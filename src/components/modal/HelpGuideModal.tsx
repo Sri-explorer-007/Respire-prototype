@@ -1,5 +1,5 @@
 import React from 'react';
-import { HelpCircle, Shield, CheckCircle2, Layers, BookOpen, X } from 'lucide-react';
+import { HelpCircle, Shield, Layers, BookOpen, X } from 'lucide-react';
 
 interface HelpGuideModalProps {
   isOpen: boolean;
@@ -10,19 +10,19 @@ export const HelpGuideModal: React.FC<HelpGuideModalProps> = ({ isOpen, onClose 
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 bg-black/80 backdrop-blur-md flex items-center justify-center p-4 animate-in fade-in">
-      <div className="aero-card max-w-2xl w-full max-h-[85vh] flex flex-col border border-white/20 shadow-2xl overflow-hidden">
+    <div className="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4 animate-in fade-in select-none">
+      <div className="bg-white max-w-2xl w-full max-h-[85vh] flex flex-col rounded-2xl border border-slate-200 shadow-2xl overflow-hidden">
         {/* Header */}
-        <div className="px-6 py-4 border-b border-white/10 flex items-center justify-between bg-white/[0.02]">
-          <div className="flex items-center space-x-2.5">
-            <div className="p-2 rounded-xl bg-blue-600/20 border border-blue-500/30 text-blue-400">
+        <div className="px-6 py-4 border-b border-slate-200 flex items-center justify-between bg-white shrink-0">
+          <div className="flex items-center space-x-3">
+            <div className="p-2.5 rounded-xl bg-blue-600 text-white shadow-md shadow-blue-500/20">
               <HelpCircle className="w-5 h-5" />
             </div>
             <div>
-              <h3 className="text-sm font-bold text-white tracking-tight flex items-center gap-1.5">
+              <h3 className="text-base font-bold text-slate-900 tracking-tight flex items-center gap-1.5">
                 RESPIRE Operational Command Guide
               </h3>
-              <p className="text-[11px] text-slate-400">
+              <p className="text-xs text-slate-500 mt-0.5">
                 Greater Chennai Corporation Climate Resilience Platform
               </p>
             </div>
@@ -30,105 +30,104 @@ export const HelpGuideModal: React.FC<HelpGuideModalProps> = ({ isOpen, onClose 
           <button
             type="button"
             onClick={onClose}
-            className="p-1.5 rounded-lg bg-white/[0.05] hover:bg-white/[0.1] text-slate-400 hover:text-white transition-colors cursor-pointer text-sm font-bold"
+            className="p-2 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-500 hover:text-slate-900 transition-colors cursor-pointer"
           >
             <X className="w-4 h-4" />
           </button>
         </div>
 
         {/* Content */}
-        <div className="p-6 space-y-5 overflow-y-auto custom-scrollbar text-xs text-slate-300 leading-relaxed">
-          {/* Section 1: 4 Decision Phases */}
+        <div className="p-6 space-y-5 overflow-y-auto custom-scrollbar text-xs text-slate-700 leading-relaxed bg-[#f8f9ff]">
+          {/* Section 1: Decision Workflow Stages */}
           <div className="space-y-3">
-            <h4 className="text-xs font-bold text-white uppercase tracking-wider flex items-center gap-2">
-              <Layers className="w-4 h-4 text-orange-400" />
-              Four-Phase Decision Support Workflow
+            <h4 className="text-xs font-bold text-slate-900 uppercase tracking-wider flex items-center gap-2">
+              <Layers className="w-4 h-4 text-emerald-600" />
+              Core Municipal Decision Support Workflow
             </h4>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
-              <div className="p-3 rounded-xl bg-white/[0.02] border border-white/[0.06] space-y-1">
-                <span className="font-bold text-orange-300 font-mono text-[11px] block">
-                  01 IDENTIFY
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div className="p-3.5 rounded-xl bg-white border border-slate-200 space-y-1 shadow-2xs">
+                <span className="font-bold text-slate-900 font-mono text-[11px] block flex items-center gap-1">
+                  <span className="w-2 h-2 rounded-full bg-blue-600"></span>
+                  00 OVERVIEW & 01 DATA
                 </span>
-                <p className="text-slate-400 text-[11px]">
-                  Explore live geospatial heat risk across Greater Chennai Corporation. Filter by risk tier and inspect telemetry for each ward.
+                <p className="text-slate-600 text-[11px]">
+                  Executive briefing summary KPIs and full 200 wards telemetry explorer with Landsat & census provenance.
                 </p>
               </div>
 
-              <div className="p-3 rounded-xl bg-white/[0.02] border border-white/[0.06] space-y-1">
-                <span className="font-bold text-amber-300 font-mono text-[11px] block">
-                  02 EXPLAIN WHY
+              <div className="p-3.5 rounded-xl bg-white border border-slate-200 space-y-1 shadow-2xs">
+                <span className="font-bold text-slate-900 font-mono text-[11px] block flex items-center gap-1">
+                  <span className="w-2 h-2 rounded-full bg-rose-600"></span>
+                  02 IDENTIFY & 03 EXPLAIN
                 </span>
-                <p className="text-slate-400 text-[11px]">
-                  Audit the causal drivers: 50% Heat Exposure + 20% Vegetation Deficit + 30% Social Vulnerability. Zero black-box calculations.
+                <p className="text-slate-600 text-[11px]">
+                  Interactive GIS map with live meteorology and transparent additive scoring (50% Heat + 20% Veg + 30% Vuln).
                 </p>
               </div>
 
-              <div className="p-3 rounded-xl bg-white/[0.02] border border-white/[0.06] space-y-1">
-                <span className="font-bold text-emerald-300 font-mono text-[11px] block">
-                  03 RECOMMEND ACTIONS
+              <div className="p-3.5 rounded-xl bg-white border border-slate-200 space-y-1 shadow-2xs">
+                <span className="font-bold text-slate-900 font-mono text-[11px] block flex items-center gap-1">
+                  <span className="w-2 h-2 rounded-full bg-amber-600"></span>
+                  04 RECOMMEND & 05 PRIORITIZE
                 </span>
-                <p className="text-slate-400 text-[11px]">
-                  Review targeted, rule-based cooling interventions tailored to each ward&apos;s primary stressor (cool roofs, hydration hubs, canopy corridors).
+                <p className="text-slate-600 text-[11px]">
+                  Rule-based cooling intervention catalogue and multi-criteria capital allocation rankings with transparent budgets.
                 </p>
               </div>
 
-              <div className="p-3 rounded-xl bg-white/[0.02] border border-white/[0.06] space-y-1">
-                <span className="font-bold text-cyan-300 font-mono text-[11px] block">
-                  04 PRIORITIZE & FUND
+              <div className="p-3.5 rounded-xl bg-white border border-slate-200 space-y-1 shadow-2xs">
+                <span className="font-bold text-slate-900 font-mono text-[11px] block flex items-center gap-1">
+                  <span className="w-2 h-2 rounded-full bg-emerald-600"></span>
+                  06 PLAN & 07 REPORT
                 </span>
-                <p className="text-slate-400 text-[11px]">
-                  Rank municipal capital allocations using 50% Need + 30% Impact + 20% Cost Efficiency weighting with transparent indicative budgets.
+                <p className="text-slate-600 text-[11px]">
+                  Interactive What-If policy sandbox simulator and printable council briefing dockets with CSV export.
                 </p>
               </div>
             </div>
           </div>
 
           {/* Section 2: Data Integrity & Ground Truth */}
-          <div className="p-4 rounded-xl bg-blue-500/10 border border-blue-500/20 space-y-2">
-            <div className="flex items-center space-x-2 text-blue-300 font-bold text-xs">
-              <Shield className="w-4 h-4" />
+          <div className="p-4 rounded-xl bg-blue-50 border border-blue-200 space-y-1.5">
+            <div className="flex items-center space-x-2 text-blue-900 font-bold text-xs">
+              <Shield className="w-4 h-4 text-blue-700" />
               <span>Scientific Data Integrity Standards</span>
             </div>
-            <p className="text-[11px] text-blue-100/90 leading-normal">
+            <p className="text-[11px] text-blue-800 leading-normal">
               All cost and temperature impact metrics are explicitly designated as <strong>Indicative Planning Estimates</strong>. Wards with missing sensor telemetry (such as Sholinganallur Ward 198) display <em>Insufficient Evidence</em> rather than fabricated zero scores.
             </p>
           </div>
 
-          {/* Section 3: Interactive Controls */}
+          {/* Section 3: Keyboard & Navigation Controls */}
           <div className="space-y-2">
-            <h4 className="text-xs font-bold text-white uppercase tracking-wider flex items-center gap-2">
-              <BookOpen className="w-4 h-4 text-emerald-400" />
-              Navigation & Telemetry Controls
+            <h4 className="text-xs font-bold text-slate-900 uppercase tracking-wider flex items-center gap-2">
+              <BookOpen className="w-4 h-4 text-emerald-600" />
+              Keyboard & Navigation Shortcuts
             </h4>
-            <ul className="space-y-1.5 text-slate-300 text-[11px]">
-              <li className="flex items-center gap-2">
-                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
-                <span><strong>Map Navigation:</strong> Click any ward marker to sync climate and telemetry cards across the entire command deck.</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
-                <span><strong>Radar View:</strong> Toggle ambient radar telemetry sweep at the bottom-right of the map viewport.</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
-                <span><strong>Top Status Chips:</strong> Click &quot;5 Critical&quot; or &quot;42.5°C LST&quot; to quickly jump to high-risk zones.</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
-                <span><strong>Data Mode:</strong> Toggle offline demo data vs. processed feeds using the header mode switch.</span>
-              </li>
-            </ul>
+            <div className="grid grid-cols-2 gap-2 text-[11px]">
+              <div className="p-2.5 rounded-lg bg-white border border-slate-200 flex justify-between items-center">
+                <span className="text-slate-600">Switch Workflow Tabs</span>
+                <kbd className="px-2 py-0.5 rounded bg-slate-100 font-mono text-[10px] text-slate-700 font-bold border border-slate-200">1 – 8</kbd>
+              </div>
+              <div className="p-2.5 rounded-lg bg-white border border-slate-200 flex justify-between items-center">
+                <span className="text-slate-600">Search Wards / Zones</span>
+                <kbd className="px-2 py-0.5 rounded bg-slate-100 font-mono text-[10px] text-slate-700 font-bold border border-slate-200">/</kbd>
+              </div>
+            </div>
           </div>
         </div>
 
         {/* Footer */}
-        <div className="px-6 py-3 border-t border-white/10 bg-white/[0.02] flex items-center justify-end">
+        <div className="px-6 py-3.5 border-t border-slate-200 bg-white flex items-center justify-between">
+          <span className="text-[11px] font-mono text-slate-500">
+            RESPIRE v2.4 · Greater Chennai Corporation
+          </span>
           <button
             type="button"
             onClick={onClose}
-            className="px-4 py-1.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs transition-colors cursor-pointer shadow-lg shadow-blue-500/20"
+            className="px-4 py-2 rounded-xl bg-[#0b1c30] hover:bg-slate-800 text-white font-semibold text-xs transition-colors cursor-pointer shadow-2xs"
           >
-            Got it, Return to Command Deck
+            Got it, return to Dashboard
           </button>
         </div>
       </div>

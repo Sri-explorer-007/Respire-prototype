@@ -1,4 +1,6 @@
 export * from './WorkflowHeader';
+export * from './OverviewView';
+export * from './ScenarioSandbox';
 export * from './RiskSummaryCards';
 export * from './RiskMap';
 export * from './RiskLegend';

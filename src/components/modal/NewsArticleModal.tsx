@@ -18,20 +18,20 @@ export const NewsArticleModal: React.FC<NewsArticleModalProps> = ({ article, onC
   if (!article) return null;
 
   return (
-    <div className="fixed inset-0 z-50 bg-black/80 backdrop-blur-md flex items-center justify-center p-4 animate-in fade-in">
-      <div className="aero-card max-w-lg w-full p-6 space-y-4 border border-white/20 shadow-2xl">
+    <div className="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4 animate-in fade-in select-none">
+      <div className="bg-white max-w-lg w-full p-6 space-y-4 rounded-2xl border border-slate-200 shadow-2xl">
         {/* Header */}
-        <div className="flex items-center justify-between border-b border-white/10 pb-3">
+        <div className="flex items-center justify-between border-b border-slate-200 pb-3">
           <div className="flex items-center space-x-2">
-            <div className="p-1.5 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400">
+            <div className="p-1.5 rounded-lg bg-blue-50 border border-blue-200 text-blue-600">
               <Newspaper className="w-4 h-4" />
             </div>
-            <span className="text-xs font-mono text-slate-400 font-semibold">{article.source}</span>
+            <span className="text-xs font-mono text-slate-600 font-semibold">{article.source}</span>
           </div>
           <button
             type="button"
             onClick={onClose}
-            className="p-1 rounded-lg hover:bg-white/10 text-slate-400 hover:text-white transition-colors cursor-pointer text-sm font-bold"
+            className="p-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-500 hover:text-slate-900 transition-colors cursor-pointer"
           >
             <X className="w-4 h-4" />
           </button>
@@ -43,22 +43,22 @@ export const NewsArticleModal: React.FC<NewsArticleModalProps> = ({ article, onC
             <Calendar className="w-3 h-3" />
             <span>Published {article.time}</span>
             <span>•</span>
-            <span className="text-emerald-400 font-semibold flex items-center gap-0.5">
+            <span className="text-emerald-700 font-semibold flex items-center gap-0.5">
               <ShieldCheck className="w-3 h-3" /> Verified Dispatch
             </span>
           </div>
-          <h3 className="text-sm font-bold text-white leading-snug">
+          <h3 className="text-sm font-bold text-slate-900 leading-snug">
             {article.title}
           </h3>
         </div>
 
         {/* Body content */}
-        <div className="text-xs text-slate-300 leading-relaxed space-y-2 bg-white/[0.02] p-3.5 rounded-xl border border-white/[0.06]">
+        <div className="text-xs text-slate-700 leading-relaxed space-y-2 bg-[#f8f9ff] p-4 rounded-xl border border-slate-200">
           <p>
             {article.summary ||
               'Greater Chennai Corporation authorities today confirmed enhanced heat-resilience measures under the 2026 Climate Action Framework. Ground teams have begun micro-deployment across North and Central Chennai wards experiencing Land Surface Temperatures exceeding 42°C.'}
           </p>
-          <p className="text-slate-400 text-[11px]">
+          <p className="text-slate-500 text-[11px]">
             The initiative integrates automated GIS satellite telemetry with community outreach units to protect high-vulnerability informal settlements and outdoor workers.
           </p>
         </div>
@@ -71,7 +71,7 @@ export const NewsArticleModal: React.FC<NewsArticleModalProps> = ({ article, onC
           <button
             type="button"
             onClick={onClose}
-            className="px-4 py-1.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs transition-colors cursor-pointer shadow-lg shadow-blue-500/20"
+            className="px-4 py-2 rounded-xl bg-[#0b1c30] hover:bg-slate-800 text-white font-semibold text-xs transition-colors cursor-pointer shadow-2xs"
           >
             Close Article
           </button>

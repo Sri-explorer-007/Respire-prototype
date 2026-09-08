@@ -11,7 +11,15 @@ import {
 } from 'lucide-react';
 import type { DataSourceMode, DataProvenanceSummary } from '../../data';
 
-export type WorkflowTab = 'identify' | 'explain' | 'recommend' | 'prioritize';
+export type WorkflowTab =
+  | 'overview'
+  | 'data'
+  | 'identify'
+  | 'explain'
+  | 'recommend'
+  | 'prioritize'
+  | 'planning'
+  | 'reports';
 
 interface WorkflowHeaderProps {
   dataSourceMode: DataSourceMode;
@@ -38,9 +46,25 @@ export const WorkflowHeader: React.FC<WorkflowHeaderProps> = ({
 }) => {
   const steps = [
     {
+      id: 'overview',
+      tabKey: 'overview' as const,
+      stepNumber: '00',
+      title: 'OVERVIEW',
+      subtitle: 'Executive Risk Briefing',
+      icon: Layers,
+    },
+    {
+      id: 'data',
+      tabKey: 'data' as const,
+      stepNumber: '01',
+      title: 'DATA EXPLORER',
+      subtitle: '200 Wards Telemetry',
+      icon: Database,
+    },
+    {
       id: 'identify',
       tabKey: 'identify' as const,
-      stepNumber: '01',
+      stepNumber: '02',
       title: 'IDENTIFY RISK',
       subtitle: 'Spatial Heat & Vulnerability Map',
       icon: Crosshair,
@@ -48,15 +72,15 @@ export const WorkflowHeader: React.FC<WorkflowHeaderProps> = ({
     {
       id: 'explain',
       tabKey: 'explain' as const,
-      stepNumber: '02',
+      stepNumber: '03',
       title: 'EXPLAIN WHY',
-      subtitle: 'Causal Drivers & Component Breakdown',
+      subtitle: 'Causal Drivers & Breakdown',
       icon: Layers,
     },
     {
       id: 'recommend',
       tabKey: 'recommend' as const,
-      stepNumber: '03',
+      stepNumber: '04',
       title: 'RECOMMEND ACTIONS',
       subtitle: 'Intervention Catalogue Rules',
       icon: Sparkles,
@@ -64,10 +88,26 @@ export const WorkflowHeader: React.FC<WorkflowHeaderProps> = ({
     {
       id: 'prioritize',
       tabKey: 'prioritize' as const,
-      stepNumber: '04',
+      stepNumber: '05',
       title: 'PRIORITIZE & FUND',
       subtitle: 'Cost + Impact Optimization',
       icon: TrendingUp,
+    },
+    {
+      id: 'planning',
+      tabKey: 'planning' as const,
+      stepNumber: '06',
+      title: 'WHAT-IF SANDBOX',
+      subtitle: 'Scenario Policy Modeling',
+      icon: Sparkles,
+    },
+    {
+      id: 'reports',
+      tabKey: 'reports' as const,
+      stepNumber: '07',
+      title: 'DOCKETS & REPORTS',
+      subtitle: 'Export & Council Summaries',
+      icon: CheckCircle2,
     },
   ];
 
@@ -128,7 +168,7 @@ export const WorkflowHeader: React.FC<WorkflowHeaderProps> = ({
 
         {/* Sleek Stepper Navigation Bar */}
         <nav aria-label="Decision Workflow Navigation">
-          <div className="bg-white/[0.02] p-1 rounded-xl border border-white/[0.06] grid grid-cols-2 md:grid-cols-4 gap-1.5">
+          <div className="bg-white/[0.02] p-1 rounded-xl border border-white/[0.06] grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-1.5">
             {steps.map((step) => {
               const isCurrent = step.tabKey === activeTab;
               const Icon = step.icon;
