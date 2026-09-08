@@ -5,6 +5,7 @@ import { ProcessedZoneDataProvider } from './processed/processedDataProvider';
 export * from './boundary/dataSource.interface';
 export * from './demo/chennaiDemoData';
 export * from './processed/processedDataProvider';
+export * from './processed/chennaiAllWardsData';
 export * from './validation/zoneValidation';
 export * from './interventions/interventionsData';
 

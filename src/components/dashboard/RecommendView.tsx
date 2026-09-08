@@ -116,14 +116,23 @@ export const RecommendView: React.FC<RecommendViewProps> = ({
                 onChange={(e) => onSelectZone(e.target.value)}
                 className="w-full appearance-none bg-slate-900/90 border border-white/[0.1] rounded-xl px-3 py-2 pr-8 text-xs font-medium text-slate-200 focus:outline-none focus:ring-2 focus:ring-orange-500/50 cursor-pointer shadow-lg"
               >
-                {scoredZones.map(({ zone: z, score: s }) => {
-                  const zId = z.zoneId || z.id || '';
-                  const sVal = s.totalScore !== null ? `${s.totalScore.toFixed(0)}/100` : 'Insufficient Data';
-                  const tier = s.riskBand ?? s.riskLevel;
+                {Array.from(new Set(scoredZones.map((item) => item.zone.zoneName || 'Greater Chennai Corporation'))).map((zoneGroupName) => {
+                  const groupItems = scoredZones.filter(
+                    (item) => (item.zone.zoneName || 'Greater Chennai Corporation') === zoneGroupName
+                  );
                   return (
-                    <option key={zId} value={zId} className="bg-slate-900 text-slate-200">
-                      {z.wardName || z.name || zId} ({tier} · {sVal})
-                    </option>
+                    <optgroup key={zoneGroupName} label={zoneGroupName} className="bg-slate-950 font-bold text-slate-400">
+                      {groupItems.map(({ zone: z, score: s }) => {
+                        const zId = z.zoneId || z.id || '';
+                        const sVal = s.totalScore !== null ? `${s.totalScore.toFixed(0)}/100` : 'Insufficient Data';
+                        const tier = s.riskBand ?? s.riskLevel;
+                        return (
+                          <option key={zId} value={zId} className="bg-slate-900 text-slate-200 font-normal">
+                            {z.wardName || z.name || zId} ({tier} · {sVal})
+                          </option>
+                        );
+                      })}
+                    </optgroup>
                   );
                 })}
               </select>

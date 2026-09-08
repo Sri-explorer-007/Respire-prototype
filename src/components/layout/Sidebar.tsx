@@ -10,6 +10,7 @@ import {
   Thermometer,
   Trees,
   BarChart3,
+  MapPin,
 } from 'lucide-react';
 import type { WorkflowTab } from '../dashboard';
 
@@ -23,6 +24,7 @@ interface SidebarProps {
   onSelectZone?: (zoneId: string) => void;
   onOpenHeatPlan?: () => void;
   onOpenHelp?: () => void;
+  onOpenZonesModal?: () => void;
 }
 
 export const Sidebar: React.FC<SidebarProps> = ({
@@ -33,6 +35,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
   onSelectZone,
   onOpenHeatPlan,
   onOpenHelp,
+  onOpenZonesModal,
 }) => {
   return (
     <aside className="w-64 shrink-0 hidden lg:flex flex-col border-r border-white/[0.08] bg-[#0A0D1A]/90 backdrop-blur-2xl z-30 select-none h-screen sticky top-0">
@@ -225,6 +228,23 @@ export const Sidebar: React.FC<SidebarProps> = ({
               <span>Command SOPs & Help</span>
             </div>
           </button>
+
+          {onOpenZonesModal && (
+            <button
+              type="button"
+              onClick={onOpenZonesModal}
+              title="Open Complete GCC 15 Zones & 200 Wards Directory"
+              className="w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs text-blue-300 hover:text-white bg-blue-500/10 hover:bg-blue-500/20 border border-blue-500/20 transition-all cursor-pointer shadow-sm"
+            >
+              <div className="flex items-center space-x-2.5">
+                <MapPin className="w-4 h-4 text-blue-400" />
+                <span className="font-semibold">15 Zones · 200 Wards</span>
+              </div>
+              <span className="text-[10px] font-mono px-1.5 py-0.2 rounded bg-blue-500/30 text-blue-200 font-bold">
+                GCC
+              </span>
+            </button>
+          )}
         </div>
       </div>
 

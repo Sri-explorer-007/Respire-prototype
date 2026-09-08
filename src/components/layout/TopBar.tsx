@@ -8,6 +8,7 @@ import {
   AlertCircle,
   Flame,
   CheckCircle2,
+  MapPin,
 } from 'lucide-react';
 import type { DataSourceMode, DataProvenanceSummary } from '../../data';
 import type { WorkflowTab } from '../dashboard';
@@ -20,6 +21,7 @@ interface TopBarProps {
   onSelectTab: (tab: WorkflowTab) => void;
   onOpenKeySettings?: () => void;
   onOpenHelp?: () => void;
+  onOpenZonesModal?: () => void;
   onSelectZone?: (zoneId: string) => void;
   searchQuery?: string;
   onSearchChange?: (query: string) => void;
@@ -28,11 +30,12 @@ interface TopBarProps {
 export const TopBar: React.FC<TopBarProps> = ({
   dataSourceMode,
   onToggleMode,
-  provenanceSummary,
+  provenanceSummary: _provenanceSummary,
   activeTab,
   onSelectTab,
   onOpenKeySettings: _onOpenKeySettings,
   onOpenHelp,
+  onOpenZonesModal,
   onSelectZone,
   searchQuery = '',
   onSearchChange,
@@ -170,19 +173,29 @@ export const TopBar: React.FC<TopBarProps> = ({
           <span className="font-bold text-[11px]">5 Critical</span>
         </button>
 
+        {/* 15 Zones & 200 Wards Directory Button */}
+        {onOpenZonesModal && (
+          <button
+            type="button"
+            onClick={onOpenZonesModal}
+            className="flex items-center space-x-1.5 px-3 py-1.5 rounded-full bg-blue-600/20 hover:bg-blue-600/30 border border-blue-500/40 text-blue-300 transition-colors cursor-pointer shadow-sm shrink-0 whitespace-nowrap"
+            title="Browse All 15 GCC Zones and 200 Municipal Wards"
+          >
+            <MapPin className="w-3.5 h-3.5 text-blue-400 shrink-0" />
+            <span className="font-bold text-[11px]">15 Zones / 200 Wards</span>
+          </button>
+        )}
+
         {/* Data Mode Switcher */}
         <button
           type="button"
           onClick={() => onToggleMode && onToggleMode(dataSourceMode === 'demo' ? 'processed' : 'demo')}
-          className="hidden lg:flex items-center space-x-1.5 px-3 py-1.5 rounded-full bg-white/[0.04] hover:bg-white/[0.08] border border-white/[0.08] text-slate-300 transition-colors cursor-pointer shrink-0"
-          title="Toggle Data Mode"
+          className="hidden sm:flex items-center space-x-1.5 px-3 py-1.5 rounded-full bg-white/[0.04] hover:bg-white/[0.08] border border-white/[0.08] text-slate-300 transition-colors cursor-pointer shrink-0"
+          title="Toggle between 200 Municipal Wards and 10 Benchmark Wards"
         >
           <CheckCircle2 className="w-3 h-3 text-emerald-400 shrink-0" />
-          <span className="text-[11px] font-mono whitespace-nowrap hidden 2xl:inline">
-            {provenanceSummary?.datasetLabel || 'Verified Offline Demo'}
-          </span>
-          <span className="text-[11px] font-mono whitespace-nowrap 2xl:hidden">
-            Offline Demo
+          <span className="text-[11px] font-mono whitespace-nowrap">
+            {dataSourceMode === 'processed' ? '200 Wards' : '10 Calibrated Wards'}
           </span>
         </button>
 

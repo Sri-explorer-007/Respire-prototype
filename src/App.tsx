@@ -24,9 +24,10 @@ import { TopBar } from './components/layout/TopBar';
 import { Footer } from './components/layout/Footer';
 import { HelpGuideModal } from './components/modal/HelpGuideModal';
 import { HeatPlanModal } from './components/modal/HeatPlanModal';
+import { ChennaiZonesModal } from './components/modal/ChennaiZonesModal';
 
 export function App() {
-  const [dataSourceMode, setDataSourceMode] = useState<DataSourceMode>(respireApi.getDataSourceMode());
+  const [dataSourceMode, setDataSourceMode] = useState<DataSourceMode>('processed');
   const [zones, setZones] = useState<Zone[]>([]);
   const [selectedZoneId, setSelectedZoneId] = useState<string>('');
   const [activeWorkflowTab, setActiveWorkflowTab] = useState<WorkflowTab>('identify');
@@ -36,19 +37,27 @@ export function App() {
   const [searchQuery, setSearchQuery] = useState('');
   const [showHelpModal, setShowHelpModal] = useState(false);
   const [showHeatPlanModal, setShowHeatPlanModal] = useState(false);
+  const [showChennaiZonesModal, setShowChennaiZonesModal] = useState(false);
 
   // Fetch zones on initial mount or when data mode toggles
   useEffect(() => {
+    respireApi.setDataSourceMode(dataSourceMode);
     async function loadZones() {
       const data = await respireApi.fetchZones();
       setZones(data);
-      if (data.length > 0 && !selectedZoneId) {
-        setSelectedZoneId(data[0].zoneId || data[0].id || '');
+      if (data.length > 0) {
+        setSelectedZoneId((prev) => {
+          const stillValid = data.some(
+            (z) => (z.zoneId || z.id || z.wardId) === prev
+          );
+          if (stillValid && prev) return prev;
+          return data[0].zoneId || data[0].id || data[0].wardId || '';
+        });
       }
       setProvenanceSummary(respireApi.getProvenanceMetadata());
     }
     loadZones();
-  }, [dataSourceMode, selectedZoneId]);
+  }, [dataSourceMode]);
 
   // Compute domain risk scores dynamically via respireScoringEngine
   const scoredZones = useMemo(() => {
@@ -64,20 +73,38 @@ export function App() {
     setDataSourceMode(mode);
   };
 
-  // Filter zones by search query if present
+  // Filter zones by search query if present (supports ward numbers, names, zones)
   const filteredScoredZones = useMemo(() => {
     if (!searchQuery.trim()) return scoredZones;
-    const q = searchQuery.toLowerCase();
+    const q = searchQuery.toLowerCase().trim();
+    const cleanNum = q.replace(/^ward\s*/i, '').replace(/^w-?/i, '');
     return scoredZones.filter(({ zone }) => {
       const name = (zone.zoneName || zone.name || '').toLowerCase();
-      const ward = (zone.wardId || '').toLowerCase();
-      return name.includes(q) || ward.includes(q);
+      const wardId = (zone.wardId || '').toLowerCase();
+      const wardName = (zone.wardName || '').toLowerCase();
+      const zoneId = (zone.zoneId || '').toLowerCase();
+      const numMatch =
+        cleanNum &&
+        /^\d+$/.test(cleanNum) &&
+        (wardId === `ward-${cleanNum.padStart(3, '0')}` ||
+          wardName.includes(`ward ${cleanNum.padStart(3, '0')}`) ||
+          wardName.includes(`ward ${cleanNum}`));
+
+      return (
+        name.includes(q) ||
+        wardId.includes(q) ||
+        wardName.includes(q) ||
+        zoneId.includes(q) ||
+        numMatch
+      );
     });
   }, [scoredZones, searchQuery]);
 
   // Resolve currently selected zone and its computed score
   const selectedScoredItem = scoredZones.find(
-    (item) => (item.zone.zoneId || item.zone.id) === selectedZoneId
+    (item) =>
+      (item.zone.zoneId || item.zone.id) === selectedZoneId ||
+      item.zone.wardId === selectedZoneId
   );
   const selectedZone = selectedScoredItem?.zone;
   const selectedScore = selectedScoredItem?.score ?? null;
@@ -92,6 +119,7 @@ export function App() {
         onSelectZone={setSelectedZoneId}
         onOpenHeatPlan={() => setShowHeatPlanModal(true)}
         onOpenHelp={() => setShowHelpModal(true)}
+        onOpenZonesModal={() => setShowChennaiZonesModal(true)}
       />
 
       {/* Main Command Viewport */}
@@ -104,6 +132,7 @@ export function App() {
           activeTab={activeWorkflowTab}
           onSelectTab={setActiveWorkflowTab}
           onOpenHelp={() => setShowHelpModal(true)}
+          onOpenZonesModal={() => setShowChennaiZonesModal(true)}
           onSelectZone={setSelectedZoneId}
           searchQuery={searchQuery}
           onSearchChange={setSearchQuery}
@@ -237,6 +266,16 @@ export function App() {
       <HeatPlanModal
         isOpen={showHeatPlanModal}
         onClose={() => setShowHeatPlanModal(false)}
+      />
+
+      {/* Chennai Administrative Hierarchy (15 Zones / 200 Wards) Modal */}
+      <ChennaiZonesModal
+        isOpen={showChennaiZonesModal}
+        onClose={() => setShowChennaiZonesModal(false)}
+        selectedZoneId={selectedZoneId}
+        onSelectZone={setSelectedZoneId}
+        dataSourceMode={dataSourceMode}
+        onToggleMode={handleModeToggle}
       />
     </div>
   );
