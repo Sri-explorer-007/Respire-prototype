@@ -42,15 +42,15 @@ export const Sidebar: React.FC<SidebarProps> = ({
       {/* Brand Header */}
       <div className="h-16 px-4 border-b border-white/[0.08] flex items-center justify-between shrink-0">
         <div className="flex items-center space-x-2.5">
-          <div className="h-9 w-9 rounded-xl bg-gradient-to-tr from-blue-600 via-indigo-500 to-orange-500 p-0.5 shadow-lg shadow-blue-500/20">
-            <div className="h-full w-full bg-[#0A0D1A] rounded-[10px] flex items-center justify-center text-blue-400">
-              <Compass className="w-5 h-5 text-blue-400" />
+          <div className="h-9 w-9 rounded-xl bg-gradient-to-tr from-red-600 via-rose-500 to-amber-500 p-0.5 shadow-lg shadow-red-500/20">
+            <div className="h-full w-full bg-[#0A0D1A] rounded-[10px] flex items-center justify-center overflow-hidden p-1">
+              <img src="/respire-emblem.png" alt="RESPIRE" className="w-full h-full object-contain" />
             </div>
           </div>
           <div>
             <h1 className="font-extrabold text-sm tracking-tight text-white flex items-center gap-1.5">
               RESPIRE
-              <span className="text-[9px] font-mono px-1.5 py-0.2 rounded bg-orange-500/20 text-orange-400 font-bold border border-orange-500/30">
+              <span className="text-[9px] font-mono px-1.5 py-0.2 rounded bg-red-500/20 text-red-400 font-bold border border-red-500/30">
                 GCC
               </span>
             </h1>

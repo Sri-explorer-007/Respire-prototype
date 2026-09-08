@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShieldAlert, Database, MapPin } from 'lucide-react';
+import { Database, MapPin } from 'lucide-react';
 import type { DataSourceMode, DataProvenanceSummary } from '../../data';
 
 interface HeaderProps {
@@ -17,8 +17,8 @@ export const Header: React.FC<HeaderProps> = ({
     <header className="border-b border-slate-800 bg-slate-950/80 backdrop-blur-md px-6 py-4">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center md:justify-between gap-4">
         <div className="flex items-center space-x-3">
-          <div className="h-10 w-10 rounded-lg bg-orange-600/20 border border-orange-500/40 flex items-center justify-center text-orange-400">
-            <ShieldAlert className="w-5 h-5" />
+          <div className="h-10 w-10 rounded-xl bg-gradient-to-tr from-red-600/30 via-rose-500/20 to-amber-500/20 border border-red-500/30 flex items-center justify-center p-1.5 shadow-lg shadow-red-500/20">
+            <img src="/respire-emblem.png" alt="RESPIRE" className="w-full h-full object-contain" />
           </div>
           <div>
             <div className="flex items-center space-x-2">
