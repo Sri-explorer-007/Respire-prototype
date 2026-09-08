@@ -19,6 +19,7 @@ import {
   SevereHeatAlertCard,
   ClimateNewsCard,
 } from './components/dashboard';
+import { LandingPage } from './components/landing';
 import { Sidebar } from './components/layout/Sidebar';
 import { TopBar } from './components/layout/TopBar';
 import { Footer } from './components/layout/Footer';
@@ -27,6 +28,7 @@ import { HeatPlanModal } from './components/modal/HeatPlanModal';
 import { ChennaiZonesModal } from './components/modal/ChennaiZonesModal';
 
 export function App() {
+  const [viewMode, setViewMode] = useState<'landing' | 'console'>('landing');
   const [dataSourceMode, setDataSourceMode] = useState<DataSourceMode>('processed');
   const [zones, setZones] = useState<Zone[]>([]);
   const [selectedZoneId, setSelectedZoneId] = useState<string>('');
@@ -109,37 +111,56 @@ export function App() {
   const selectedZone = selectedScoredItem?.zone;
   const selectedScore = selectedScoredItem?.score ?? null;
 
+  const handleLaunchConsole = (targetTab?: WorkflowTab, zoneId?: string) => {
+    if (targetTab) setActiveWorkflowTab(targetTab);
+    if (zoneId) setSelectedZoneId(zoneId);
+    setViewMode('console');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
-    <div className="min-h-screen bg-[#060814] text-slate-100 flex antialiased selection:bg-blue-600 selection:text-white stars-bg relative">
-      {/* Left Collapsible Command Sidebar (Matching AirlineSim Reference) */}
-      <Sidebar
-        activeTab={activeWorkflowTab}
-        onSelectTab={setActiveWorkflowTab}
-        alertCount={5}
-        onSelectZone={setSelectedZoneId}
-        onOpenHeatPlan={() => setShowHeatPlanModal(true)}
-        onOpenHelp={() => setShowHelpModal(true)}
-        onOpenZonesModal={() => setShowChennaiZonesModal(true)}
-      />
-
-      {/* Main Command Viewport */}
-      <div className="flex-1 flex flex-col min-w-0 min-h-screen overflow-x-hidden">
-        {/* Top Command Bar (Search, Breadcrumbs, Status Chips) */}
-        <TopBar
-          dataSourceMode={dataSourceMode}
-          onToggleMode={handleModeToggle}
-          provenanceSummary={provenanceSummary}
-          activeTab={activeWorkflowTab}
-          onSelectTab={setActiveWorkflowTab}
-          onOpenHelp={() => setShowHelpModal(true)}
+    <div className="min-h-screen bg-[#060814] text-slate-100 flex antialiased selection:bg-cyan-500 selection:text-black stars-bg relative">
+      {viewMode === 'landing' ? (
+        <LandingPage
+          onLaunchConsole={handleLaunchConsole}
+          onOpenHeatPlan={() => setShowHeatPlanModal(true)}
           onOpenZonesModal={() => setShowChennaiZonesModal(true)}
-          onSelectZone={setSelectedZoneId}
-          searchQuery={searchQuery}
-          onSearchChange={setSearchQuery}
+          onOpenHelp={() => setShowHelpModal(true)}
+          zones={zones}
         />
+      ) : (
+        <>
+          {/* Left Collapsible Command Sidebar (Matching AirlineSim Reference) */}
+          <Sidebar
+            activeTab={activeWorkflowTab}
+            onSelectTab={setActiveWorkflowTab}
+            alertCount={5}
+            onSelectZone={setSelectedZoneId}
+            onOpenHeatPlan={() => setShowHeatPlanModal(true)}
+            onOpenHelp={() => setShowHelpModal(true)}
+            onOpenZonesModal={() => setShowChennaiZonesModal(true)}
+            onNavigateToLanding={() => setViewMode('landing')}
+          />
 
-        {/* Dynamic Workspace Area */}
-        <main className="flex-1 p-4 sm:p-6 space-y-5 max-w-[1600px] w-full mx-auto">
+          {/* Main Command Viewport */}
+          <div className="flex-1 flex flex-col min-w-0 min-h-screen overflow-x-hidden">
+            {/* Top Command Bar (Search, Breadcrumbs, Status Chips) */}
+            <TopBar
+              dataSourceMode={dataSourceMode}
+              onToggleMode={handleModeToggle}
+              provenanceSummary={provenanceSummary}
+              activeTab={activeWorkflowTab}
+              onSelectTab={setActiveWorkflowTab}
+              onOpenHelp={() => setShowHelpModal(true)}
+              onOpenZonesModal={() => setShowChennaiZonesModal(true)}
+              onSelectZone={setSelectedZoneId}
+              searchQuery={searchQuery}
+              onSearchChange={setSearchQuery}
+              onNavigateToLanding={() => setViewMode('landing')}
+            />
+
+            {/* Dynamic Workspace Area */}
+            <main className="flex-1 p-4 sm:p-6 space-y-5 max-w-[1600px] w-full mx-auto">
           {activeWorkflowTab === 'identify' ? (
             <>
               {/* Emergency Banner (Matching Severe Weather Card from reference) */}
@@ -255,6 +276,8 @@ export function App() {
         {/* Global Footer */}
         <Footer />
       </div>
+      </>
+      )}
 
       {/* Operational Help Guide Modal */}
       <HelpGuideModal

@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "start": "vite",
+    "build": "node --max-old-space-size=4096 ./node_modules/typescript/bin/tsc -b && vite build",
     "lint": "oxlint",
     "preview": "vite preview",
     "test": "tsx src/core/scoring/scoringEngine.test.ts && tsx src/core/recommendations/recommendationEngine.test.ts && tsx src/core/services/prioritization/__tests__/prioritizationEngine.test.ts && tsx src/components/dashboard/__tests__/identifyDashboard.test.ts && tsx src/components/dashboard/__tests__/explainDashboard.test.ts && tsx src/components/dashboard/__tests__/recommendDashboard.test.ts && tsx src/components/dashboard/__tests__/prioritizeDashboard.test.ts && tsx src/components/dashboard/__tests__/e2eWorkflowHardening.test.ts",

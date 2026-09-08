@@ -72,31 +72,33 @@ export const WardClimateCard: React.FC<WardClimateCardProps> = ({
         />
       </div>
 
-      {/* Main Metric: Huge Temp + Condition */}
-      <div className="py-2 flex items-center justify-between gap-2">
-        <div className="flex items-baseline space-x-2.5 min-w-0">
-          <span className="text-4xl font-extrabold text-white tracking-tight font-mono shrink-0">
+      {/* Main Metric Area: Clean layout with zero text collision */}
+      <div className="py-2.5 flex items-center justify-between gap-2.5">
+        {/* Left: Temperature & Weather Condition */}
+        <div className="min-w-0 flex-1">
+          <div className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight font-mono leading-none">
             {isInsufficient ? '—' : `${lst.toFixed(1)}°`}
-          </span>
-          <div className="min-w-0">
-            <div className="flex items-center space-x-1 text-amber-400 text-xs font-semibold whitespace-nowrap">
+          </div>
+          <div className="flex items-center space-x-1.5 mt-1.5 min-w-0">
+            <div className="flex items-center space-x-1 text-amber-400 text-[11px] font-semibold truncate">
               <Sun className="w-3.5 h-3.5 shrink-0" />
-              <span>{isInsufficient ? 'Sensors Offline' : 'Extreme Heat'}</span>
+              <span className="truncate">{isInsufficient ? 'Sensors Offline' : 'Extreme Heat'}</span>
             </div>
             {!isInsufficient && (
-              <p className="text-[10px] text-slate-400 mt-0.5 font-mono whitespace-nowrap">
+              <span className="text-[10px] text-slate-400 font-mono shrink-0">
                 H:{highTemp}° L:{lowTemp}°
-              </p>
+              </span>
             )}
           </div>
         </div>
 
-        {/* Risk Score Pill */}
-        <div className="text-right shrink-0">
-          <span className="text-[9px] text-slate-400 block font-mono">Risk Score</span>
-          <span className="text-lg font-extrabold font-mono text-rose-400 block">
-            {totalScore} <span className="text-[10px] font-normal text-slate-400">/ 100</span>
-          </span>
+        {/* Right: Risk Score Card */}
+        <div className="shrink-0 text-right bg-white/[0.04] border border-white/[0.08] px-2.5 py-1.5 rounded-lg shadow-inner">
+          <span className="text-[9px] text-slate-400 block font-mono uppercase tracking-wider">Risk Score</span>
+          <div className="text-lg font-extrabold font-mono text-rose-400 leading-tight">
+            {totalScore}
+            <span className="text-[10px] font-normal text-slate-400 ml-0.5">/100</span>
+          </div>
         </div>
       </div>
 

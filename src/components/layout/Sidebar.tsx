@@ -4,7 +4,6 @@ import {
   FileText,
   Settings,
   Shield,
-  Radio,
   ExternalLink,
   Compass,
   Thermometer,
@@ -25,6 +24,7 @@ interface SidebarProps {
   onOpenHeatPlan?: () => void;
   onOpenHelp?: () => void;
   onOpenZonesModal?: () => void;
+  onNavigateToLanding?: () => void;
 }
 
 export const Sidebar: React.FC<SidebarProps> = ({
@@ -36,21 +36,26 @@ export const Sidebar: React.FC<SidebarProps> = ({
   onOpenHeatPlan,
   onOpenHelp,
   onOpenZonesModal,
+  onNavigateToLanding,
 }) => {
   return (
     <aside className="w-64 shrink-0 hidden lg:flex flex-col border-r border-white/[0.08] bg-[#0A0D1A]/90 backdrop-blur-2xl z-30 select-none h-screen sticky top-0">
       {/* Brand Header */}
       <div className="h-16 px-4 border-b border-white/[0.08] flex items-center justify-between shrink-0">
-        <div className="flex items-center space-x-2.5">
-          <div className="h-9 w-9 rounded-xl bg-gradient-to-tr from-red-600 via-rose-500 to-amber-500 p-0.5 shadow-lg shadow-red-500/20">
+        <div
+          className="flex items-center space-x-2.5 cursor-pointer group"
+          onClick={onNavigateToLanding}
+          title="Return to Respire Landing Overview"
+        >
+          <div className="h-9 w-9 rounded-xl bg-gradient-to-tr from-cyan-500 via-blue-600 to-indigo-600 p-0.5 shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform">
             <div className="h-full w-full bg-[#0A0D1A] rounded-[10px] flex items-center justify-center overflow-hidden p-1">
               <img src="/respire-emblem.png" alt="RESPIRE" className="w-full h-full object-contain" />
             </div>
           </div>
           <div>
-            <h1 className="font-extrabold text-sm tracking-tight text-white flex items-center gap-1.5">
+            <h1 className="font-extrabold text-sm tracking-tight text-white flex items-center gap-1.5 group-hover:text-cyan-300 transition-colors">
               RESPIRE
-              <span className="text-[9px] font-mono px-1.5 py-0.2 rounded bg-red-500/20 text-red-400 font-bold border border-red-500/30">
+              <span className="text-[9px] font-mono px-1.5 py-0.2 rounded bg-cyan-500/20 text-cyan-400 font-bold border border-cyan-500/30">
                 GCC
               </span>
             </h1>
@@ -62,9 +67,9 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
         <button
           type="button"
-          onClick={() => onSelectTab('identify')}
-          className="p-1.5 rounded-lg bg-white/[0.03] hover:bg-white/[0.08] border border-white/[0.06] text-slate-400 hover:text-white transition-colors cursor-pointer"
-          title="Reset to Identify Map"
+          onClick={onNavigateToLanding}
+          className="p-1.5 rounded-lg bg-white/[0.03] hover:bg-white/[0.08] border border-white/[0.06] text-slate-400 hover:text-cyan-300 transition-colors cursor-pointer"
+          title="Landing Page Overview"
         >
           <Compass className="w-3.5 h-3.5" />
         </button>
@@ -186,22 +191,6 @@ export const Sidebar: React.FC<SidebarProps> = ({
             <span className="px-1.5 py-0.5 rounded-full bg-rose-500/20 text-rose-300 font-mono text-[10px] font-bold border border-rose-500/30">
               {alertCount} Urgent
             </span>
-          </button>
-
-          <button
-            type="button"
-            onClick={() => {
-              onSelectTab('identify');
-              onSelectZone?.('ward-045');
-            }}
-            title="Inspect North Chennai Telemetry Corridor"
-            className="w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs text-slate-400 hover:text-white hover:bg-white/[0.04] transition-colors cursor-pointer"
-          >
-            <div className="flex items-center space-x-2.5">
-              <Radio className="w-4 h-4 text-cyan-400" />
-              <span>Sensor Corridor</span>
-            </div>
-            <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
           </button>
 
           <button

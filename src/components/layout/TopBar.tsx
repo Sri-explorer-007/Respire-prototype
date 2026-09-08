@@ -25,6 +25,7 @@ interface TopBarProps {
   onSelectZone?: (zoneId: string) => void;
   searchQuery?: string;
   onSearchChange?: (query: string) => void;
+  onNavigateToLanding?: () => void;
 }
 
 export const TopBar: React.FC<TopBarProps> = ({
@@ -39,6 +40,7 @@ export const TopBar: React.FC<TopBarProps> = ({
   onSelectZone,
   searchQuery = '',
   onSearchChange,
+  onNavigateToLanding,
 }) => {
   const [internalSearch, setInternalSearch] = useState(searchQuery);
 
@@ -65,8 +67,25 @@ export const TopBar: React.FC<TopBarProps> = ({
 
   return (
     <header className="h-16 border-b border-white/[0.08] bg-[#0A0D1A]/80 backdrop-blur-xl px-4 lg:px-6 flex items-center justify-between gap-3 z-20 select-none shrink-0 sticky top-0 overflow-hidden">
-      {/* Left: Sequential Tab Controller & Quick Search */}
+      {/* Left: Interactive RESPIRE Logo (Click to Home) + Sequential Tab Controller & Quick Search */}
       <div className="flex items-center space-x-2.5 min-w-0 flex-1">
+        {/* Clickable Logo - Redirects to Home Page */}
+        <button
+          type="button"
+          onClick={onNavigateToLanding}
+          className="flex items-center space-x-2 px-2.5 py-1.5 rounded-xl bg-white/[0.04] hover:bg-white/[0.08] border border-white/[0.08] text-xs font-mono text-cyan-300 transition-all cursor-pointer shrink-0 group hover:border-cyan-500/40"
+          title="Click to redirect to Respire Home Page"
+        >
+          <div className="h-6 w-6 rounded-lg bg-gradient-to-tr from-cyan-500 via-blue-600 to-indigo-600 p-[1px] shadow-[0_0_12px_rgba(6,182,212,0.4)] group-hover:scale-105 transition-transform">
+            <div className="h-full w-full bg-[#080c1e] rounded-[7px] flex items-center justify-center">
+              <Flame className="w-3.5 h-3.5 text-cyan-400" />
+            </div>
+          </div>
+          <span className="font-extrabold text-xs tracking-tight text-white group-hover:text-cyan-300 transition-colors">
+            RESPIRE
+          </span>
+        </button>
+
         {/* Step Arrows + Step Pills */}
         <div className="flex items-center space-x-1 shrink-0">
           <button
@@ -130,21 +149,7 @@ export const TopBar: React.FC<TopBarProps> = ({
 
       {/* Right: Status Chips & Actions */}
       <div className="flex items-center shrink-0 space-x-2 text-xs">
-        {/* Status Chip 1: Sector */}
-        <button
-          type="button"
-          onClick={() => {
-            onSelectTab('identify');
-            onSelectZone?.('ward-045');
-          }}
-          title="Inspect GCC Heat Corridor (North Chennai Wards)"
-          className="hidden 2xl:flex items-center space-x-1.5 px-3 py-1.5 rounded-full bg-white/[0.04] hover:bg-white/[0.08] border border-white/[0.08] text-slate-300 transition-colors cursor-pointer shrink-0"
-        >
-          <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
-          <span className="font-semibold text-[11px] text-white whitespace-nowrap">GCC Heat Corridor</span>
-        </button>
-
-        {/* Status Chip 2: Max LST */}
+        {/* Status Chip 1: Max LST */}
         <button
           type="button"
           onClick={() => {
