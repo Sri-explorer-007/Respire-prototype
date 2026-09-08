@@ -1,0 +1,44 @@
+{
+  "name": "respire",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "oxlint",
+    "preview": "vite preview",
+    "test": "tsx src/core/scoring/scoringEngine.test.ts && tsx src/core/recommendations/recommendationEngine.test.ts && tsx src/core/services/prioritization/__tests__/prioritizationEngine.test.ts && tsx src/components/dashboard/__tests__/identifyDashboard.test.ts && tsx src/components/dashboard/__tests__/explainDashboard.test.ts && tsx src/components/dashboard/__tests__/recommendDashboard.test.ts && tsx src/components/dashboard/__tests__/prioritizeDashboard.test.ts && tsx src/components/dashboard/__tests__/e2eWorkflowHardening.test.ts",
+    "test:scoring": "tsx src/core/scoring/scoringEngine.test.ts",
+    "test:recommendations": "tsx src/core/recommendations/recommendationEngine.test.ts",
+    "test:prioritization": "tsx src/core/services/prioritization/__tests__/prioritizationEngine.test.ts",
+    "test:identify": "tsx src/components/dashboard/__tests__/identifyDashboard.test.ts",
+    "test:explain": "tsx src/components/dashboard/__tests__/explainDashboard.test.ts",
+    "test:recommend": "tsx src/components/dashboard/__tests__/recommendDashboard.test.ts",
+    "test:prioritize-ui": "tsx src/components/dashboard/__tests__/prioritizeDashboard.test.ts",
+    "test:e2e": "tsx src/components/dashboard/__tests__/e2eWorkflowHardening.test.ts",
+    "audit:scoring": "tsx src/core/scoring/runScoringDemo.ts",
+    "audit:recommendations": "tsx src/core/recommendations/runRecommendationsDemo.ts",
+    "audit:prioritization": "tsx scripts/evaluateDemoPrioritization.ts"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@vis.gl/react-google-maps": "^1.10.0",
+    "clsx": "^2.1.1",
+    "lucide-react": "^1.42.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "tailwind-merge": "^3.6.0",
+    "tailwindcss": "^4.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.3",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.4",
+    "@vitejs/plugin-react": "^6.1.0",
+    "oxlint": "^1.79.0",
+    "tsx": "^4.23.13",
+    "typescript": "~6.0.2",
+    "vite": "^8.2.2"
+  }
+}
