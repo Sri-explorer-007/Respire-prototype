@@ -122,27 +122,15 @@
   background-size: 900px 500px;
 }
 
-/* Suppress Google Maps Development/Auth Error Dialogs, Popups & Dark Dimming */
+/* Suppress Google Maps Development/Auth Error Dialogs */
 .gm-err-container,
 .gm-err-content,
 .gm-err-autocomplete,
-.dismissButton,
-div[aria-labelledby*="gm-err"],
-div:has(> .gm-err-container),
-div:has(> div > .gm-err-content),
-div:has(> div > .gm-err-container),
-div:has(> div > div > .gm-err-content),
-div:has(> div > div > .dismissButton) {
+.dismissButton {
   display: none !important;
   visibility: hidden !important;
   pointer-events: none !important;
   opacity: 0 !important;
-  z-index: -9999 !important;
-  height: 0 !important;
-  width: 0 !important;
-  overflow: hidden !important;
-  position: absolute !important;
-  transform: scale(0) !important;
 }
 
 /* Remove grey/black overlay filter that Google Maps puts on unauthenticated/dev maps */
