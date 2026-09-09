@@ -127,20 +127,20 @@ export const RiskSummaryCards: React.FC<RiskSummaryCardsProps> = ({ scoredZones 
               key={card.id}
               className={`rounded-xl p-4 border ${card.borderColor} ${card.bgGradient} backdrop-blur-md flex flex-col justify-between transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg`}
             >
-              <div className="flex items-center justify-between">
-                <span className="text-[10px] font-bold tracking-wider text-slate-400 uppercase">
+              <div className="flex items-start justify-between min-h-[28px] gap-1">
+                <span className="text-[10px] font-bold tracking-wider text-slate-400 uppercase leading-snug">
                   {card.title}
                 </span>
-                <div className={`p-1.5 rounded-lg bg-white/[0.04] ${card.textColor}`}>
+                <div className={`p-1.5 rounded-lg bg-white/[0.04] ${card.textColor} shrink-0`}>
                   <Icon className="w-3.5 h-3.5" />
                 </div>
               </div>
 
-              <div className="my-2.5 flex items-baseline justify-between">
-                <span className={`text-3xl font-extrabold font-mono tracking-tight ${card.textColor}`}>
+              <div className="my-2 h-9 flex items-baseline justify-between">
+                <span className={`text-3xl font-extrabold font-mono tracking-tight leading-none ${card.textColor}`}>
                   {card.count}
                 </span>
-                <span className={`text-[10px] font-mono font-medium px-2 py-0.5 rounded-full border ${card.badgeColor}`}>
+                <span className={`text-[10px] font-mono font-medium px-2 py-0.5 rounded-full border ${card.badgeColor} shrink-0`}>
                   {card.badge}
                 </span>
               </div>

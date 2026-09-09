@@ -117,102 +117,110 @@ export const OverviewView: React.FC<OverviewViewProps> = ({
         {/* KPI 1: Total Wards */}
         <div className="bg-white border border-slate-200 p-4 rounded-xl shadow-xs flex flex-col justify-between transition-all hover:shadow-sm">
           <div>
-            <div className="flex items-center justify-between mb-1">
-              <span className="text-[11px] uppercase text-slate-500 tracking-wider font-semibold">
+            <div className="flex items-start justify-between gap-1.5 min-h-[36px] mb-1">
+              <span className="text-[11px] uppercase text-slate-500 tracking-wider font-semibold leading-tight">
                 Total Wards
               </span>
-              <span className="px-1.5 py-0.5 bg-slate-100 text-slate-700 text-[10px] font-mono rounded font-medium">
+              <span className="px-1.5 py-0.5 bg-slate-100 text-slate-700 text-[10px] font-mono rounded font-medium shrink-0">
                 SOURCED
               </span>
             </div>
-            <div className="text-4xl font-bold text-slate-900 font-mono tracking-tight mt-1">
-              {totalWardsCount}
+            <div className="h-10 flex items-baseline">
+              <span className="text-4xl font-bold text-slate-900 font-mono tracking-tight leading-none">
+                {totalWardsCount}
+              </span>
             </div>
           </div>
-          <div className="pt-3 border-t border-slate-100 mt-3">
-            <p className="text-xs text-slate-500">Coverage: 15 GCC Zones (Core & North)</p>
+          <div className="pt-3 border-t border-slate-100 mt-3 min-h-[44px] flex items-center">
+            <p className="text-xs text-slate-500 leading-snug">Coverage: 15 GCC Zones (Core & North)</p>
           </div>
         </div>
 
         {/* KPI 2: Analyzable */}
         <div className="bg-white border border-slate-200 p-4 rounded-xl shadow-xs flex flex-col justify-between transition-all hover:shadow-sm">
           <div>
-            <div className="flex items-center justify-between mb-1">
-              <span className="text-[11px] uppercase text-slate-500 tracking-wider font-semibold">
+            <div className="flex items-start justify-between gap-1.5 min-h-[36px] mb-1">
+              <span className="text-[11px] uppercase text-slate-500 tracking-wider font-semibold leading-tight">
                 Analyzable
               </span>
-              <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
+              <span className="w-2 h-2 rounded-full bg-emerald-500 shrink-0 mt-1"></span>
             </div>
-            <div className="text-4xl font-bold text-slate-900 font-mono tracking-tight mt-1">
-              {analyzableCount}
+            <div className="h-10 flex items-baseline">
+              <span className="text-4xl font-bold text-slate-900 font-mono tracking-tight leading-none">
+                {analyzableCount}
+              </span>
             </div>
           </div>
-          <div className="pt-3 border-t border-slate-100 mt-3">
-            <p className="text-xs text-emerald-700 font-medium">Complete Telemetry Verified</p>
+          <div className="pt-3 border-t border-slate-100 mt-3 min-h-[44px] flex items-center">
+            <p className="text-xs text-emerald-700 font-medium leading-snug">Complete Telemetry Verified</p>
           </div>
         </div>
 
         {/* KPI 3: High / Very High */}
         <div className="bg-white border border-rose-200 p-4 rounded-xl shadow-xs flex flex-col justify-between transition-all hover:shadow-sm">
           <div>
-            <div className="flex items-center justify-between mb-1">
-              <span className="text-[11px] uppercase text-slate-500 tracking-wider font-semibold">
+            <div className="flex items-start justify-between gap-1.5 min-h-[36px] mb-1">
+              <span className="text-[11px] uppercase text-slate-500 tracking-wider font-semibold leading-tight">
                 High / Very High
               </span>
-              <span className="px-1.5 py-0.5 bg-rose-100 text-rose-800 text-[10px] font-bold rounded tracking-wider">
+              <span className="px-1.5 py-0.5 bg-rose-100 text-rose-800 text-[10px] font-bold rounded tracking-wider shrink-0">
                 ACTION REQ.
               </span>
             </div>
-            <div className="text-4xl font-bold text-rose-600 font-mono tracking-tight mt-1">
-              {highRiskCount.toString().padStart(2, '0')}
+            <div className="h-10 flex items-baseline">
+              <span className="text-4xl font-bold text-rose-600 font-mono tracking-tight leading-none">
+                {highRiskCount.toString().padStart(2, '0')}
+              </span>
             </div>
           </div>
-          <div className="pt-3 border-t border-slate-100 mt-3">
-            <p className="text-xs text-slate-500">Immediate cooling triage designated</p>
+          <div className="pt-3 border-t border-slate-100 mt-3 min-h-[44px] flex items-center">
+            <p className="text-xs text-slate-500 leading-snug">Immediate cooling triage designated</p>
           </div>
         </div>
 
         {/* KPI 4: Insufficient Evidence */}
         <div className="bg-white border border-slate-200 p-4 rounded-xl shadow-xs flex flex-col justify-between transition-all hover:shadow-sm">
           <div>
-            <div className="flex items-center justify-between mb-1">
-              <span className="text-[11px] uppercase text-slate-500 tracking-wider font-semibold">
+            <div className="flex items-start justify-between gap-1.5 min-h-[36px] mb-1">
+              <span className="text-[11px] uppercase text-slate-500 tracking-wider font-semibold leading-tight">
                 Insufficient Data
               </span>
-              <span className="px-1.5 py-0.5 bg-slate-100 text-slate-600 text-[10px] font-mono rounded">
+              <span className="px-1.5 py-0.5 bg-slate-100 text-slate-600 text-[10px] font-mono rounded shrink-0">
                 EXCLUDED
               </span>
             </div>
-            <div className="text-4xl font-bold text-slate-400 font-mono tracking-tight mt-1">
-              {insufficientCount.toString().padStart(2, '0')}
+            <div className="h-10 flex items-baseline">
+              <span className="text-4xl font-bold text-slate-400 font-mono tracking-tight leading-none">
+                {insufficientCount.toString().padStart(2, '0')}
+              </span>
             </div>
           </div>
-          <div className="pt-3 border-t border-slate-100 mt-3">
-            <p className="text-xs text-slate-500">Swath Nadir Optical Gap</p>
+          <div className="pt-3 border-t border-slate-100 mt-3 min-h-[44px] flex items-center">
+            <p className="text-xs text-slate-500 leading-snug">Swath Nadir Optical Gap</p>
           </div>
         </div>
 
         {/* KPI 5: Completeness */}
         <div className="bg-white border border-slate-200 p-4 rounded-xl shadow-xs flex flex-col justify-between transition-all hover:shadow-sm">
           <div>
-            <div className="flex items-center justify-between mb-1">
-              <span className="text-[11px] uppercase text-slate-500 tracking-wider font-semibold">
+            <div className="flex items-start justify-between gap-1.5 min-h-[36px] mb-1">
+              <span className="text-[11px] uppercase text-slate-500 tracking-wider font-semibold leading-tight">
                 Completeness
               </span>
-              <ShieldCheck className="w-3.5 h-3.5 text-emerald-600" />
+              <ShieldCheck className="w-3.5 h-3.5 text-emerald-600 shrink-0 mt-0.5" />
             </div>
-            <div className="flex items-baseline gap-1 mt-1">
-              <span className="text-4xl font-bold text-slate-900 font-mono tracking-tight">
+            <div className="h-10 flex items-baseline gap-1">
+              <span className="text-4xl font-bold text-slate-900 font-mono tracking-tight leading-none">
                 {completenessPercent}
               </span>
-              <span className="text-lg font-bold text-slate-500">%</span>
+              <span className="text-lg font-bold text-slate-500 leading-none">%</span>
             </div>
           </div>
-          <div className="pt-3 border-t border-slate-100 mt-3">
-            <div className="w-full bg-slate-100 h-1.5 rounded-full overflow-hidden mb-1.5">
+          <div className="pt-3 border-t border-slate-100 mt-3 min-h-[44px] flex flex-col justify-center">
+            <div className="w-full bg-slate-100 h-1.5 rounded-full overflow-hidden mb-1">
               <div className="bg-emerald-600 h-full rounded-full" style={{ width: `${completenessPercent}%` }} />
             </div>
-            <p className="text-xs text-slate-500">High Civic Trust Threshold</p>
+            <p className="text-xs text-slate-500 leading-snug">High Civic Trust Threshold</p>
           </div>
         </div>
       </section>
