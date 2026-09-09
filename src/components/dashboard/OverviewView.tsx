@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import {
   AlertTriangle,
   ArrowRight,
-  ShieldCheck,
   Building2,
   Trees,
   Umbrella,
@@ -420,29 +419,6 @@ export const OverviewView: React.FC<OverviewViewProps> = ({
                   </div>
                   <span className="font-mono font-bold text-slate-500 dark:text-slate-400">1</span>
                 </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Card: Why Respire Matters (Black & Slate Grey) */}
-          <div className="bg-white dark:bg-gradient-to-b dark:from-[#181d2a] dark:to-[#11141e] border border-slate-200 dark:border-[#2d364a] dark:shadow-[0_2px_6px_rgba(0,0,0,0.4),inset_0_1px_0_rgba(255,255,255,0.1)] p-5 rounded-2xl shadow-xs flex flex-col gap-3">
-            <div className="flex items-center gap-2 text-slate-900 dark:text-white font-bold text-xs">
-              <ShieldCheck className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
-              <span>Civic Trust & Governance Assurances</span>
-            </div>
-
-            <div className="space-y-2 text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
-              <div className="flex items-start gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-slate-400 mt-1.5 shrink-0" />
-                <span><strong>No Black-Box Scoring:</strong> Fully transparent 50/20/30 deterministic formula adhering to NDMA guidelines.</span>
-              </div>
-              <div className="flex items-start gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-slate-400 mt-1.5 shrink-0" />
-                <span><strong>Audit Transparency:</strong> Excludes cloud-obscured pixels (e.g. Ward 198) to prevent public capital misallocation.</span>
-              </div>
-              <div className="flex items-start gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-slate-400 mt-1.5 shrink-0" />
-                <span><strong>Action-Oriented:</strong> Generates immediate ward-by-ward budgets, materials, and cooling blueprints.</span>
               </div>
             </div>
           </div>
