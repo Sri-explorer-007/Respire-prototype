@@ -135,10 +135,14 @@ export function validateZone(zone: Zone): ValidationResult {
         { name: 'outdoorWorkerExposure', item: comps.outdoorWorkerExposure || comps.outdoorWorkerExposureRatio },
       ];
       for (const comp of compList) {
+        if (
+          comp.item &&
+          comp.item.value !== null &&
+          (typeof comp.item.value !== 'number' || isNaN(comp.item.value) || comp.item.value < 0)
+        ) {
+          errors.push(`Zone "${zone.zoneId}" component ${comp.name} must be a valid non-negative number.`);
+        }
         if (comp.item && comp.item.value !== null) {
-          if (typeof comp.item.value !== 'number' || isNaN(comp.item.value) || comp.item.value < 0) {
-            errors.push(`Zone "${zone.zoneId}" component ${comp.name} must be a valid non-negative number.`);
-          }
           validateProvenanceMetadata(`Zone "${zone.zoneId}" component ${comp.name}`, comp.item.metadata, errors);
         }
       }
