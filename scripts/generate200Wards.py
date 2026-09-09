@@ -5,6 +5,30 @@ Covering all 15 Greater Chennai Corporation Zones and 200 Wards.
 import json
 import os
 
+# Metadata & Source Name Constants (SonarQube S1192 Compliance)
+SOURCE_CENSUS_DATA = "Census Data"
+SOURCE_LABOR_STATISTICS = "Labor Statistics"
+SOURCE_URBAN_MORPHOLOGY = "Urban Morphology Index"
+SOURCE_SLUM_CLEARANCE = "Slum Clearance Board Survey"
+SOURCE_GCC_CENSUS_PLAN = "GCC Municipal Ward Census & Slum Free City Plan"
+SOURCE_LANDSAT_TIRS = "Landsat 8/9 TIRS (Band 10 LST)"
+SOURCE_LANDSAT_TIRS_SHORT = "Landsat 8/9 TIRS"
+SOURCE_SENTINEL_NDVI = "Sentinel-2 MSI (10m NDVI)"
+SOURCE_SENTINEL_MSI = "Sentinel-2 MSI"
+
+SOURCE_TYPE_MUNICIPAL_CENSUS = "MUNICIPAL_CENSUS"
+SOURCE_TYPE_SATELLITE_THERMAL = "SATELLITE_THERMAL"
+SOURCE_TYPE_SATELLITE_MULTISPECTRAL = "SATELLITE_MULTISPECTRAL"
+
+STATUS_SOURCED = "SOURCED"
+STATUS_DERIVED = "DERIVED"
+STATUS_INDICATIVE_ESTIMATE = "INDICATIVE_ESTIMATE"
+STATUS_UNKNOWN = "UNKNOWN"
+
+CONFIDENCE_HIGH = "HIGH"
+CONFIDENCE_MEDIUM = "MEDIUM"
+CONFIDENCE_UNKNOWN = "UNKNOWN"
+
 ZONES_SPEC = [
     {
         "zoneNum": 1,
@@ -257,10 +281,10 @@ def generate():
                             "lst": {
                                 "value": None,
                                 "metadata": {
-                                    "sourceType": "SATELLITE_THERMAL",
-                                    "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
-                                    "confidence": "UNKNOWN",
-                                    "status": "UNKNOWN",
+                                    "sourceType": SOURCE_TYPE_SATELLITE_THERMAL,
+                                    "sourceName": SOURCE_LANDSAT_TIRS,
+                                    "confidence": CONFIDENCE_UNKNOWN,
+                                    "status": STATUS_UNKNOWN,
                                     "resolution": "Ward-level raster zonal aggregate",
                                     "processingMethod": "Missing cloud-free thermal raster over marshland boundary"
                                 },
@@ -269,10 +293,10 @@ def generate():
                             "lstNormalized": {
                                 "value": None,
                                 "metadata": {
-                                    "sourceType": "SATELLITE_THERMAL",
-                                    "sourceName": "Landsat 8/9 TIRS",
-                                    "confidence": "UNKNOWN",
-                                    "status": "UNKNOWN"
+                                    "sourceType": SOURCE_TYPE_SATELLITE_THERMAL,
+                                    "sourceName": SOURCE_LANDSAT_TIRS_SHORT,
+                                    "confidence": CONFIDENCE_UNKNOWN,
+                                    "status": STATUS_UNKNOWN
                                 }
                             }
                         },
@@ -280,10 +304,10 @@ def generate():
                             "ndvi": {
                                 "value": None,
                                 "metadata": {
-                                    "sourceType": "SATELLITE_MULTISPECTRAL",
-                                    "sourceName": "Sentinel-2 MSI (10m NDVI)",
-                                    "confidence": "UNKNOWN",
-                                    "status": "UNKNOWN",
+                                    "sourceType": SOURCE_TYPE_SATELLITE_MULTISPECTRAL,
+                                    "sourceName": SOURCE_SENTINEL_NDVI,
+                                    "confidence": CONFIDENCE_UNKNOWN,
+                                    "status": STATUS_UNKNOWN,
                                     "resolution": "Ward-level raster zonal aggregate",
                                     "processingMethod": "Missing surface reflectance observation"
                                 },
@@ -292,10 +316,10 @@ def generate():
                             "vegetationDeficitNormalized": {
                                 "value": None,
                                 "metadata": {
-                                    "sourceType": "SATELLITE_MULTISPECTRAL",
-                                    "sourceName": "Sentinel-2 MSI",
-                                    "confidence": "UNKNOWN",
-                                    "status": "UNKNOWN"
+                                    "sourceType": SOURCE_TYPE_SATELLITE_MULTISPECTRAL,
+                                    "sourceName": SOURCE_SENTINEL_MSI,
+                                    "confidence": CONFIDENCE_UNKNOWN,
+                                    "status": STATUS_UNKNOWN
                                 }
                             }
                         },
@@ -303,10 +327,10 @@ def generate():
                             "vulnerabilityScore": {
                                 "value": None,
                                 "metadata": {
-                                    "sourceType": "MUNICIPAL_CENSUS",
-                                    "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
-                                    "confidence": "UNKNOWN",
-                                    "status": "UNKNOWN"
+                                    "sourceType": SOURCE_TYPE_MUNICIPAL_CENSUS,
+                                    "sourceName": SOURCE_GCC_CENSUS_PLAN,
+                                    "confidence": CONFIDENCE_UNKNOWN,
+                                    "status": STATUS_UNKNOWN
                                 },
                                 "notes": "Incomplete enumeration for rapid developing IT corridor SEZ"
                             },
@@ -314,10 +338,10 @@ def generate():
                                 "populationDensity": {
                                     "value": 4200,
                                     "metadata": {
-                                        "sourceType": "MUNICIPAL_CENSUS",
-                                        "sourceName": "Census Data",
-                                        "confidence": "MEDIUM",
-                                        "status": "SOURCED"
+                                        "sourceType": SOURCE_TYPE_MUNICIPAL_CENSUS,
+                                        "sourceName": SOURCE_CENSUS_DATA,
+                                        "confidence": CONFIDENCE_MEDIUM,
+                                        "status": STATUS_SOURCED
                                     }
                                 }
                             }
@@ -365,10 +389,10 @@ def generate():
                             "lst": {
                                 "value": lst_val,
                                 "metadata": {
-                                    "sourceType": "SATELLITE_THERMAL",
-                                    "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
-                                    "confidence": "HIGH",
-                                    "status": "SOURCED",
+                                    "sourceType": SOURCE_TYPE_SATELLITE_THERMAL,
+                                    "sourceName": SOURCE_LANDSAT_TIRS,
+                                    "confidence": CONFIDENCE_HIGH,
+                                    "status": STATUS_SOURCED,
                                     "resolution": "30m downscaled to Ward-level zonal average",
                                     "processingMethod": "Mono-window thermal radiative transfer calculation"
                                 },
@@ -377,10 +401,10 @@ def generate():
                             "lstNormalized": {
                                 "value": lst_norm,
                                 "metadata": {
-                                    "sourceType": "SATELLITE_THERMAL",
-                                    "sourceName": "Landsat 8/9 TIRS",
-                                    "confidence": "HIGH",
-                                    "status": "DERIVED"
+                                    "sourceType": SOURCE_TYPE_SATELLITE_THERMAL,
+                                    "sourceName": SOURCE_LANDSAT_TIRS_SHORT,
+                                    "confidence": CONFIDENCE_HIGH,
+                                    "status": STATUS_DERIVED
                                 }
                             }
                         },
@@ -388,10 +412,10 @@ def generate():
                             "ndvi": {
                                 "value": ndvi_val,
                                 "metadata": {
-                                    "sourceType": "SATELLITE_MULTISPECTRAL",
+                                    "sourceType": SOURCE_TYPE_SATELLITE_MULTISPECTRAL,
                                     "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
-                                    "confidence": "HIGH",
-                                    "status": "SOURCED",
+                                    "confidence": CONFIDENCE_HIGH,
+                                    "status": STATUS_SOURCED,
                                     "resolution": "10m raster zonal average",
                                     "processingMethod": "Normalized Difference NIR/Red band ratio"
                                 },
@@ -400,10 +424,10 @@ def generate():
                             "vegetationDeficitNormalized": {
                                 "value": veg_deficit,
                                 "metadata": {
-                                    "sourceType": "SATELLITE_MULTISPECTRAL",
-                                    "sourceName": "Sentinel-2 MSI",
-                                    "confidence": "HIGH",
-                                    "status": "DERIVED"
+                                    "sourceType": SOURCE_TYPE_SATELLITE_MULTISPECTRAL,
+                                    "sourceName": SOURCE_SENTINEL_MSI,
+                                    "confidence": CONFIDENCE_HIGH,
+                                    "status": STATUS_DERIVED
                                 }
                             }
                         },
@@ -411,10 +435,10 @@ def generate():
                             "vulnerabilityScore": {
                                 "value": vuln_val,
                                 "metadata": {
-                                    "sourceType": "MUNICIPAL_CENSUS",
-                                    "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
-                                    "confidence": "MEDIUM",
-                                    "status": "DERIVED",
+                                    "sourceType": SOURCE_TYPE_MUNICIPAL_CENSUS,
+                                    "sourceName": SOURCE_GCC_CENSUS_PLAN,
+                                    "confidence": CONFIDENCE_MEDIUM,
+                                    "status": STATUS_DERIVED,
                                     "resolution": "Ward Census Block Aggregate",
                                     "processingMethod": "Standardized socio-economic exposure index"
                                 },
@@ -424,46 +448,46 @@ def generate():
                                 "populationDensity": {
                                     "value": pop_density,
                                     "metadata": {
-                                        "sourceType": "MUNICIPAL_CENSUS",
-                                        "sourceName": "Census Data",
-                                        "confidence": "HIGH",
-                                        "status": "SOURCED"
+                                        "sourceType": SOURCE_TYPE_MUNICIPAL_CENSUS,
+                                        "sourceName": SOURCE_CENSUS_DATA,
+                                        "confidence": CONFIDENCE_HIGH,
+                                        "status": STATUS_SOURCED
                                     }
                                 },
                                 "elderlyPopulation": {
                                     "value": elderly_pct,
                                     "metadata": {
-                                        "sourceType": "MUNICIPAL_CENSUS",
-                                        "sourceName": "Census Data",
-                                        "confidence": "MEDIUM",
-                                        "status": "INDICATIVE_ESTIMATE"
+                                        "sourceType": SOURCE_TYPE_MUNICIPAL_CENSUS,
+                                        "sourceName": SOURCE_CENSUS_DATA,
+                                        "confidence": CONFIDENCE_MEDIUM,
+                                        "status": STATUS_INDICATIVE_ESTIMATE
                                     }
                                 },
                                 "outdoorWorkerExposure": {
                                     "value": worker_pct,
                                     "metadata": {
-                                        "sourceType": "MUNICIPAL_CENSUS",
-                                        "sourceName": "Labor Statistics",
-                                        "confidence": "MEDIUM",
-                                        "status": "INDICATIVE_ESTIMATE"
+                                        "sourceType": SOURCE_TYPE_MUNICIPAL_CENSUS,
+                                        "sourceName": SOURCE_LABOR_STATISTICS,
+                                        "confidence": CONFIDENCE_MEDIUM,
+                                        "status": STATUS_INDICATIVE_ESTIMATE
                                     }
                                 },
                                 "builtEnvironmentIndicator": {
                                     "value": built_pct,
                                     "metadata": {
-                                        "sourceType": "MUNICIPAL_CENSUS",
-                                        "sourceName": "Urban Morphology Index",
-                                        "confidence": "MEDIUM",
-                                        "status": "INDICATIVE_ESTIMATE"
+                                        "sourceType": SOURCE_TYPE_MUNICIPAL_CENSUS,
+                                        "sourceName": SOURCE_URBAN_MORPHOLOGY,
+                                        "confidence": CONFIDENCE_MEDIUM,
+                                        "status": STATUS_INDICATIVE_ESTIMATE
                                     }
                                 },
                                 "informalSettlementIndicator": {
                                     "value": informal_pct,
                                     "metadata": {
-                                        "sourceType": "MUNICIPAL_CENSUS",
-                                        "sourceName": "Slum Clearance Board Survey",
-                                        "confidence": "MEDIUM",
-                                        "status": "INDICATIVE_ESTIMATE"
+                                        "sourceType": SOURCE_TYPE_MUNICIPAL_CENSUS,
+                                        "sourceName": SOURCE_SLUM_CLEARANCE,
+                                        "confidence": CONFIDENCE_MEDIUM,
+                                        "status": STATUS_INDICATIVE_ESTIMATE
                                     }
                                 }
                             }
