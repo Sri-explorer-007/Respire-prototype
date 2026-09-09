@@ -140,7 +140,7 @@ export function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#f8f9ff] dark:bg-[#080c14] text-slate-900 dark:text-slate-100 flex antialiased selection:bg-slate-800 selection:text-white relative transition-colors duration-200">
+    <div className="min-h-screen bg-[#f8f9ff] dark:bg-[#0a0c13] text-slate-900 dark:text-slate-100 flex antialiased selection:bg-slate-800 selection:text-white relative transition-colors duration-200">
       {viewMode === 'landing' ? (
         <LandingPage
           onLaunchConsole={handleLaunchConsole}
@@ -164,7 +164,7 @@ export function App() {
           />
 
           {/* Main Command Viewport */}
-          <div className="pl-72 flex-1 flex flex-col min-w-0 min-h-screen bg-[#f8f9ff] dark:bg-[#080c14] transition-colors duration-200">
+          <div className="pl-72 flex-1 flex flex-col min-w-0 min-h-screen bg-[#f8f9ff] dark:bg-[#0a0c13] transition-colors duration-200">
             {/* Top Bar Header + Workflow Stepper Ribbon */}
             <TopBar
               dataSourceMode={dataSourceMode}
