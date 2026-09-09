@@ -1,5 +1,5 @@
 import React from 'react';
-import { Building2, HelpCircle, Settings, Sun, Moon } from 'lucide-react';
+import { Building2, Sun, Moon } from 'lucide-react';
 import type { DataSourceMode, DataProvenanceSummary } from '../../data';
 import type { WorkflowTab } from '../dashboard';
 
@@ -26,8 +26,6 @@ interface TopBarProps {
 export const TopBar: React.FC<TopBarProps> = ({
   dataSourceMode,
   onToggleMode,
-  onOpenHelp,
-  onOpenZonesModal,
   theme = 'light',
   onToggleTheme,
 }) => {
@@ -55,7 +53,7 @@ export const TopBar: React.FC<TopBarProps> = ({
         </button>
       </div>
 
-      {/* Right: Theme Toggle (Silver Lining), Quick Actions & Officer Profile */}
+      {/* Right: Theme Toggle (Silver Lining) & Officer Profile */}
       <div className="flex items-center gap-2 sm:gap-3">
         {/* Dark / Light Mode Toggle Button with Silver Lining */}
         {onToggleTheme && (
@@ -76,28 +74,6 @@ export const TopBar: React.FC<TopBarProps> = ({
                 <span className="hidden sm:inline font-mono">Dark Mode</span>
               </>
             )}
-          </button>
-        )}
-
-        {onOpenHelp && (
-          <button
-            type="button"
-            onClick={onOpenHelp}
-            className="p-2 rounded-lg text-slate-500 hover:text-slate-900 hover:bg-slate-100 dark:text-slate-400 dark:hover:text-slate-100 dark:hover:bg-[#1e2436] dark:border dark:border-transparent dark:hover:border-slate-400/50 transition-all cursor-pointer hidden md:flex items-center justify-center"
-            title="Help & Documentation"
-          >
-            <HelpCircle className="w-4 h-4" />
-          </button>
-        )}
-
-        {onOpenZonesModal && (
-          <button
-            type="button"
-            onClick={onOpenZonesModal}
-            className="p-2 rounded-lg text-slate-500 hover:text-slate-900 hover:bg-slate-100 dark:text-slate-400 dark:hover:text-slate-100 dark:hover:bg-[#1e2436] dark:border dark:border-transparent dark:hover:border-slate-400/50 transition-all cursor-pointer hidden md:flex items-center justify-center"
-            title="15 Zones / 200 Wards Hierarchy"
-          >
-            <Settings className="w-4 h-4" />
           </button>
         )}
 
