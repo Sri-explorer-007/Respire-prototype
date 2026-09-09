@@ -240,8 +240,8 @@ ZONES_SPEC = [
 ]
 
 def generate():
+    """Generates the TypeScript dataset containing all 200 Greater Chennai Corporation wards."""
     all_wards = []
-    total_count = 0
 
     for z in ZONES_SPEC:
         zone_id = f"zone-{z['zoneNum']:02d}"
@@ -250,7 +250,6 @@ def generate():
         neighborhoods = z["neighborhoods"]
         
         for idx, w_num in enumerate(wards):
-            total_count += 1
             ward_id = f"ward-{w_num:03d}"
             n_name = neighborhoods[idx % len(neighborhoods)]
             ward_name = f"Ward {w_num:03d} - {n_name}"

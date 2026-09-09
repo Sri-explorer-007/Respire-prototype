@@ -6,6 +6,9 @@ import type { ZoneMetrics } from '../../types';
 
 const scoringEngine = new RespireScoringEngine();
 
+/**
+ * Helper to generate mock ZoneMetrics for unit test scenarios.
+ */
 function createMockMetrics(
   heatNorm: number | null,
   vegNorm: number | null,
@@ -35,7 +38,7 @@ function createMockMetrics(
     },
     vegetation: {
       ndvi: {
-        value: vegNorm !== null ? 0.5 - vegNorm * 0.4 : null,
+        value: vegNorm !== null ? 0.6 - vegNorm * 0.5 : null,
         metadata: {
           sourceType: 'SATELLITE_MULTISPECTRAL',
           sourceName: 'Sentinel-2 MSI',
@@ -58,7 +61,7 @@ function createMockMetrics(
         value: vulnNorm,
         metadata: {
           sourceType: 'MUNICIPAL_CENSUS',
-          sourceName: 'GCC Census Data',
+          sourceName: 'Census 2011 & Socioeconomic Survey',
           confidence: 'HIGH',
           status,
         },
@@ -67,6 +70,9 @@ function createMockMetrics(
   };
 }
 
+/**
+ * Runs the complete scoring verification suite across 13 distinct edge cases.
+ */
 export function runScoringTests() {
   console.log('====================================================');
   console.log('RESPIRE SCORING ENGINE - 13 TEST VERIFICATION SUITE');
@@ -78,10 +84,10 @@ export function runScoringTests() {
   function assert(condition: boolean, testName: string, detail?: string) {
     if (condition) {
       console.log(`  ✅ [PASS] ${testName}`);
-      passed++;
+      passed += 1;
     } else {
       console.error(`  ❌ [FAIL] ${testName} - ${detail || ''}`);
-      failed++;
+      failed += 1;
     }
   }
 

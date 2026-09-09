@@ -6,6 +6,9 @@ interface CostSparklineCardProps {
   onNavigateToPrioritize?: () => void;
 }
 
+/**
+ * Displays indicative intervention costs and cooling efficiency delta metrics.
+ */
 export const CostSparklineCard: React.FC<CostSparklineCardProps> = ({
   onNavigateToPrioritize,
 }) => {

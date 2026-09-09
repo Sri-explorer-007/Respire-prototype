@@ -19,6 +19,9 @@ interface TopBarProps {
   onNavigateToLanding?: () => void;
 }
 
+/**
+ * Navigation top bar component supporting workflow phase switching, search, and live satellite sync.
+ */
 export const TopBar: React.FC<TopBarProps> = ({
   dataSourceMode,
   onToggleMode,

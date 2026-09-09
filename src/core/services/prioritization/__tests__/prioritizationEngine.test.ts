@@ -107,6 +107,9 @@ function createMockRecommendation(params: {
   };
 }
 
+/**
+ * Verification test suite for Respire Prioritization Engine (Step 5A Credibility).
+ */
 export function runPrioritizationTests() {
   console.log('================================================================');
   console.log('RESPIRE PRIORITIZATION ENGINE - STEP 5A CREDIBILITY TEST SUITE');
@@ -118,10 +121,10 @@ export function runPrioritizationTests() {
   function assert(condition: boolean, testName: string, detail?: string) {
     if (condition) {
       console.log(`  ✅ [PASS] ${testName}`);
-      passed++;
+      passed += 1;
     } else {
       console.error(`  ❌ [FAIL] ${testName} - ${detail || ''}`);
-      failed++;
+      failed += 1;
     }
   }
 

@@ -5,6 +5,9 @@ interface SevereHeatAlertCardProps {
   onNavigateToExplain?: () => void;
 }
 
+/**
+ * High-priority notification banner alerting operators to extreme urban heat events.
+ */
 export const SevereHeatAlertCard: React.FC<SevereHeatAlertCardProps> = ({
   onNavigateToExplain,
 }) => {

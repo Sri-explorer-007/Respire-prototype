@@ -23,6 +23,9 @@ import { ChennaiZonesModal } from './components/modal/ChennaiZonesModal';
 import { exportZonesToCsv, copySummaryReport } from './utils/exportTelemetry';
 import { Download, Copy } from 'lucide-react';
 
+/**
+ * Main application container for the RESPIRE Climate Resilience Decision Support Platform.
+ */
 export function App() {
   const [viewMode, setViewMode] = useState<'landing' | 'console'>('console');
   const [dataSourceMode, setDataSourceMode] = useState<DataSourceMode>('processed');
@@ -40,6 +43,9 @@ export function App() {
   // Fetch zones on initial mount or when data mode toggles
   useEffect(() => {
     respireApi.setDataSourceMode(dataSourceMode);
+    /**
+     * Loads spatial zone datasets and synchronizes active telemetry.
+     */
     async function loadZones() {
       const data = await respireApi.fetchZones();
       setZones(data);

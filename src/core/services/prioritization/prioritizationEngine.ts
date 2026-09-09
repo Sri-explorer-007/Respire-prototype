@@ -306,6 +306,9 @@ function determineConfidence(
   return 'LOW';
 }
 
+/**
+ * Generates an auditable natural language explanation for the relative prioritization result.
+ */
 function generateExplanation(
   zoneName: string,
   priorityScore: number | null,

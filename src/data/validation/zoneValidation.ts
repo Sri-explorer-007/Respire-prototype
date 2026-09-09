@@ -73,16 +73,12 @@ export function validateZone(zone: Zone): ValidationResult {
   // 4. Heat Metric Checks
   if (heat) {
     // LST (allow null, but if numeric must be plausible Celsius)
-    if (heat.lst.value !== null) {
-      if (typeof heat.lst.value !== 'number' || heat.lst.value < 10 || heat.lst.value > 70) {
-        errors.push(`Zone "${zone.zoneId}" LST value out of plausible range (10-70°C): ${heat.lst.value}`);
-      }
+    if (heat.lst.value !== null && (typeof heat.lst.value !== 'number' || heat.lst.value < 10 || heat.lst.value > 70)) {
+      errors.push(`Zone "${zone.zoneId}" LST value out of plausible range (10-70°C): ${heat.lst.value}`);
     }
     // LST Normalized (must be 0.0 to 1.0 or null)
-    if (heat.lstNormalized.value !== null) {
-      if (typeof heat.lstNormalized.value !== 'number' || heat.lstNormalized.value < 0 || heat.lstNormalized.value > 1) {
-        errors.push(`Zone "${zone.zoneId}" lstNormalized must be between 0.0 and 1.0: ${heat.lstNormalized.value}`);
-      }
+    if (heat.lstNormalized.value !== null && (typeof heat.lstNormalized.value !== 'number' || heat.lstNormalized.value < 0 || heat.lstNormalized.value > 1)) {
+      errors.push(`Zone "${zone.zoneId}" lstNormalized must be between 0.0 and 1.0: ${heat.lstNormalized.value}`);
     }
     validateProvenanceMetadata(`Zone "${zone.zoneId}" heat.lst`, heat.lst.metadata, errors);
   } else {
@@ -92,22 +88,19 @@ export function validateZone(zone: Zone): ValidationResult {
   // 5. Vegetation Metric Checks
   if (vegetation) {
     // NDVI (must be -1.0 to 1.0 or null)
-    if (vegetation.ndvi.value !== null) {
-      if (typeof vegetation.ndvi.value !== 'number' || vegetation.ndvi.value < -1 || vegetation.ndvi.value > 1) {
-        errors.push(`Zone "${zone.zoneId}" NDVI out of range (-1.0 to 1.0): ${vegetation.ndvi.value}`);
-      }
+    if (vegetation.ndvi.value !== null && (typeof vegetation.ndvi.value !== 'number' || vegetation.ndvi.value < -1 || vegetation.ndvi.value > 1)) {
+      errors.push(`Zone "${zone.zoneId}" NDVI out of range (-1.0 to 1.0): ${vegetation.ndvi.value}`);
     }
     // Vegetation Deficit Normalized (must be 0.0 to 1.0 or null)
-    if (vegetation.vegetationDeficitNormalized.value !== null) {
-      if (
-        typeof vegetation.vegetationDeficitNormalized.value !== 'number' ||
+    if (
+      vegetation.vegetationDeficitNormalized.value !== null &&
+      (typeof vegetation.vegetationDeficitNormalized.value !== 'number' ||
         vegetation.vegetationDeficitNormalized.value < 0 ||
-        vegetation.vegetationDeficitNormalized.value > 1
-      ) {
-        errors.push(
-          `Zone "${zone.zoneId}" vegetationDeficitNormalized must be between 0.0 and 1.0: ${vegetation.vegetationDeficitNormalized.value}`
-        );
-      }
+        vegetation.vegetationDeficitNormalized.value > 1)
+    ) {
+      errors.push(
+        `Zone "${zone.zoneId}" vegetationDeficitNormalized must be between 0.0 and 1.0: ${vegetation.vegetationDeficitNormalized.value}`
+      );
     }
     validateProvenanceMetadata(`Zone "${zone.zoneId}" vegetation.ndvi`, vegetation.ndvi.metadata, errors);
   } else {
@@ -116,16 +109,15 @@ export function validateZone(zone: Zone): ValidationResult {
 
   // 6. Vulnerability Metric Checks
   if (vulnerability) {
-    if (vulnerability.vulnerabilityScore.value !== null) {
-      if (
-        typeof vulnerability.vulnerabilityScore.value !== 'number' ||
+    if (
+      vulnerability.vulnerabilityScore.value !== null &&
+      (typeof vulnerability.vulnerabilityScore.value !== 'number' ||
         vulnerability.vulnerabilityScore.value < 0 ||
-        vulnerability.vulnerabilityScore.value > 1
-      ) {
-        errors.push(
-          `Zone "${zone.zoneId}" vulnerabilityScore must be between 0.0 and 1.0: ${vulnerability.vulnerabilityScore.value}`
-        );
-      }
+        vulnerability.vulnerabilityScore.value > 1)
+    ) {
+      errors.push(
+        `Zone "${zone.zoneId}" vulnerabilityScore must be between 0.0 and 1.0: ${vulnerability.vulnerabilityScore.value}`
+      );
     }
     validateProvenanceMetadata(
       `Zone "${zone.zoneId}" vulnerability.score`,
@@ -174,6 +166,9 @@ export function validateZone(zone: Zone): ValidationResult {
   };
 }
 
+/**
+ * Validates data provenance metadata schema, status, and confidence levels.
+ */
 function validateProvenanceMetadata(
   context: string,
   meta: any,

@@ -4,6 +4,9 @@ import { ILLUSTRATIVE_INTERVENTIONS } from '../interventions/interventionsData';
 
 declare const process: { argv?: string[] };
 
+/**
+ * Executes a comprehensive data model verification and provenance audit across demo zones and catalog items.
+ */
 export function runDataVerification() {
   console.log('====================================================');
   console.log('RESPIRE - DATA MODEL & DEMO DATA VALIDATION AUDIT');
@@ -32,12 +35,18 @@ export function runDataVerification() {
 
   console.log(`\n2. Inspecting Future Intervention Catalog (${ILLUSTRATIVE_INTERVENTIONS.length} items)...`);
   ILLUSTRATIVE_INTERVENTIONS.forEach((item) => {
+    const costStr = item.cost !== null ? `${item.cost} ${item.costUnit}` : 'null';
+    const impactStr = item.impact !== null ? `${item.impact} ${item.impactUnit}` : 'null';
+    const conditionsStr = item.applicabilityConditions
+      .map((c) => `${c.metricKey} ${c.operator} ${c.threshold}`)
+      .join(', ');
+
     console.log(
-      `  • [${item.interventionId}] ${item.interventionName}` +
-      `\n    Category: ${item.category}` +
-      `\n    Cost: ${item.cost !== null ? `${item.cost} ${item.costUnit}` : 'null'} [Status: ${item.costStatus}]` +
-      `\n    Impact: ${item.impact !== null ? `${item.impact} ${item.impactUnit}` : 'null'} [Status: ${item.impactStatus}]` +
-      `\n    Conditions: ${item.applicabilityConditions.map((c) => `${c.metricKey} ${c.operator} ${c.threshold}`).join(', ')}`
+      `  • [${item.interventionId}] ${item.interventionName}\n` +
+      `    Category: ${item.category}\n` +
+      `    Cost: ${costStr} [Status: ${item.costStatus}]\n` +
+      `    Impact: ${impactStr} [Status: ${item.impactStatus}]\n` +
+      `    Conditions: ${conditionsStr}`
     );
   });
 

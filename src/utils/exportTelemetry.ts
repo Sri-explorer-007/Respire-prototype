@@ -1,5 +1,8 @@
 import type { ScoredZoneItem } from '../components/dashboard/RiskSummaryCards';
 
+/**
+ * Exports current ward telemetry and risk calculations to CSV file download.
+ */
 export function exportZonesToCsv(scoredZones: ScoredZoneItem[], filename = 'chennai_heat_telemetry.csv') {
   const headers = ['Ward ID', 'Ward Name', 'Zone', 'Risk Score', 'Risk Band', 'LST (°C)', 'NDVI', 'Social Vuln Score', 'Completeness (%)'];
   
@@ -29,6 +32,9 @@ export function exportZonesToCsv(scoredZones: ScoredZoneItem[], filename = 'chen
   URL.revokeObjectURL(url);
 }
 
+/**
+ * Copies a formatted dispatch text summary to clipboard for incident management.
+ */
 export function copySummaryReport(scoredZones: ScoredZoneItem[]) {
   const highRiskCount = scoredZones.filter((z) => (z.score.riskBand ?? z.score.riskLevel) === 'VERY_HIGH').length;
   const summary = [

@@ -1,6 +1,9 @@
 import React from 'react';
 import { ProvenanceBadge } from '../common/ProvenanceBadge';
 
+/**
+ * Application footer displaying municipal resilience platform identity and provenance metadata indicators.
+ */
 export const Footer: React.FC = () => {
   return (
     <footer className="h-16 mt-auto border-t border-white/[0.08] bg-[#080B11]/90 backdrop-blur-xl px-6 flex items-center text-xs text-slate-400 select-none">

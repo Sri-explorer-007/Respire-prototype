@@ -14,6 +14,9 @@ interface NewsArticleModalProps {
   onClose: () => void;
 }
 
+/**
+ * Modal dialogue for reading full municipal news dispatches and official climate notices.
+ */
 export const NewsArticleModal: React.FC<NewsArticleModalProps> = ({ article, onClose }) => {
   if (!article) return null;
 

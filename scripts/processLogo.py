@@ -32,7 +32,6 @@ transparent_img.save('public/respire-logo-transparent.png')
 
 # 3. Find bounding box of the circular emblem on the left
 # Looking from x: 0 to 500
-emblem_box = None
 left_min = 1000
 top_min = 1000
 right_max = 0

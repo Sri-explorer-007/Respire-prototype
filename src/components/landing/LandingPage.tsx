@@ -25,6 +25,9 @@ interface LandingPageProps {
   zones: Zone[];
 }
 
+/**
+ * LandingPage component providing a high-impact overview of Respire's 4-stage climate resilience workflow.
+ */
 export const LandingPage: React.FC<LandingPageProps> = ({
   onLaunchConsole,
   onOpenHeatPlan,
@@ -278,7 +281,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
                 {activeTab === 'telemetry' && (
                   <div className="space-y-2 text-slate-300">
                     <p className="text-cyan-400 font-bold">
-                      // Ward 045 (Vyasarpadi) Real-Time Telemetry Stream
+                      {'// Ward 045 (Vyasarpadi) Real-Time Telemetry Stream'}
                     </p>
                     <div className="p-2.5 rounded-lg bg-black/50 border border-white/[0.06] space-y-1 text-[11px]">
                       <div className="flex justify-between">
@@ -311,7 +314,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
                 {activeTab === 'scoring' && (
                   <div className="space-y-2 text-slate-300">
                     <p className="text-cyan-400 font-bold">
-                      // Additive Decision Decomposition (50/20/30 Model)
+                      {'// Additive Decision Decomposition (50/20/30 Model)'}
                     </p>
                     <div className="space-y-1.5 text-[11px]">
                       <div className="flex items-center justify-between">
@@ -348,7 +351,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
                 {activeTab === 'intervention' && (
                   <div className="space-y-2 text-slate-300">
                     <p className="text-cyan-400 font-bold">
-                      // Rule-Engine Prescribed Climate Action
+                      {'// Rule-Engine Prescribed Climate Action'}
                     </p>
                     <div className="p-2.5 rounded-lg bg-indigo-950/40 border border-indigo-500/30 space-y-1 text-[11px]">
                       <div className="text-indigo-200 font-bold">
@@ -644,7 +647,9 @@ export const LandingPage: React.FC<LandingPageProps> = ({
                     <span className="text-[10px] font-mono text-emerald-300 block">Estimated Cooling Benefit</span>
                     <div className="text-xl font-extrabold font-mono text-emerald-400 mt-0.5">
                       {activeRecommendation.primaryRecommendation.impact !== null
-                        ? `${activeRecommendation.primaryRecommendation.impact > 0 ? `-${activeRecommendation.primaryRecommendation.impact}` : activeRecommendation.primaryRecommendation.impact}°C`
+                        ? (activeRecommendation.primaryRecommendation.impact > 0
+                            ? `-${activeRecommendation.primaryRecommendation.impact}°C`
+                            : `${activeRecommendation.primaryRecommendation.impact}°C`)
                         : '-4.5°C'}
                     </div>
                     <span className="text-[9px] text-slate-400 font-mono">

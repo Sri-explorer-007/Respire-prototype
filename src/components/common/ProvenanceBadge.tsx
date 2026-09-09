@@ -7,11 +7,17 @@ interface ProvenanceBadgeProps {
   className?: string;
 }
 
+/**
+ * Renders a standardized visual badge indicating the data provenance and confidence tier of a metric.
+ */
 export const ProvenanceBadge: React.FC<ProvenanceBadgeProps> = ({
   status,
   labelOverride,
   className = '',
 }) => {
+  /**
+   * Resolves the CSS styling classes corresponding to a provenance tier.
+   */
   const getBadgeStyle = (prov: DataProvenance) => {
     switch (prov) {
       case 'SOURCED':
@@ -28,6 +34,9 @@ export const ProvenanceBadge: React.FC<ProvenanceBadgeProps> = ({
     }
   };
 
+  /**
+   * Formats human-readable label text for a provenance status.
+   */
   const formatText = (prov: DataProvenance) => {
     if (labelOverride) return labelOverride;
     switch (prov) {

@@ -46,8 +46,7 @@ export const PrioritizeView: React.FC<PrioritizeViewProps> = ({
     documentedDate: '2026-03-01T00:00:00Z',
   });
 
-  const rankedPriorities = prioritizationResult.rankedPriorities;
-  const unrankedPriorities = prioritizationResult.unrankedPriorities;
+  const { rankedPriorities, unrankedPriorities } = prioritizationResult;
 
   // 2. Resolve selected priority item (defaulting to rank #1 if none selected)
   const selectedPriority =

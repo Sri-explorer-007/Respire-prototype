@@ -13,10 +13,10 @@ let failed = 0;
 function assert(condition: boolean, testName: string, detail?: string) {
   if (condition) {
     console.log(`  ✅ [PASS] ${testName}`);
-    passed++;
+    passed += 1;
   } else {
     console.error(`  ❌ [FAIL] ${testName} - ${detail || ''}`);
-    failed++;
+    failed += 1;
   }
 }
 

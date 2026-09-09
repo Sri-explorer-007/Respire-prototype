@@ -15,6 +15,9 @@ interface WardClimateCardProps {
   onNavigateToExplain?: () => void;
 }
 
+/**
+ * Detailed telemetry card displaying climate variables (LST, NDVI, vulnerability) for a selected ward.
+ */
 export const WardClimateCard: React.FC<WardClimateCardProps> = ({
   selectedZoneItem,
   onNavigateToExplain,

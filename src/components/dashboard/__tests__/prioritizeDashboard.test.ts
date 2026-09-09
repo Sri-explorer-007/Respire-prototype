@@ -23,10 +23,10 @@ export async function runPrioritizeDashboardTests() {
   function assert(condition: boolean, testName: string, detail?: string) {
     if (condition) {
       console.log(`  ✅ [PASS] ${testName}`);
-      passed++;
+      passed += 1;
     } else {
       console.error(`  ❌ [FAIL] ${testName} - ${detail || ''}`);
-      failed++;
+      failed += 1;
     }
   }
 
@@ -44,7 +44,7 @@ export async function runPrioritizeDashboardTests() {
   );
 
   // 3. Vyasarpadi appears as Rank #1 with priority score 80 and risk score 88
-  const topCandidate = prioResult.rankedPriorities[0];
+  const [topCandidate] = prioResult.rankedPriorities;
   assert(
     topCandidate !== undefined &&
     topCandidate.rank === 1 &&

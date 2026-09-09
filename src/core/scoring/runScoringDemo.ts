@@ -1,6 +1,9 @@
 import { CHENNAI_DEMO_ZONES, DEMO_DATA_LABEL } from '../../data/demo/chennaiDemoData';
 import { respireScoringEngine } from './scoringEngine';
 
+/**
+ * Executes a comprehensive demo scoring audit across all Chennai Demo Zones, evaluating risk levels and primary drivers.
+ */
 export function runDemoScoringAudit() {
   console.log('========================================================================================');
   console.log(`RESPIRE - DEMO DATA SCORING AUDIT (${DEMO_DATA_LABEL})`);
@@ -42,7 +45,7 @@ export function runDemoScoringAudit() {
   console.log('DETAILED "WHY THIS ZONE?" EXPLANATION SAMPLES:\n');
 
   // Sample 1: Top Very-High Risk Zone
-  const topZone = results[0];
+  const [topZone] = results;
   console.log(`1. Top Priority Zone: ${topZone.zone.zoneName} (${topZone.zone.wardName})`);
   console.log(`   - Priority Score: ${topZone.scoreResult.totalScore}/100 [${topZone.scoreResult.riskLevel}]`);
   console.log(`   - Explanation: "${topZone.scoreResult.explanation}"`);

@@ -209,6 +209,8 @@ export class RespireScoringEngine implements IScoringEngine {
           return 'NDVI Vegetation Deficit';
         case 'vulnerability':
           return 'Social Vulnerability Index';
+        default:
+          return String(k);
       }
     });
 
@@ -279,6 +281,9 @@ export class RespireScoringEngine implements IScoringEngine {
 // Helper Functions
 // ============================================================================
 
+/**
+ * Constructs a component contribution breakdown object.
+ */
 function createComponentContribution(
   key: ScoringComponentKey,
   label: string,
@@ -299,6 +304,9 @@ function createComponentContribution(
   };
 }
 
+/**
+ * Determines scoring confidence level based on metric status and completeness.
+ */
 function determineConfidence(metrics: ZoneMetrics, completeness: number): ScoringConfidence {
   if (completeness === 0) return 'NONE';
   if (completeness < 1.0) return 'LOW';
@@ -317,11 +325,17 @@ function determineConfidence(metrics: ZoneMetrics, completeness: number): Scorin
   return hasAssumptionsOrEstimates ? 'MEDIUM' : 'HIGH';
 }
 
+/**
+ * Formats primary/secondary driver string with severity percentage.
+ */
 function formatDriver(comp: ComponentContribution): string {
   const pct = comp.normalizedValue !== null ? Math.round(comp.normalizedValue * 100) : 0;
   return `${comp.label} (${pct}% severity)`;
 }
 
+/**
+ * Generates an executive decision rationale summarizing risk score and primary drivers.
+ */
 function generatePriorityRationale(
   score: number,
   riskLevel: RiskLevel,
@@ -342,6 +356,9 @@ function generatePriorityRationale(
   return rationale;
 }
 
+/**
+ * Generates human-readable additive breakdown explanation for audit transparency.
+ */
 function generateExplanation(
   totalScore: number,
   riskLevel: RiskLevel,

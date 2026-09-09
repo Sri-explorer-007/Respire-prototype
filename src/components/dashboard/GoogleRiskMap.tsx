@@ -42,6 +42,9 @@ interface DisplayMapItem {
   rawZone?: Zone;
 }
 
+/**
+ * Interactive Google Maps Platform component for geospatial heat risk triage.
+ */
 export const GoogleRiskMap: React.FC<GoogleRiskMapProps> = ({
   scoredZones,
   selectedZoneId,
@@ -57,6 +60,9 @@ export const GoogleRiskMap: React.FC<GoogleRiskMapProps> = ({
     // Suppress window.gm_authFailure
     (window as unknown as { gm_authFailure?: () => void }).gm_authFailure = () => {};
 
+    /**
+     * Suppresses default Google Maps authentication error overlays in sandbox mode.
+     */
     const dismissGoogleErrorDialogs = () => {
       // 1. Click dismiss / OK buttons if present to satisfy Google Maps internal state
       const dismissBtns = document.querySelectorAll<HTMLButtonElement>(
@@ -126,7 +132,9 @@ export const GoogleRiskMap: React.FC<GoogleRiskMapProps> = ({
     };
   }, []);
 
-  // Helper for risk badge colors
+  /**
+   * Resolves visual color palette, glows and badges for a given risk level.
+   */
   const getRiskColor = (riskLevel: string) => {
     switch (riskLevel) {
       case 'VERY_HIGH':
@@ -216,14 +224,14 @@ export const GoogleRiskMap: React.FC<GoogleRiskMapProps> = ({
       const avgLat = data.latSum / data.items.length;
       const avgLng = data.lngSum / data.items.length;
       
-      let riskBand = 'MODERATE';
+      let riskBand: string;
       if (avgScore === null) riskBand = 'INSUFFICIENT_EVIDENCE';
       else if (avgScore >= 80) riskBand = 'VERY_HIGH';
       else if (avgScore >= 65) riskBand = 'HIGH';
       else if (avgScore >= 45) riskBand = 'MODERATE';
       else riskBand = 'LOW';
 
-      const rep = data.items[0];
+      const [rep] = data.items;
       return {
         id: rep.zone.zoneId || rep.zone.id || zName,
         name: zName,

@@ -11,6 +11,9 @@ interface PriorityQueueCardProps {
   onNavigateToPrioritize?: () => void;
 }
 
+/**
+ * Summary card presenting top priority zones ranked by multi-criteria urgency score.
+ */
 export const PriorityQueueCard: React.FC<PriorityQueueCardProps> = ({
   scoredZones,
   selectedZoneId,

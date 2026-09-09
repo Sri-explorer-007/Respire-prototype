@@ -6,6 +6,9 @@ interface SectorClocksCardProps {
   onSelectZone?: (zoneId: string) => void;
 }
 
+/**
+ * Real-time sector status clocks displaying temperature telemetry and status indicators.
+ */
 export const SectorClocksCard: React.FC<SectorClocksCardProps> = ({ onSelectZone }) => {
   const [syncedTime, setSyncedTime] = useState('14:30 IST');
 

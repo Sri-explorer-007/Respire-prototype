@@ -3,6 +3,9 @@ import { Newspaper, ExternalLink, RefreshCw, Filter, CheckCircle2 } from 'lucide
 import { CardActionMenu } from '../common/CardActionMenu';
 import { NewsArticleModal, type NewsArticleItem } from '../modal/NewsArticleModal';
 
+/**
+ * Live news and municipal heat dispatch card summarizing recent policy and satellite updates.
+ */
 export const ClimateNewsCard: React.FC = () => {
   const [selectedArticle, setSelectedArticle] = useState<NewsArticleItem | null>(null);
   const [filterSource, setFilterSource] = useState<string>('ALL');

@@ -15,6 +15,9 @@ interface CardActionMenuProps {
   iconClassName?: string;
 }
 
+/**
+ * Context action menu offering card-level export, navigation, and telemetry actions.
+ */
 export const CardActionMenu: React.FC<CardActionMenuProps> = ({
   items,
   title = 'Card options',

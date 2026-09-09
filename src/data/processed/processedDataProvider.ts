@@ -37,6 +37,9 @@ export class ProcessedZoneDataProvider implements IZoneDataProvider {
     return this.fallbackProvider.getZoneById(id);
   }
 
+  /**
+   * Retrieves data provenance summary for the 200-ward processed pipeline.
+   */
   getProvenanceSummary(): DataProvenanceSummary {
     if (this.processedCache && this.processedCache.length > 0) {
       return {

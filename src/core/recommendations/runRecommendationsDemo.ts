@@ -59,7 +59,7 @@ export function runRecommendationsDemoAudit() {
     }))
   );
 
-  console.log('\n' + '='.repeat(100));
+  console.log(`\n${'='.repeat(100)}`);
   console.log('DETAILED RECOMMENDATIONS & "WHY THIS ACTION?" UI SAMPLES (3 Selected Zones)');
   console.log('='.repeat(100));
 
@@ -93,9 +93,9 @@ export function runRecommendationsDemoAudit() {
     manali.whyThisAction.checkpoints.forEach((cp) => console.log(`  ${cp}`));
   }
 
-  console.log('\n' + '='.repeat(100));
+  console.log(`\n${'='.repeat(100)}`);
   console.log('DEMO AUDIT COMPLETED SUCCESSFULLY: 10/10 ZONES EVALUATED.');
-  console.log('='.repeat(100) + '\n');
+  console.log(`${'='.repeat(100)}\n`);
 
   return results;
 }
