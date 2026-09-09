@@ -16,7 +16,7 @@
   <b>A transparent, deterministic decision-support platform engineered for Municipal Planning Officers, Disaster Management Cells, and Climate Engineers across Greater Chennai Corporation (GCC).</b>
 </p>
 
-[Explore Workflow](#-the-4-pillar-decision-workflow) • [System Architecture](#-system-architecture) • [Mathematical Model](#-mathematical-formulation) • [Quick Start](#-quick-start) • [Verification Matrix](#-test-suite--validation-matrix)
+[Explore Workflow](#-the-4-pillar-decision-workflow) • [System Architecture](#-system-architecture) • [Backend Pipeline Guide](./backend/README.md) • [Jury Pipeline Explainer](./backend/PIPELINE_EXPLAINER.md) • [Mathematical Model](#-mathematical-formulation) • [Quick Start](#-quick-start)
 
 <br/>
 
