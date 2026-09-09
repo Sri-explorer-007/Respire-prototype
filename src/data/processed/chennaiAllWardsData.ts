@@ -1,25 +1,8 @@
-import type { Zone } from '../../types';
-
 /**
- * RESPIRE - Complete Greater Chennai Corporation (GCC) Municipal Dataset
- * 
- * Encompasses all 15 Administrative Zones and exactly 200 Municipal Wards:
- * - Zone I: Thiruvotriyur (Wards 1 to 14)
- * - Zone II: Manali (Wards 15 to 21)
- * - Zone III: Madhavaram (Wards 22 to 33)
- * - Zone IV: Tondiarpet (Wards 34 to 48)
- * - Zone V: Royapuram (Wards 49 to 63)
- * - Zone VI: Thiru-Vi-Ka Nagar (Wards 64 to 78)
- * - Zone VII: Ambattur (Wards 79 to 93)
- * - Zone VIII: Anna Nagar (Wards 94 to 108)
- * - Zone IX: Teynampet (Wards 109 to 126)
- * - Zone X: Kodambakkam (Wards 127 to 142)
- * - Zone XI: Valasaravakkam (Wards 143 to 155)
- * - Zone XII: Alandur (Wards 156 to 167)
- * - Zone XIII: Adyar (Wards 170 to 182)
- * - Zone XIV: Perungudi (Wards 168, 169, 183 to 191)
- * - Zone XV: Sholinganallur (Wards 192 to 200)
+ * RESPIRE - Greater Chennai Corporation (200 Wards / 15 Zones Dataset)
  */
+
+import type { Zone } from '../../types';
 
 export interface ZoneAdministrativeMeta {
   zoneNumber: number;
@@ -2704,18 +2687,18 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     "zoneId": "zone-03",
     "zoneName": "Zone III - Madhavaram",
     "wardId": "ward-022",
-    "wardName": "Ward 022 - Vadaperumbakkam",
+    "wardName": "Ward 022 - Puzhal",
     "latitude": 13.138,
-    "longitude": 80.193,
+    "longitude": 80.208,
     "areaKm2": 2.4,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
     "id": "ward-022",
-    "name": "Ward 022 - Vadaperumbakkam",
+    "name": "Ward 022 - Puzhal",
     "metrics": {
       "heat": {
         "lst": {
-          "value": 37.3,
+          "value": 37.7,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
@@ -2727,7 +2710,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
           "notes": "Surface temperature observation in Madhavaram municipal sector"
         },
         "lstNormalized": {
-          "value": 0.521,
+          "value": 0.55,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS",
@@ -2747,7 +2730,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Vadaperumbakkam"
+          "notes": "Canopy and surface greenness indicator in Puzhal"
         },
         "vegetationDeficitNormalized": {
           "value": 0.733,
@@ -2770,7 +2753,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 022 - Vadaperumbakkam"
+          "notes": "Composite socio-economic sensitivity for Ward 022 - Puzhal"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
@@ -2826,18 +2809,18 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     "zoneId": "zone-03",
     "zoneName": "Zone III - Madhavaram",
     "wardId": "ward-023",
-    "wardName": "Ward 023 - Puzhal North",
+    "wardName": "Ward 023 - Puzhal Camp",
     "latitude": 13.146,
-    "longitude": 80.193,
+    "longitude": 80.208,
     "areaKm2": 3.0,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
     "id": "ward-023",
-    "name": "Ward 023 - Puzhal North",
+    "name": "Ward 023 - Puzhal Camp",
     "metrics": {
       "heat": {
         "lst": {
-          "value": 39.0,
+          "value": 39.4,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
@@ -2849,7 +2832,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
           "notes": "Surface temperature observation in Madhavaram municipal sector"
         },
         "lstNormalized": {
-          "value": 0.643,
+          "value": 0.671,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS",
@@ -2869,7 +2852,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Puzhal North"
+          "notes": "Canopy and surface greenness indicator in Puzhal Camp"
         },
         "vegetationDeficitNormalized": {
           "value": 0.689,
@@ -2892,7 +2875,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 023 - Puzhal North"
+          "notes": "Composite socio-economic sensitivity for Ward 023 - Puzhal Camp"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
@@ -2948,18 +2931,18 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     "zoneId": "zone-03",
     "zoneName": "Zone III - Madhavaram",
     "wardId": "ward-024",
-    "wardName": "Ward 024 - Puzhal South",
+    "wardName": "Ward 024 - Madhavaram Milk Colony",
     "latitude": 13.154,
-    "longitude": 80.193,
+    "longitude": 80.208,
     "areaKm2": 3.6,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
     "id": "ward-024",
-    "name": "Ward 024 - Puzhal South",
+    "name": "Ward 024 - Madhavaram Milk Colony",
     "metrics": {
       "heat": {
         "lst": {
-          "value": 37.6,
+          "value": 38.0,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
@@ -2971,7 +2954,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
           "notes": "Surface temperature observation in Madhavaram municipal sector"
         },
         "lstNormalized": {
-          "value": 0.543,
+          "value": 0.571,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS",
@@ -2991,7 +2974,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Puzhal South"
+          "notes": "Canopy and surface greenness indicator in Madhavaram Milk Colony"
         },
         "vegetationDeficitNormalized": {
           "value": 0.644,
@@ -3014,7 +2997,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 024 - Puzhal South"
+          "notes": "Composite socio-economic sensitivity for Ward 024 - Madhavaram Milk Colony"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
@@ -3070,18 +3053,18 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     "zoneId": "zone-03",
     "zoneName": "Zone III - Madhavaram",
     "wardId": "ward-025",
-    "wardName": "Ward 025 - Puthagaram",
+    "wardName": "Ward 025 - Madhavaram Bus Terminus",
     "latitude": 13.162,
-    "longitude": 80.193,
+    "longitude": 80.208,
     "areaKm2": 4.2,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
     "id": "ward-025",
-    "name": "Ward 025 - Puthagaram",
+    "name": "Ward 025 - Madhavaram Bus Terminus",
     "metrics": {
       "heat": {
         "lst": {
-          "value": 39.3,
+          "value": 39.7,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
@@ -3093,7 +3076,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
           "notes": "Surface temperature observation in Madhavaram municipal sector"
         },
         "lstNormalized": {
-          "value": 0.664,
+          "value": 0.693,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS",
@@ -3113,7 +3096,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Puthagaram"
+          "notes": "Canopy and surface greenness indicator in Madhavaram Bus Terminus"
         },
         "vegetationDeficitNormalized": {
           "value": 0.6,
@@ -3136,7 +3119,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 025 - Puthagaram"
+          "notes": "Composite socio-economic sensitivity for Ward 025 - Madhavaram Bus Terminus"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
@@ -3192,18 +3175,18 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     "zoneId": "zone-03",
     "zoneName": "Zone III - Madhavaram",
     "wardId": "ward-026",
-    "wardName": "Ward 026 - Surapet",
+    "wardName": "Ward 026 - Vadaperumbakkam",
     "latitude": 13.138,
-    "longitude": 80.201,
+    "longitude": 80.216,
     "areaKm2": 4.8,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
     "id": "ward-026",
-    "name": "Ward 026 - Surapet",
+    "name": "Ward 026 - Vadaperumbakkam",
     "metrics": {
       "heat": {
         "lst": {
-          "value": 37.9,
+          "value": 38.3,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
@@ -3215,7 +3198,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
           "notes": "Surface temperature observation in Madhavaram municipal sector"
         },
         "lstNormalized": {
-          "value": 0.564,
+          "value": 0.593,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS",
@@ -3235,7 +3218,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Surapet"
+          "notes": "Canopy and surface greenness indicator in Vadaperumbakkam"
         },
         "vegetationDeficitNormalized": {
           "value": 0.556,
@@ -3258,7 +3241,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 026 - Surapet"
+          "notes": "Composite socio-economic sensitivity for Ward 026 - Vadaperumbakkam"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
@@ -3314,18 +3297,18 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     "zoneId": "zone-03",
     "zoneName": "Zone III - Madhavaram",
     "wardId": "ward-027",
-    "wardName": "Ward 027 - Kathirvedu",
+    "wardName": "Ward 027 - Thanikachalam Nagar",
     "latitude": 13.146,
-    "longitude": 80.201,
+    "longitude": 80.216,
     "areaKm2": 5.4,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
     "id": "ward-027",
-    "name": "Ward 027 - Kathirvedu",
+    "name": "Ward 027 - Thanikachalam Nagar",
     "metrics": {
       "heat": {
         "lst": {
-          "value": 39.6,
+          "value": 40.0,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
@@ -3337,7 +3320,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
           "notes": "Surface temperature observation in Madhavaram municipal sector"
         },
         "lstNormalized": {
-          "value": 0.686,
+          "value": 0.714,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS",
@@ -3357,7 +3340,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Kathirvedu"
+          "notes": "Canopy and surface greenness indicator in Thanikachalam Nagar"
         },
         "vegetationDeficitNormalized": {
           "value": 0.511,
@@ -3380,7 +3363,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 027 - Kathirvedu"
+          "notes": "Composite socio-economic sensitivity for Ward 027 - Thanikachalam Nagar"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
@@ -3436,18 +3419,18 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     "zoneId": "zone-03",
     "zoneName": "Zone III - Madhavaram",
     "wardId": "ward-028",
-    "wardName": "Ward 028 - Vinayagapuram",
+    "wardName": "Ward 028 - Ponniammanmedu",
     "latitude": 13.154,
-    "longitude": 80.201,
+    "longitude": 80.216,
     "areaKm2": 1.8,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
     "id": "ward-028",
-    "name": "Ward 028 - Vinayagapuram",
+    "name": "Ward 028 - Ponniammanmedu",
     "metrics": {
       "heat": {
         "lst": {
-          "value": 38.2,
+          "value": 38.6,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
@@ -3459,7 +3442,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
           "notes": "Surface temperature observation in Madhavaram municipal sector"
         },
         "lstNormalized": {
-          "value": 0.586,
+          "value": 0.614,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS",
@@ -3479,7 +3462,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Vinayagapuram"
+          "notes": "Canopy and surface greenness indicator in Ponniammanmedu"
         },
         "vegetationDeficitNormalized": {
           "value": 0.467,
@@ -3502,7 +3485,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 028 - Vinayagapuram"
+          "notes": "Composite socio-economic sensitivity for Ward 028 - Ponniammanmedu"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
@@ -3558,18 +3541,18 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     "zoneId": "zone-03",
     "zoneName": "Zone III - Madhavaram",
     "wardId": "ward-029",
-    "wardName": "Ward 029 - Madhavaram Milk Colony",
+    "wardName": "Ward 029 - Kathirvedu",
     "latitude": 13.162,
-    "longitude": 80.201,
+    "longitude": 80.216,
     "areaKm2": 2.4,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
     "id": "ward-029",
-    "name": "Ward 029 - Madhavaram Milk Colony",
+    "name": "Ward 029 - Kathirvedu",
     "metrics": {
       "heat": {
         "lst": {
-          "value": 39.9,
+          "value": 40.3,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
@@ -3581,7 +3564,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
           "notes": "Surface temperature observation in Madhavaram municipal sector"
         },
         "lstNormalized": {
-          "value": 0.707,
+          "value": 0.736,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS",
@@ -3601,7 +3584,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Madhavaram Milk Colony"
+          "notes": "Canopy and surface greenness indicator in Kathirvedu"
         },
         "vegetationDeficitNormalized": {
           "value": 0.422,
@@ -3624,7 +3607,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 029 - Madhavaram Milk Colony"
+          "notes": "Composite socio-economic sensitivity for Ward 029 - Kathirvedu"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
@@ -3680,18 +3663,18 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     "zoneId": "zone-03",
     "zoneName": "Zone III - Madhavaram",
     "wardId": "ward-030",
-    "wardName": "Ward 030 - Madhavaram Central",
+    "wardName": "Ward 030 - Surapet",
     "latitude": 13.138,
-    "longitude": 80.209,
+    "longitude": 80.224,
     "areaKm2": 3.0,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
     "id": "ward-030",
-    "name": "Ward 030 - Madhavaram Central",
+    "name": "Ward 030 - Surapet",
     "metrics": {
       "heat": {
         "lst": {
-          "value": 38.5,
+          "value": 38.9,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
@@ -3703,7 +3686,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
           "notes": "Surface temperature observation in Madhavaram municipal sector"
         },
         "lstNormalized": {
-          "value": 0.607,
+          "value": 0.636,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS",
@@ -3723,7 +3706,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Madhavaram Central"
+          "notes": "Canopy and surface greenness indicator in Surapet"
         },
         "vegetationDeficitNormalized": {
           "value": 0.378,
@@ -3746,7 +3729,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 030 - Madhavaram Central"
+          "notes": "Composite socio-economic sensitivity for Ward 030 - Surapet"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
@@ -3802,18 +3785,18 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     "zoneId": "zone-03",
     "zoneName": "Zone III - Madhavaram",
     "wardId": "ward-031",
-    "wardName": "Ward 031 - Assisi Nagar",
+    "wardName": "Ward 031 - Vinayakapuram",
     "latitude": 13.146,
-    "longitude": 80.209,
+    "longitude": 80.224,
     "areaKm2": 3.6,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
     "id": "ward-031",
-    "name": "Ward 031 - Assisi Nagar",
+    "name": "Ward 031 - Vinayakapuram",
     "metrics": {
       "heat": {
         "lst": {
-          "value": 37.1,
+          "value": 37.5,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
@@ -3825,7 +3808,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
           "notes": "Surface temperature observation in Madhavaram municipal sector"
         },
         "lstNormalized": {
-          "value": 0.507,
+          "value": 0.536,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS",
@@ -3845,7 +3828,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Assisi Nagar"
+          "notes": "Canopy and surface greenness indicator in Vinayakapuram"
         },
         "vegetationDeficitNormalized": {
           "value": 0.333,
@@ -3868,7 +3851,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 031 - Assisi Nagar"
+          "notes": "Composite socio-economic sensitivity for Ward 031 - Vinayakapuram"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
@@ -3924,18 +3907,18 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     "zoneId": "zone-03",
     "zoneName": "Zone III - Madhavaram",
     "wardId": "ward-032",
-    "wardName": "Ward 032 - Ponniammanmedu",
+    "wardName": "Ward 032 - Retteri Junction",
     "latitude": 13.154,
-    "longitude": 80.209,
+    "longitude": 80.224,
     "areaKm2": 4.2,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
     "id": "ward-032",
-    "name": "Ward 032 - Ponniammanmedu",
+    "name": "Ward 032 - Retteri Junction",
     "metrics": {
       "heat": {
         "lst": {
-          "value": 38.8,
+          "value": 39.2,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
@@ -3947,7 +3930,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
           "notes": "Surface temperature observation in Madhavaram municipal sector"
         },
         "lstNormalized": {
-          "value": 0.629,
+          "value": 0.657,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS",
@@ -3967,7 +3950,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Ponniammanmedu"
+          "notes": "Canopy and surface greenness indicator in Retteri Junction"
         },
         "vegetationDeficitNormalized": {
           "value": 0.756,
@@ -3990,7 +3973,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 032 - Ponniammanmedu"
+          "notes": "Composite socio-economic sensitivity for Ward 032 - Retteri Junction"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
@@ -4046,18 +4029,18 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     "zoneId": "zone-03",
     "zoneName": "Zone III - Madhavaram",
     "wardId": "ward-033",
-    "wardName": "Ward 033 - Thanikachalam Nagar",
+    "wardName": "Ward 033 - Kolathur North",
     "latitude": 13.162,
-    "longitude": 80.209,
+    "longitude": 80.224,
     "areaKm2": 4.8,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
     "id": "ward-033",
-    "name": "Ward 033 - Thanikachalam Nagar",
+    "name": "Ward 033 - Kolathur North",
     "metrics": {
       "heat": {
         "lst": {
-          "value": 37.4,
+          "value": 37.8,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
@@ -4069,7 +4052,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
           "notes": "Surface temperature observation in Madhavaram municipal sector"
         },
         "lstNormalized": {
-          "value": 0.529,
+          "value": 0.557,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS",
@@ -4089,7 +4072,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Thanikachalam Nagar"
+          "notes": "Canopy and surface greenness indicator in Kolathur North"
         },
         "vegetationDeficitNormalized": {
           "value": 0.711,
@@ -4112,7 +4095,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 033 - Thanikachalam Nagar"
+          "notes": "Composite socio-economic sensitivity for Ward 033 - Kolathur North"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
@@ -4168,14 +4151,14 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     "zoneId": "zone-04",
     "zoneName": "Zone IV - Tondiarpet",
     "wardId": "ward-034",
-    "wardName": "Ward 034 - Korukkupet North",
-    "latitude": 13.123,
-    "longitude": 80.263,
+    "wardName": "Ward 034 - Korukkupet Junction",
+    "latitude": 13.113,
+    "longitude": 80.268,
     "areaKm2": 5.4,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
     "id": "ward-034",
-    "name": "Ward 034 - Korukkupet North",
+    "name": "Ward 034 - Korukkupet Junction",
     "metrics": {
       "heat": {
         "lst": {
@@ -4211,7 +4194,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Korukkupet North"
+          "notes": "Canopy and surface greenness indicator in Korukkupet Junction"
         },
         "vegetationDeficitNormalized": {
           "value": 0.95,
@@ -4225,7 +4208,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vulnerability": {
         "vulnerabilityScore": {
-          "value": 0.9,
+          "value": 0.91,
           "metadata": {
             "sourceType": "MUNICIPAL_CENSUS",
             "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
@@ -4234,11 +4217,11 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 034 - Korukkupet North"
+          "notes": "Composite socio-economic sensitivity for Ward 034 - Korukkupet Junction"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 40300,
+            "value": 40650,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -4256,7 +4239,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "outdoorWorkerExposure": {
-            "value": 0.435,
+            "value": 0.439,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Labor Statistics",
@@ -4274,7 +4257,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "informalSettlementIndicator": {
-            "value": 0.44,
+            "value": 0.448,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Slum Clearance Board Survey",
@@ -4290,14 +4273,14 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     "zoneId": "zone-04",
     "zoneName": "Zone IV - Tondiarpet",
     "wardId": "ward-035",
-    "wardName": "Ward 035 - Korukkupet South",
-    "latitude": 13.131,
-    "longitude": 80.263,
+    "wardName": "Ward 035 - Korukkupet West",
+    "latitude": 13.121,
+    "longitude": 80.268,
     "areaKm2": 1.8,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
     "id": "ward-035",
-    "name": "Ward 035 - Korukkupet South",
+    "name": "Ward 035 - Korukkupet West",
     "metrics": {
       "heat": {
         "lst": {
@@ -4333,7 +4316,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Korukkupet South"
+          "notes": "Canopy and surface greenness indicator in Korukkupet West"
         },
         "vegetationDeficitNormalized": {
           "value": 0.911,
@@ -4347,7 +4330,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vulnerability": {
         "vulnerabilityScore": {
-          "value": 0.78,
+          "value": 0.79,
           "metadata": {
             "sourceType": "MUNICIPAL_CENSUS",
             "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
@@ -4356,11 +4339,11 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 035 - Korukkupet South"
+          "notes": "Composite socio-economic sensitivity for Ward 035 - Korukkupet West"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 36900,
+            "value": 37250,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -4378,7 +4361,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "outdoorWorkerExposure": {
-            "value": 0.393,
+            "value": 0.396,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Labor Statistics",
@@ -4396,7 +4379,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "informalSettlementIndicator": {
-            "value": 0.344,
+            "value": 0.352,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Slum Clearance Board Survey",
@@ -4412,14 +4395,14 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     "zoneId": "zone-04",
     "zoneName": "Zone IV - Tondiarpet",
     "wardId": "ward-036",
-    "wardName": "Ward 036 - Tondiarpet West",
-    "latitude": 13.139,
-    "longitude": 80.263,
+    "wardName": "Ward 036 - Tondiarpet High Road",
+    "latitude": 13.129,
+    "longitude": 80.268,
     "areaKm2": 2.4,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
     "id": "ward-036",
-    "name": "Ward 036 - Tondiarpet West",
+    "name": "Ward 036 - Tondiarpet High Road",
     "metrics": {
       "heat": {
         "lst": {
@@ -4455,7 +4438,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Tondiarpet West"
+          "notes": "Canopy and surface greenness indicator in Tondiarpet High Road"
         },
         "vegetationDeficitNormalized": {
           "value": 0.867,
@@ -4469,7 +4452,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vulnerability": {
         "vulnerabilityScore": {
-          "value": 0.91,
+          "value": 0.92,
           "metadata": {
             "sourceType": "MUNICIPAL_CENSUS",
             "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
@@ -4478,11 +4461,11 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 036 - Tondiarpet West"
+          "notes": "Composite socio-economic sensitivity for Ward 036 - Tondiarpet High Road"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 42250,
+            "value": 42600,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -4500,7 +4483,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "outdoorWorkerExposure": {
-            "value": 0.439,
+            "value": 0.442,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Labor Statistics",
@@ -4518,7 +4501,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "informalSettlementIndicator": {
-            "value": 0.448,
+            "value": 0.456,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Slum Clearance Board Survey",
@@ -4534,14 +4517,14 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     "zoneId": "zone-04",
     "zoneName": "Zone IV - Tondiarpet",
     "wardId": "ward-037",
-    "wardName": "Ward 037 - New Washermanpet",
-    "latitude": 13.147,
-    "longitude": 80.263,
+    "wardName": "Ward 037 - Vaidyanathan Street",
+    "latitude": 13.137,
+    "longitude": 80.268,
     "areaKm2": 3.0,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
     "id": "ward-037",
-    "name": "Ward 037 - New Washermanpet",
+    "name": "Ward 037 - Vaidyanathan Street",
     "metrics": {
       "heat": {
         "lst": {
@@ -4577,7 +4560,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in New Washermanpet"
+          "notes": "Canopy and surface greenness indicator in Vaidyanathan Street"
         },
         "vegetationDeficitNormalized": {
           "value": 0.822,
@@ -4591,7 +4574,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vulnerability": {
         "vulnerabilityScore": {
-          "value": 0.79,
+          "value": 0.8,
           "metadata": {
             "sourceType": "MUNICIPAL_CENSUS",
             "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
@@ -4600,11 +4583,11 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 037 - New Washermanpet"
+          "notes": "Composite socio-economic sensitivity for Ward 037 - Vaidyanathan Street"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 38850,
+            "value": 39200,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -4622,7 +4605,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "outdoorWorkerExposure": {
-            "value": 0.396,
+            "value": 0.4,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Labor Statistics",
@@ -4640,7 +4623,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "informalSettlementIndicator": {
-            "value": 0.352,
+            "value": 0.36,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Slum Clearance Board Survey",
@@ -4656,14 +4639,14 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     "zoneId": "zone-04",
     "zoneName": "Zone IV - Tondiarpet",
     "wardId": "ward-038",
-    "wardName": "Ward 038 - Stanley Hospital",
-    "latitude": 13.123,
-    "longitude": 80.271,
+    "wardName": "Ward 038 - Dr. Radhakrishnan Nagar",
+    "latitude": 13.113,
+    "longitude": 80.276,
     "areaKm2": 3.6,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
     "id": "ward-038",
-    "name": "Ward 038 - Stanley Hospital",
+    "name": "Ward 038 - Dr. Radhakrishnan Nagar",
     "metrics": {
       "heat": {
         "lst": {
@@ -4699,7 +4682,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Stanley Hospital"
+          "notes": "Canopy and surface greenness indicator in Dr. Radhakrishnan Nagar"
         },
         "vegetationDeficitNormalized": {
           "value": 0.778,
@@ -4722,7 +4705,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 038 - Stanley Hospital"
+          "notes": "Composite socio-economic sensitivity for Ward 038 - Dr. Radhakrishnan Nagar"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
@@ -4778,14 +4761,14 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     "zoneId": "zone-04",
     "zoneName": "Zone IV - Tondiarpet",
     "wardId": "ward-039",
-    "wardName": "Ward 039 - Kasimedu Harbour",
-    "latitude": 13.131,
-    "longitude": 80.271,
+    "wardName": "Ward 039 - Meenambal Nagar",
+    "latitude": 13.121,
+    "longitude": 80.276,
     "areaKm2": 4.2,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
     "id": "ward-039",
-    "name": "Ward 039 - Kasimedu Harbour",
+    "name": "Ward 039 - Meenambal Nagar",
     "metrics": {
       "heat": {
         "lst": {
@@ -4821,7 +4804,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Kasimedu Harbour"
+          "notes": "Canopy and surface greenness indicator in Meenambal Nagar"
         },
         "vegetationDeficitNormalized": {
           "value": 0.733,
@@ -4835,7 +4818,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vulnerability": {
         "vulnerabilityScore": {
-          "value": 0.8,
+          "value": 0.81,
           "metadata": {
             "sourceType": "MUNICIPAL_CENSUS",
             "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
@@ -4844,11 +4827,11 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 039 - Kasimedu Harbour"
+          "notes": "Composite socio-economic sensitivity for Ward 039 - Meenambal Nagar"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 40800,
+            "value": 41150,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -4866,7 +4849,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "outdoorWorkerExposure": {
-            "value": 0.4,
+            "value": 0.403,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Labor Statistics",
@@ -4884,7 +4867,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "informalSettlementIndicator": {
-            "value": 0.36,
+            "value": 0.368,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Slum Clearance Board Survey",
@@ -4900,14 +4883,14 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     "zoneId": "zone-04",
     "zoneName": "Zone IV - Tondiarpet",
     "wardId": "ward-040",
-    "wardName": "Ward 040 - Royapuram Basin",
-    "latitude": 13.139,
-    "longitude": 80.271,
+    "wardName": "Ward 040 - Old Washermanpet",
+    "latitude": 13.129,
+    "longitude": 80.276,
     "areaKm2": 4.8,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
     "id": "ward-040",
-    "name": "Ward 040 - Royapuram Basin",
+    "name": "Ward 040 - Old Washermanpet",
     "metrics": {
       "heat": {
         "lst": {
@@ -4943,7 +4926,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Royapuram Basin"
+          "notes": "Canopy and surface greenness indicator in Old Washermanpet"
         },
         "vegetationDeficitNormalized": {
           "value": 0.689,
@@ -4966,7 +4949,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 040 - Royapuram Basin"
+          "notes": "Composite socio-economic sensitivity for Ward 040 - Old Washermanpet"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
@@ -5022,14 +5005,14 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     "zoneId": "zone-04",
     "zoneName": "Zone IV - Tondiarpet",
     "wardId": "ward-041",
-    "wardName": "Ward 041 - Seniamman Koil",
-    "latitude": 13.147,
-    "longitude": 80.271,
+    "wardName": "Ward 041 - Vyasarpadi Jeeva",
+    "latitude": 13.137,
+    "longitude": 80.276,
     "areaKm2": 5.4,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
     "id": "ward-041",
-    "name": "Ward 041 - Seniamman Koil",
+    "name": "Ward 041 - Vyasarpadi Jeeva",
     "metrics": {
       "heat": {
         "lst": {
@@ -5065,7 +5048,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Seniamman Koil"
+          "notes": "Canopy and surface greenness indicator in Vyasarpadi Jeeva"
         },
         "vegetationDeficitNormalized": {
           "value": 0.644,
@@ -5079,7 +5062,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vulnerability": {
         "vulnerabilityScore": {
-          "value": 0.81,
+          "value": 0.82,
           "metadata": {
             "sourceType": "MUNICIPAL_CENSUS",
             "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
@@ -5088,11 +5071,11 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 041 - Seniamman Koil"
+          "notes": "Composite socio-economic sensitivity for Ward 041 - Vyasarpadi Jeeva"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 42750,
+            "value": 43100,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -5110,7 +5093,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "outdoorWorkerExposure": {
-            "value": 0.403,
+            "value": 0.407,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Labor Statistics",
@@ -5128,7 +5111,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "informalSettlementIndicator": {
-            "value": 0.368,
+            "value": 0.376,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Slum Clearance Board Survey",
@@ -5144,14 +5127,14 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     "zoneId": "zone-04",
     "zoneName": "Zone IV - Tondiarpet",
     "wardId": "ward-042",
-    "wardName": "Ward 042 - Meenambal Nagar",
-    "latitude": 13.123,
-    "longitude": 80.279,
+    "wardName": "Ward 042 - Vyasarpadi Central",
+    "latitude": 13.113,
+    "longitude": 80.284,
     "areaKm2": 1.8,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
     "id": "ward-042",
-    "name": "Ward 042 - Meenambal Nagar",
+    "name": "Ward 042 - Vyasarpadi Central",
     "metrics": {
       "heat": {
         "lst": {
@@ -5187,7 +5170,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Meenambal Nagar"
+          "notes": "Canopy and surface greenness indicator in Vyasarpadi Central"
         },
         "vegetationDeficitNormalized": {
           "value": 0.95,
@@ -5210,7 +5193,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 042 - Meenambal Nagar"
+          "notes": "Composite socio-economic sensitivity for Ward 042 - Vyasarpadi Central"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
@@ -5266,14 +5249,14 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     "zoneId": "zone-04",
     "zoneName": "Zone IV - Tondiarpet",
     "wardId": "ward-043",
-    "wardName": "Ward 043 - Dr. Radhakrishnan Nagar",
-    "latitude": 13.131,
-    "longitude": 80.279,
+    "wardName": "Ward 043 - Vyasarpadi Industrial",
+    "latitude": 13.121,
+    "longitude": 80.284,
     "areaKm2": 2.4,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
     "id": "ward-043",
-    "name": "Ward 043 - Dr. Radhakrishnan Nagar",
+    "name": "Ward 043 - Vyasarpadi Industrial",
     "metrics": {
       "heat": {
         "lst": {
@@ -5309,7 +5292,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Dr. Radhakrishnan Nagar"
+          "notes": "Canopy and surface greenness indicator in Vyasarpadi Industrial"
         },
         "vegetationDeficitNormalized": {
           "value": 0.95,
@@ -5323,7 +5306,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vulnerability": {
         "vulnerabilityScore": {
-          "value": 0.82,
+          "value": 0.83,
           "metadata": {
             "sourceType": "MUNICIPAL_CENSUS",
             "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
@@ -5332,11 +5315,11 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 043 - Dr. Radhakrishnan Nagar"
+          "notes": "Composite socio-economic sensitivity for Ward 043 - Vyasarpadi Industrial"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 44700,
+            "value": 45050,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -5354,7 +5337,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "outdoorWorkerExposure": {
-            "value": 0.407,
+            "value": 0.41,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Labor Statistics",
@@ -5372,7 +5355,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "informalSettlementIndicator": {
-            "value": 0.376,
+            "value": 0.384,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Slum Clearance Board Survey",
@@ -5388,14 +5371,14 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     "zoneId": "zone-04",
     "zoneName": "Zone IV - Tondiarpet",
     "wardId": "ward-044",
-    "wardName": "Ward 044 - Kodungaiyur North",
-    "latitude": 13.139,
-    "longitude": 80.279,
+    "wardName": "Ward 044 - Washermanpet Market",
+    "latitude": 13.129,
+    "longitude": 80.284,
     "areaKm2": 3.0,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
     "id": "ward-044",
-    "name": "Ward 044 - Kodungaiyur North",
+    "name": "Ward 044 - Washermanpet Market",
     "metrics": {
       "heat": {
         "lst": {
@@ -5431,7 +5414,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Kodungaiyur North"
+          "notes": "Canopy and surface greenness indicator in Washermanpet Market"
         },
         "vegetationDeficitNormalized": {
           "value": 0.95,
@@ -5454,7 +5437,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 044 - Kodungaiyur North"
+          "notes": "Composite socio-economic sensitivity for Ward 044 - Washermanpet Market"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
@@ -5510,14 +5493,14 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     "zoneId": "zone-04",
     "zoneName": "Zone IV - Tondiarpet",
     "wardId": "ward-045",
-    "wardName": "Ward 045 - Kodungaiyur South",
-    "latitude": 13.147,
-    "longitude": 80.279,
+    "wardName": "Ward 045 - Stanley Hospital",
+    "latitude": 13.137,
+    "longitude": 80.284,
     "areaKm2": 3.6,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
     "id": "ward-045",
-    "name": "Ward 045 - Kodungaiyur South",
+    "name": "Ward 045 - Stanley Hospital",
     "metrics": {
       "heat": {
         "lst": {
@@ -5553,7 +5536,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Kodungaiyur South"
+          "notes": "Canopy and surface greenness indicator in Stanley Hospital"
         },
         "vegetationDeficitNormalized": {
           "value": 0.933,
@@ -5567,7 +5550,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vulnerability": {
         "vulnerabilityScore": {
-          "value": 0.83,
+          "value": 0.84,
           "metadata": {
             "sourceType": "MUNICIPAL_CENSUS",
             "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
@@ -5576,11 +5559,11 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 045 - Kodungaiyur South"
+          "notes": "Composite socio-economic sensitivity for Ward 045 - Stanley Hospital"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 37850,
+            "value": 38200,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -5598,7 +5581,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "outdoorWorkerExposure": {
-            "value": 0.41,
+            "value": 0.414,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Labor Statistics",
@@ -5616,7 +5599,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "informalSettlementIndicator": {
-            "value": 0.384,
+            "value": 0.392,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Slum Clearance Board Survey",
@@ -5632,14 +5615,14 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     "zoneId": "zone-04",
     "zoneName": "Zone IV - Tondiarpet",
     "wardId": "ward-046",
-    "wardName": "Ward 046 - Ezhil Nagar",
-    "latitude": 13.123,
-    "longitude": 80.287,
+    "wardName": "Ward 046 - Periyar Nagar",
+    "latitude": 13.113,
+    "longitude": 80.292,
     "areaKm2": 4.2,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
     "id": "ward-046",
-    "name": "Ward 046 - Ezhil Nagar",
+    "name": "Ward 046 - Periyar Nagar",
     "metrics": {
       "heat": {
         "lst": {
@@ -5675,7 +5658,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Ezhil Nagar"
+          "notes": "Canopy and surface greenness indicator in Periyar Nagar"
         },
         "vegetationDeficitNormalized": {
           "value": 0.889,
@@ -5698,7 +5681,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 046 - Ezhil Nagar"
+          "notes": "Composite socio-economic sensitivity for Ward 046 - Periyar Nagar"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
@@ -5754,14 +5737,14 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     "zoneId": "zone-04",
     "zoneName": "Zone IV - Tondiarpet",
     "wardId": "ward-047",
-    "wardName": "Ward 047 - Krishnamoorthy Nagar",
-    "latitude": 13.131,
-    "longitude": 80.287,
+    "wardName": "Ward 047 - Moolakadai",
+    "latitude": 13.121,
+    "longitude": 80.292,
     "areaKm2": 4.8,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
     "id": "ward-047",
-    "name": "Ward 047 - Krishnamoorthy Nagar",
+    "name": "Ward 047 - Moolakadai",
     "metrics": {
       "heat": {
         "lst": {
@@ -5797,7 +5780,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Krishnamoorthy Nagar"
+          "notes": "Canopy and surface greenness indicator in Moolakadai"
         },
         "vegetationDeficitNormalized": {
           "value": 0.844,
@@ -5811,7 +5794,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vulnerability": {
         "vulnerabilityScore": {
-          "value": 0.84,
+          "value": 0.85,
           "metadata": {
             "sourceType": "MUNICIPAL_CENSUS",
             "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
@@ -5820,11 +5803,11 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 047 - Krishnamoorthy Nagar"
+          "notes": "Composite socio-economic sensitivity for Ward 047 - Moolakadai"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 39800,
+            "value": 40150,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -5842,7 +5825,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "outdoorWorkerExposure": {
-            "value": 0.414,
+            "value": 0.417,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Labor Statistics",
@@ -5860,7 +5843,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "informalSettlementIndicator": {
-            "value": 0.392,
+            "value": 0.4,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Slum Clearance Board Survey",
@@ -5876,14 +5859,14 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     "zoneId": "zone-04",
     "zoneName": "Zone IV - Tondiarpet",
     "wardId": "ward-048",
-    "wardName": "Ward 048 - Ambedkar Nagar",
-    "latitude": 13.139,
-    "longitude": 80.287,
+    "wardName": "Ward 048 - Kodungaiyur East",
+    "latitude": 13.129,
+    "longitude": 80.292,
     "areaKm2": 5.4,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
     "id": "ward-048",
-    "name": "Ward 048 - Ambedkar Nagar",
+    "name": "Ward 048 - Kodungaiyur East",
     "metrics": {
       "heat": {
         "lst": {
@@ -5919,7 +5902,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Ambedkar Nagar"
+          "notes": "Canopy and surface greenness indicator in Kodungaiyur East"
         },
         "vegetationDeficitNormalized": {
           "value": 0.8,
@@ -5942,7 +5925,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 048 - Ambedkar Nagar"
+          "notes": "Composite socio-economic sensitivity for Ward 048 - Kodungaiyur East"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
@@ -5998,18 +5981,18 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     "zoneId": "zone-05",
     "zoneName": "Zone V - Royapuram",
     "wardId": "ward-049",
-    "wardName": "Ward 049 - Old Washermanpet",
-    "latitude": 13.088,
-    "longitude": 80.273,
+    "wardName": "Ward 049 - Royapuram Beach",
+    "latitude": 13.093,
+    "longitude": 80.278,
     "areaKm2": 1.8,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
     "id": "ward-049",
-    "name": "Ward 049 - Old Washermanpet",
+    "name": "Ward 049 - Royapuram Beach",
     "metrics": {
       "heat": {
         "lst": {
-          "value": 41.7,
+          "value": 43.4,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
@@ -6021,7 +6004,1349 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
           "notes": "Surface temperature observation in Royapuram municipal sector"
         },
         "lstNormalized": {
-          "value": 0.836,
+          "value": 0.957,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vegetation": {
+        "ndvi": {
+          "value": 0.13,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "10m raster zonal average",
+            "processingMethod": "Normalized Difference NIR/Red band ratio"
+          },
+          "notes": "Canopy and surface greenness indicator in Royapuram Beach"
+        },
+        "vegetationDeficitNormalized": {
+          "value": 0.822,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vulnerability": {
+        "vulnerabilityScore": {
+          "value": 0.89,
+          "metadata": {
+            "sourceType": "MUNICIPAL_CENSUS",
+            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
+            "confidence": "MEDIUM",
+            "status": "DERIVED",
+            "resolution": "Ward Census Block Aggregate",
+            "processingMethod": "Standardized socio-economic exposure index"
+          },
+          "notes": "Composite socio-economic sensitivity for Ward 049 - Royapuram Beach"
+        },
+        "vulnerabilityComponents": {
+          "populationDensity": {
+            "value": 43150,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "HIGH",
+              "status": "SOURCED"
+            }
+          },
+          "elderlyPopulation": {
+            "value": 0.11,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "outdoorWorkerExposure": {
+            "value": 0.431,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Labor Statistics",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "builtEnvironmentIndicator": {
+            "value": 0.885,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Urban Morphology Index",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "informalSettlementIndicator": {
+            "value": 0.432,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Slum Clearance Board Survey",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "zoneId": "zone-05",
+    "zoneName": "Zone V - Royapuram",
+    "wardId": "ward-050",
+    "wardName": "Ward 050 - Royapuram Railway Colony",
+    "latitude": 13.101,
+    "longitude": 80.278,
+    "areaKm2": 2.4,
+    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
+    "lastUpdated": "2026-03-01T00:00:00Z",
+    "id": "ward-050",
+    "name": "Ward 050 - Royapuram Railway Colony",
+    "metrics": {
+      "heat": {
+        "lst": {
+          "value": 42.0,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "30m downscaled to Ward-level zonal average",
+            "processingMethod": "Mono-window thermal radiative transfer calculation"
+          },
+          "notes": "Surface temperature observation in Royapuram municipal sector"
+        },
+        "lstNormalized": {
+          "value": 0.857,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vegetation": {
+        "ndvi": {
+          "value": 0.15,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "10m raster zonal average",
+            "processingMethod": "Normalized Difference NIR/Red band ratio"
+          },
+          "notes": "Canopy and surface greenness indicator in Royapuram Railway Colony"
+        },
+        "vegetationDeficitNormalized": {
+          "value": 0.778,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vulnerability": {
+        "vulnerabilityScore": {
+          "value": 0.77,
+          "metadata": {
+            "sourceType": "MUNICIPAL_CENSUS",
+            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
+            "confidence": "MEDIUM",
+            "status": "DERIVED",
+            "resolution": "Ward Census Block Aggregate",
+            "processingMethod": "Standardized socio-economic exposure index"
+          },
+          "notes": "Composite socio-economic sensitivity for Ward 050 - Royapuram Railway Colony"
+        },
+        "vulnerabilityComponents": {
+          "populationDensity": {
+            "value": 39750,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "HIGH",
+              "status": "SOURCED"
+            }
+          },
+          "elderlyPopulation": {
+            "value": 0.12,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "outdoorWorkerExposure": {
+            "value": 0.389,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Labor Statistics",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "builtEnvironmentIndicator": {
+            "value": 0.875,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Urban Morphology Index",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "informalSettlementIndicator": {
+            "value": 0.336,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Slum Clearance Board Survey",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "zoneId": "zone-05",
+    "zoneName": "Zone V - Royapuram",
+    "wardId": "ward-051",
+    "wardName": "Ward 051 - Mannadi Metro",
+    "latitude": 13.109,
+    "longitude": 80.278,
+    "areaKm2": 3.0,
+    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
+    "lastUpdated": "2026-03-01T00:00:00Z",
+    "id": "ward-051",
+    "name": "Ward 051 - Mannadi Metro",
+    "metrics": {
+      "heat": {
+        "lst": {
+          "value": 43.7,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "30m downscaled to Ward-level zonal average",
+            "processingMethod": "Mono-window thermal radiative transfer calculation"
+          },
+          "notes": "Surface temperature observation in Royapuram municipal sector"
+        },
+        "lstNormalized": {
+          "value": 0.979,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vegetation": {
+        "ndvi": {
+          "value": 0.17,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "10m raster zonal average",
+            "processingMethod": "Normalized Difference NIR/Red band ratio"
+          },
+          "notes": "Canopy and surface greenness indicator in Mannadi Metro"
+        },
+        "vegetationDeficitNormalized": {
+          "value": 0.733,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vulnerability": {
+        "vulnerabilityScore": {
+          "value": 0.9,
+          "metadata": {
+            "sourceType": "MUNICIPAL_CENSUS",
+            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
+            "confidence": "MEDIUM",
+            "status": "DERIVED",
+            "resolution": "Ward Census Block Aggregate",
+            "processingMethod": "Standardized socio-economic exposure index"
+          },
+          "notes": "Composite socio-economic sensitivity for Ward 051 - Mannadi Metro"
+        },
+        "vulnerabilityComponents": {
+          "populationDensity": {
+            "value": 45100,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "HIGH",
+              "status": "SOURCED"
+            }
+          },
+          "elderlyPopulation": {
+            "value": 0.13,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "outdoorWorkerExposure": {
+            "value": 0.435,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Labor Statistics",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "builtEnvironmentIndicator": {
+            "value": 0.865,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Urban Morphology Index",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "informalSettlementIndicator": {
+            "value": 0.44,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Slum Clearance Board Survey",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "zoneId": "zone-05",
+    "zoneName": "Zone V - Royapuram",
+    "wardId": "ward-052",
+    "wardName": "Ward 052 - Broadway Bus Stand",
+    "latitude": 13.117,
+    "longitude": 80.278,
+    "areaKm2": 3.6,
+    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
+    "lastUpdated": "2026-03-01T00:00:00Z",
+    "id": "ward-052",
+    "name": "Ward 052 - Broadway Bus Stand",
+    "metrics": {
+      "heat": {
+        "lst": {
+          "value": 42.3,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "30m downscaled to Ward-level zonal average",
+            "processingMethod": "Mono-window thermal radiative transfer calculation"
+          },
+          "notes": "Surface temperature observation in Royapuram municipal sector"
+        },
+        "lstNormalized": {
+          "value": 0.879,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vegetation": {
+        "ndvi": {
+          "value": 0.19,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "10m raster zonal average",
+            "processingMethod": "Normalized Difference NIR/Red band ratio"
+          },
+          "notes": "Canopy and surface greenness indicator in Broadway Bus Stand"
+        },
+        "vegetationDeficitNormalized": {
+          "value": 0.689,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vulnerability": {
+        "vulnerabilityScore": {
+          "value": 0.78,
+          "metadata": {
+            "sourceType": "MUNICIPAL_CENSUS",
+            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
+            "confidence": "MEDIUM",
+            "status": "DERIVED",
+            "resolution": "Ward Census Block Aggregate",
+            "processingMethod": "Standardized socio-economic exposure index"
+          },
+          "notes": "Composite socio-economic sensitivity for Ward 052 - Broadway Bus Stand"
+        },
+        "vulnerabilityComponents": {
+          "populationDensity": {
+            "value": 41700,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "HIGH",
+              "status": "SOURCED"
+            }
+          },
+          "elderlyPopulation": {
+            "value": 0.14,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "outdoorWorkerExposure": {
+            "value": 0.393,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Labor Statistics",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "builtEnvironmentIndicator": {
+            "value": 0.855,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Urban Morphology Index",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "informalSettlementIndicator": {
+            "value": 0.344,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Slum Clearance Board Survey",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "zoneId": "zone-05",
+    "zoneName": "Zone V - Royapuram",
+    "wardId": "ward-053",
+    "wardName": "Ward 053 - George Town Central",
+    "latitude": 13.093,
+    "longitude": 80.286,
+    "areaKm2": 4.2,
+    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
+    "lastUpdated": "2026-03-01T00:00:00Z",
+    "id": "ward-053",
+    "name": "Ward 053 - George Town Central",
+    "metrics": {
+      "heat": {
+        "lst": {
+          "value": 40.9,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "30m downscaled to Ward-level zonal average",
+            "processingMethod": "Mono-window thermal radiative transfer calculation"
+          },
+          "notes": "Surface temperature observation in Royapuram municipal sector"
+        },
+        "lstNormalized": {
+          "value": 0.779,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vegetation": {
+        "ndvi": {
+          "value": 0.06,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "10m raster zonal average",
+            "processingMethod": "Normalized Difference NIR/Red band ratio"
+          },
+          "notes": "Canopy and surface greenness indicator in George Town Central"
+        },
+        "vegetationDeficitNormalized": {
+          "value": 0.95,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vulnerability": {
+        "vulnerabilityScore": {
+          "value": 0.91,
+          "metadata": {
+            "sourceType": "MUNICIPAL_CENSUS",
+            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
+            "confidence": "MEDIUM",
+            "status": "DERIVED",
+            "resolution": "Ward Census Block Aggregate",
+            "processingMethod": "Standardized socio-economic exposure index"
+          },
+          "notes": "Composite socio-economic sensitivity for Ward 053 - George Town Central"
+        },
+        "vulnerabilityComponents": {
+          "populationDensity": {
+            "value": 47050,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "HIGH",
+              "status": "SOURCED"
+            }
+          },
+          "elderlyPopulation": {
+            "value": 0.15,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "outdoorWorkerExposure": {
+            "value": 0.439,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Labor Statistics",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "builtEnvironmentIndicator": {
+            "value": 0.92,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Urban Morphology Index",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "informalSettlementIndicator": {
+            "value": 0.448,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Slum Clearance Board Survey",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "zoneId": "zone-05",
+    "zoneName": "Zone V - Royapuram",
+    "wardId": "ward-054",
+    "wardName": "Ward 054 - Parrys Corner",
+    "latitude": 13.101,
+    "longitude": 80.286,
+    "areaKm2": 4.8,
+    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
+    "lastUpdated": "2026-03-01T00:00:00Z",
+    "id": "ward-054",
+    "name": "Ward 054 - Parrys Corner",
+    "metrics": {
+      "heat": {
+        "lst": {
+          "value": 42.6,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "30m downscaled to Ward-level zonal average",
+            "processingMethod": "Mono-window thermal radiative transfer calculation"
+          },
+          "notes": "Surface temperature observation in Royapuram municipal sector"
+        },
+        "lstNormalized": {
+          "value": 0.9,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vegetation": {
+        "ndvi": {
+          "value": 0.06,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "10m raster zonal average",
+            "processingMethod": "Normalized Difference NIR/Red band ratio"
+          },
+          "notes": "Canopy and surface greenness indicator in Parrys Corner"
+        },
+        "vegetationDeficitNormalized": {
+          "value": 0.95,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vulnerability": {
+        "vulnerabilityScore": {
+          "value": 0.79,
+          "metadata": {
+            "sourceType": "MUNICIPAL_CENSUS",
+            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
+            "confidence": "MEDIUM",
+            "status": "DERIVED",
+            "resolution": "Ward Census Block Aggregate",
+            "processingMethod": "Standardized socio-economic exposure index"
+          },
+          "notes": "Composite socio-economic sensitivity for Ward 054 - Parrys Corner"
+        },
+        "vulnerabilityComponents": {
+          "populationDensity": {
+            "value": 43650,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "HIGH",
+              "status": "SOURCED"
+            }
+          },
+          "elderlyPopulation": {
+            "value": 0.07,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "outdoorWorkerExposure": {
+            "value": 0.396,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Labor Statistics",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "builtEnvironmentIndicator": {
+            "value": 0.92,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Urban Morphology Index",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "informalSettlementIndicator": {
+            "value": 0.352,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Slum Clearance Board Survey",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "zoneId": "zone-05",
+    "zoneName": "Zone V - Royapuram",
+    "wardId": "ward-055",
+    "wardName": "Ward 055 - Seven Wells",
+    "latitude": 13.109,
+    "longitude": 80.286,
+    "areaKm2": 5.4,
+    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
+    "lastUpdated": "2026-03-01T00:00:00Z",
+    "id": "ward-055",
+    "name": "Ward 055 - Seven Wells",
+    "metrics": {
+      "heat": {
+        "lst": {
+          "value": 41.2,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "30m downscaled to Ward-level zonal average",
+            "processingMethod": "Mono-window thermal radiative transfer calculation"
+          },
+          "notes": "Surface temperature observation in Royapuram municipal sector"
+        },
+        "lstNormalized": {
+          "value": 0.8,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vegetation": {
+        "ndvi": {
+          "value": 0.06,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "10m raster zonal average",
+            "processingMethod": "Normalized Difference NIR/Red band ratio"
+          },
+          "notes": "Canopy and surface greenness indicator in Seven Wells"
+        },
+        "vegetationDeficitNormalized": {
+          "value": 0.95,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vulnerability": {
+        "vulnerabilityScore": {
+          "value": 0.92,
+          "metadata": {
+            "sourceType": "MUNICIPAL_CENSUS",
+            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
+            "confidence": "MEDIUM",
+            "status": "DERIVED",
+            "resolution": "Ward Census Block Aggregate",
+            "processingMethod": "Standardized socio-economic exposure index"
+          },
+          "notes": "Composite socio-economic sensitivity for Ward 055 - Seven Wells"
+        },
+        "vulnerabilityComponents": {
+          "populationDensity": {
+            "value": 40200,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "HIGH",
+              "status": "SOURCED"
+            }
+          },
+          "elderlyPopulation": {
+            "value": 0.08,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "outdoorWorkerExposure": {
+            "value": 0.442,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Labor Statistics",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "builtEnvironmentIndicator": {
+            "value": 0.92,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Urban Morphology Index",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "informalSettlementIndicator": {
+            "value": 0.456,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Slum Clearance Board Survey",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "zoneId": "zone-05",
+    "zoneName": "Zone V - Royapuram",
+    "wardId": "ward-056",
+    "wardName": "Ward 056 - Mint Street",
+    "latitude": 13.117,
+    "longitude": 80.286,
+    "areaKm2": 1.8,
+    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
+    "lastUpdated": "2026-03-01T00:00:00Z",
+    "id": "ward-056",
+    "name": "Ward 056 - Mint Street",
+    "metrics": {
+      "heat": {
+        "lst": {
+          "value": 42.9,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "30m downscaled to Ward-level zonal average",
+            "processingMethod": "Mono-window thermal radiative transfer calculation"
+          },
+          "notes": "Surface temperature observation in Royapuram municipal sector"
+        },
+        "lstNormalized": {
+          "value": 0.921,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vegetation": {
+        "ndvi": {
+          "value": 0.06,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "10m raster zonal average",
+            "processingMethod": "Normalized Difference NIR/Red band ratio"
+          },
+          "notes": "Canopy and surface greenness indicator in Mint Street"
+        },
+        "vegetationDeficitNormalized": {
+          "value": 0.95,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vulnerability": {
+        "vulnerabilityScore": {
+          "value": 0.8,
+          "metadata": {
+            "sourceType": "MUNICIPAL_CENSUS",
+            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
+            "confidence": "MEDIUM",
+            "status": "DERIVED",
+            "resolution": "Ward Census Block Aggregate",
+            "processingMethod": "Standardized socio-economic exposure index"
+          },
+          "notes": "Composite socio-economic sensitivity for Ward 056 - Mint Street"
+        },
+        "vulnerabilityComponents": {
+          "populationDensity": {
+            "value": 36800,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "HIGH",
+              "status": "SOURCED"
+            }
+          },
+          "elderlyPopulation": {
+            "value": 0.09,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "outdoorWorkerExposure": {
+            "value": 0.4,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Labor Statistics",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "builtEnvironmentIndicator": {
+            "value": 0.92,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Urban Morphology Index",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "informalSettlementIndicator": {
+            "value": 0.36,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Slum Clearance Board Survey",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "zoneId": "zone-05",
+    "zoneName": "Zone V - Royapuram",
+    "wardId": "ward-057",
+    "wardName": "Ward 057 - Sowcarpet Market",
+    "latitude": 13.093,
+    "longitude": 80.294,
+    "areaKm2": 2.4,
+    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
+    "lastUpdated": "2026-03-01T00:00:00Z",
+    "id": "ward-057",
+    "name": "Ward 057 - Sowcarpet Market",
+    "metrics": {
+      "heat": {
+        "lst": {
+          "value": 41.5,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "30m downscaled to Ward-level zonal average",
+            "processingMethod": "Mono-window thermal radiative transfer calculation"
+          },
+          "notes": "Surface temperature observation in Royapuram municipal sector"
+        },
+        "lstNormalized": {
+          "value": 0.821,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vegetation": {
+        "ndvi": {
+          "value": 0.08,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "10m raster zonal average",
+            "processingMethod": "Normalized Difference NIR/Red band ratio"
+          },
+          "notes": "Canopy and surface greenness indicator in Sowcarpet Market"
+        },
+        "vegetationDeficitNormalized": {
+          "value": 0.933,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vulnerability": {
+        "vulnerabilityScore": {
+          "value": 0.92,
+          "metadata": {
+            "sourceType": "MUNICIPAL_CENSUS",
+            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
+            "confidence": "MEDIUM",
+            "status": "DERIVED",
+            "resolution": "Ward Census Block Aggregate",
+            "processingMethod": "Standardized socio-economic exposure index"
+          },
+          "notes": "Composite socio-economic sensitivity for Ward 057 - Sowcarpet Market"
+        },
+        "vulnerabilityComponents": {
+          "populationDensity": {
+            "value": 41800,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "HIGH",
+              "status": "SOURCED"
+            }
+          },
+          "elderlyPopulation": {
+            "value": 0.1,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "outdoorWorkerExposure": {
+            "value": 0.442,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Labor Statistics",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "builtEnvironmentIndicator": {
+            "value": 0.91,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Urban Morphology Index",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "informalSettlementIndicator": {
+            "value": 0.456,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Slum Clearance Board Survey",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "zoneId": "zone-05",
+    "zoneName": "Zone V - Royapuram",
+    "wardId": "ward-058",
+    "wardName": "Ward 058 - Kothawal Chavadi",
+    "latitude": 13.101,
+    "longitude": 80.294,
+    "areaKm2": 3.0,
+    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
+    "lastUpdated": "2026-03-01T00:00:00Z",
+    "id": "ward-058",
+    "name": "Ward 058 - Kothawal Chavadi",
+    "metrics": {
+      "heat": {
+        "lst": {
+          "value": 43.2,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "30m downscaled to Ward-level zonal average",
+            "processingMethod": "Mono-window thermal radiative transfer calculation"
+          },
+          "notes": "Surface temperature observation in Royapuram municipal sector"
+        },
+        "lstNormalized": {
+          "value": 0.943,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vegetation": {
+        "ndvi": {
+          "value": 0.1,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "10m raster zonal average",
+            "processingMethod": "Normalized Difference NIR/Red band ratio"
+          },
+          "notes": "Canopy and surface greenness indicator in Kothawal Chavadi"
+        },
+        "vegetationDeficitNormalized": {
+          "value": 0.889,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vulnerability": {
+        "vulnerabilityScore": {
+          "value": 0.81,
+          "metadata": {
+            "sourceType": "MUNICIPAL_CENSUS",
+            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
+            "confidence": "MEDIUM",
+            "status": "DERIVED",
+            "resolution": "Ward Census Block Aggregate",
+            "processingMethod": "Standardized socio-economic exposure index"
+          },
+          "notes": "Composite socio-economic sensitivity for Ward 058 - Kothawal Chavadi"
+        },
+        "vulnerabilityComponents": {
+          "populationDensity": {
+            "value": 38750,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "HIGH",
+              "status": "SOURCED"
+            }
+          },
+          "elderlyPopulation": {
+            "value": 0.11,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "outdoorWorkerExposure": {
+            "value": 0.403,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Labor Statistics",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "builtEnvironmentIndicator": {
+            "value": 0.9,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Urban Morphology Index",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "informalSettlementIndicator": {
+            "value": 0.368,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Slum Clearance Board Survey",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "zoneId": "zone-05",
+    "zoneName": "Zone V - Royapuram",
+    "wardId": "ward-059",
+    "wardName": "Ward 059 - Park Town",
+    "latitude": 13.109,
+    "longitude": 80.294,
+    "areaKm2": 3.6,
+    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
+    "lastUpdated": "2026-03-01T00:00:00Z",
+    "id": "ward-059",
+    "name": "Ward 059 - Park Town",
+    "metrics": {
+      "heat": {
+        "lst": {
+          "value": 41.8,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "30m downscaled to Ward-level zonal average",
+            "processingMethod": "Mono-window thermal radiative transfer calculation"
+          },
+          "notes": "Surface temperature observation in Royapuram municipal sector"
+        },
+        "lstNormalized": {
+          "value": 0.843,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vegetation": {
+        "ndvi": {
+          "value": 0.12,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "10m raster zonal average",
+            "processingMethod": "Normalized Difference NIR/Red band ratio"
+          },
+          "notes": "Canopy and surface greenness indicator in Park Town"
+        },
+        "vegetationDeficitNormalized": {
+          "value": 0.844,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vulnerability": {
+        "vulnerabilityScore": {
+          "value": 0.92,
+          "metadata": {
+            "sourceType": "MUNICIPAL_CENSUS",
+            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
+            "confidence": "MEDIUM",
+            "status": "DERIVED",
+            "resolution": "Ward Census Block Aggregate",
+            "processingMethod": "Standardized socio-economic exposure index"
+          },
+          "notes": "Composite socio-economic sensitivity for Ward 059 - Park Town"
+        },
+        "vulnerabilityComponents": {
+          "populationDensity": {
+            "value": 43400,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "HIGH",
+              "status": "SOURCED"
+            }
+          },
+          "elderlyPopulation": {
+            "value": 0.12,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "outdoorWorkerExposure": {
+            "value": 0.442,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Labor Statistics",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "builtEnvironmentIndicator": {
+            "value": 0.89,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Urban Morphology Index",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "informalSettlementIndicator": {
+            "value": 0.456,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Slum Clearance Board Survey",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "zoneId": "zone-05",
+    "zoneName": "Zone V - Royapuram",
+    "wardId": "ward-060",
+    "wardName": "Ward 060 - Chintadripet North",
+    "latitude": 13.117,
+    "longitude": 80.294,
+    "areaKm2": 4.2,
+    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
+    "lastUpdated": "2026-03-01T00:00:00Z",
+    "id": "ward-060",
+    "name": "Ward 060 - Chintadripet North",
+    "metrics": {
+      "heat": {
+        "lst": {
+          "value": 43.5,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "30m downscaled to Ward-level zonal average",
+            "processingMethod": "Mono-window thermal radiative transfer calculation"
+          },
+          "notes": "Surface temperature observation in Royapuram municipal sector"
+        },
+        "lstNormalized": {
+          "value": 0.964,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS",
@@ -6041,7 +7366,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Old Washermanpet"
+          "notes": "Canopy and surface greenness indicator in Chintadripet North"
         },
         "vegetationDeficitNormalized": {
           "value": 0.8,
@@ -6064,7 +7389,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 049 - Old Washermanpet"
+          "notes": "Composite socio-economic sensitivity for Ward 060 - Chintadripet North"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
@@ -6077,7 +7402,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "elderlyPopulation": {
-            "value": 0.11,
+            "value": 0.13,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -6119,19 +7444,19 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
   {
     "zoneId": "zone-05",
     "zoneName": "Zone V - Royapuram",
-    "wardId": "ward-050",
-    "wardName": "Ward 050 - Royapuram Railway Colony",
-    "latitude": 13.096,
-    "longitude": 80.273,
-    "areaKm2": 2.4,
+    "wardId": "ward-061",
+    "wardName": "Ward 061 - Wall Tax Road",
+    "latitude": 13.093,
+    "longitude": 80.302,
+    "areaKm2": 4.8,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-050",
-    "name": "Ward 050 - Royapuram Railway Colony",
+    "id": "ward-061",
+    "name": "Ward 061 - Wall Tax Road",
     "metrics": {
       "heat": {
         "lst": {
-          "value": 40.3,
+          "value": 42.1,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
@@ -6143,7 +7468,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
           "notes": "Surface temperature observation in Royapuram municipal sector"
         },
         "lstNormalized": {
-          "value": 0.736,
+          "value": 0.864,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS",
@@ -6163,7 +7488,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Royapuram Railway Colony"
+          "notes": "Canopy and surface greenness indicator in Wall Tax Road"
         },
         "vegetationDeficitNormalized": {
           "value": 0.756,
@@ -6177,7 +7502,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vulnerability": {
         "vulnerabilityScore": {
-          "value": 0.7,
+          "value": 0.92,
           "metadata": {
             "sourceType": "MUNICIPAL_CENSUS",
             "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
@@ -6186,11 +7511,11 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 050 - Royapuram Railway Colony"
+          "notes": "Composite socio-economic sensitivity for Ward 061 - Wall Tax Road"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 37300,
+            "value": 45000,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -6199,7 +7524,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "elderlyPopulation": {
-            "value": 0.12,
+            "value": 0.14,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -6208,7 +7533,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "outdoorWorkerExposure": {
-            "value": 0.365,
+            "value": 0.442,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Labor Statistics",
@@ -6226,7 +7551,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "informalSettlementIndicator": {
-            "value": 0.28,
+            "value": 0.456,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Slum Clearance Board Survey",
@@ -6241,19 +7566,19 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
   {
     "zoneId": "zone-05",
     "zoneName": "Zone V - Royapuram",
-    "wardId": "ward-051",
-    "wardName": "Ward 051 - Sanjeevirayanpet",
-    "latitude": 13.104,
-    "longitude": 80.273,
-    "areaKm2": 3.0,
+    "wardId": "ward-062",
+    "wardName": "Ward 062 - Elephant Gate",
+    "latitude": 13.101,
+    "longitude": 80.302,
+    "areaKm2": 5.4,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-051",
-    "name": "Ward 051 - Sanjeevirayanpet",
+    "id": "ward-062",
+    "name": "Ward 062 - Elephant Gate",
     "metrics": {
       "heat": {
         "lst": {
-          "value": 42.0,
+          "value": 40.7,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
@@ -6265,7 +7590,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
           "notes": "Surface temperature observation in Royapuram municipal sector"
         },
         "lstNormalized": {
-          "value": 0.857,
+          "value": 0.764,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS",
@@ -6285,7 +7610,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Sanjeevirayanpet"
+          "notes": "Canopy and surface greenness indicator in Elephant Gate"
         },
         "vegetationDeficitNormalized": {
           "value": 0.711,
@@ -6308,7 +7633,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 051 - Sanjeevirayanpet"
+          "notes": "Composite socio-economic sensitivity for Ward 062 - Elephant Gate"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
@@ -6321,7 +7646,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "elderlyPopulation": {
-            "value": 0.13,
+            "value": 0.15,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -6363,19 +7688,19 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
   {
     "zoneId": "zone-05",
     "zoneName": "Zone V - Royapuram",
-    "wardId": "ward-052",
-    "wardName": "Ward 052 - Grace Garden",
-    "latitude": 13.112,
-    "longitude": 80.273,
-    "areaKm2": 3.6,
+    "wardId": "ward-063",
+    "wardName": "Ward 063 - Kondithope",
+    "latitude": 13.109,
+    "longitude": 80.302,
+    "areaKm2": 1.8,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-052",
-    "name": "Ward 052 - Grace Garden",
+    "id": "ward-063",
+    "name": "Ward 063 - Kondithope",
     "metrics": {
       "heat": {
         "lst": {
-          "value": 40.6,
+          "value": 42.4,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
@@ -6387,129 +7712,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
           "notes": "Surface temperature observation in Royapuram municipal sector"
         },
         "lstNormalized": {
-          "value": 0.757,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vegetation": {
-        "ndvi": {
-          "value": 0.2,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "10m raster zonal average",
-            "processingMethod": "Normalized Difference NIR/Red band ratio"
-          },
-          "notes": "Canopy and surface greenness indicator in Grace Garden"
-        },
-        "vegetationDeficitNormalized": {
-          "value": 0.667,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vulnerability": {
-        "vulnerabilityScore": {
-          "value": 0.71,
-          "metadata": {
-            "sourceType": "MUNICIPAL_CENSUS",
-            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
-            "confidence": "MEDIUM",
-            "status": "DERIVED",
-            "resolution": "Ward Census Block Aggregate",
-            "processingMethod": "Standardized socio-economic exposure index"
-          },
-          "notes": "Composite socio-economic sensitivity for Ward 052 - Grace Garden"
-        },
-        "vulnerabilityComponents": {
-          "populationDensity": {
-            "value": 39250,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "HIGH",
-              "status": "SOURCED"
-            }
-          },
-          "elderlyPopulation": {
-            "value": 0.14,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "outdoorWorkerExposure": {
-            "value": 0.368,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Labor Statistics",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "builtEnvironmentIndicator": {
-            "value": 0.85,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Urban Morphology Index",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "informalSettlementIndicator": {
-            "value": 0.288,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Slum Clearance Board Survey",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          }
-        }
-      }
-    }
-  },
-  {
-    "zoneId": "zone-05",
-    "zoneName": "Zone V - Royapuram",
-    "wardId": "ward-053",
-    "wardName": "Ward 053 - Ma Po Si Nagar",
-    "latitude": 13.088,
-    "longitude": 80.281,
-    "areaKm2": 4.2,
-    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
-    "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-053",
-    "name": "Ward 053 - Ma Po Si Nagar",
-    "metrics": {
-      "heat": {
-        "lst": {
-          "value": 39.2,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "30m downscaled to Ward-level zonal average",
-            "processingMethod": "Mono-window thermal radiative transfer calculation"
-          },
-          "notes": "Surface temperature observation in Royapuram municipal sector"
-        },
-        "lstNormalized": {
-          "value": 0.657,
+          "value": 0.886,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS",
@@ -6529,7 +7732,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Ma Po Si Nagar"
+          "notes": "Canopy and surface greenness indicator in Kondithope"
         },
         "vegetationDeficitNormalized": {
           "value": 0.95,
@@ -6543,7 +7746,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vulnerability": {
         "vulnerabilityScore": {
-          "value": 0.84,
+          "value": 0.92,
           "metadata": {
             "sourceType": "MUNICIPAL_CENSUS",
             "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
@@ -6552,133 +7755,11 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 053 - Ma Po Si Nagar"
+          "notes": "Composite socio-economic sensitivity for Ward 063 - Kondithope"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 44600,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "HIGH",
-              "status": "SOURCED"
-            }
-          },
-          "elderlyPopulation": {
-            "value": 0.15,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "outdoorWorkerExposure": {
-            "value": 0.414,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Labor Statistics",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "builtEnvironmentIndicator": {
-            "value": 0.92,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Urban Morphology Index",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "informalSettlementIndicator": {
-            "value": 0.392,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Slum Clearance Board Survey",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          }
-        }
-      }
-    }
-  },
-  {
-    "zoneId": "zone-05",
-    "zoneName": "Zone V - Royapuram",
-    "wardId": "ward-054",
-    "wardName": "Ward 054 - Mannady",
-    "latitude": 13.096,
-    "longitude": 80.281,
-    "areaKm2": 4.8,
-    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
-    "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-054",
-    "name": "Ward 054 - Mannady",
-    "metrics": {
-      "heat": {
-        "lst": {
-          "value": 40.9,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "30m downscaled to Ward-level zonal average",
-            "processingMethod": "Mono-window thermal radiative transfer calculation"
-          },
-          "notes": "Surface temperature observation in Royapuram municipal sector"
-        },
-        "lstNormalized": {
-          "value": 0.779,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vegetation": {
-        "ndvi": {
-          "value": 0.06,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "10m raster zonal average",
-            "processingMethod": "Normalized Difference NIR/Red band ratio"
-          },
-          "notes": "Canopy and surface greenness indicator in Mannady"
-        },
-        "vegetationDeficitNormalized": {
-          "value": 0.95,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vulnerability": {
-        "vulnerabilityScore": {
-          "value": 0.72,
-          "metadata": {
-            "sourceType": "MUNICIPAL_CENSUS",
-            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
-            "confidence": "MEDIUM",
-            "status": "DERIVED",
-            "resolution": "Ward Census Block Aggregate",
-            "processingMethod": "Standardized socio-economic exposure index"
-          },
-          "notes": "Composite socio-economic sensitivity for Ward 054 - Mannady"
-        },
-        "vulnerabilityComponents": {
-          "populationDensity": {
-            "value": 41200,
+            "value": 46600,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -6696,7 +7777,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "outdoorWorkerExposure": {
-            "value": 0.372,
+            "value": 0.442,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Labor Statistics",
@@ -6714,7 +7795,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "informalSettlementIndicator": {
-            "value": 0.296,
+            "value": 0.456,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Slum Clearance Board Survey",
@@ -6727,21 +7808,21 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     }
   },
   {
-    "zoneId": "zone-05",
-    "zoneName": "Zone V - Royapuram",
-    "wardId": "ward-055",
-    "wardName": "Ward 055 - George Town North",
-    "latitude": 13.104,
-    "longitude": 80.281,
-    "areaKm2": 5.4,
+    "zoneId": "zone-06",
+    "zoneName": "Zone VI - Thiru-Vi-Ka Nagar",
+    "wardId": "ward-064",
+    "wardName": "Ward 064 - Perambur Barracks",
+    "latitude": 13.098,
+    "longitude": 80.228,
+    "areaKm2": 2.4,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-055",
-    "name": "Ward 055 - George Town North",
+    "id": "ward-064",
+    "name": "Ward 064 - Perambur Barracks",
     "metrics": {
       "heat": {
         "lst": {
-          "value": 39.5,
+          "value": 39.2,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
@@ -6750,132 +7831,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "30m downscaled to Ward-level zonal average",
             "processingMethod": "Mono-window thermal radiative transfer calculation"
           },
-          "notes": "Surface temperature observation in Royapuram municipal sector"
+          "notes": "Surface temperature observation in Thiru-Vi-Ka Nagar municipal sector"
         },
         "lstNormalized": {
-          "value": 0.679,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vegetation": {
-        "ndvi": {
-          "value": 0.06,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "10m raster zonal average",
-            "processingMethod": "Normalized Difference NIR/Red band ratio"
-          },
-          "notes": "Canopy and surface greenness indicator in George Town North"
-        },
-        "vegetationDeficitNormalized": {
-          "value": 0.95,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vulnerability": {
-        "vulnerabilityScore": {
-          "value": 0.85,
-          "metadata": {
-            "sourceType": "MUNICIPAL_CENSUS",
-            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
-            "confidence": "MEDIUM",
-            "status": "DERIVED",
-            "resolution": "Ward Census Block Aggregate",
-            "processingMethod": "Standardized socio-economic exposure index"
-          },
-          "notes": "Composite socio-economic sensitivity for Ward 055 - George Town North"
-        },
-        "vulnerabilityComponents": {
-          "populationDensity": {
-            "value": 37750,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "HIGH",
-              "status": "SOURCED"
-            }
-          },
-          "elderlyPopulation": {
-            "value": 0.08,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "outdoorWorkerExposure": {
-            "value": 0.417,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Labor Statistics",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "builtEnvironmentIndicator": {
-            "value": 0.92,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Urban Morphology Index",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "informalSettlementIndicator": {
-            "value": 0.4,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Slum Clearance Board Survey",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          }
-        }
-      }
-    }
-  },
-  {
-    "zoneId": "zone-05",
-    "zoneName": "Zone V - Royapuram",
-    "wardId": "ward-056",
-    "wardName": "Ward 056 - Chennai Port / Harbour",
-    "latitude": 13.112,
-    "longitude": 80.281,
-    "areaKm2": 1.8,
-    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
-    "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-056",
-    "name": "Ward 056 - Chennai Port / Harbour",
-    "metrics": {
-      "heat": {
-        "lst": {
-          "value": 41.2,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "30m downscaled to Ward-level zonal average",
-            "processingMethod": "Mono-window thermal radiative transfer calculation"
-          },
-          "notes": "Surface temperature observation in Royapuram municipal sector"
-        },
-        "lstNormalized": {
-          "value": 0.8,
+          "value": 0.657,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS",
@@ -6895,254 +7854,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Chennai Port / Harbour"
+          "notes": "Canopy and surface greenness indicator in Perambur Barracks"
         },
         "vegetationDeficitNormalized": {
           "value": 0.95,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vulnerability": {
-        "vulnerabilityScore": {
-          "value": 0.73,
-          "metadata": {
-            "sourceType": "MUNICIPAL_CENSUS",
-            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
-            "confidence": "MEDIUM",
-            "status": "DERIVED",
-            "resolution": "Ward Census Block Aggregate",
-            "processingMethod": "Standardized socio-economic exposure index"
-          },
-          "notes": "Composite socio-economic sensitivity for Ward 056 - Chennai Port / Harbour"
-        },
-        "vulnerabilityComponents": {
-          "populationDensity": {
-            "value": 34350,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "HIGH",
-              "status": "SOURCED"
-            }
-          },
-          "elderlyPopulation": {
-            "value": 0.09,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "outdoorWorkerExposure": {
-            "value": 0.376,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Labor Statistics",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "builtEnvironmentIndicator": {
-            "value": 0.915,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Urban Morphology Index",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "informalSettlementIndicator": {
-            "value": 0.304,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Slum Clearance Board Survey",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          }
-        }
-      }
-    }
-  },
-  {
-    "zoneId": "zone-05",
-    "zoneName": "Zone V - Royapuram",
-    "wardId": "ward-057",
-    "wardName": "Ward 057 - Muthialpet",
-    "latitude": 13.088,
-    "longitude": 80.289,
-    "areaKm2": 2.4,
-    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
-    "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-057",
-    "name": "Ward 057 - Muthialpet",
-    "metrics": {
-      "heat": {
-        "lst": {
-          "value": 39.8,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "30m downscaled to Ward-level zonal average",
-            "processingMethod": "Mono-window thermal radiative transfer calculation"
-          },
-          "notes": "Surface temperature observation in Royapuram municipal sector"
-        },
-        "lstNormalized": {
-          "value": 0.7,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vegetation": {
-        "ndvi": {
-          "value": 0.09,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "10m raster zonal average",
-            "processingMethod": "Normalized Difference NIR/Red band ratio"
-          },
-          "notes": "Canopy and surface greenness indicator in Muthialpet"
-        },
-        "vegetationDeficitNormalized": {
-          "value": 0.911,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vulnerability": {
-        "vulnerabilityScore": {
-          "value": 0.86,
-          "metadata": {
-            "sourceType": "MUNICIPAL_CENSUS",
-            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
-            "confidence": "MEDIUM",
-            "status": "DERIVED",
-            "resolution": "Ward Census Block Aggregate",
-            "processingMethod": "Standardized socio-economic exposure index"
-          },
-          "notes": "Composite socio-economic sensitivity for Ward 057 - Muthialpet"
-        },
-        "vulnerabilityComponents": {
-          "populationDensity": {
-            "value": 39700,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "HIGH",
-              "status": "SOURCED"
-            }
-          },
-          "elderlyPopulation": {
-            "value": 0.1,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "outdoorWorkerExposure": {
-            "value": 0.421,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Labor Statistics",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "builtEnvironmentIndicator": {
-            "value": 0.905,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Urban Morphology Index",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "informalSettlementIndicator": {
-            "value": 0.408,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Slum Clearance Board Survey",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          }
-        }
-      }
-    }
-  },
-  {
-    "zoneId": "zone-05",
-    "zoneName": "Zone V - Royapuram",
-    "wardId": "ward-058",
-    "wardName": "Ward 058 - Sowcarpet North",
-    "latitude": 13.096,
-    "longitude": 80.289,
-    "areaKm2": 3.0,
-    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
-    "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-058",
-    "name": "Ward 058 - Sowcarpet North",
-    "metrics": {
-      "heat": {
-        "lst": {
-          "value": 41.5,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "30m downscaled to Ward-level zonal average",
-            "processingMethod": "Mono-window thermal radiative transfer calculation"
-          },
-          "notes": "Surface temperature observation in Royapuram municipal sector"
-        },
-        "lstNormalized": {
-          "value": 0.821,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vegetation": {
-        "ndvi": {
-          "value": 0.11,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "10m raster zonal average",
-            "processingMethod": "Normalized Difference NIR/Red band ratio"
-          },
-          "notes": "Canopy and surface greenness indicator in Sowcarpet North"
-        },
-        "vegetationDeficitNormalized": {
-          "value": 0.867,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -7162,11 +7877,11 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 058 - Sowcarpet North"
+          "notes": "Composite socio-economic sensitivity for Ward 064 - Perambur Barracks"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 36300,
+            "value": 41100,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -7175,7 +7890,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "elderlyPopulation": {
-            "value": 0.11,
+            "value": 0.08,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -7193,7 +7908,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.895,
+            "value": 0.915,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -7215,21 +7930,21 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     }
   },
   {
-    "zoneId": "zone-05",
-    "zoneName": "Zone V - Royapuram",
-    "wardId": "ward-059",
-    "wardName": "Ward 059 - Sowcarpet South",
-    "latitude": 13.104,
-    "longitude": 80.289,
-    "areaKm2": 3.6,
+    "zoneId": "zone-06",
+    "zoneName": "Zone VI - Thiru-Vi-Ka Nagar",
+    "wardId": "ward-065",
+    "wardName": "Ward 065 - Jamalia",
+    "latitude": 13.106,
+    "longitude": 80.228,
+    "areaKm2": 3.0,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-059",
-    "name": "Ward 059 - Sowcarpet South",
+    "id": "ward-065",
+    "name": "Ward 065 - Jamalia",
     "metrics": {
       "heat": {
         "lst": {
-          "value": 40.1,
+          "value": 40.9,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
@@ -7238,10 +7953,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "30m downscaled to Ward-level zonal average",
             "processingMethod": "Mono-window thermal radiative transfer calculation"
           },
-          "notes": "Surface temperature observation in Royapuram municipal sector"
+          "notes": "Surface temperature observation in Thiru-Vi-Ka Nagar municipal sector"
         },
         "lstNormalized": {
-          "value": 0.721,
+          "value": 0.779,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS",
@@ -7252,7 +7967,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.13,
+          "value": 0.09,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -7261,10 +7976,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Sowcarpet South"
+          "notes": "Canopy and surface greenness indicator in Jamalia"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.822,
+          "value": 0.911,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -7284,11 +7999,11 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 059 - Sowcarpet South"
+          "notes": "Composite socio-economic sensitivity for Ward 065 - Jamalia"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 41650,
+            "value": 46450,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -7297,7 +8012,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "elderlyPopulation": {
-            "value": 0.12,
+            "value": 0.09,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -7315,7 +8030,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.885,
+            "value": 0.905,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -7337,21 +8052,21 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     }
   },
   {
-    "zoneId": "zone-05",
-    "zoneName": "Zone V - Royapuram",
-    "wardId": "ward-060",
-    "wardName": "Ward 060 - Peddanaickenpet",
-    "latitude": 13.112,
-    "longitude": 80.289,
-    "areaKm2": 4.2,
+    "zoneId": "zone-06",
+    "zoneName": "Zone VI - Thiru-Vi-Ka Nagar",
+    "wardId": "ward-066",
+    "wardName": "Ward 066 - Otteri Nalla",
+    "latitude": 13.114,
+    "longitude": 80.228,
+    "areaKm2": 3.6,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-060",
-    "name": "Ward 060 - Peddanaickenpet",
+    "id": "ward-066",
+    "name": "Ward 066 - Otteri Nalla",
     "metrics": {
       "heat": {
         "lst": {
-          "value": 41.8,
+          "value": 39.5,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
@@ -7360,10 +8075,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "30m downscaled to Ward-level zonal average",
             "processingMethod": "Mono-window thermal radiative transfer calculation"
           },
-          "notes": "Surface temperature observation in Royapuram municipal sector"
+          "notes": "Surface temperature observation in Thiru-Vi-Ka Nagar municipal sector"
         },
         "lstNormalized": {
-          "value": 0.843,
+          "value": 0.679,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS",
@@ -7374,7 +8089,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.15,
+          "value": 0.11,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -7383,10 +8098,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Peddanaickenpet"
+          "notes": "Canopy and surface greenness indicator in Otteri Nalla"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.778,
+          "value": 0.867,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -7406,11 +8121,11 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 060 - Peddanaickenpet"
+          "notes": "Composite socio-economic sensitivity for Ward 066 - Otteri Nalla"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 38250,
+            "value": 34250,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -7419,7 +8134,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "elderlyPopulation": {
-            "value": 0.13,
+            "value": 0.1,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -7437,7 +8152,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.875,
+            "value": 0.895,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -7459,21 +8174,21 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     }
   },
   {
-    "zoneId": "zone-05",
-    "zoneName": "Zone V - Royapuram",
-    "wardId": "ward-061",
-    "wardName": "Ward 061 - Seven Wells",
-    "latitude": 13.088,
-    "longitude": 80.297,
-    "areaKm2": 4.8,
+    "zoneId": "zone-06",
+    "zoneName": "Zone VI - Thiru-Vi-Ka Nagar",
+    "wardId": "ward-067",
+    "wardName": "Ward 067 - Pattalam",
+    "latitude": 13.122,
+    "longitude": 80.228,
+    "areaKm2": 4.2,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-061",
-    "name": "Ward 061 - Seven Wells",
+    "id": "ward-067",
+    "name": "Ward 067 - Pattalam",
     "metrics": {
       "heat": {
         "lst": {
-          "value": 40.4,
+          "value": 41.2,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
@@ -7482,10 +8197,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "30m downscaled to Ward-level zonal average",
             "processingMethod": "Mono-window thermal radiative transfer calculation"
           },
-          "notes": "Surface temperature observation in Royapuram municipal sector"
+          "notes": "Surface temperature observation in Thiru-Vi-Ka Nagar municipal sector"
         },
         "lstNormalized": {
-          "value": 0.743,
+          "value": 0.8,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS",
@@ -7496,7 +8211,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.17,
+          "value": 0.13,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -7505,10 +8220,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Seven Wells"
+          "notes": "Canopy and surface greenness indicator in Pattalam"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.733,
+          "value": 0.822,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -7528,11 +8243,11 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 061 - Seven Wells"
+          "notes": "Composite socio-economic sensitivity for Ward 067 - Pattalam"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 43600,
+            "value": 39600,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -7541,7 +8256,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "elderlyPopulation": {
-            "value": 0.14,
+            "value": 0.11,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -7559,7 +8274,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.865,
+            "value": 0.885,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -7581,21 +8296,21 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     }
   },
   {
-    "zoneId": "zone-05",
-    "zoneName": "Zone V - Royapuram",
-    "wardId": "ward-062",
-    "wardName": "Ward 062 - Broadway / Esplanade",
-    "latitude": 13.096,
-    "longitude": 80.297,
-    "areaKm2": 5.4,
+    "zoneId": "zone-06",
+    "zoneName": "Zone VI - Thiru-Vi-Ka Nagar",
+    "wardId": "ward-068",
+    "wardName": "Ward 068 - Pulianthope High Road",
+    "latitude": 13.098,
+    "longitude": 80.236,
+    "areaKm2": 4.8,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-062",
-    "name": "Ward 062 - Broadway / Esplanade",
+    "id": "ward-068",
+    "name": "Ward 068 - Pulianthope High Road",
     "metrics": {
       "heat": {
         "lst": {
-          "value": 39.0,
+          "value": 39.8,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
@@ -7604,10 +8319,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "30m downscaled to Ward-level zonal average",
             "processingMethod": "Mono-window thermal radiative transfer calculation"
           },
-          "notes": "Surface temperature observation in Royapuram municipal sector"
+          "notes": "Surface temperature observation in Thiru-Vi-Ka Nagar municipal sector"
         },
         "lstNormalized": {
-          "value": 0.643,
+          "value": 0.7,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS",
@@ -7618,7 +8333,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.19,
+          "value": 0.15,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -7627,10 +8342,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Broadway / Esplanade"
+          "notes": "Canopy and surface greenness indicator in Pulianthope High Road"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.689,
+          "value": 0.778,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -7650,11 +8365,11 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 062 - Broadway / Esplanade"
+          "notes": "Composite socio-economic sensitivity for Ward 068 - Pulianthope High Road"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 40200,
+            "value": 36200,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -7663,7 +8378,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "elderlyPopulation": {
-            "value": 0.15,
+            "value": 0.12,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -7681,7 +8396,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.855,
+            "value": 0.875,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -7703,21 +8418,21 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     }
   },
   {
-    "zoneId": "zone-05",
-    "zoneName": "Zone V - Royapuram",
-    "wardId": "ward-063",
-    "wardName": "Ward 063 - Choolai North",
-    "latitude": 13.104,
-    "longitude": 80.297,
-    "areaKm2": 1.8,
+    "zoneId": "zone-06",
+    "zoneName": "Zone VI - Thiru-Vi-Ka Nagar",
+    "wardId": "ward-069",
+    "wardName": "Ward 069 - Strahans Road",
+    "latitude": 13.106,
+    "longitude": 80.236,
+    "areaKm2": 5.4,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-063",
-    "name": "Ward 063 - Choolai North",
+    "id": "ward-069",
+    "name": "Ward 069 - Strahans Road",
     "metrics": {
       "heat": {
         "lst": {
-          "value": 40.7,
+          "value": 41.5,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
@@ -7726,10 +8441,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "30m downscaled to Ward-level zonal average",
             "processingMethod": "Mono-window thermal radiative transfer calculation"
           },
-          "notes": "Surface temperature observation in Royapuram municipal sector"
+          "notes": "Surface temperature observation in Thiru-Vi-Ka Nagar municipal sector"
         },
         "lstNormalized": {
-          "value": 0.764,
+          "value": 0.821,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS",
@@ -7740,7 +8455,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.06,
+          "value": 0.17,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -7749,10 +8464,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Choolai North"
+          "notes": "Canopy and surface greenness indicator in Strahans Road"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.95,
+          "value": 0.733,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -7772,11 +8487,11 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 063 - Choolai North"
+          "notes": "Composite socio-economic sensitivity for Ward 069 - Strahans Road"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 45550,
+            "value": 41550,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -7785,7 +8500,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "elderlyPopulation": {
-            "value": 0.07,
+            "value": 0.13,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -7803,7 +8518,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.92,
+            "value": 0.865,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -7827,19 +8542,19 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
   {
     "zoneId": "zone-06",
     "zoneName": "Zone VI - Thiru-Vi-Ka Nagar",
-    "wardId": "ward-064",
-    "wardName": "Ward 064 - Kolathur North",
-    "latitude": 13.103,
-    "longitude": 80.228,
-    "areaKm2": 2.4,
+    "wardId": "ward-070",
+    "wardName": "Ward 070 - Perambur Loco Works",
+    "latitude": 13.114,
+    "longitude": 80.236,
+    "areaKm2": 1.8,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-064",
-    "name": "Ward 064 - Kolathur North",
+    "id": "ward-070",
+    "name": "Ward 070 - Perambur Loco Works",
     "metrics": {
       "heat": {
         "lst": {
-          "value": 40.0,
+          "value": 40.1,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
@@ -7851,7 +8566,495 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
           "notes": "Surface temperature observation in Thiru-Vi-Ka Nagar municipal sector"
         },
         "lstNormalized": {
-          "value": 0.714,
+          "value": 0.721,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vegetation": {
+        "ndvi": {
+          "value": 0.19,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "10m raster zonal average",
+            "processingMethod": "Normalized Difference NIR/Red band ratio"
+          },
+          "notes": "Canopy and surface greenness indicator in Perambur Loco Works"
+        },
+        "vegetationDeficitNormalized": {
+          "value": 0.689,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vulnerability": {
+        "vulnerabilityScore": {
+          "value": 0.77,
+          "metadata": {
+            "sourceType": "MUNICIPAL_CENSUS",
+            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
+            "confidence": "MEDIUM",
+            "status": "DERIVED",
+            "resolution": "Ward Census Block Aggregate",
+            "processingMethod": "Standardized socio-economic exposure index"
+          },
+          "notes": "Composite socio-economic sensitivity for Ward 070 - Perambur Loco Works"
+        },
+        "vulnerabilityComponents": {
+          "populationDensity": {
+            "value": 38150,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "HIGH",
+              "status": "SOURCED"
+            }
+          },
+          "elderlyPopulation": {
+            "value": 0.14,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "outdoorWorkerExposure": {
+            "value": 0.389,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Labor Statistics",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "builtEnvironmentIndicator": {
+            "value": 0.855,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Urban Morphology Index",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "informalSettlementIndicator": {
+            "value": 0.336,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Slum Clearance Board Survey",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "zoneId": "zone-06",
+    "zoneName": "Zone VI - Thiru-Vi-Ka Nagar",
+    "wardId": "ward-071",
+    "wardName": "Ward 071 - Perambur Carriage Works",
+    "latitude": 13.122,
+    "longitude": 80.236,
+    "areaKm2": 2.4,
+    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
+    "lastUpdated": "2026-03-01T00:00:00Z",
+    "id": "ward-071",
+    "name": "Ward 071 - Perambur Carriage Works",
+    "metrics": {
+      "heat": {
+        "lst": {
+          "value": 41.8,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "30m downscaled to Ward-level zonal average",
+            "processingMethod": "Mono-window thermal radiative transfer calculation"
+          },
+          "notes": "Surface temperature observation in Thiru-Vi-Ka Nagar municipal sector"
+        },
+        "lstNormalized": {
+          "value": 0.843,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vegetation": {
+        "ndvi": {
+          "value": 0.21,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "10m raster zonal average",
+            "processingMethod": "Normalized Difference NIR/Red band ratio"
+          },
+          "notes": "Canopy and surface greenness indicator in Perambur Carriage Works"
+        },
+        "vegetationDeficitNormalized": {
+          "value": 0.644,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vulnerability": {
+        "vulnerabilityScore": {
+          "value": 0.9,
+          "metadata": {
+            "sourceType": "MUNICIPAL_CENSUS",
+            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
+            "confidence": "MEDIUM",
+            "status": "DERIVED",
+            "resolution": "Ward Census Block Aggregate",
+            "processingMethod": "Standardized socio-economic exposure index"
+          },
+          "notes": "Composite socio-economic sensitivity for Ward 071 - Perambur Carriage Works"
+        },
+        "vulnerabilityComponents": {
+          "populationDensity": {
+            "value": 43500,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "HIGH",
+              "status": "SOURCED"
+            }
+          },
+          "elderlyPopulation": {
+            "value": 0.15,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "outdoorWorkerExposure": {
+            "value": 0.435,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Labor Statistics",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "builtEnvironmentIndicator": {
+            "value": 0.845,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Urban Morphology Index",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "informalSettlementIndicator": {
+            "value": 0.44,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Slum Clearance Board Survey",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "zoneId": "zone-06",
+    "zoneName": "Zone VI - Thiru-Vi-Ka Nagar",
+    "wardId": "ward-072",
+    "wardName": "Ward 072 - Sembium",
+    "latitude": 13.098,
+    "longitude": 80.244,
+    "areaKm2": 3.0,
+    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
+    "lastUpdated": "2026-03-01T00:00:00Z",
+    "id": "ward-072",
+    "name": "Ward 072 - Sembium",
+    "metrics": {
+      "heat": {
+        "lst": {
+          "value": 40.4,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "30m downscaled to Ward-level zonal average",
+            "processingMethod": "Mono-window thermal radiative transfer calculation"
+          },
+          "notes": "Surface temperature observation in Thiru-Vi-Ka Nagar municipal sector"
+        },
+        "lstNormalized": {
+          "value": 0.743,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vegetation": {
+        "ndvi": {
+          "value": 0.23,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "10m raster zonal average",
+            "processingMethod": "Normalized Difference NIR/Red band ratio"
+          },
+          "notes": "Canopy and surface greenness indicator in Sembium"
+        },
+        "vegetationDeficitNormalized": {
+          "value": 0.6,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vulnerability": {
+        "vulnerabilityScore": {
+          "value": 0.78,
+          "metadata": {
+            "sourceType": "MUNICIPAL_CENSUS",
+            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
+            "confidence": "MEDIUM",
+            "status": "DERIVED",
+            "resolution": "Ward Census Block Aggregate",
+            "processingMethod": "Standardized socio-economic exposure index"
+          },
+          "notes": "Composite socio-economic sensitivity for Ward 072 - Sembium"
+        },
+        "vulnerabilityComponents": {
+          "populationDensity": {
+            "value": 40100,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "HIGH",
+              "status": "SOURCED"
+            }
+          },
+          "elderlyPopulation": {
+            "value": 0.07,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "outdoorWorkerExposure": {
+            "value": 0.393,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Labor Statistics",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "builtEnvironmentIndicator": {
+            "value": 0.835,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Urban Morphology Index",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "informalSettlementIndicator": {
+            "value": 0.344,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Slum Clearance Board Survey",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "zoneId": "zone-06",
+    "zoneName": "Zone VI - Thiru-Vi-Ka Nagar",
+    "wardId": "ward-073",
+    "wardName": "Ward 073 - Aynavaram Bus Depot",
+    "latitude": 13.106,
+    "longitude": 80.244,
+    "areaKm2": 3.6,
+    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
+    "lastUpdated": "2026-03-01T00:00:00Z",
+    "id": "ward-073",
+    "name": "Ward 073 - Aynavaram Bus Depot",
+    "metrics": {
+      "heat": {
+        "lst": {
+          "value": 39.0,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "30m downscaled to Ward-level zonal average",
+            "processingMethod": "Mono-window thermal radiative transfer calculation"
+          },
+          "notes": "Surface temperature observation in Thiru-Vi-Ka Nagar municipal sector"
+        },
+        "lstNormalized": {
+          "value": 0.643,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vegetation": {
+        "ndvi": {
+          "value": 0.25,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "10m raster zonal average",
+            "processingMethod": "Normalized Difference NIR/Red band ratio"
+          },
+          "notes": "Canopy and surface greenness indicator in Aynavaram Bus Depot"
+        },
+        "vegetationDeficitNormalized": {
+          "value": 0.556,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vulnerability": {
+        "vulnerabilityScore": {
+          "value": 0.91,
+          "metadata": {
+            "sourceType": "MUNICIPAL_CENSUS",
+            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
+            "confidence": "MEDIUM",
+            "status": "DERIVED",
+            "resolution": "Ward Census Block Aggregate",
+            "processingMethod": "Standardized socio-economic exposure index"
+          },
+          "notes": "Composite socio-economic sensitivity for Ward 073 - Aynavaram Bus Depot"
+        },
+        "vulnerabilityComponents": {
+          "populationDensity": {
+            "value": 45450,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "HIGH",
+              "status": "SOURCED"
+            }
+          },
+          "elderlyPopulation": {
+            "value": 0.08,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "outdoorWorkerExposure": {
+            "value": 0.439,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Labor Statistics",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "builtEnvironmentIndicator": {
+            "value": 0.825,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Urban Morphology Index",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "informalSettlementIndicator": {
+            "value": 0.448,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Slum Clearance Board Survey",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "zoneId": "zone-06",
+    "zoneName": "Zone VI - Thiru-Vi-Ka Nagar",
+    "wardId": "ward-074",
+    "wardName": "Ward 074 - Aynavaram Market",
+    "latitude": 13.114,
+    "longitude": 80.244,
+    "areaKm2": 4.2,
+    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
+    "lastUpdated": "2026-03-01T00:00:00Z",
+    "id": "ward-074",
+    "name": "Ward 074 - Aynavaram Market",
+    "metrics": {
+      "heat": {
+        "lst": {
+          "value": 40.7,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "30m downscaled to Ward-level zonal average",
+            "processingMethod": "Mono-window thermal radiative transfer calculation"
+          },
+          "notes": "Surface temperature observation in Thiru-Vi-Ka Nagar municipal sector"
+        },
+        "lstNormalized": {
+          "value": 0.764,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS",
@@ -7871,7 +9074,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Kolathur North"
+          "notes": "Canopy and surface greenness indicator in Aynavaram Market"
         },
         "vegetationDeficitNormalized": {
           "value": 0.95,
@@ -7894,11 +9097,11 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 064 - Kolathur North"
+          "notes": "Composite socio-economic sensitivity for Ward 074 - Aynavaram Market"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 42850,
+            "value": 42050,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -7907,7 +9110,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "elderlyPopulation": {
-            "value": 0.08,
+            "value": 0.09,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -7949,19 +9152,19 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
   {
     "zoneId": "zone-06",
     "zoneName": "Zone VI - Thiru-Vi-Ka Nagar",
-    "wardId": "ward-065",
-    "wardName": "Ward 065 - Kolathur South",
-    "latitude": 13.111,
-    "longitude": 80.228,
-    "areaKm2": 3.0,
+    "wardId": "ward-075",
+    "wardName": "Ward 075 - Thiru-Vi-Ka Nagar Central",
+    "latitude": 13.122,
+    "longitude": 80.244,
+    "areaKm2": 4.8,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-065",
-    "name": "Ward 065 - Kolathur South",
+    "id": "ward-075",
+    "name": "Ward 075 - Thiru-Vi-Ka Nagar Central",
     "metrics": {
       "heat": {
         "lst": {
-          "value": 41.7,
+          "value": 39.3,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
@@ -7973,7 +9176,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
           "notes": "Surface temperature observation in Thiru-Vi-Ka Nagar municipal sector"
         },
         "lstNormalized": {
-          "value": 0.836,
+          "value": 0.664,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS",
@@ -7984,7 +9187,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.07,
+          "value": 0.08,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -7993,10 +9196,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Kolathur South"
+          "notes": "Canopy and surface greenness indicator in Thiru-Vi-Ka Nagar Central"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.95,
+          "value": 0.933,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -8007,7 +9210,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vulnerability": {
         "vulnerabilityScore": {
-          "value": 0.92,
+          "value": 0.67,
           "metadata": {
             "sourceType": "MUNICIPAL_CENSUS",
             "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
@@ -8016,11 +9219,11 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 065 - Kolathur South"
+          "notes": "Composite socio-economic sensitivity for Ward 075 - Thiru-Vi-Ka Nagar Central"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 48200,
+            "value": 38650,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -8029,7 +9232,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "elderlyPopulation": {
-            "value": 0.09,
+            "value": 0.1,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -8038,7 +9241,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "outdoorWorkerExposure": {
-            "value": 0.442,
+            "value": 0.354,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Labor Statistics",
@@ -8047,7 +9250,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.915,
+            "value": 0.91,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -8056,7 +9259,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "informalSettlementIndicator": {
-            "value": 0.456,
+            "value": 0.256,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Slum Clearance Board Survey",
@@ -8071,19 +9274,19 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
   {
     "zoneId": "zone-06",
     "zoneName": "Zone VI - Thiru-Vi-Ka Nagar",
-    "wardId": "ward-066",
-    "wardName": "Ward 066 - Peravallur",
-    "latitude": 13.119,
-    "longitude": 80.228,
-    "areaKm2": 3.6,
+    "wardId": "ward-076",
+    "wardName": "Ward 076 - Vasantha Nagar",
+    "latitude": 13.098,
+    "longitude": 80.252,
+    "areaKm2": 5.4,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-066",
-    "name": "Ward 066 - Peravallur",
+    "id": "ward-076",
+    "name": "Ward 076 - Vasantha Nagar",
     "metrics": {
       "heat": {
         "lst": {
-          "value": 40.3,
+          "value": 41.0,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
@@ -8095,7 +9298,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
           "notes": "Surface temperature observation in Thiru-Vi-Ka Nagar municipal sector"
         },
         "lstNormalized": {
-          "value": 0.736,
+          "value": 0.786,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS",
@@ -8106,7 +9309,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.09,
+          "value": 0.1,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -8115,10 +9318,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Peravallur"
+          "notes": "Canopy and surface greenness indicator in Vasantha Nagar"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.911,
+          "value": 0.889,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -8138,11 +9341,11 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 066 - Peravallur"
+          "notes": "Composite socio-economic sensitivity for Ward 076 - Vasantha Nagar"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 36000,
+            "value": 44000,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -8151,7 +9354,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "elderlyPopulation": {
-            "value": 0.1,
+            "value": 0.11,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -8169,7 +9372,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.905,
+            "value": 0.9,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -8193,19 +9396,19 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
   {
     "zoneId": "zone-06",
     "zoneName": "Zone VI - Thiru-Vi-Ka Nagar",
-    "wardId": "ward-067",
-    "wardName": "Ward 067 - Jawahar Nagar",
-    "latitude": 13.127,
-    "longitude": 80.228,
-    "areaKm2": 4.2,
+    "wardId": "ward-077",
+    "wardName": "Ward 077 - Agaram",
+    "latitude": 13.106,
+    "longitude": 80.252,
+    "areaKm2": 1.8,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-067",
-    "name": "Ward 067 - Jawahar Nagar",
+    "id": "ward-077",
+    "name": "Ward 077 - Agaram",
     "metrics": {
       "heat": {
         "lst": {
-          "value": 42.0,
+          "value": 39.6,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
@@ -8217,7 +9420,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
           "notes": "Surface temperature observation in Thiru-Vi-Ka Nagar municipal sector"
         },
         "lstNormalized": {
-          "value": 0.857,
+          "value": 0.686,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS",
@@ -8228,7 +9431,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.11,
+          "value": 0.12,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -8237,10 +9440,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Jawahar Nagar"
+          "notes": "Canopy and surface greenness indicator in Agaram"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.867,
+          "value": 0.844,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -8251,7 +9454,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vulnerability": {
         "vulnerabilityScore": {
-          "value": 0.92,
+          "value": 0.68,
           "metadata": {
             "sourceType": "MUNICIPAL_CENSUS",
             "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
@@ -8260,11 +9463,11 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 067 - Jawahar Nagar"
+          "notes": "Composite socio-economic sensitivity for Ward 077 - Agaram"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 41000,
+            "value": 31800,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -8273,7 +9476,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "elderlyPopulation": {
-            "value": 0.11,
+            "value": 0.12,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -8282,7 +9485,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "outdoorWorkerExposure": {
-            "value": 0.442,
+            "value": 0.358,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Labor Statistics",
@@ -8291,7 +9494,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.895,
+            "value": 0.89,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -8300,7 +9503,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "informalSettlementIndicator": {
-            "value": 0.456,
+            "value": 0.264,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Slum Clearance Board Survey",
@@ -8315,19 +9518,19 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
   {
     "zoneId": "zone-06",
     "zoneName": "Zone VI - Thiru-Vi-Ka Nagar",
-    "wardId": "ward-068",
-    "wardName": "Ward 068 - Sembium",
-    "latitude": 13.103,
-    "longitude": 80.236,
-    "areaKm2": 4.8,
+    "wardId": "ward-078",
+    "wardName": "Ward 078 - GKM Colony",
+    "latitude": 13.114,
+    "longitude": 80.252,
+    "areaKm2": 2.4,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-068",
-    "name": "Ward 068 - Sembium",
+    "id": "ward-078",
+    "name": "Ward 078 - GKM Colony",
     "metrics": {
       "heat": {
         "lst": {
-          "value": 40.6,
+          "value": 41.3,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
@@ -8339,7 +9542,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
           "notes": "Surface temperature observation in Thiru-Vi-Ka Nagar municipal sector"
         },
         "lstNormalized": {
-          "value": 0.757,
+          "value": 0.807,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS",
@@ -8350,7 +9553,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.13,
+          "value": 0.14,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -8359,10 +9562,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Sembium"
+          "notes": "Canopy and surface greenness indicator in GKM Colony"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.822,
+          "value": 0.8,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -8382,11 +9585,11 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 068 - Sembium"
+          "notes": "Composite socio-economic sensitivity for Ward 078 - GKM Colony"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 37950,
+            "value": 37150,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -8395,7 +9598,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "elderlyPopulation": {
-            "value": 0.12,
+            "value": 0.13,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -8413,7 +9616,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.885,
+            "value": 0.88,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -8435,1237 +9638,17 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     }
   },
   {
-    "zoneId": "zone-06",
-    "zoneName": "Zone VI - Thiru-Vi-Ka Nagar",
-    "wardId": "ward-069",
-    "wardName": "Ward 069 - Perambur Loco Works",
-    "latitude": 13.111,
-    "longitude": 80.236,
-    "areaKm2": 5.4,
-    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
-    "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-069",
-    "name": "Ward 069 - Perambur Loco Works",
-    "metrics": {
-      "heat": {
-        "lst": {
-          "value": 42.3,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "30m downscaled to Ward-level zonal average",
-            "processingMethod": "Mono-window thermal radiative transfer calculation"
-          },
-          "notes": "Surface temperature observation in Thiru-Vi-Ka Nagar municipal sector"
-        },
-        "lstNormalized": {
-          "value": 0.879,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vegetation": {
-        "ndvi": {
-          "value": 0.15,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "10m raster zonal average",
-            "processingMethod": "Normalized Difference NIR/Red band ratio"
-          },
-          "notes": "Canopy and surface greenness indicator in Perambur Loco Works"
-        },
-        "vegetationDeficitNormalized": {
-          "value": 0.778,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vulnerability": {
-        "vulnerabilityScore": {
-          "value": 0.92,
-          "metadata": {
-            "sourceType": "MUNICIPAL_CENSUS",
-            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
-            "confidence": "MEDIUM",
-            "status": "DERIVED",
-            "resolution": "Ward Census Block Aggregate",
-            "processingMethod": "Standardized socio-economic exposure index"
-          },
-          "notes": "Composite socio-economic sensitivity for Ward 069 - Perambur Loco Works"
-        },
-        "vulnerabilityComponents": {
-          "populationDensity": {
-            "value": 42600,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "HIGH",
-              "status": "SOURCED"
-            }
-          },
-          "elderlyPopulation": {
-            "value": 0.13,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "outdoorWorkerExposure": {
-            "value": 0.442,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Labor Statistics",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "builtEnvironmentIndicator": {
-            "value": 0.875,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Urban Morphology Index",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "informalSettlementIndicator": {
-            "value": 0.456,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Slum Clearance Board Survey",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          }
-        }
-      }
-    }
-  },
-  {
-    "zoneId": "zone-06",
-    "zoneName": "Zone VI - Thiru-Vi-Ka Nagar",
-    "wardId": "ward-070",
-    "wardName": "Ward 070 - Perambur Carriage Works",
-    "latitude": 13.119,
-    "longitude": 80.236,
-    "areaKm2": 1.8,
-    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
-    "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-070",
-    "name": "Ward 070 - Perambur Carriage Works",
-    "metrics": {
-      "heat": {
-        "lst": {
-          "value": 40.9,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "30m downscaled to Ward-level zonal average",
-            "processingMethod": "Mono-window thermal radiative transfer calculation"
-          },
-          "notes": "Surface temperature observation in Thiru-Vi-Ka Nagar municipal sector"
-        },
-        "lstNormalized": {
-          "value": 0.779,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vegetation": {
-        "ndvi": {
-          "value": 0.17,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "10m raster zonal average",
-            "processingMethod": "Normalized Difference NIR/Red band ratio"
-          },
-          "notes": "Canopy and surface greenness indicator in Perambur Carriage Works"
-        },
-        "vegetationDeficitNormalized": {
-          "value": 0.733,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vulnerability": {
-        "vulnerabilityScore": {
-          "value": 0.82,
-          "metadata": {
-            "sourceType": "MUNICIPAL_CENSUS",
-            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
-            "confidence": "MEDIUM",
-            "status": "DERIVED",
-            "resolution": "Ward Census Block Aggregate",
-            "processingMethod": "Standardized socio-economic exposure index"
-          },
-          "notes": "Composite socio-economic sensitivity for Ward 070 - Perambur Carriage Works"
-        },
-        "vulnerabilityComponents": {
-          "populationDensity": {
-            "value": 39900,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "HIGH",
-              "status": "SOURCED"
-            }
-          },
-          "elderlyPopulation": {
-            "value": 0.14,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "outdoorWorkerExposure": {
-            "value": 0.407,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Labor Statistics",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "builtEnvironmentIndicator": {
-            "value": 0.865,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Urban Morphology Index",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "informalSettlementIndicator": {
-            "value": 0.376,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Slum Clearance Board Survey",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          }
-        }
-      }
-    }
-  },
-  {
-    "zoneId": "zone-06",
-    "zoneName": "Zone VI - Thiru-Vi-Ka Nagar",
-    "wardId": "ward-071",
-    "wardName": "Ward 071 - Vyasarpadi Central",
-    "latitude": 13.127,
-    "longitude": 80.236,
-    "areaKm2": 2.4,
-    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
-    "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-071",
-    "name": "Ward 071 - Vyasarpadi Central",
-    "metrics": {
-      "heat": {
-        "lst": {
-          "value": 42.6,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "30m downscaled to Ward-level zonal average",
-            "processingMethod": "Mono-window thermal radiative transfer calculation"
-          },
-          "notes": "Surface temperature observation in Thiru-Vi-Ka Nagar municipal sector"
-        },
-        "lstNormalized": {
-          "value": 0.9,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vegetation": {
-        "ndvi": {
-          "value": 0.19,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "10m raster zonal average",
-            "processingMethod": "Normalized Difference NIR/Red band ratio"
-          },
-          "notes": "Canopy and surface greenness indicator in Vyasarpadi Central"
-        },
-        "vegetationDeficitNormalized": {
-          "value": 0.689,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vulnerability": {
-        "vulnerabilityScore": {
-          "value": 0.92,
-          "metadata": {
-            "sourceType": "MUNICIPAL_CENSUS",
-            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
-            "confidence": "MEDIUM",
-            "status": "DERIVED",
-            "resolution": "Ward Census Block Aggregate",
-            "processingMethod": "Standardized socio-economic exposure index"
-          },
-          "notes": "Composite socio-economic sensitivity for Ward 071 - Vyasarpadi Central"
-        },
-        "vulnerabilityComponents": {
-          "populationDensity": {
-            "value": 44200,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "HIGH",
-              "status": "SOURCED"
-            }
-          },
-          "elderlyPopulation": {
-            "value": 0.15,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "outdoorWorkerExposure": {
-            "value": 0.442,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Labor Statistics",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "builtEnvironmentIndicator": {
-            "value": 0.855,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Urban Morphology Index",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "informalSettlementIndicator": {
-            "value": 0.456,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Slum Clearance Board Survey",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          }
-        }
-      }
-    }
-  },
-  {
-    "zoneId": "zone-06",
-    "zoneName": "Zone VI - Thiru-Vi-Ka Nagar",
-    "wardId": "ward-072",
-    "wardName": "Ward 072 - Pulianthope North",
-    "latitude": 13.103,
-    "longitude": 80.244,
-    "areaKm2": 3.0,
-    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
-    "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-072",
-    "name": "Ward 072 - Pulianthope North",
-    "metrics": {
-      "heat": {
-        "lst": {
-          "value": 41.2,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "30m downscaled to Ward-level zonal average",
-            "processingMethod": "Mono-window thermal radiative transfer calculation"
-          },
-          "notes": "Surface temperature observation in Thiru-Vi-Ka Nagar municipal sector"
-        },
-        "lstNormalized": {
-          "value": 0.8,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vegetation": {
-        "ndvi": {
-          "value": 0.21,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "10m raster zonal average",
-            "processingMethod": "Normalized Difference NIR/Red band ratio"
-          },
-          "notes": "Canopy and surface greenness indicator in Pulianthope North"
-        },
-        "vegetationDeficitNormalized": {
-          "value": 0.644,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vulnerability": {
-        "vulnerabilityScore": {
-          "value": 0.83,
-          "metadata": {
-            "sourceType": "MUNICIPAL_CENSUS",
-            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
-            "confidence": "MEDIUM",
-            "status": "DERIVED",
-            "resolution": "Ward Census Block Aggregate",
-            "processingMethod": "Standardized socio-economic exposure index"
-          },
-          "notes": "Composite socio-economic sensitivity for Ward 072 - Pulianthope North"
-        },
-        "vulnerabilityComponents": {
-          "populationDensity": {
-            "value": 41850,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "HIGH",
-              "status": "SOURCED"
-            }
-          },
-          "elderlyPopulation": {
-            "value": 0.07,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "outdoorWorkerExposure": {
-            "value": 0.41,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Labor Statistics",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "builtEnvironmentIndicator": {
-            "value": 0.845,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Urban Morphology Index",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "informalSettlementIndicator": {
-            "value": 0.384,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Slum Clearance Board Survey",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          }
-        }
-      }
-    }
-  },
-  {
-    "zoneId": "zone-06",
-    "zoneName": "Zone VI - Thiru-Vi-Ka Nagar",
-    "wardId": "ward-073",
-    "wardName": "Ward 073 - Pulianthope South",
-    "latitude": 13.111,
-    "longitude": 80.244,
-    "areaKm2": 3.6,
-    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
-    "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-073",
-    "name": "Ward 073 - Pulianthope South",
-    "metrics": {
-      "heat": {
-        "lst": {
-          "value": 39.8,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "30m downscaled to Ward-level zonal average",
-            "processingMethod": "Mono-window thermal radiative transfer calculation"
-          },
-          "notes": "Surface temperature observation in Thiru-Vi-Ka Nagar municipal sector"
-        },
-        "lstNormalized": {
-          "value": 0.7,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vegetation": {
-        "ndvi": {
-          "value": 0.23,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "10m raster zonal average",
-            "processingMethod": "Normalized Difference NIR/Red band ratio"
-          },
-          "notes": "Canopy and surface greenness indicator in Pulianthope South"
-        },
-        "vegetationDeficitNormalized": {
-          "value": 0.6,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vulnerability": {
-        "vulnerabilityScore": {
-          "value": 0.92,
-          "metadata": {
-            "sourceType": "MUNICIPAL_CENSUS",
-            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
-            "confidence": "MEDIUM",
-            "status": "DERIVED",
-            "resolution": "Ward Census Block Aggregate",
-            "processingMethod": "Standardized socio-economic exposure index"
-          },
-          "notes": "Composite socio-economic sensitivity for Ward 073 - Pulianthope South"
-        },
-        "vulnerabilityComponents": {
-          "populationDensity": {
-            "value": 45800,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "HIGH",
-              "status": "SOURCED"
-            }
-          },
-          "elderlyPopulation": {
-            "value": 0.08,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "outdoorWorkerExposure": {
-            "value": 0.442,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Labor Statistics",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "builtEnvironmentIndicator": {
-            "value": 0.835,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Urban Morphology Index",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "informalSettlementIndicator": {
-            "value": 0.456,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Slum Clearance Board Survey",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          }
-        }
-      }
-    }
-  },
-  {
-    "zoneId": "zone-06",
-    "zoneName": "Zone VI - Thiru-Vi-Ka Nagar",
-    "wardId": "ward-074",
-    "wardName": "Ward 074 - Strahans Road",
-    "latitude": 13.119,
-    "longitude": 80.244,
-    "areaKm2": 4.2,
-    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
-    "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-074",
-    "name": "Ward 074 - Strahans Road",
-    "metrics": {
-      "heat": {
-        "lst": {
-          "value": 41.5,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "30m downscaled to Ward-level zonal average",
-            "processingMethod": "Mono-window thermal radiative transfer calculation"
-          },
-          "notes": "Surface temperature observation in Thiru-Vi-Ka Nagar municipal sector"
-        },
-        "lstNormalized": {
-          "value": 0.821,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vegetation": {
-        "ndvi": {
-          "value": 0.06,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "10m raster zonal average",
-            "processingMethod": "Normalized Difference NIR/Red band ratio"
-          },
-          "notes": "Canopy and surface greenness indicator in Strahans Road"
-        },
-        "vegetationDeficitNormalized": {
-          "value": 0.95,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vulnerability": {
-        "vulnerabilityScore": {
-          "value": 0.84,
-          "metadata": {
-            "sourceType": "MUNICIPAL_CENSUS",
-            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
-            "confidence": "MEDIUM",
-            "status": "DERIVED",
-            "resolution": "Ward Census Block Aggregate",
-            "processingMethod": "Standardized socio-economic exposure index"
-          },
-          "notes": "Composite socio-economic sensitivity for Ward 074 - Strahans Road"
-        },
-        "vulnerabilityComponents": {
-          "populationDensity": {
-            "value": 43800,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "HIGH",
-              "status": "SOURCED"
-            }
-          },
-          "elderlyPopulation": {
-            "value": 0.09,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "outdoorWorkerExposure": {
-            "value": 0.414,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Labor Statistics",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "builtEnvironmentIndicator": {
-            "value": 0.92,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Urban Morphology Index",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "informalSettlementIndicator": {
-            "value": 0.392,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Slum Clearance Board Survey",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          }
-        }
-      }
-    }
-  },
-  {
-    "zoneId": "zone-06",
-    "zoneName": "Zone VI - Thiru-Vi-Ka Nagar",
-    "wardId": "ward-075",
-    "wardName": "Ward 075 - Pattalam",
-    "latitude": 13.127,
-    "longitude": 80.244,
-    "areaKm2": 4.8,
-    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
-    "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-075",
-    "name": "Ward 075 - Pattalam",
-    "metrics": {
-      "heat": {
-        "lst": {
-          "value": 40.1,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "30m downscaled to Ward-level zonal average",
-            "processingMethod": "Mono-window thermal radiative transfer calculation"
-          },
-          "notes": "Surface temperature observation in Thiru-Vi-Ka Nagar municipal sector"
-        },
-        "lstNormalized": {
-          "value": 0.721,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vegetation": {
-        "ndvi": {
-          "value": 0.06,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "10m raster zonal average",
-            "processingMethod": "Normalized Difference NIR/Red band ratio"
-          },
-          "notes": "Canopy and surface greenness indicator in Pattalam"
-        },
-        "vegetationDeficitNormalized": {
-          "value": 0.95,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vulnerability": {
-        "vulnerabilityScore": {
-          "value": 0.72,
-          "metadata": {
-            "sourceType": "MUNICIPAL_CENSUS",
-            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
-            "confidence": "MEDIUM",
-            "status": "DERIVED",
-            "resolution": "Ward Census Block Aggregate",
-            "processingMethod": "Standardized socio-economic exposure index"
-          },
-          "notes": "Composite socio-economic sensitivity for Ward 075 - Pattalam"
-        },
-        "vulnerabilityComponents": {
-          "populationDensity": {
-            "value": 40400,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "HIGH",
-              "status": "SOURCED"
-            }
-          },
-          "elderlyPopulation": {
-            "value": 0.1,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "outdoorWorkerExposure": {
-            "value": 0.372,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Labor Statistics",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "builtEnvironmentIndicator": {
-            "value": 0.92,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Urban Morphology Index",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "informalSettlementIndicator": {
-            "value": 0.296,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Slum Clearance Board Survey",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          }
-        }
-      }
-    }
-  },
-  {
-    "zoneId": "zone-06",
-    "zoneName": "Zone VI - Thiru-Vi-Ka Nagar",
-    "wardId": "ward-076",
-    "wardName": "Ward 076 - Otteri",
-    "latitude": 13.103,
-    "longitude": 80.252,
-    "areaKm2": 5.4,
-    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
-    "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-076",
-    "name": "Ward 076 - Otteri",
-    "metrics": {
-      "heat": {
-        "lst": {
-          "value": 41.8,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "30m downscaled to Ward-level zonal average",
-            "processingMethod": "Mono-window thermal radiative transfer calculation"
-          },
-          "notes": "Surface temperature observation in Thiru-Vi-Ka Nagar municipal sector"
-        },
-        "lstNormalized": {
-          "value": 0.843,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vegetation": {
-        "ndvi": {
-          "value": 0.08,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "10m raster zonal average",
-            "processingMethod": "Normalized Difference NIR/Red band ratio"
-          },
-          "notes": "Canopy and surface greenness indicator in Otteri"
-        },
-        "vegetationDeficitNormalized": {
-          "value": 0.933,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vulnerability": {
-        "vulnerabilityScore": {
-          "value": 0.85,
-          "metadata": {
-            "sourceType": "MUNICIPAL_CENSUS",
-            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
-            "confidence": "MEDIUM",
-            "status": "DERIVED",
-            "resolution": "Ward Census Block Aggregate",
-            "processingMethod": "Standardized socio-economic exposure index"
-          },
-          "notes": "Composite socio-economic sensitivity for Ward 076 - Otteri"
-        },
-        "vulnerabilityComponents": {
-          "populationDensity": {
-            "value": 45750,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "HIGH",
-              "status": "SOURCED"
-            }
-          },
-          "elderlyPopulation": {
-            "value": 0.11,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "outdoorWorkerExposure": {
-            "value": 0.417,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Labor Statistics",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "builtEnvironmentIndicator": {
-            "value": 0.91,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Urban Morphology Index",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "informalSettlementIndicator": {
-            "value": 0.4,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Slum Clearance Board Survey",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          }
-        }
-      }
-    }
-  },
-  {
-    "zoneId": "zone-06",
-    "zoneName": "Zone VI - Thiru-Vi-Ka Nagar",
-    "wardId": "ward-077",
-    "wardName": "Ward 077 - Mangalapuram",
-    "latitude": 13.111,
-    "longitude": 80.252,
-    "areaKm2": 1.8,
-    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
-    "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-077",
-    "name": "Ward 077 - Mangalapuram",
-    "metrics": {
-      "heat": {
-        "lst": {
-          "value": 40.4,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "30m downscaled to Ward-level zonal average",
-            "processingMethod": "Mono-window thermal radiative transfer calculation"
-          },
-          "notes": "Surface temperature observation in Thiru-Vi-Ka Nagar municipal sector"
-        },
-        "lstNormalized": {
-          "value": 0.743,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vegetation": {
-        "ndvi": {
-          "value": 0.1,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "10m raster zonal average",
-            "processingMethod": "Normalized Difference NIR/Red band ratio"
-          },
-          "notes": "Canopy and surface greenness indicator in Mangalapuram"
-        },
-        "vegetationDeficitNormalized": {
-          "value": 0.889,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vulnerability": {
-        "vulnerabilityScore": {
-          "value": 0.73,
-          "metadata": {
-            "sourceType": "MUNICIPAL_CENSUS",
-            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
-            "confidence": "MEDIUM",
-            "status": "DERIVED",
-            "resolution": "Ward Census Block Aggregate",
-            "processingMethod": "Standardized socio-economic exposure index"
-          },
-          "notes": "Composite socio-economic sensitivity for Ward 077 - Mangalapuram"
-        },
-        "vulnerabilityComponents": {
-          "populationDensity": {
-            "value": 33550,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "HIGH",
-              "status": "SOURCED"
-            }
-          },
-          "elderlyPopulation": {
-            "value": 0.12,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "outdoorWorkerExposure": {
-            "value": 0.376,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Labor Statistics",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "builtEnvironmentIndicator": {
-            "value": 0.9,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Urban Morphology Index",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "informalSettlementIndicator": {
-            "value": 0.304,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Slum Clearance Board Survey",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          }
-        }
-      }
-    }
-  },
-  {
-    "zoneId": "zone-06",
-    "zoneName": "Zone VI - Thiru-Vi-Ka Nagar",
-    "wardId": "ward-078",
-    "wardName": "Ward 078 - Thiru-Vi-Ka Nagar Hub",
-    "latitude": 13.119,
-    "longitude": 80.252,
-    "areaKm2": 2.4,
-    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
-    "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-078",
-    "name": "Ward 078 - Thiru-Vi-Ka Nagar Hub",
-    "metrics": {
-      "heat": {
-        "lst": {
-          "value": 42.1,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "30m downscaled to Ward-level zonal average",
-            "processingMethod": "Mono-window thermal radiative transfer calculation"
-          },
-          "notes": "Surface temperature observation in Thiru-Vi-Ka Nagar municipal sector"
-        },
-        "lstNormalized": {
-          "value": 0.864,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vegetation": {
-        "ndvi": {
-          "value": 0.12,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "10m raster zonal average",
-            "processingMethod": "Normalized Difference NIR/Red band ratio"
-          },
-          "notes": "Canopy and surface greenness indicator in Thiru-Vi-Ka Nagar Hub"
-        },
-        "vegetationDeficitNormalized": {
-          "value": 0.844,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vulnerability": {
-        "vulnerabilityScore": {
-          "value": 0.86,
-          "metadata": {
-            "sourceType": "MUNICIPAL_CENSUS",
-            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
-            "confidence": "MEDIUM",
-            "status": "DERIVED",
-            "resolution": "Ward Census Block Aggregate",
-            "processingMethod": "Standardized socio-economic exposure index"
-          },
-          "notes": "Composite socio-economic sensitivity for Ward 078 - Thiru-Vi-Ka Nagar Hub"
-        },
-        "vulnerabilityComponents": {
-          "populationDensity": {
-            "value": 38900,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "HIGH",
-              "status": "SOURCED"
-            }
-          },
-          "elderlyPopulation": {
-            "value": 0.13,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "outdoorWorkerExposure": {
-            "value": 0.421,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Labor Statistics",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "builtEnvironmentIndicator": {
-            "value": 0.89,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Urban Morphology Index",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "informalSettlementIndicator": {
-            "value": 0.408,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Slum Clearance Board Survey",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          }
-        }
-      }
-    }
-  },
-  {
     "zoneId": "zone-07",
     "zoneName": "Zone VII - Ambattur",
     "wardId": "ward-079",
-    "wardName": "Ward 079 - Padi Junction",
+    "wardName": "Ward 079 - Ambattur OT",
     "latitude": 13.098,
     "longitude": 80.148,
     "areaKm2": 3.0,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
     "id": "ward-079",
-    "name": "Ward 079 - Padi Junction",
+    "name": "Ward 079 - Ambattur OT",
     "metrics": {
       "heat": {
         "lst": {
@@ -9692,7 +9675,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.2,
+          "value": 0.23,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -9701,10 +9684,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Padi Junction"
+          "notes": "Canopy and surface greenness indicator in Ambattur OT"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.667,
+          "value": 0.6,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -9724,7 +9707,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 079 - Padi Junction"
+          "notes": "Composite socio-economic sensitivity for Ward 079 - Ambattur OT"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
@@ -9755,7 +9738,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.85,
+            "value": 0.835,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -9780,14 +9763,14 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     "zoneId": "zone-07",
     "zoneName": "Zone VII - Ambattur",
     "wardId": "ward-080",
-    "wardName": "Ward 080 - Korattur Lake North",
+    "wardName": "Ward 080 - Ambattur Estate 3rd Main",
     "latitude": 13.106,
     "longitude": 80.148,
     "areaKm2": 3.6,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
     "id": "ward-080",
-    "name": "Ward 080 - Korattur Lake North",
+    "name": "Ward 080 - Ambattur Estate 3rd Main",
     "metrics": {
       "heat": {
         "lst": {
@@ -9814,7 +9797,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.22,
+          "value": 0.25,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -9823,10 +9806,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Korattur Lake North"
+          "notes": "Canopy and surface greenness indicator in Ambattur Estate 3rd Main"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.622,
+          "value": 0.556,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -9846,7 +9829,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 080 - Korattur Lake North"
+          "notes": "Composite socio-economic sensitivity for Ward 080 - Ambattur Estate 3rd Main"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
@@ -9877,7 +9860,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.84,
+            "value": 0.825,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -9902,14 +9885,14 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     "zoneId": "zone-07",
     "zoneName": "Zone VII - Ambattur",
     "wardId": "ward-081",
-    "wardName": "Ward 081 - Korattur South",
+    "wardName": "Ward 081 - Ambattur Estate South",
     "latitude": 13.114,
     "longitude": 80.148,
     "areaKm2": 4.2,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
     "id": "ward-081",
-    "name": "Ward 081 - Korattur South",
+    "name": "Ward 081 - Ambattur Estate South",
     "metrics": {
       "heat": {
         "lst": {
@@ -9936,7 +9919,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.24,
+          "value": 0.27,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -9945,10 +9928,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Korattur South"
+          "notes": "Canopy and surface greenness indicator in Ambattur Estate South"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.578,
+          "value": 0.511,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -9968,7 +9951,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 081 - Korattur South"
+          "notes": "Composite socio-economic sensitivity for Ward 081 - Ambattur Estate South"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
@@ -9999,7 +9982,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.83,
+            "value": 0.815,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -10024,14 +10007,14 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     "zoneId": "zone-07",
     "zoneName": "Zone VII - Ambattur",
     "wardId": "ward-082",
-    "wardName": "Ward 082 - Mannurpet",
+    "wardName": "Ward 082 - Padi Flyover",
     "latitude": 13.122,
     "longitude": 80.148,
     "areaKm2": 4.8,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
     "id": "ward-082",
-    "name": "Ward 082 - Mannurpet",
+    "name": "Ward 082 - Padi Flyover",
     "metrics": {
       "heat": {
         "lst": {
@@ -10058,7 +10041,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.26,
+          "value": 0.29,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -10067,10 +10050,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Mannurpet"
+          "notes": "Canopy and surface greenness indicator in Padi Flyover"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.533,
+          "value": 0.467,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -10090,7 +10073,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 082 - Mannurpet"
+          "notes": "Composite socio-economic sensitivity for Ward 082 - Padi Flyover"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
@@ -10121,7 +10104,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.82,
+            "value": 0.805,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -10146,14 +10129,14 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     "zoneId": "zone-07",
     "zoneName": "Zone VII - Ambattur",
     "wardId": "ward-083",
-    "wardName": "Ward 083 - Ambattur OT",
+    "wardName": "Ward 083 - Padi Lucas TVS",
     "latitude": 13.098,
     "longitude": 80.156,
     "areaKm2": 5.4,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
     "id": "ward-083",
-    "name": "Ward 083 - Ambattur OT",
+    "name": "Ward 083 - Padi Lucas TVS",
     "metrics": {
       "heat": {
         "lst": {
@@ -10180,7 +10163,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.28,
+          "value": 0.31,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -10189,10 +10172,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Ambattur OT"
+          "notes": "Canopy and surface greenness indicator in Padi Lucas TVS"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.489,
+          "value": 0.422,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -10212,7 +10195,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 083 - Ambattur OT"
+          "notes": "Composite socio-economic sensitivity for Ward 083 - Padi Lucas TVS"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
@@ -10243,7 +10226,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.81,
+            "value": 0.795,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -10268,14 +10251,14 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     "zoneId": "zone-07",
     "zoneName": "Zone VII - Ambattur",
     "wardId": "ward-084",
-    "wardName": "Ward 084 - Menambedu",
+    "wardName": "Ward 084 - Mogappair East",
     "latitude": 13.106,
     "longitude": 80.156,
     "areaKm2": 1.8,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
     "id": "ward-084",
-    "name": "Ward 084 - Menambedu",
+    "name": "Ward 084 - Mogappair East",
     "metrics": {
       "heat": {
         "lst": {
@@ -10302,7 +10285,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.09,
+          "value": 0.12,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -10311,10 +10294,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Menambedu"
+          "notes": "Canopy and surface greenness indicator in Mogappair East"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.911,
+          "value": 0.844,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -10334,7 +10317,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 084 - Menambedu"
+          "notes": "Composite socio-economic sensitivity for Ward 084 - Mogappair East"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
@@ -10365,7 +10348,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.905,
+            "value": 0.89,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -10390,14 +10373,14 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     "zoneId": "zone-07",
     "zoneName": "Zone VII - Ambattur",
     "wardId": "ward-085",
-    "wardName": "Ward 085 - Ambattur Industrial Estate North",
+    "wardName": "Ward 085 - Mogappair West",
     "latitude": 13.114,
     "longitude": 80.156,
     "areaKm2": 2.4,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
     "id": "ward-085",
-    "name": "Ward 085 - Ambattur Industrial Estate North",
+    "name": "Ward 085 - Mogappair West",
     "metrics": {
       "heat": {
         "lst": {
@@ -10424,7 +10407,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.11,
+          "value": 0.14,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -10433,10 +10416,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Ambattur Industrial Estate North"
+          "notes": "Canopy and surface greenness indicator in Mogappair West"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.867,
+          "value": 0.8,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -10456,7 +10439,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 085 - Ambattur Industrial Estate North"
+          "notes": "Composite socio-economic sensitivity for Ward 085 - Mogappair West"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
@@ -10487,7 +10470,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.895,
+            "value": 0.88,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -10512,14 +10495,14 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     "zoneId": "zone-07",
     "zoneName": "Zone VII - Ambattur",
     "wardId": "ward-086",
-    "wardName": "Ward 086 - Ambattur Industrial Estate South",
+    "wardName": "Ward 086 - Mannurpet",
     "latitude": 13.122,
     "longitude": 80.156,
     "areaKm2": 3.0,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
     "id": "ward-086",
-    "name": "Ward 086 - Ambattur Industrial Estate South",
+    "name": "Ward 086 - Mannurpet",
     "metrics": {
       "heat": {
         "lst": {
@@ -10546,7 +10529,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.13,
+          "value": 0.16,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -10555,10 +10538,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Ambattur Industrial Estate South"
+          "notes": "Canopy and surface greenness indicator in Mannurpet"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.822,
+          "value": 0.756,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -10578,7 +10561,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 086 - Ambattur Industrial Estate South"
+          "notes": "Composite socio-economic sensitivity for Ward 086 - Mannurpet"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
@@ -10609,7 +10592,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.885,
+            "value": 0.87,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -10634,14 +10617,14 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     "zoneId": "zone-07",
     "zoneName": "Zone VII - Ambattur",
     "wardId": "ward-087",
-    "wardName": "Ward 087 - Mogappair East",
+    "wardName": "Ward 087 - Korattur North",
     "latitude": 13.098,
     "longitude": 80.164,
     "areaKm2": 3.6,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
     "id": "ward-087",
-    "name": "Ward 087 - Mogappair East",
+    "name": "Ward 087 - Korattur North",
     "metrics": {
       "heat": {
         "lst": {
@@ -10668,7 +10651,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.15,
+          "value": 0.18,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -10677,10 +10660,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Mogappair East"
+          "notes": "Canopy and surface greenness indicator in Korattur North"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.778,
+          "value": 0.711,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -10700,7 +10683,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 087 - Mogappair East"
+          "notes": "Composite socio-economic sensitivity for Ward 087 - Korattur North"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
@@ -10731,7 +10714,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.875,
+            "value": 0.86,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -10756,14 +10739,14 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     "zoneId": "zone-07",
     "zoneName": "Zone VII - Ambattur",
     "wardId": "ward-088",
-    "wardName": "Ward 088 - Mogappair West",
+    "wardName": "Ward 088 - Korattur Lake Side",
     "latitude": 13.106,
     "longitude": 80.164,
     "areaKm2": 4.2,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
     "id": "ward-088",
-    "name": "Ward 088 - Mogappair West",
+    "name": "Ward 088 - Korattur Lake Side",
     "metrics": {
       "heat": {
         "lst": {
@@ -10790,7 +10773,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.17,
+          "value": 0.2,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -10799,10 +10782,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Mogappair West"
+          "notes": "Canopy and surface greenness indicator in Korattur Lake Side"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.733,
+          "value": 0.667,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -10822,7 +10805,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 088 - Mogappair West"
+          "notes": "Composite socio-economic sensitivity for Ward 088 - Korattur Lake Side"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
@@ -10853,7 +10836,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.865,
+            "value": 0.85,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -10878,14 +10861,14 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     "zoneId": "zone-07",
     "zoneName": "Zone VII - Ambattur",
     "wardId": "ward-089",
-    "wardName": "Ward 089 - Nolambur Phase 1",
+    "wardName": "Ward 089 - Pattaravakkam",
     "latitude": 13.114,
     "longitude": 80.164,
     "areaKm2": 4.8,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
     "id": "ward-089",
-    "name": "Ward 089 - Nolambur Phase 1",
+    "name": "Ward 089 - Pattaravakkam",
     "metrics": {
       "heat": {
         "lst": {
@@ -10912,7 +10895,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.19,
+          "value": 0.22,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -10921,10 +10904,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Nolambur Phase 1"
+          "notes": "Canopy and surface greenness indicator in Pattaravakkam"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.689,
+          "value": 0.622,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -10944,7 +10927,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 089 - Nolambur Phase 1"
+          "notes": "Composite socio-economic sensitivity for Ward 089 - Pattaravakkam"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
@@ -10975,7 +10958,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.855,
+            "value": 0.84,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -11000,14 +10983,14 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     "zoneId": "zone-07",
     "zoneName": "Zone VII - Ambattur",
     "wardId": "ward-090",
-    "wardName": "Ward 090 - Nolambur Phase 2",
+    "wardName": "Ward 090 - Sidco Industrial Estate",
     "latitude": 13.122,
     "longitude": 80.164,
     "areaKm2": 5.4,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
     "id": "ward-090",
-    "name": "Ward 090 - Nolambur Phase 2",
+    "name": "Ward 090 - Sidco Industrial Estate",
     "metrics": {
       "heat": {
         "lst": {
@@ -11034,7 +11017,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.21,
+          "value": 0.24,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -11043,10 +11026,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Nolambur Phase 2"
+          "notes": "Canopy and surface greenness indicator in Sidco Industrial Estate"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.644,
+          "value": 0.578,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -11066,7 +11049,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 090 - Nolambur Phase 2"
+          "notes": "Composite socio-economic sensitivity for Ward 090 - Sidco Industrial Estate"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
@@ -11097,7 +11080,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.845,
+            "value": 0.83,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -11122,14 +11105,14 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     "zoneId": "zone-07",
     "zoneName": "Zone VII - Ambattur",
     "wardId": "ward-091",
-    "wardName": "Ward 091 - Karukku",
+    "wardName": "Ward 091 - Kallikuppam",
     "latitude": 13.098,
     "longitude": 80.172,
     "areaKm2": 1.8,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
     "id": "ward-091",
-    "name": "Ward 091 - Karukku",
+    "name": "Ward 091 - Kallikuppam",
     "metrics": {
       "heat": {
         "lst": {
@@ -11156,7 +11139,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.23,
+          "value": 0.26,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -11165,10 +11148,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Karukku"
+          "notes": "Canopy and surface greenness indicator in Kallikuppam"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.6,
+          "value": 0.533,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -11188,7 +11171,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 091 - Karukku"
+          "notes": "Composite socio-economic sensitivity for Ward 091 - Kallikuppam"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
@@ -11219,7 +11202,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.835,
+            "value": 0.82,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -11244,14 +11227,14 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     "zoneId": "zone-07",
     "zoneName": "Zone VII - Ambattur",
     "wardId": "ward-092",
-    "wardName": "Ward 092 - Kallikuppam",
+    "wardName": "Ward 092 - Menambedu",
     "latitude": 13.106,
     "longitude": 80.172,
     "areaKm2": 2.4,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
     "id": "ward-092",
-    "name": "Ward 092 - Kallikuppam",
+    "name": "Ward 092 - Menambedu",
     "metrics": {
       "heat": {
         "lst": {
@@ -11278,7 +11261,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.25,
+          "value": 0.28,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -11287,10 +11270,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Kallikuppam"
+          "notes": "Canopy and surface greenness indicator in Menambedu"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.556,
+          "value": 0.489,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -11310,7 +11293,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 092 - Kallikuppam"
+          "notes": "Composite socio-economic sensitivity for Ward 092 - Menambedu"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
@@ -11341,7 +11324,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.825,
+            "value": 0.81,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -11366,14 +11349,14 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     "zoneId": "zone-07",
     "zoneName": "Zone VII - Ambattur",
     "wardId": "ward-093",
-    "wardName": "Ward 093 - Venkatapuram",
+    "wardName": "Ward 093 - Prithvipakkam",
     "latitude": 13.114,
     "longitude": 80.172,
     "areaKm2": 3.0,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
     "id": "ward-093",
-    "name": "Ward 093 - Venkatapuram",
+    "name": "Ward 093 - Prithvipakkam",
     "metrics": {
       "heat": {
         "lst": {
@@ -11400,7 +11383,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.27,
+          "value": 0.3,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -11409,10 +11392,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Venkatapuram"
+          "notes": "Canopy and surface greenness indicator in Prithvipakkam"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.511,
+          "value": 0.444,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -11432,7 +11415,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 093 - Venkatapuram"
+          "notes": "Composite socio-economic sensitivity for Ward 093 - Prithvipakkam"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
@@ -11463,7 +11446,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.815,
+            "value": 0.8,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -11488,18 +11471,18 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     "zoneId": "zone-08",
     "zoneName": "Zone VIII - Anna Nagar",
     "wardId": "ward-094",
-    "wardName": "Ward 094 - Villivakkam North",
+    "wardName": "Ward 094 - Anna Nagar Roundtana",
     "latitude": 13.073,
-    "longitude": 80.198,
+    "longitude": 80.203,
     "areaKm2": 3.6,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
     "id": "ward-094",
-    "name": "Ward 094 - Villivakkam North",
+    "name": "Ward 094 - Anna Nagar Roundtana",
     "metrics": {
       "heat": {
         "lst": {
-          "value": 39.2,
+          "value": 38.8,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
@@ -11511,7 +11494,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
           "notes": "Surface temperature observation in Anna Nagar municipal sector"
         },
         "lstNormalized": {
-          "value": 0.657,
+          "value": 0.629,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS",
@@ -11522,7 +11505,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.32,
+          "value": 0.37,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -11531,1108 +11514,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Villivakkam North"
+          "notes": "Canopy and surface greenness indicator in Anna Nagar Roundtana"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.4,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vulnerability": {
-        "vulnerabilityScore": {
-          "value": 0.72,
-          "metadata": {
-            "sourceType": "MUNICIPAL_CENSUS",
-            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
-            "confidence": "MEDIUM",
-            "status": "DERIVED",
-            "resolution": "Ward Census Block Aggregate",
-            "processingMethod": "Standardized socio-economic exposure index"
-          },
-          "notes": "Composite socio-economic sensitivity for Ward 094 - Villivakkam North"
-        },
-        "vulnerabilityComponents": {
-          "populationDensity": {
-            "value": 38000,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "HIGH",
-              "status": "SOURCED"
-            }
-          },
-          "elderlyPopulation": {
-            "value": 0.11,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "outdoorWorkerExposure": {
-            "value": 0.372,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Labor Statistics",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "builtEnvironmentIndicator": {
-            "value": 0.79,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Urban Morphology Index",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "informalSettlementIndicator": {
-            "value": 0.296,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Slum Clearance Board Survey",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          }
-        }
-      }
-    }
-  },
-  {
-    "zoneId": "zone-08",
-    "zoneName": "Zone VIII - Anna Nagar",
-    "wardId": "ward-095",
-    "wardName": "Ward 095 - Villivakkam South",
-    "latitude": 13.081,
-    "longitude": 80.198,
-    "areaKm2": 4.2,
-    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
-    "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-095",
-    "name": "Ward 095 - Villivakkam South",
-    "metrics": {
-      "heat": {
-        "lst": {
-          "value": 37.8,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "30m downscaled to Ward-level zonal average",
-            "processingMethod": "Mono-window thermal radiative transfer calculation"
-          },
-          "notes": "Surface temperature observation in Anna Nagar municipal sector"
-        },
-        "lstNormalized": {
-          "value": 0.557,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vegetation": {
-        "ndvi": {
-          "value": 0.13,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "10m raster zonal average",
-            "processingMethod": "Normalized Difference NIR/Red band ratio"
-          },
-          "notes": "Canopy and surface greenness indicator in Villivakkam South"
-        },
-        "vegetationDeficitNormalized": {
-          "value": 0.822,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vulnerability": {
-        "vulnerabilityScore": {
-          "value": 0.6,
-          "metadata": {
-            "sourceType": "MUNICIPAL_CENSUS",
-            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
-            "confidence": "MEDIUM",
-            "status": "DERIVED",
-            "resolution": "Ward Census Block Aggregate",
-            "processingMethod": "Standardized socio-economic exposure index"
-          },
-          "notes": "Composite socio-economic sensitivity for Ward 095 - Villivakkam South"
-        },
-        "vulnerabilityComponents": {
-          "populationDensity": {
-            "value": 34600,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "HIGH",
-              "status": "SOURCED"
-            }
-          },
-          "elderlyPopulation": {
-            "value": 0.12,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "outdoorWorkerExposure": {
-            "value": 0.33,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Labor Statistics",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "builtEnvironmentIndicator": {
-            "value": 0.885,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Urban Morphology Index",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "informalSettlementIndicator": {
-            "value": 0.2,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Slum Clearance Board Survey",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          }
-        }
-      }
-    }
-  },
-  {
-    "zoneId": "zone-08",
-    "zoneName": "Zone VIII - Anna Nagar",
-    "wardId": "ward-096",
-    "wardName": "Ward 096 - Agaram",
-    "latitude": 13.089,
-    "longitude": 80.198,
-    "areaKm2": 4.8,
-    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
-    "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-096",
-    "name": "Ward 096 - Agaram",
-    "metrics": {
-      "heat": {
-        "lst": {
-          "value": 39.5,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "30m downscaled to Ward-level zonal average",
-            "processingMethod": "Mono-window thermal radiative transfer calculation"
-          },
-          "notes": "Surface temperature observation in Anna Nagar municipal sector"
-        },
-        "lstNormalized": {
-          "value": 0.679,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vegetation": {
-        "ndvi": {
-          "value": 0.15,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "10m raster zonal average",
-            "processingMethod": "Normalized Difference NIR/Red band ratio"
-          },
-          "notes": "Canopy and surface greenness indicator in Agaram"
-        },
-        "vegetationDeficitNormalized": {
-          "value": 0.778,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vulnerability": {
-        "vulnerabilityScore": {
-          "value": 0.73,
-          "metadata": {
-            "sourceType": "MUNICIPAL_CENSUS",
-            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
-            "confidence": "MEDIUM",
-            "status": "DERIVED",
-            "resolution": "Ward Census Block Aggregate",
-            "processingMethod": "Standardized socio-economic exposure index"
-          },
-          "notes": "Composite socio-economic sensitivity for Ward 096 - Agaram"
-        },
-        "vulnerabilityComponents": {
-          "populationDensity": {
-            "value": 39950,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "HIGH",
-              "status": "SOURCED"
-            }
-          },
-          "elderlyPopulation": {
-            "value": 0.13,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "outdoorWorkerExposure": {
-            "value": 0.376,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Labor Statistics",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "builtEnvironmentIndicator": {
-            "value": 0.875,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Urban Morphology Index",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "informalSettlementIndicator": {
-            "value": 0.304,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Slum Clearance Board Survey",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          }
-        }
-      }
-    }
-  },
-  {
-    "zoneId": "zone-08",
-    "zoneName": "Zone VIII - Anna Nagar",
-    "wardId": "ward-097",
-    "wardName": "Ward 097 - Ayanavaram North",
-    "latitude": 13.097,
-    "longitude": 80.198,
-    "areaKm2": 5.4,
-    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
-    "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-097",
-    "name": "Ward 097 - Ayanavaram North",
-    "metrics": {
-      "heat": {
-        "lst": {
-          "value": 38.1,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "30m downscaled to Ward-level zonal average",
-            "processingMethod": "Mono-window thermal radiative transfer calculation"
-          },
-          "notes": "Surface temperature observation in Anna Nagar municipal sector"
-        },
-        "lstNormalized": {
-          "value": 0.579,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vegetation": {
-        "ndvi": {
-          "value": 0.17,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "10m raster zonal average",
-            "processingMethod": "Normalized Difference NIR/Red band ratio"
-          },
-          "notes": "Canopy and surface greenness indicator in Ayanavaram North"
-        },
-        "vegetationDeficitNormalized": {
-          "value": 0.733,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vulnerability": {
-        "vulnerabilityScore": {
-          "value": 0.61,
-          "metadata": {
-            "sourceType": "MUNICIPAL_CENSUS",
-            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
-            "confidence": "MEDIUM",
-            "status": "DERIVED",
-            "resolution": "Ward Census Block Aggregate",
-            "processingMethod": "Standardized socio-economic exposure index"
-          },
-          "notes": "Composite socio-economic sensitivity for Ward 097 - Ayanavaram North"
-        },
-        "vulnerabilityComponents": {
-          "populationDensity": {
-            "value": 36550,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "HIGH",
-              "status": "SOURCED"
-            }
-          },
-          "elderlyPopulation": {
-            "value": 0.14,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "outdoorWorkerExposure": {
-            "value": 0.334,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Labor Statistics",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "builtEnvironmentIndicator": {
-            "value": 0.865,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Urban Morphology Index",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "informalSettlementIndicator": {
-            "value": 0.208,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Slum Clearance Board Survey",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          }
-        }
-      }
-    }
-  },
-  {
-    "zoneId": "zone-08",
-    "zoneName": "Zone VIII - Anna Nagar",
-    "wardId": "ward-098",
-    "wardName": "Ward 098 - Ayanavaram South",
-    "latitude": 13.073,
-    "longitude": 80.206,
-    "areaKm2": 1.8,
-    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
-    "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-098",
-    "name": "Ward 098 - Ayanavaram South",
-    "metrics": {
-      "heat": {
-        "lst": {
-          "value": 39.8,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "30m downscaled to Ward-level zonal average",
-            "processingMethod": "Mono-window thermal radiative transfer calculation"
-          },
-          "notes": "Surface temperature observation in Anna Nagar municipal sector"
-        },
-        "lstNormalized": {
-          "value": 0.7,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vegetation": {
-        "ndvi": {
-          "value": 0.19,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "10m raster zonal average",
-            "processingMethod": "Normalized Difference NIR/Red band ratio"
-          },
-          "notes": "Canopy and surface greenness indicator in Ayanavaram South"
-        },
-        "vegetationDeficitNormalized": {
-          "value": 0.689,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vulnerability": {
-        "vulnerabilityScore": {
-          "value": 0.74,
-          "metadata": {
-            "sourceType": "MUNICIPAL_CENSUS",
-            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
-            "confidence": "MEDIUM",
-            "status": "DERIVED",
-            "resolution": "Ward Census Block Aggregate",
-            "processingMethod": "Standardized socio-economic exposure index"
-          },
-          "notes": "Composite socio-economic sensitivity for Ward 098 - Ayanavaram South"
-        },
-        "vulnerabilityComponents": {
-          "populationDensity": {
-            "value": 41900,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "HIGH",
-              "status": "SOURCED"
-            }
-          },
-          "elderlyPopulation": {
-            "value": 0.15,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "outdoorWorkerExposure": {
-            "value": 0.379,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Labor Statistics",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "builtEnvironmentIndicator": {
-            "value": 0.855,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Urban Morphology Index",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "informalSettlementIndicator": {
-            "value": 0.312,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Slum Clearance Board Survey",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          }
-        }
-      }
-    }
-  },
-  {
-    "zoneId": "zone-08",
-    "zoneName": "Zone VIII - Anna Nagar",
-    "wardId": "ward-099",
-    "wardName": "Ward 099 - Kilpauk Garden",
-    "latitude": 13.081,
-    "longitude": 80.206,
-    "areaKm2": 2.4,
-    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
-    "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-099",
-    "name": "Ward 099 - Kilpauk Garden",
-    "metrics": {
-      "heat": {
-        "lst": {
-          "value": 38.4,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "30m downscaled to Ward-level zonal average",
-            "processingMethod": "Mono-window thermal radiative transfer calculation"
-          },
-          "notes": "Surface temperature observation in Anna Nagar municipal sector"
-        },
-        "lstNormalized": {
-          "value": 0.6,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vegetation": {
-        "ndvi": {
-          "value": 0.21,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "10m raster zonal average",
-            "processingMethod": "Normalized Difference NIR/Red band ratio"
-          },
-          "notes": "Canopy and surface greenness indicator in Kilpauk Garden"
-        },
-        "vegetationDeficitNormalized": {
-          "value": 0.644,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vulnerability": {
-        "vulnerabilityScore": {
-          "value": 0.62,
-          "metadata": {
-            "sourceType": "MUNICIPAL_CENSUS",
-            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
-            "confidence": "MEDIUM",
-            "status": "DERIVED",
-            "resolution": "Ward Census Block Aggregate",
-            "processingMethod": "Standardized socio-economic exposure index"
-          },
-          "notes": "Composite socio-economic sensitivity for Ward 099 - Kilpauk Garden"
-        },
-        "vulnerabilityComponents": {
-          "populationDensity": {
-            "value": 29700,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "HIGH",
-              "status": "SOURCED"
-            }
-          },
-          "elderlyPopulation": {
-            "value": 0.07,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "outdoorWorkerExposure": {
-            "value": 0.337,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Labor Statistics",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "builtEnvironmentIndicator": {
-            "value": 0.845,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Urban Morphology Index",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "informalSettlementIndicator": {
-            "value": 0.216,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Slum Clearance Board Survey",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          }
-        }
-      }
-    }
-  },
-  {
-    "zoneId": "zone-08",
-    "zoneName": "Zone VIII - Anna Nagar",
-    "wardId": "ward-100",
-    "wardName": "Ward 100 - Shenoy Nagar East",
-    "latitude": 13.089,
-    "longitude": 80.206,
-    "areaKm2": 3.0,
-    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
-    "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-100",
-    "name": "Ward 100 - Shenoy Nagar East",
-    "metrics": {
-      "heat": {
-        "lst": {
-          "value": 40.1,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "30m downscaled to Ward-level zonal average",
-            "processingMethod": "Mono-window thermal radiative transfer calculation"
-          },
-          "notes": "Surface temperature observation in Anna Nagar municipal sector"
-        },
-        "lstNormalized": {
-          "value": 0.721,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vegetation": {
-        "ndvi": {
-          "value": 0.23,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "10m raster zonal average",
-            "processingMethod": "Normalized Difference NIR/Red band ratio"
-          },
-          "notes": "Canopy and surface greenness indicator in Shenoy Nagar East"
-        },
-        "vegetationDeficitNormalized": {
-          "value": 0.6,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vulnerability": {
-        "vulnerabilityScore": {
-          "value": 0.5,
-          "metadata": {
-            "sourceType": "MUNICIPAL_CENSUS",
-            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
-            "confidence": "MEDIUM",
-            "status": "DERIVED",
-            "resolution": "Ward Census Block Aggregate",
-            "processingMethod": "Standardized socio-economic exposure index"
-          },
-          "notes": "Composite socio-economic sensitivity for Ward 100 - Shenoy Nagar East"
-        },
-        "vulnerabilityComponents": {
-          "populationDensity": {
-            "value": 26300,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "HIGH",
-              "status": "SOURCED"
-            }
-          },
-          "elderlyPopulation": {
-            "value": 0.08,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "outdoorWorkerExposure": {
-            "value": 0.295,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Labor Statistics",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "builtEnvironmentIndicator": {
-            "value": 0.835,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Urban Morphology Index",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "informalSettlementIndicator": {
-            "value": 0.12,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Slum Clearance Board Survey",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          }
-        }
-      }
-    }
-  },
-  {
-    "zoneId": "zone-08",
-    "zoneName": "Zone VIII - Anna Nagar",
-    "wardId": "ward-101",
-    "wardName": "Ward 101 - Shenoy Nagar West",
-    "latitude": 13.097,
-    "longitude": 80.206,
-    "areaKm2": 3.6,
-    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
-    "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-101",
-    "name": "Ward 101 - Shenoy Nagar West",
-    "metrics": {
-      "heat": {
-        "lst": {
-          "value": 38.7,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "30m downscaled to Ward-level zonal average",
-            "processingMethod": "Mono-window thermal radiative transfer calculation"
-          },
-          "notes": "Surface temperature observation in Anna Nagar municipal sector"
-        },
-        "lstNormalized": {
-          "value": 0.621,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vegetation": {
-        "ndvi": {
-          "value": 0.25,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "10m raster zonal average",
-            "processingMethod": "Normalized Difference NIR/Red band ratio"
-          },
-          "notes": "Canopy and surface greenness indicator in Shenoy Nagar West"
-        },
-        "vegetationDeficitNormalized": {
-          "value": 0.556,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vulnerability": {
-        "vulnerabilityScore": {
-          "value": 0.63,
-          "metadata": {
-            "sourceType": "MUNICIPAL_CENSUS",
-            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
-            "confidence": "MEDIUM",
-            "status": "DERIVED",
-            "resolution": "Ward Census Block Aggregate",
-            "processingMethod": "Standardized socio-economic exposure index"
-          },
-          "notes": "Composite socio-economic sensitivity for Ward 101 - Shenoy Nagar West"
-        },
-        "vulnerabilityComponents": {
-          "populationDensity": {
-            "value": 31650,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "HIGH",
-              "status": "SOURCED"
-            }
-          },
-          "elderlyPopulation": {
-            "value": 0.09,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "outdoorWorkerExposure": {
-            "value": 0.34,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Labor Statistics",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "builtEnvironmentIndicator": {
-            "value": 0.825,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Urban Morphology Index",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "informalSettlementIndicator": {
-            "value": 0.224,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Slum Clearance Board Survey",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          }
-        }
-      }
-    }
-  },
-  {
-    "zoneId": "zone-08",
-    "zoneName": "Zone VIII - Anna Nagar",
-    "wardId": "ward-102",
-    "wardName": "Ward 102 - Anna Nagar Tower",
-    "latitude": 13.073,
-    "longitude": 80.214,
-    "areaKm2": 4.2,
-    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
-    "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-102",
-    "name": "Ward 102 - Anna Nagar Tower",
-    "metrics": {
-      "heat": {
-        "lst": {
-          "value": 40.4,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "30m downscaled to Ward-level zonal average",
-            "processingMethod": "Mono-window thermal radiative transfer calculation"
-          },
-          "notes": "Surface temperature observation in Anna Nagar municipal sector"
-        },
-        "lstNormalized": {
-          "value": 0.743,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vegetation": {
-        "ndvi": {
-          "value": 0.27,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "10m raster zonal average",
-            "processingMethod": "Normalized Difference NIR/Red band ratio"
-          },
-          "notes": "Canopy and surface greenness indicator in Anna Nagar Tower"
-        },
-        "vegetationDeficitNormalized": {
-          "value": 0.511,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vulnerability": {
-        "vulnerabilityScore": {
-          "value": 0.51,
-          "metadata": {
-            "sourceType": "MUNICIPAL_CENSUS",
-            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
-            "confidence": "MEDIUM",
-            "status": "DERIVED",
-            "resolution": "Ward Census Block Aggregate",
-            "processingMethod": "Standardized socio-economic exposure index"
-          },
-          "notes": "Composite socio-economic sensitivity for Ward 102 - Anna Nagar Tower"
-        },
-        "vulnerabilityComponents": {
-          "populationDensity": {
-            "value": 28250,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "HIGH",
-              "status": "SOURCED"
-            }
-          },
-          "elderlyPopulation": {
-            "value": 0.1,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "outdoorWorkerExposure": {
-            "value": 0.298,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Labor Statistics",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "builtEnvironmentIndicator": {
-            "value": 0.815,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Urban Morphology Index",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "informalSettlementIndicator": {
-            "value": 0.128,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Slum Clearance Board Survey",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          }
-        }
-      }
-    }
-  },
-  {
-    "zoneId": "zone-08",
-    "zoneName": "Zone VIII - Anna Nagar",
-    "wardId": "ward-103",
-    "wardName": "Ward 103 - Anna Nagar West Extension",
-    "latitude": 13.081,
-    "longitude": 80.214,
-    "areaKm2": 4.8,
-    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
-    "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-103",
-    "name": "Ward 103 - Anna Nagar West Extension",
-    "metrics": {
-      "heat": {
-        "lst": {
-          "value": 39.0,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "30m downscaled to Ward-level zonal average",
-            "processingMethod": "Mono-window thermal radiative transfer calculation"
-          },
-          "notes": "Surface temperature observation in Anna Nagar municipal sector"
-        },
-        "lstNormalized": {
-          "value": 0.643,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vegetation": {
-        "ndvi": {
-          "value": 0.29,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "10m raster zonal average",
-            "processingMethod": "Normalized Difference NIR/Red band ratio"
-          },
-          "notes": "Canopy and surface greenness indicator in Anna Nagar West Extension"
-        },
-        "vegetationDeficitNormalized": {
-          "value": 0.467,
+          "value": 0.289,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -12652,11 +11537,11 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 103 - Anna Nagar West Extension"
+          "notes": "Composite socio-economic sensitivity for Ward 094 - Anna Nagar Roundtana"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 33600,
+            "value": 35200,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -12683,7 +11568,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.805,
+            "value": 0.765,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -12707,19 +11592,19 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
   {
     "zoneId": "zone-08",
     "zoneName": "Zone VIII - Anna Nagar",
-    "wardId": "ward-104",
-    "wardName": "Ward 104 - Anna Nagar Roundtana",
-    "latitude": 13.089,
-    "longitude": 80.214,
-    "areaKm2": 5.4,
+    "wardId": "ward-095",
+    "wardName": "Ward 095 - Anna Nagar West Extension",
+    "latitude": 13.081,
+    "longitude": 80.203,
+    "areaKm2": 4.2,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-104",
-    "name": "Ward 104 - Anna Nagar Roundtana",
+    "id": "ward-095",
+    "name": "Ward 095 - Anna Nagar West Extension",
     "metrics": {
       "heat": {
         "lst": {
-          "value": 37.6,
+          "value": 37.4,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
@@ -12731,7 +11616,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
           "notes": "Surface temperature observation in Anna Nagar municipal sector"
         },
         "lstNormalized": {
-          "value": 0.543,
+          "value": 0.529,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS",
@@ -12742,7 +11627,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.31,
+          "value": 0.18,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -12751,10 +11636,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Anna Nagar Roundtana"
+          "notes": "Canopy and surface greenness indicator in Anna Nagar West Extension"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.422,
+          "value": 0.711,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -12774,11 +11659,11 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 104 - Anna Nagar Roundtana"
+          "notes": "Composite socio-economic sensitivity for Ward 095 - Anna Nagar West Extension"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 30200,
+            "value": 31800,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -12805,7 +11690,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.795,
+            "value": 0.86,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -12829,19 +11714,19 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
   {
     "zoneId": "zone-08",
     "zoneName": "Zone VIII - Anna Nagar",
-    "wardId": "ward-105",
-    "wardName": "Ward 105 - Aminjikarai",
-    "latitude": 13.097,
-    "longitude": 80.214,
-    "areaKm2": 1.8,
+    "wardId": "ward-096",
+    "wardName": "Ward 096 - Anna Nagar Tower Park",
+    "latitude": 13.089,
+    "longitude": 80.203,
+    "areaKm2": 4.8,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-105",
-    "name": "Ward 105 - Aminjikarai",
+    "id": "ward-096",
+    "name": "Ward 096 - Anna Nagar Tower Park",
     "metrics": {
       "heat": {
         "lst": {
-          "value": 39.3,
+          "value": 39.1,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
@@ -12853,7 +11738,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
           "notes": "Surface temperature observation in Anna Nagar municipal sector"
         },
         "lstNormalized": {
-          "value": 0.664,
+          "value": 0.65,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS",
@@ -12864,7 +11749,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.12,
+          "value": 0.2,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -12873,10 +11758,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Aminjikarai"
+          "notes": "Canopy and surface greenness indicator in Anna Nagar Tower Park"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.844,
+          "value": 0.667,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -12896,11 +11781,11 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 105 - Aminjikarai"
+          "notes": "Composite socio-economic sensitivity for Ward 096 - Anna Nagar Tower Park"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 35550,
+            "value": 37150,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -12927,7 +11812,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.89,
+            "value": 0.85,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -12951,19 +11836,19 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
   {
     "zoneId": "zone-08",
     "zoneName": "Zone VIII - Anna Nagar",
-    "wardId": "ward-106",
-    "wardName": "Ward 106 - Koyambedu Market",
-    "latitude": 13.073,
-    "longitude": 80.222,
-    "areaKm2": 2.4,
+    "wardId": "ward-097",
+    "wardName": "Ward 097 - Shanti Colony",
+    "latitude": 13.097,
+    "longitude": 80.203,
+    "areaKm2": 5.4,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-106",
-    "name": "Ward 106 - Koyambedu Market",
+    "id": "ward-097",
+    "name": "Ward 097 - Shanti Colony",
     "metrics": {
       "heat": {
         "lst": {
-          "value": 37.9,
+          "value": 37.7,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
@@ -12975,7 +11860,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
           "notes": "Surface temperature observation in Anna Nagar municipal sector"
         },
         "lstNormalized": {
-          "value": 0.564,
+          "value": 0.55,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS",
@@ -12986,7 +11871,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.14,
+          "value": 0.22,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -12995,10 +11880,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Koyambedu Market"
+          "notes": "Canopy and surface greenness indicator in Shanti Colony"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.8,
+          "value": 0.622,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -13018,11 +11903,11 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 106 - Koyambedu Market"
+          "notes": "Composite socio-economic sensitivity for Ward 097 - Shanti Colony"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 32150,
+            "value": 33750,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -13049,7 +11934,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.88,
+            "value": 0.84,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -13073,19 +11958,19 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
   {
     "zoneId": "zone-08",
     "zoneName": "Zone VIII - Anna Nagar",
-    "wardId": "ward-107",
-    "wardName": "Ward 107 - Koyambedu CMBT",
-    "latitude": 13.081,
-    "longitude": 80.222,
-    "areaKm2": 3.0,
+    "wardId": "ward-098",
+    "wardName": "Ward 098 - Thirumangalam Metro",
+    "latitude": 13.073,
+    "longitude": 80.211,
+    "areaKm2": 1.8,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-107",
-    "name": "Ward 107 - Koyambedu CMBT",
+    "id": "ward-098",
+    "name": "Ward 098 - Thirumangalam Metro",
     "metrics": {
       "heat": {
         "lst": {
-          "value": 39.6,
+          "value": 39.4,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
@@ -13097,7 +11982,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
           "notes": "Surface temperature observation in Anna Nagar municipal sector"
         },
         "lstNormalized": {
-          "value": 0.686,
+          "value": 0.671,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS",
@@ -13108,7 +11993,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.16,
+          "value": 0.24,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -13117,10 +12002,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Koyambedu CMBT"
+          "notes": "Canopy and surface greenness indicator in Thirumangalam Metro"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.756,
+          "value": 0.578,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -13140,11 +12025,11 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 107 - Koyambedu CMBT"
+          "notes": "Composite socio-economic sensitivity for Ward 098 - Thirumangalam Metro"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 37500,
+            "value": 39100,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -13171,7 +12056,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.87,
+            "value": 0.83,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -13195,19 +12080,19 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
   {
     "zoneId": "zone-08",
     "zoneName": "Zone VIII - Anna Nagar",
-    "wardId": "ward-108",
-    "wardName": "Ward 108 - Arumbakkam",
-    "latitude": 13.089,
-    "longitude": 80.222,
-    "areaKm2": 3.6,
+    "wardId": "ward-099",
+    "wardName": "Ward 099 - Shenoy Nagar Park",
+    "latitude": 13.081,
+    "longitude": 80.211,
+    "areaKm2": 2.4,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-108",
-    "name": "Ward 108 - Arumbakkam",
+    "id": "ward-099",
+    "name": "Ward 099 - Shenoy Nagar Park",
     "metrics": {
       "heat": {
         "lst": {
-          "value": 38.2,
+          "value": 38.0,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
@@ -13219,7 +12104,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
           "notes": "Surface temperature observation in Anna Nagar municipal sector"
         },
         "lstNormalized": {
-          "value": 0.586,
+          "value": 0.571,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS",
@@ -13230,7 +12115,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.18,
+          "value": 0.26,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -13239,10 +12124,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Arumbakkam"
+          "notes": "Canopy and surface greenness indicator in Shenoy Nagar Park"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.711,
+          "value": 0.533,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -13262,11 +12147,11 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 108 - Arumbakkam"
+          "notes": "Composite socio-economic sensitivity for Ward 099 - Shenoy Nagar Park"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 34100,
+            "value": 26900,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -13293,7 +12178,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.86,
+            "value": 0.82,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -13315,21 +12200,21 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     }
   },
   {
-    "zoneId": "zone-09",
-    "zoneName": "Zone IX - Teynampet",
-    "wardId": "ward-109",
-    "wardName": "Ward 109 - Nungambakkam High Road",
-    "latitude": 13.038,
-    "longitude": 80.238,
-    "areaKm2": 4.2,
+    "zoneId": "zone-08",
+    "zoneName": "Zone VIII - Anna Nagar",
+    "wardId": "ward-100",
+    "wardName": "Ward 100 - Aminjikarai Market",
+    "latitude": 13.089,
+    "longitude": 80.211,
+    "areaKm2": 3.0,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-109",
-    "name": "Ward 109 - Nungambakkam High Road",
+    "id": "ward-100",
+    "name": "Ward 100 - Aminjikarai Market",
     "metrics": {
       "heat": {
         "lst": {
-          "value": 40.5,
+          "value": 39.7,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
@@ -13338,10 +12223,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "30m downscaled to Ward-level zonal average",
             "processingMethod": "Mono-window thermal radiative transfer calculation"
           },
-          "notes": "Surface temperature observation in Teynampet municipal sector"
+          "notes": "Surface temperature observation in Anna Nagar municipal sector"
         },
         "lstNormalized": {
-          "value": 0.75,
+          "value": 0.693,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS",
@@ -13352,7 +12237,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.13,
+          "value": 0.28,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -13361,10 +12246,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Nungambakkam High Road"
+          "notes": "Canopy and surface greenness indicator in Aminjikarai Market"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.822,
+          "value": 0.489,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -13375,7 +12260,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vulnerability": {
         "vulnerabilityScore": {
-          "value": 0.81,
+          "value": 0.42,
           "metadata": {
             "sourceType": "MUNICIPAL_CENSUS",
             "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
@@ -13384,11 +12269,11 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 109 - Nungambakkam High Road"
+          "notes": "Composite socio-economic sensitivity for Ward 100 - Aminjikarai Market"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 44350,
+            "value": 23500,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -13406,7 +12291,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "outdoorWorkerExposure": {
-            "value": 0.403,
+            "value": 0.267,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Labor Statistics",
@@ -13415,7 +12300,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.885,
+            "value": 0.81,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -13424,7 +12309,1105 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "informalSettlementIndicator": {
-            "value": 0.368,
+            "value": 0.056,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Slum Clearance Board Survey",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "zoneId": "zone-08",
+    "zoneName": "Zone VIII - Anna Nagar",
+    "wardId": "ward-101",
+    "wardName": "Ward 101 - Villivakkam Railway Colony",
+    "latitude": 13.097,
+    "longitude": 80.211,
+    "areaKm2": 3.6,
+    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
+    "lastUpdated": "2026-03-01T00:00:00Z",
+    "id": "ward-101",
+    "name": "Ward 101 - Villivakkam Railway Colony",
+    "metrics": {
+      "heat": {
+        "lst": {
+          "value": 38.3,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "30m downscaled to Ward-level zonal average",
+            "processingMethod": "Mono-window thermal radiative transfer calculation"
+          },
+          "notes": "Surface temperature observation in Anna Nagar municipal sector"
+        },
+        "lstNormalized": {
+          "value": 0.593,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vegetation": {
+        "ndvi": {
+          "value": 0.3,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "10m raster zonal average",
+            "processingMethod": "Normalized Difference NIR/Red band ratio"
+          },
+          "notes": "Canopy and surface greenness indicator in Villivakkam Railway Colony"
+        },
+        "vegetationDeficitNormalized": {
+          "value": 0.444,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vulnerability": {
+        "vulnerabilityScore": {
+          "value": 0.55,
+          "metadata": {
+            "sourceType": "MUNICIPAL_CENSUS",
+            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
+            "confidence": "MEDIUM",
+            "status": "DERIVED",
+            "resolution": "Ward Census Block Aggregate",
+            "processingMethod": "Standardized socio-economic exposure index"
+          },
+          "notes": "Composite socio-economic sensitivity for Ward 101 - Villivakkam Railway Colony"
+        },
+        "vulnerabilityComponents": {
+          "populationDensity": {
+            "value": 28850,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "HIGH",
+              "status": "SOURCED"
+            }
+          },
+          "elderlyPopulation": {
+            "value": 0.09,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "outdoorWorkerExposure": {
+            "value": 0.312,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Labor Statistics",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "builtEnvironmentIndicator": {
+            "value": 0.8,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Urban Morphology Index",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "informalSettlementIndicator": {
+            "value": 0.16,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Slum Clearance Board Survey",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "zoneId": "zone-08",
+    "zoneName": "Zone VIII - Anna Nagar",
+    "wardId": "ward-102",
+    "wardName": "Ward 102 - Villivakkam Market",
+    "latitude": 13.073,
+    "longitude": 80.219,
+    "areaKm2": 4.2,
+    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
+    "lastUpdated": "2026-03-01T00:00:00Z",
+    "id": "ward-102",
+    "name": "Ward 102 - Villivakkam Market",
+    "metrics": {
+      "heat": {
+        "lst": {
+          "value": 40.0,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "30m downscaled to Ward-level zonal average",
+            "processingMethod": "Mono-window thermal radiative transfer calculation"
+          },
+          "notes": "Surface temperature observation in Anna Nagar municipal sector"
+        },
+        "lstNormalized": {
+          "value": 0.714,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vegetation": {
+        "ndvi": {
+          "value": 0.32,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "10m raster zonal average",
+            "processingMethod": "Normalized Difference NIR/Red band ratio"
+          },
+          "notes": "Canopy and surface greenness indicator in Villivakkam Market"
+        },
+        "vegetationDeficitNormalized": {
+          "value": 0.4,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vulnerability": {
+        "vulnerabilityScore": {
+          "value": 0.43,
+          "metadata": {
+            "sourceType": "MUNICIPAL_CENSUS",
+            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
+            "confidence": "MEDIUM",
+            "status": "DERIVED",
+            "resolution": "Ward Census Block Aggregate",
+            "processingMethod": "Standardized socio-economic exposure index"
+          },
+          "notes": "Composite socio-economic sensitivity for Ward 102 - Villivakkam Market"
+        },
+        "vulnerabilityComponents": {
+          "populationDensity": {
+            "value": 25450,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "HIGH",
+              "status": "SOURCED"
+            }
+          },
+          "elderlyPopulation": {
+            "value": 0.1,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "outdoorWorkerExposure": {
+            "value": 0.27,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Labor Statistics",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "builtEnvironmentIndicator": {
+            "value": 0.79,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Urban Morphology Index",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "informalSettlementIndicator": {
+            "value": 0.064,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Slum Clearance Board Survey",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "zoneId": "zone-08",
+    "zoneName": "Zone VIII - Anna Nagar",
+    "wardId": "ward-103",
+    "wardName": "Ward 103 - Nathamuni",
+    "latitude": 13.081,
+    "longitude": 80.219,
+    "areaKm2": 4.8,
+    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
+    "lastUpdated": "2026-03-01T00:00:00Z",
+    "id": "ward-103",
+    "name": "Ward 103 - Nathamuni",
+    "metrics": {
+      "heat": {
+        "lst": {
+          "value": 38.6,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "30m downscaled to Ward-level zonal average",
+            "processingMethod": "Mono-window thermal radiative transfer calculation"
+          },
+          "notes": "Surface temperature observation in Anna Nagar municipal sector"
+        },
+        "lstNormalized": {
+          "value": 0.614,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vegetation": {
+        "ndvi": {
+          "value": 0.34,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "10m raster zonal average",
+            "processingMethod": "Normalized Difference NIR/Red band ratio"
+          },
+          "notes": "Canopy and surface greenness indicator in Nathamuni"
+        },
+        "vegetationDeficitNormalized": {
+          "value": 0.356,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vulnerability": {
+        "vulnerabilityScore": {
+          "value": 0.56,
+          "metadata": {
+            "sourceType": "MUNICIPAL_CENSUS",
+            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
+            "confidence": "MEDIUM",
+            "status": "DERIVED",
+            "resolution": "Ward Census Block Aggregate",
+            "processingMethod": "Standardized socio-economic exposure index"
+          },
+          "notes": "Composite socio-economic sensitivity for Ward 103 - Nathamuni"
+        },
+        "vulnerabilityComponents": {
+          "populationDensity": {
+            "value": 30800,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "HIGH",
+              "status": "SOURCED"
+            }
+          },
+          "elderlyPopulation": {
+            "value": 0.11,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "outdoorWorkerExposure": {
+            "value": 0.316,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Labor Statistics",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "builtEnvironmentIndicator": {
+            "value": 0.78,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Urban Morphology Index",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "informalSettlementIndicator": {
+            "value": 0.168,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Slum Clearance Board Survey",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "zoneId": "zone-08",
+    "zoneName": "Zone VIII - Anna Nagar",
+    "wardId": "ward-104",
+    "wardName": "Ward 104 - ICF North",
+    "latitude": 13.089,
+    "longitude": 80.219,
+    "areaKm2": 5.4,
+    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
+    "lastUpdated": "2026-03-01T00:00:00Z",
+    "id": "ward-104",
+    "name": "Ward 104 - ICF North",
+    "metrics": {
+      "heat": {
+        "lst": {
+          "value": 37.2,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "30m downscaled to Ward-level zonal average",
+            "processingMethod": "Mono-window thermal radiative transfer calculation"
+          },
+          "notes": "Surface temperature observation in Anna Nagar municipal sector"
+        },
+        "lstNormalized": {
+          "value": 0.514,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vegetation": {
+        "ndvi": {
+          "value": 0.36,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "10m raster zonal average",
+            "processingMethod": "Normalized Difference NIR/Red band ratio"
+          },
+          "notes": "Canopy and surface greenness indicator in ICF North"
+        },
+        "vegetationDeficitNormalized": {
+          "value": 0.311,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vulnerability": {
+        "vulnerabilityScore": {
+          "value": 0.44,
+          "metadata": {
+            "sourceType": "MUNICIPAL_CENSUS",
+            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
+            "confidence": "MEDIUM",
+            "status": "DERIVED",
+            "resolution": "Ward Census Block Aggregate",
+            "processingMethod": "Standardized socio-economic exposure index"
+          },
+          "notes": "Composite socio-economic sensitivity for Ward 104 - ICF North"
+        },
+        "vulnerabilityComponents": {
+          "populationDensity": {
+            "value": 27400,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "HIGH",
+              "status": "SOURCED"
+            }
+          },
+          "elderlyPopulation": {
+            "value": 0.12,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "outdoorWorkerExposure": {
+            "value": 0.274,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Labor Statistics",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "builtEnvironmentIndicator": {
+            "value": 0.77,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Urban Morphology Index",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "informalSettlementIndicator": {
+            "value": 0.072,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Slum Clearance Board Survey",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "zoneId": "zone-08",
+    "zoneName": "Zone VIII - Anna Nagar",
+    "wardId": "ward-105",
+    "wardName": "Ward 105 - ICF South",
+    "latitude": 13.097,
+    "longitude": 80.219,
+    "areaKm2": 1.8,
+    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
+    "lastUpdated": "2026-03-01T00:00:00Z",
+    "id": "ward-105",
+    "name": "Ward 105 - ICF South",
+    "metrics": {
+      "heat": {
+        "lst": {
+          "value": 38.9,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "30m downscaled to Ward-level zonal average",
+            "processingMethod": "Mono-window thermal radiative transfer calculation"
+          },
+          "notes": "Surface temperature observation in Anna Nagar municipal sector"
+        },
+        "lstNormalized": {
+          "value": 0.636,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vegetation": {
+        "ndvi": {
+          "value": 0.17,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "10m raster zonal average",
+            "processingMethod": "Normalized Difference NIR/Red band ratio"
+          },
+          "notes": "Canopy and surface greenness indicator in ICF South"
+        },
+        "vegetationDeficitNormalized": {
+          "value": 0.733,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vulnerability": {
+        "vulnerabilityScore": {
+          "value": 0.57,
+          "metadata": {
+            "sourceType": "MUNICIPAL_CENSUS",
+            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
+            "confidence": "MEDIUM",
+            "status": "DERIVED",
+            "resolution": "Ward Census Block Aggregate",
+            "processingMethod": "Standardized socio-economic exposure index"
+          },
+          "notes": "Composite socio-economic sensitivity for Ward 105 - ICF South"
+        },
+        "vulnerabilityComponents": {
+          "populationDensity": {
+            "value": 32750,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "HIGH",
+              "status": "SOURCED"
+            }
+          },
+          "elderlyPopulation": {
+            "value": 0.13,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "outdoorWorkerExposure": {
+            "value": 0.32,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Labor Statistics",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "builtEnvironmentIndicator": {
+            "value": 0.865,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Urban Morphology Index",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "informalSettlementIndicator": {
+            "value": 0.176,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Slum Clearance Board Survey",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "zoneId": "zone-08",
+    "zoneName": "Zone VIII - Anna Nagar",
+    "wardId": "ward-106",
+    "wardName": "Ward 106 - Arumbakkam Metro",
+    "latitude": 13.073,
+    "longitude": 80.227,
+    "areaKm2": 2.4,
+    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
+    "lastUpdated": "2026-03-01T00:00:00Z",
+    "id": "ward-106",
+    "name": "Ward 106 - Arumbakkam Metro",
+    "metrics": {
+      "heat": {
+        "lst": {
+          "value": 37.5,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "30m downscaled to Ward-level zonal average",
+            "processingMethod": "Mono-window thermal radiative transfer calculation"
+          },
+          "notes": "Surface temperature observation in Anna Nagar municipal sector"
+        },
+        "lstNormalized": {
+          "value": 0.536,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vegetation": {
+        "ndvi": {
+          "value": 0.19,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "10m raster zonal average",
+            "processingMethod": "Normalized Difference NIR/Red band ratio"
+          },
+          "notes": "Canopy and surface greenness indicator in Arumbakkam Metro"
+        },
+        "vegetationDeficitNormalized": {
+          "value": 0.689,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vulnerability": {
+        "vulnerabilityScore": {
+          "value": 0.45,
+          "metadata": {
+            "sourceType": "MUNICIPAL_CENSUS",
+            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
+            "confidence": "MEDIUM",
+            "status": "DERIVED",
+            "resolution": "Ward Census Block Aggregate",
+            "processingMethod": "Standardized socio-economic exposure index"
+          },
+          "notes": "Composite socio-economic sensitivity for Ward 106 - Arumbakkam Metro"
+        },
+        "vulnerabilityComponents": {
+          "populationDensity": {
+            "value": 29350,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "HIGH",
+              "status": "SOURCED"
+            }
+          },
+          "elderlyPopulation": {
+            "value": 0.14,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "outdoorWorkerExposure": {
+            "value": 0.277,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Labor Statistics",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "builtEnvironmentIndicator": {
+            "value": 0.855,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Urban Morphology Index",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "informalSettlementIndicator": {
+            "value": 0.08,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Slum Clearance Board Survey",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "zoneId": "zone-08",
+    "zoneName": "Zone VIII - Anna Nagar",
+    "wardId": "ward-107",
+    "wardName": "Ward 107 - CMBT Koyambedu",
+    "latitude": 13.081,
+    "longitude": 80.227,
+    "areaKm2": 3.0,
+    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
+    "lastUpdated": "2026-03-01T00:00:00Z",
+    "id": "ward-107",
+    "name": "Ward 107 - CMBT Koyambedu",
+    "metrics": {
+      "heat": {
+        "lst": {
+          "value": 39.2,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "30m downscaled to Ward-level zonal average",
+            "processingMethod": "Mono-window thermal radiative transfer calculation"
+          },
+          "notes": "Surface temperature observation in Anna Nagar municipal sector"
+        },
+        "lstNormalized": {
+          "value": 0.657,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vegetation": {
+        "ndvi": {
+          "value": 0.21,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "10m raster zonal average",
+            "processingMethod": "Normalized Difference NIR/Red band ratio"
+          },
+          "notes": "Canopy and surface greenness indicator in CMBT Koyambedu"
+        },
+        "vegetationDeficitNormalized": {
+          "value": 0.644,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vulnerability": {
+        "vulnerabilityScore": {
+          "value": 0.58,
+          "metadata": {
+            "sourceType": "MUNICIPAL_CENSUS",
+            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
+            "confidence": "MEDIUM",
+            "status": "DERIVED",
+            "resolution": "Ward Census Block Aggregate",
+            "processingMethod": "Standardized socio-economic exposure index"
+          },
+          "notes": "Composite socio-economic sensitivity for Ward 107 - CMBT Koyambedu"
+        },
+        "vulnerabilityComponents": {
+          "populationDensity": {
+            "value": 34700,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "HIGH",
+              "status": "SOURCED"
+            }
+          },
+          "elderlyPopulation": {
+            "value": 0.15,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "outdoorWorkerExposure": {
+            "value": 0.323,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Labor Statistics",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "builtEnvironmentIndicator": {
+            "value": 0.845,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Urban Morphology Index",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "informalSettlementIndicator": {
+            "value": 0.184,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Slum Clearance Board Survey",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "zoneId": "zone-08",
+    "zoneName": "Zone VIII - Anna Nagar",
+    "wardId": "ward-108",
+    "wardName": "Ward 108 - Koyambedu Wholesale Market",
+    "latitude": 13.089,
+    "longitude": 80.227,
+    "areaKm2": 3.6,
+    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
+    "lastUpdated": "2026-03-01T00:00:00Z",
+    "id": "ward-108",
+    "name": "Ward 108 - Koyambedu Wholesale Market",
+    "metrics": {
+      "heat": {
+        "lst": {
+          "value": 37.8,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "30m downscaled to Ward-level zonal average",
+            "processingMethod": "Mono-window thermal radiative transfer calculation"
+          },
+          "notes": "Surface temperature observation in Anna Nagar municipal sector"
+        },
+        "lstNormalized": {
+          "value": 0.557,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vegetation": {
+        "ndvi": {
+          "value": 0.23,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "10m raster zonal average",
+            "processingMethod": "Normalized Difference NIR/Red band ratio"
+          },
+          "notes": "Canopy and surface greenness indicator in Koyambedu Wholesale Market"
+        },
+        "vegetationDeficitNormalized": {
+          "value": 0.6,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vulnerability": {
+        "vulnerabilityScore": {
+          "value": 0.46,
+          "metadata": {
+            "sourceType": "MUNICIPAL_CENSUS",
+            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
+            "confidence": "MEDIUM",
+            "status": "DERIVED",
+            "resolution": "Ward Census Block Aggregate",
+            "processingMethod": "Standardized socio-economic exposure index"
+          },
+          "notes": "Composite socio-economic sensitivity for Ward 108 - Koyambedu Wholesale Market"
+        },
+        "vulnerabilityComponents": {
+          "populationDensity": {
+            "value": 31300,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "HIGH",
+              "status": "SOURCED"
+            }
+          },
+          "elderlyPopulation": {
+            "value": 0.07,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "outdoorWorkerExposure": {
+            "value": 0.281,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Labor Statistics",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "builtEnvironmentIndicator": {
+            "value": 0.835,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Urban Morphology Index",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "informalSettlementIndicator": {
+            "value": 0.088,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Slum Clearance Board Survey",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "zoneId": "zone-09",
+    "zoneName": "Zone IX - Teynampet",
+    "wardId": "ward-109",
+    "wardName": "Ward 109 - Thousand Lights",
+    "latitude": 13.033,
+    "longitude": 80.233,
+    "areaKm2": 4.2,
+    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
+    "lastUpdated": "2026-03-01T00:00:00Z",
+    "id": "ward-109",
+    "name": "Ward 109 - Thousand Lights",
+    "metrics": {
+      "heat": {
+        "lst": {
+          "value": 40.1,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "30m downscaled to Ward-level zonal average",
+            "processingMethod": "Mono-window thermal radiative transfer calculation"
+          },
+          "notes": "Surface temperature observation in Teynampet municipal sector"
+        },
+        "lstNormalized": {
+          "value": 0.721,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vegetation": {
+        "ndvi": {
+          "value": 0.21,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "10m raster zonal average",
+            "processingMethod": "Normalized Difference NIR/Red band ratio"
+          },
+          "notes": "Canopy and surface greenness indicator in Thousand Lights"
+        },
+        "vegetationDeficitNormalized": {
+          "value": 0.644,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vulnerability": {
+        "vulnerabilityScore": {
+          "value": 0.67,
+          "metadata": {
+            "sourceType": "MUNICIPAL_CENSUS",
+            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
+            "confidence": "MEDIUM",
+            "status": "DERIVED",
+            "resolution": "Ward Census Block Aggregate",
+            "processingMethod": "Standardized socio-economic exposure index"
+          },
+          "notes": "Composite socio-economic sensitivity for Ward 109 - Thousand Lights"
+        },
+        "vulnerabilityComponents": {
+          "populationDensity": {
+            "value": 39450,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "HIGH",
+              "status": "SOURCED"
+            }
+          },
+          "elderlyPopulation": {
+            "value": 0.08,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "outdoorWorkerExposure": {
+            "value": 0.354,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Labor Statistics",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "builtEnvironmentIndicator": {
+            "value": 0.845,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Urban Morphology Index",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "informalSettlementIndicator": {
+            "value": 0.256,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Slum Clearance Board Survey",
@@ -13440,18 +13423,18 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     "zoneId": "zone-09",
     "zoneName": "Zone IX - Teynampet",
     "wardId": "ward-110",
-    "wardName": "Ward 110 - College Road",
-    "latitude": 13.046,
-    "longitude": 80.238,
+    "wardName": "Ward 110 - Gopalapuram",
+    "latitude": 13.041,
+    "longitude": 80.233,
     "areaKm2": 4.8,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
     "id": "ward-110",
-    "name": "Ward 110 - College Road",
+    "name": "Ward 110 - Gopalapuram",
     "metrics": {
       "heat": {
         "lst": {
-          "value": 39.1,
+          "value": 38.7,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
@@ -13463,7 +13446,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
           "notes": "Surface temperature observation in Teynampet municipal sector"
         },
         "lstNormalized": {
-          "value": 0.65,
+          "value": 0.621,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS",
@@ -13474,7 +13457,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.15,
+          "value": 0.23,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -13483,10 +13466,376 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in College Road"
+          "notes": "Canopy and surface greenness indicator in Gopalapuram"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.778,
+          "value": 0.6,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vulnerability": {
+        "vulnerabilityScore": {
+          "value": 0.55,
+          "metadata": {
+            "sourceType": "MUNICIPAL_CENSUS",
+            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
+            "confidence": "MEDIUM",
+            "status": "DERIVED",
+            "resolution": "Ward Census Block Aggregate",
+            "processingMethod": "Standardized socio-economic exposure index"
+          },
+          "notes": "Composite socio-economic sensitivity for Ward 110 - Gopalapuram"
+        },
+        "vulnerabilityComponents": {
+          "populationDensity": {
+            "value": 27250,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "HIGH",
+              "status": "SOURCED"
+            }
+          },
+          "elderlyPopulation": {
+            "value": 0.09,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "outdoorWorkerExposure": {
+            "value": 0.312,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Labor Statistics",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "builtEnvironmentIndicator": {
+            "value": 0.835,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Urban Morphology Index",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "informalSettlementIndicator": {
+            "value": 0.16,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Slum Clearance Board Survey",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "zoneId": "zone-09",
+    "zoneName": "Zone IX - Teynampet",
+    "wardId": "ward-111",
+    "wardName": "Ward 111 - Royapettah Clock Tower",
+    "latitude": 13.049,
+    "longitude": 80.233,
+    "areaKm2": 5.4,
+    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
+    "lastUpdated": "2026-03-01T00:00:00Z",
+    "id": "ward-111",
+    "name": "Ward 111 - Royapettah Clock Tower",
+    "metrics": {
+      "heat": {
+        "lst": {
+          "value": 40.4,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "30m downscaled to Ward-level zonal average",
+            "processingMethod": "Mono-window thermal radiative transfer calculation"
+          },
+          "notes": "Surface temperature observation in Teynampet municipal sector"
+        },
+        "lstNormalized": {
+          "value": 0.743,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vegetation": {
+        "ndvi": {
+          "value": 0.25,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "10m raster zonal average",
+            "processingMethod": "Normalized Difference NIR/Red band ratio"
+          },
+          "notes": "Canopy and surface greenness indicator in Royapettah Clock Tower"
+        },
+        "vegetationDeficitNormalized": {
+          "value": 0.556,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vulnerability": {
+        "vulnerabilityScore": {
+          "value": 0.68,
+          "metadata": {
+            "sourceType": "MUNICIPAL_CENSUS",
+            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
+            "confidence": "MEDIUM",
+            "status": "DERIVED",
+            "resolution": "Ward Census Block Aggregate",
+            "processingMethod": "Standardized socio-economic exposure index"
+          },
+          "notes": "Composite socio-economic sensitivity for Ward 111 - Royapettah Clock Tower"
+        },
+        "vulnerabilityComponents": {
+          "populationDensity": {
+            "value": 32600,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "HIGH",
+              "status": "SOURCED"
+            }
+          },
+          "elderlyPopulation": {
+            "value": 0.1,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "outdoorWorkerExposure": {
+            "value": 0.358,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Labor Statistics",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "builtEnvironmentIndicator": {
+            "value": 0.825,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Urban Morphology Index",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "informalSettlementIndicator": {
+            "value": 0.264,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Slum Clearance Board Survey",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "zoneId": "zone-09",
+    "zoneName": "Zone IX - Teynampet",
+    "wardId": "ward-112",
+    "wardName": "Ward 112 - Triplicane High Road",
+    "latitude": 13.057,
+    "longitude": 80.233,
+    "areaKm2": 1.8,
+    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
+    "lastUpdated": "2026-03-01T00:00:00Z",
+    "id": "ward-112",
+    "name": "Ward 112 - Triplicane High Road",
+    "metrics": {
+      "heat": {
+        "lst": {
+          "value": 39.0,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "30m downscaled to Ward-level zonal average",
+            "processingMethod": "Mono-window thermal radiative transfer calculation"
+          },
+          "notes": "Surface temperature observation in Teynampet municipal sector"
+        },
+        "lstNormalized": {
+          "value": 0.643,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vegetation": {
+        "ndvi": {
+          "value": 0.27,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "10m raster zonal average",
+            "processingMethod": "Normalized Difference NIR/Red band ratio"
+          },
+          "notes": "Canopy and surface greenness indicator in Triplicane High Road"
+        },
+        "vegetationDeficitNormalized": {
+          "value": 0.511,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vulnerability": {
+        "vulnerabilityScore": {
+          "value": 0.56,
+          "metadata": {
+            "sourceType": "MUNICIPAL_CENSUS",
+            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
+            "confidence": "MEDIUM",
+            "status": "DERIVED",
+            "resolution": "Ward Census Block Aggregate",
+            "processingMethod": "Standardized socio-economic exposure index"
+          },
+          "notes": "Composite socio-economic sensitivity for Ward 112 - Triplicane High Road"
+        },
+        "vulnerabilityComponents": {
+          "populationDensity": {
+            "value": 29200,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "HIGH",
+              "status": "SOURCED"
+            }
+          },
+          "elderlyPopulation": {
+            "value": 0.11,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "outdoorWorkerExposure": {
+            "value": 0.316,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Labor Statistics",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "builtEnvironmentIndicator": {
+            "value": 0.815,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Urban Morphology Index",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "informalSettlementIndicator": {
+            "value": 0.168,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Slum Clearance Board Survey",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "zoneId": "zone-09",
+    "zoneName": "Zone IX - Teynampet",
+    "wardId": "ward-113",
+    "wardName": "Ward 113 - Chepauk Stadium",
+    "latitude": 13.033,
+    "longitude": 80.241,
+    "areaKm2": 2.4,
+    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
+    "lastUpdated": "2026-03-01T00:00:00Z",
+    "id": "ward-113",
+    "name": "Ward 113 - Chepauk Stadium",
+    "metrics": {
+      "heat": {
+        "lst": {
+          "value": 40.7,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "30m downscaled to Ward-level zonal average",
+            "processingMethod": "Mono-window thermal radiative transfer calculation"
+          },
+          "notes": "Surface temperature observation in Teynampet municipal sector"
+        },
+        "lstNormalized": {
+          "value": 0.764,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vegetation": {
+        "ndvi": {
+          "value": 0.29,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "10m raster zonal average",
+            "processingMethod": "Normalized Difference NIR/Red band ratio"
+          },
+          "notes": "Canopy and surface greenness indicator in Chepauk Stadium"
+        },
+        "vegetationDeficitNormalized": {
+          "value": 0.467,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -13506,11 +13855,11 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 110 - College Road"
+          "notes": "Composite socio-economic sensitivity for Ward 113 - Chepauk Stadium"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 32149,
+            "value": 34550,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -13519,7 +13868,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "elderlyPopulation": {
-            "value": 0.09,
+            "value": 0.12,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -13537,7 +13886,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.875,
+            "value": 0.805,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -13561,19 +13910,19 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
   {
     "zoneId": "zone-09",
     "zoneName": "Zone IX - Teynampet",
-    "wardId": "ward-111",
-    "wardName": "Ward 111 - Thousand Lights",
-    "latitude": 13.054,
-    "longitude": 80.238,
-    "areaKm2": 5.4,
+    "wardId": "ward-114",
+    "wardName": "Ward 114 - Marina Beach North",
+    "latitude": 13.041,
+    "longitude": 80.241,
+    "areaKm2": 3.0,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-111",
-    "name": "Ward 111 - Thousand Lights",
+    "id": "ward-114",
+    "name": "Ward 114 - Marina Beach North",
     "metrics": {
       "heat": {
         "lst": {
-          "value": 40.8,
+          "value": 39.3,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
@@ -13585,7 +13934,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
           "notes": "Surface temperature observation in Teynampet municipal sector"
         },
         "lstNormalized": {
-          "value": 0.771,
+          "value": 0.664,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS",
@@ -13596,7 +13945,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.17,
+          "value": 0.31,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -13605,10 +13954,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Thousand Lights"
+          "notes": "Canopy and surface greenness indicator in Marina Beach North"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.733,
+          "value": 0.422,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -13619,7 +13968,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vulnerability": {
         "vulnerabilityScore": {
-          "value": 0.82,
+          "value": 0.57,
           "metadata": {
             "sourceType": "MUNICIPAL_CENSUS",
             "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
@@ -13628,11 +13977,11 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 111 - Thousand Lights"
+          "notes": "Composite socio-economic sensitivity for Ward 114 - Marina Beach North"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 37500,
+            "value": 31150,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -13641,7 +13990,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "elderlyPopulation": {
-            "value": 0.1,
+            "value": 0.13,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -13650,7 +13999,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "outdoorWorkerExposure": {
-            "value": 0.407,
+            "value": 0.32,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Labor Statistics",
@@ -13659,7 +14008,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.865,
+            "value": 0.795,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -13668,7 +14017,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "informalSettlementIndicator": {
-            "value": 0.376,
+            "value": 0.176,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Slum Clearance Board Survey",
@@ -13683,19 +14032,19 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
   {
     "zoneId": "zone-09",
     "zoneName": "Zone IX - Teynampet",
-    "wardId": "ward-112",
-    "wardName": "Ward 112 - Gopalapuram",
-    "latitude": 13.062,
-    "longitude": 80.238,
-    "areaKm2": 1.8,
+    "wardId": "ward-115",
+    "wardName": "Ward 115 - Mylapore Tank",
+    "latitude": 13.049,
+    "longitude": 80.241,
+    "areaKm2": 3.6,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-112",
-    "name": "Ward 112 - Gopalapuram",
+    "id": "ward-115",
+    "name": "Ward 115 - Mylapore Tank",
     "metrics": {
       "heat": {
         "lst": {
-          "value": 39.4,
+          "value": 37.9,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
@@ -13707,7 +14056,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
           "notes": "Surface temperature observation in Teynampet municipal sector"
         },
         "lstNormalized": {
-          "value": 0.671,
+          "value": 0.564,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS",
@@ -13718,7 +14067,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.19,
+          "value": 0.33,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -13727,10 +14076,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Gopalapuram"
+          "notes": "Canopy and surface greenness indicator in Mylapore Tank"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.689,
+          "value": 0.378,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -13750,11 +14099,11 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 112 - Gopalapuram"
+          "notes": "Composite socio-economic sensitivity for Ward 115 - Mylapore Tank"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 34100,
+            "value": 36500,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -13763,7 +14112,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "elderlyPopulation": {
-            "value": 0.11,
+            "value": 0.14,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -13781,7 +14130,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.855,
+            "value": 0.785,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -13805,385 +14154,19 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
   {
     "zoneId": "zone-09",
     "zoneName": "Zone IX - Teynampet",
-    "wardId": "ward-113",
-    "wardName": "Ward 113 - Royapettah High Road",
-    "latitude": 13.038,
-    "longitude": 80.246,
-    "areaKm2": 2.4,
-    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
-    "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-113",
-    "name": "Ward 113 - Royapettah High Road",
-    "metrics": {
-      "heat": {
-        "lst": {
-          "value": 41.1,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "30m downscaled to Ward-level zonal average",
-            "processingMethod": "Mono-window thermal radiative transfer calculation"
-          },
-          "notes": "Surface temperature observation in Teynampet municipal sector"
-        },
-        "lstNormalized": {
-          "value": 0.793,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vegetation": {
-        "ndvi": {
-          "value": 0.21,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "10m raster zonal average",
-            "processingMethod": "Normalized Difference NIR/Red band ratio"
-          },
-          "notes": "Canopy and surface greenness indicator in Royapettah High Road"
-        },
-        "vegetationDeficitNormalized": {
-          "value": 0.644,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vulnerability": {
-        "vulnerabilityScore": {
-          "value": 0.83,
-          "metadata": {
-            "sourceType": "MUNICIPAL_CENSUS",
-            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
-            "confidence": "MEDIUM",
-            "status": "DERIVED",
-            "resolution": "Ward Census Block Aggregate",
-            "processingMethod": "Standardized socio-economic exposure index"
-          },
-          "notes": "Composite socio-economic sensitivity for Ward 113 - Royapettah High Road"
-        },
-        "vulnerabilityComponents": {
-          "populationDensity": {
-            "value": 39450,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "HIGH",
-              "status": "SOURCED"
-            }
-          },
-          "elderlyPopulation": {
-            "value": 0.12,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "outdoorWorkerExposure": {
-            "value": 0.41,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Labor Statistics",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "builtEnvironmentIndicator": {
-            "value": 0.845,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Urban Morphology Index",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "informalSettlementIndicator": {
-            "value": 0.384,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Slum Clearance Board Survey",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          }
-        }
-      }
-    }
-  },
-  {
-    "zoneId": "zone-09",
-    "zoneName": "Zone IX - Teynampet",
-    "wardId": "ward-114",
-    "wardName": "Ward 114 - Chintadripet",
-    "latitude": 13.046,
-    "longitude": 80.246,
-    "areaKm2": 3.0,
-    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
-    "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-114",
-    "name": "Ward 114 - Chintadripet",
-    "metrics": {
-      "heat": {
-        "lst": {
-          "value": 39.7,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "30m downscaled to Ward-level zonal average",
-            "processingMethod": "Mono-window thermal radiative transfer calculation"
-          },
-          "notes": "Surface temperature observation in Teynampet municipal sector"
-        },
-        "lstNormalized": {
-          "value": 0.693,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vegetation": {
-        "ndvi": {
-          "value": 0.23,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "10m raster zonal average",
-            "processingMethod": "Normalized Difference NIR/Red band ratio"
-          },
-          "notes": "Canopy and surface greenness indicator in Chintadripet"
-        },
-        "vegetationDeficitNormalized": {
-          "value": 0.6,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vulnerability": {
-        "vulnerabilityScore": {
-          "value": 0.71,
-          "metadata": {
-            "sourceType": "MUNICIPAL_CENSUS",
-            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
-            "confidence": "MEDIUM",
-            "status": "DERIVED",
-            "resolution": "Ward Census Block Aggregate",
-            "processingMethod": "Standardized socio-economic exposure index"
-          },
-          "notes": "Composite socio-economic sensitivity for Ward 114 - Chintadripet"
-        },
-        "vulnerabilityComponents": {
-          "populationDensity": {
-            "value": 36050,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "HIGH",
-              "status": "SOURCED"
-            }
-          },
-          "elderlyPopulation": {
-            "value": 0.13,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "outdoorWorkerExposure": {
-            "value": 0.368,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Labor Statistics",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "builtEnvironmentIndicator": {
-            "value": 0.835,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Urban Morphology Index",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "informalSettlementIndicator": {
-            "value": 0.288,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Slum Clearance Board Survey",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          }
-        }
-      }
-    }
-  },
-  {
-    "zoneId": "zone-09",
-    "zoneName": "Zone IX - Teynampet",
-    "wardId": "ward-115",
-    "wardName": "Ward 115 - Triplicane High Road",
-    "latitude": 13.054,
-    "longitude": 80.246,
-    "areaKm2": 3.6,
-    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
-    "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-115",
-    "name": "Ward 115 - Triplicane High Road",
-    "metrics": {
-      "heat": {
-        "lst": {
-          "value": 38.3,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "30m downscaled to Ward-level zonal average",
-            "processingMethod": "Mono-window thermal radiative transfer calculation"
-          },
-          "notes": "Surface temperature observation in Teynampet municipal sector"
-        },
-        "lstNormalized": {
-          "value": 0.593,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vegetation": {
-        "ndvi": {
-          "value": 0.25,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "10m raster zonal average",
-            "processingMethod": "Normalized Difference NIR/Red band ratio"
-          },
-          "notes": "Canopy and surface greenness indicator in Triplicane High Road"
-        },
-        "vegetationDeficitNormalized": {
-          "value": 0.556,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vulnerability": {
-        "vulnerabilityScore": {
-          "value": 0.84,
-          "metadata": {
-            "sourceType": "MUNICIPAL_CENSUS",
-            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
-            "confidence": "MEDIUM",
-            "status": "DERIVED",
-            "resolution": "Ward Census Block Aggregate",
-            "processingMethod": "Standardized socio-economic exposure index"
-          },
-          "notes": "Composite socio-economic sensitivity for Ward 115 - Triplicane High Road"
-        },
-        "vulnerabilityComponents": {
-          "populationDensity": {
-            "value": 41400,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "HIGH",
-              "status": "SOURCED"
-            }
-          },
-          "elderlyPopulation": {
-            "value": 0.14,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "outdoorWorkerExposure": {
-            "value": 0.414,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Labor Statistics",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "builtEnvironmentIndicator": {
-            "value": 0.825,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Urban Morphology Index",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "informalSettlementIndicator": {
-            "value": 0.392,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Slum Clearance Board Survey",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          }
-        }
-      }
-    }
-  },
-  {
-    "zoneId": "zone-09",
-    "zoneName": "Zone IX - Teynampet",
     "wardId": "ward-116",
-    "wardName": "Ward 116 - Marina Promenade",
-    "latitude": 13.062,
-    "longitude": 80.246,
+    "wardName": "Ward 116 - Luz Church Road",
+    "latitude": 13.057,
+    "longitude": 80.241,
     "areaKm2": 4.2,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
     "id": "ward-116",
-    "name": "Ward 116 - Marina Promenade",
+    "name": "Ward 116 - Luz Church Road",
     "metrics": {
       "heat": {
         "lst": {
-          "value": 40.0,
+          "value": 39.6,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
@@ -14195,495 +14178,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
           "notes": "Surface temperature observation in Teynampet municipal sector"
         },
         "lstNormalized": {
-          "value": 0.714,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vegetation": {
-        "ndvi": {
-          "value": 0.06,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "10m raster zonal average",
-            "processingMethod": "Normalized Difference NIR/Red band ratio"
-          },
-          "notes": "Canopy and surface greenness indicator in Marina Promenade"
-        },
-        "vegetationDeficitNormalized": {
-          "value": 0.95,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vulnerability": {
-        "vulnerabilityScore": {
-          "value": 0.72,
-          "metadata": {
-            "sourceType": "MUNICIPAL_CENSUS",
-            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
-            "confidence": "MEDIUM",
-            "status": "DERIVED",
-            "resolution": "Ward Census Block Aggregate",
-            "processingMethod": "Standardized socio-economic exposure index"
-          },
-          "notes": "Composite socio-economic sensitivity for Ward 116 - Marina Promenade"
-        },
-        "vulnerabilityComponents": {
-          "populationDensity": {
-            "value": 38000,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "HIGH",
-              "status": "SOURCED"
-            }
-          },
-          "elderlyPopulation": {
-            "value": 0.15,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "outdoorWorkerExposure": {
-            "value": 0.372,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Labor Statistics",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "builtEnvironmentIndicator": {
-            "value": 0.92,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Urban Morphology Index",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "informalSettlementIndicator": {
-            "value": 0.296,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Slum Clearance Board Survey",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          }
-        }
-      }
-    }
-  },
-  {
-    "zoneId": "zone-09",
-    "zoneName": "Zone IX - Teynampet",
-    "wardId": "ward-117",
-    "wardName": "Ward 117 - Chepauk Stadium",
-    "latitude": 13.038,
-    "longitude": 80.254,
-    "areaKm2": 4.8,
-    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
-    "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-117",
-    "name": "Ward 117 - Chepauk Stadium",
-    "metrics": {
-      "heat": {
-        "lst": {
-          "value": 38.6,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "30m downscaled to Ward-level zonal average",
-            "processingMethod": "Mono-window thermal radiative transfer calculation"
-          },
-          "notes": "Surface temperature observation in Teynampet municipal sector"
-        },
-        "lstNormalized": {
-          "value": 0.614,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vegetation": {
-        "ndvi": {
-          "value": 0.08,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "10m raster zonal average",
-            "processingMethod": "Normalized Difference NIR/Red band ratio"
-          },
-          "notes": "Canopy and surface greenness indicator in Chepauk Stadium"
-        },
-        "vegetationDeficitNormalized": {
-          "value": 0.933,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vulnerability": {
-        "vulnerabilityScore": {
-          "value": 0.85,
-          "metadata": {
-            "sourceType": "MUNICIPAL_CENSUS",
-            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
-            "confidence": "MEDIUM",
-            "status": "DERIVED",
-            "resolution": "Ward Census Block Aggregate",
-            "processingMethod": "Standardized socio-economic exposure index"
-          },
-          "notes": "Composite socio-economic sensitivity for Ward 117 - Chepauk Stadium"
-        },
-        "vulnerabilityComponents": {
-          "populationDensity": {
-            "value": 43350,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "HIGH",
-              "status": "SOURCED"
-            }
-          },
-          "elderlyPopulation": {
-            "value": 0.07,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "outdoorWorkerExposure": {
-            "value": 0.417,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Labor Statistics",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "builtEnvironmentIndicator": {
-            "value": 0.91,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Urban Morphology Index",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "informalSettlementIndicator": {
-            "value": 0.4,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Slum Clearance Board Survey",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          }
-        }
-      }
-    }
-  },
-  {
-    "zoneId": "zone-09",
-    "zoneName": "Zone IX - Teynampet",
-    "wardId": "ward-118",
-    "wardName": "Ward 118 - Ice House",
-    "latitude": 13.046,
-    "longitude": 80.254,
-    "areaKm2": 5.4,
-    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
-    "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-118",
-    "name": "Ward 118 - Ice House",
-    "metrics": {
-      "heat": {
-        "lst": {
-          "value": 40.3,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "30m downscaled to Ward-level zonal average",
-            "processingMethod": "Mono-window thermal radiative transfer calculation"
-          },
-          "notes": "Surface temperature observation in Teynampet municipal sector"
-        },
-        "lstNormalized": {
-          "value": 0.736,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vegetation": {
-        "ndvi": {
-          "value": 0.1,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "10m raster zonal average",
-            "processingMethod": "Normalized Difference NIR/Red band ratio"
-          },
-          "notes": "Canopy and surface greenness indicator in Ice House"
-        },
-        "vegetationDeficitNormalized": {
-          "value": 0.889,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vulnerability": {
-        "vulnerabilityScore": {
-          "value": 0.73,
-          "metadata": {
-            "sourceType": "MUNICIPAL_CENSUS",
-            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
-            "confidence": "MEDIUM",
-            "status": "DERIVED",
-            "resolution": "Ward Census Block Aggregate",
-            "processingMethod": "Standardized socio-economic exposure index"
-          },
-          "notes": "Composite socio-economic sensitivity for Ward 118 - Ice House"
-        },
-        "vulnerabilityComponents": {
-          "populationDensity": {
-            "value": 39950,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "HIGH",
-              "status": "SOURCED"
-            }
-          },
-          "elderlyPopulation": {
-            "value": 0.08,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "outdoorWorkerExposure": {
-            "value": 0.376,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Labor Statistics",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "builtEnvironmentIndicator": {
-            "value": 0.9,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Urban Morphology Index",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "informalSettlementIndicator": {
-            "value": 0.304,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Slum Clearance Board Survey",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          }
-        }
-      }
-    }
-  },
-  {
-    "zoneId": "zone-09",
-    "zoneName": "Zone IX - Teynampet",
-    "wardId": "ward-119",
-    "wardName": "Ward 119 - Mylapore Tank",
-    "latitude": 13.054,
-    "longitude": 80.254,
-    "areaKm2": 1.8,
-    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
-    "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-119",
-    "name": "Ward 119 - Mylapore Tank",
-    "metrics": {
-      "heat": {
-        "lst": {
-          "value": 38.9,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "30m downscaled to Ward-level zonal average",
-            "processingMethod": "Mono-window thermal radiative transfer calculation"
-          },
-          "notes": "Surface temperature observation in Teynampet municipal sector"
-        },
-        "lstNormalized": {
-          "value": 0.636,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vegetation": {
-        "ndvi": {
-          "value": 0.12,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "10m raster zonal average",
-            "processingMethod": "Normalized Difference NIR/Red band ratio"
-          },
-          "notes": "Canopy and surface greenness indicator in Mylapore Tank"
-        },
-        "vegetationDeficitNormalized": {
-          "value": 0.844,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vulnerability": {
-        "vulnerabilityScore": {
-          "value": 0.86,
-          "metadata": {
-            "sourceType": "MUNICIPAL_CENSUS",
-            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
-            "confidence": "MEDIUM",
-            "status": "DERIVED",
-            "resolution": "Ward Census Block Aggregate",
-            "processingMethod": "Standardized socio-economic exposure index"
-          },
-          "notes": "Composite socio-economic sensitivity for Ward 119 - Mylapore Tank"
-        },
-        "vulnerabilityComponents": {
-          "populationDensity": {
-            "value": 45300,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "HIGH",
-              "status": "SOURCED"
-            }
-          },
-          "elderlyPopulation": {
-            "value": 0.09,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "outdoorWorkerExposure": {
-            "value": 0.421,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Labor Statistics",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "builtEnvironmentIndicator": {
-            "value": 0.89,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Urban Morphology Index",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "informalSettlementIndicator": {
-            "value": 0.408,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Slum Clearance Board Survey",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          }
-        }
-      }
-    }
-  },
-  {
-    "zoneId": "zone-09",
-    "zoneName": "Zone IX - Teynampet",
-    "wardId": "ward-120",
-    "wardName": "Ward 120 - Kapaleeshwarar South",
-    "latitude": 13.062,
-    "longitude": 80.254,
-    "areaKm2": 2.4,
-    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
-    "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-120",
-    "name": "Ward 120 - Kapaleeshwarar South",
-    "metrics": {
-      "heat": {
-        "lst": {
-          "value": 40.6,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "30m downscaled to Ward-level zonal average",
-            "processingMethod": "Mono-window thermal radiative transfer calculation"
-          },
-          "notes": "Surface temperature observation in Teynampet municipal sector"
-        },
-        "lstNormalized": {
-          "value": 0.757,
+          "value": 0.686,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS",
@@ -14703,7 +14198,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Kapaleeshwarar South"
+          "notes": "Canopy and surface greenness indicator in Luz Church Road"
         },
         "vegetationDeficitNormalized": {
           "value": 0.8,
@@ -14717,7 +14212,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vulnerability": {
         "vulnerabilityScore": {
-          "value": 0.74,
+          "value": 0.58,
           "metadata": {
             "sourceType": "MUNICIPAL_CENSUS",
             "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
@@ -14726,11 +14221,11 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 120 - Kapaleeshwarar South"
+          "notes": "Composite socio-economic sensitivity for Ward 116 - Luz Church Road"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 41900,
+            "value": 33100,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -14739,7 +14234,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "elderlyPopulation": {
-            "value": 0.1,
+            "value": 0.15,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -14748,7 +14243,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "outdoorWorkerExposure": {
-            "value": 0.379,
+            "value": 0.323,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Labor Statistics",
@@ -14766,7 +14261,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "informalSettlementIndicator": {
-            "value": 0.312,
+            "value": 0.184,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Slum Clearance Board Survey",
@@ -14781,19 +14276,19 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
   {
     "zoneId": "zone-09",
     "zoneName": "Zone IX - Teynampet",
-    "wardId": "ward-121",
-    "wardName": "Ward 121 - Alwarpet TTK Road",
-    "latitude": 13.038,
-    "longitude": 80.262,
-    "areaKm2": 3.0,
+    "wardId": "ward-117",
+    "wardName": "Ward 117 - Alwarpet TTK Road",
+    "latitude": 13.033,
+    "longitude": 80.249,
+    "areaKm2": 4.8,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-121",
-    "name": "Ward 121 - Alwarpet TTK Road",
+    "id": "ward-117",
+    "name": "Ward 117 - Alwarpet TTK Road",
     "metrics": {
       "heat": {
         "lst": {
-          "value": 39.2,
+          "value": 38.2,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
@@ -14805,7 +14300,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
           "notes": "Surface temperature observation in Teynampet municipal sector"
         },
         "lstNormalized": {
-          "value": 0.657,
+          "value": 0.586,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS",
@@ -14839,7 +14334,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vulnerability": {
         "vulnerabilityScore": {
-          "value": 0.87,
+          "value": 0.71,
           "metadata": {
             "sourceType": "MUNICIPAL_CENSUS",
             "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
@@ -14848,7 +14343,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 121 - Alwarpet TTK Road"
+          "notes": "Composite socio-economic sensitivity for Ward 117 - Alwarpet TTK Road"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
@@ -14861,7 +14356,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "elderlyPopulation": {
-            "value": 0.11,
+            "value": 0.07,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -14870,7 +14365,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "outdoorWorkerExposure": {
-            "value": 0.424,
+            "value": 0.368,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Labor Statistics",
@@ -14888,7 +14383,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "informalSettlementIndicator": {
-            "value": 0.416,
+            "value": 0.288,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Slum Clearance Board Survey",
@@ -14903,19 +14398,19 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
   {
     "zoneId": "zone-09",
     "zoneName": "Zone IX - Teynampet",
-    "wardId": "ward-122",
-    "wardName": "Ward 122 - Teynampet Signal",
-    "latitude": 13.046,
-    "longitude": 80.262,
-    "areaKm2": 3.6,
+    "wardId": "ward-118",
+    "wardName": "Ward 118 - Teynampet Signal",
+    "latitude": 13.041,
+    "longitude": 80.249,
+    "areaKm2": 5.4,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-122",
-    "name": "Ward 122 - Teynampet Signal",
+    "id": "ward-118",
+    "name": "Ward 118 - Teynampet Signal",
     "metrics": {
       "heat": {
         "lst": {
-          "value": 40.9,
+          "value": 39.9,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
@@ -14927,7 +14422,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
           "notes": "Surface temperature observation in Teynampet municipal sector"
         },
         "lstNormalized": {
-          "value": 0.779,
+          "value": 0.707,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS",
@@ -14961,7 +14456,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vulnerability": {
         "vulnerabilityScore": {
-          "value": 0.75,
+          "value": 0.59,
           "metadata": {
             "sourceType": "MUNICIPAL_CENSUS",
             "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
@@ -14970,7 +14465,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 122 - Teynampet Signal"
+          "notes": "Composite socio-economic sensitivity for Ward 118 - Teynampet Signal"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
@@ -14983,7 +14478,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "elderlyPopulation": {
-            "value": 0.12,
+            "value": 0.08,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -14992,7 +14487,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "outdoorWorkerExposure": {
-            "value": 0.382,
+            "value": 0.327,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Labor Statistics",
@@ -15010,7 +14505,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "informalSettlementIndicator": {
-            "value": 0.32,
+            "value": 0.192,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Slum Clearance Board Survey",
@@ -15025,19 +14520,19 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
   {
     "zoneId": "zone-09",
     "zoneName": "Zone IX - Teynampet",
-    "wardId": "ward-123",
-    "wardName": "Ward 123 - T. Nagar Panagal Park",
-    "latitude": 13.054,
-    "longitude": 80.262,
-    "areaKm2": 4.2,
+    "wardId": "ward-119",
+    "wardName": "Ward 119 - Nandanam Arts",
+    "latitude": 13.049,
+    "longitude": 80.249,
+    "areaKm2": 1.8,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-123",
-    "name": "Ward 123 - T. Nagar Panagal Park",
+    "id": "ward-119",
+    "name": "Ward 119 - Nandanam Arts",
     "metrics": {
       "heat": {
         "lst": {
-          "value": 39.5,
+          "value": 38.5,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
@@ -15049,7 +14544,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
           "notes": "Surface temperature observation in Teynampet municipal sector"
         },
         "lstNormalized": {
-          "value": 0.679,
+          "value": 0.607,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS",
@@ -15069,7 +14564,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in T. Nagar Panagal Park"
+          "notes": "Canopy and surface greenness indicator in Nandanam Arts"
         },
         "vegetationDeficitNormalized": {
           "value": 0.667,
@@ -15083,7 +14578,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vulnerability": {
         "vulnerabilityScore": {
-          "value": 0.88,
+          "value": 0.72,
           "metadata": {
             "sourceType": "MUNICIPAL_CENSUS",
             "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
@@ -15092,7 +14587,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 123 - T. Nagar Panagal Park"
+          "notes": "Composite socio-economic sensitivity for Ward 119 - Nandanam Arts"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
@@ -15105,7 +14600,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "elderlyPopulation": {
-            "value": 0.13,
+            "value": 0.09,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -15114,7 +14609,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "outdoorWorkerExposure": {
-            "value": 0.428,
+            "value": 0.372,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Labor Statistics",
@@ -15132,7 +14627,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "informalSettlementIndicator": {
-            "value": 0.424,
+            "value": 0.296,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Slum Clearance Board Survey",
@@ -15147,19 +14642,19 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
   {
     "zoneId": "zone-09",
     "zoneName": "Zone IX - Teynampet",
-    "wardId": "ward-124",
-    "wardName": "Ward 124 - T. Nagar Pondy Bazaar",
-    "latitude": 13.062,
-    "longitude": 80.262,
-    "areaKm2": 4.8,
+    "wardId": "ward-120",
+    "wardName": "Ward 120 - Nandanam YMCA",
+    "latitude": 13.057,
+    "longitude": 80.249,
+    "areaKm2": 2.4,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-124",
-    "name": "Ward 124 - T. Nagar Pondy Bazaar",
+    "id": "ward-120",
+    "name": "Ward 120 - Nandanam YMCA",
     "metrics": {
       "heat": {
         "lst": {
-          "value": 38.1,
+          "value": 40.2,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
@@ -15171,7 +14666,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
           "notes": "Surface temperature observation in Teynampet municipal sector"
         },
         "lstNormalized": {
-          "value": 0.579,
+          "value": 0.729,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS",
@@ -15191,7 +14686,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in T. Nagar Pondy Bazaar"
+          "notes": "Canopy and surface greenness indicator in Nandanam YMCA"
         },
         "vegetationDeficitNormalized": {
           "value": 0.622,
@@ -15205,7 +14700,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vulnerability": {
         "vulnerabilityScore": {
-          "value": 0.76,
+          "value": 0.6,
           "metadata": {
             "sourceType": "MUNICIPAL_CENSUS",
             "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
@@ -15214,7 +14709,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 124 - T. Nagar Pondy Bazaar"
+          "notes": "Composite socio-economic sensitivity for Ward 120 - Nandanam YMCA"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
@@ -15227,7 +14722,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "elderlyPopulation": {
-            "value": 0.14,
+            "value": 0.1,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -15236,7 +14731,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "outdoorWorkerExposure": {
-            "value": 0.386,
+            "value": 0.33,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Labor Statistics",
@@ -15254,7 +14749,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "informalSettlementIndicator": {
-            "value": 0.328,
+            "value": 0.2,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Slum Clearance Board Survey",
@@ -15269,19 +14764,19 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
   {
     "zoneId": "zone-09",
     "zoneName": "Zone IX - Teynampet",
-    "wardId": "ward-125",
-    "wardName": "Ward 125 - CIT Nagar",
-    "latitude": 13.038,
-    "longitude": 80.27,
-    "areaKm2": 5.4,
+    "wardId": "ward-121",
+    "wardName": "Ward 121 - T. Nagar Panagal Park",
+    "latitude": 13.033,
+    "longitude": 80.257,
+    "areaKm2": 3.0,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-125",
-    "name": "Ward 125 - CIT Nagar",
+    "id": "ward-121",
+    "name": "Ward 121 - T. Nagar Panagal Park",
     "metrics": {
       "heat": {
         "lst": {
-          "value": 39.8,
+          "value": 38.8,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
@@ -15293,7 +14788,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
           "notes": "Surface temperature observation in Teynampet municipal sector"
         },
         "lstNormalized": {
-          "value": 0.7,
+          "value": 0.629,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS",
@@ -15313,7 +14808,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in CIT Nagar"
+          "notes": "Canopy and surface greenness indicator in T. Nagar Panagal Park"
         },
         "vegetationDeficitNormalized": {
           "value": 0.578,
@@ -15327,7 +14822,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vulnerability": {
         "vulnerabilityScore": {
-          "value": 0.64,
+          "value": 0.73,
           "metadata": {
             "sourceType": "MUNICIPAL_CENSUS",
             "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
@@ -15336,11 +14831,11 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 125 - CIT Nagar"
+          "notes": "Composite socio-economic sensitivity for Ward 121 - T. Nagar Panagal Park"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 33600,
+            "value": 33550,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -15349,7 +14844,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "elderlyPopulation": {
-            "value": 0.15,
+            "value": 0.11,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -15358,7 +14853,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "outdoorWorkerExposure": {
-            "value": 0.344,
+            "value": 0.376,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Labor Statistics",
@@ -15376,7 +14871,495 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "informalSettlementIndicator": {
-            "value": 0.232,
+            "value": 0.304,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Slum Clearance Board Survey",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "zoneId": "zone-09",
+    "zoneName": "Zone IX - Teynampet",
+    "wardId": "ward-122",
+    "wardName": "Ward 122 - T. Nagar Pondy Bazaar",
+    "latitude": 13.041,
+    "longitude": 80.257,
+    "areaKm2": 3.6,
+    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
+    "lastUpdated": "2026-03-01T00:00:00Z",
+    "id": "ward-122",
+    "name": "Ward 122 - T. Nagar Pondy Bazaar",
+    "metrics": {
+      "heat": {
+        "lst": {
+          "value": 40.5,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "30m downscaled to Ward-level zonal average",
+            "processingMethod": "Mono-window thermal radiative transfer calculation"
+          },
+          "notes": "Surface temperature observation in Teynampet municipal sector"
+        },
+        "lstNormalized": {
+          "value": 0.75,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vegetation": {
+        "ndvi": {
+          "value": 0.26,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "10m raster zonal average",
+            "processingMethod": "Normalized Difference NIR/Red band ratio"
+          },
+          "notes": "Canopy and surface greenness indicator in T. Nagar Pondy Bazaar"
+        },
+        "vegetationDeficitNormalized": {
+          "value": 0.533,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vulnerability": {
+        "vulnerabilityScore": {
+          "value": 0.61,
+          "metadata": {
+            "sourceType": "MUNICIPAL_CENSUS",
+            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
+            "confidence": "MEDIUM",
+            "status": "DERIVED",
+            "resolution": "Ward Census Block Aggregate",
+            "processingMethod": "Standardized socio-economic exposure index"
+          },
+          "notes": "Composite socio-economic sensitivity for Ward 122 - T. Nagar Pondy Bazaar"
+        },
+        "vulnerabilityComponents": {
+          "populationDensity": {
+            "value": 30150,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "HIGH",
+              "status": "SOURCED"
+            }
+          },
+          "elderlyPopulation": {
+            "value": 0.12,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "outdoorWorkerExposure": {
+            "value": 0.334,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Labor Statistics",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "builtEnvironmentIndicator": {
+            "value": 0.82,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Urban Morphology Index",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "informalSettlementIndicator": {
+            "value": 0.208,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Slum Clearance Board Survey",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "zoneId": "zone-09",
+    "zoneName": "Zone IX - Teynampet",
+    "wardId": "ward-123",
+    "wardName": "Ward 123 - CIT Nagar",
+    "latitude": 13.049,
+    "longitude": 80.257,
+    "areaKm2": 4.2,
+    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
+    "lastUpdated": "2026-03-01T00:00:00Z",
+    "id": "ward-123",
+    "name": "Ward 123 - CIT Nagar",
+    "metrics": {
+      "heat": {
+        "lst": {
+          "value": 39.1,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "30m downscaled to Ward-level zonal average",
+            "processingMethod": "Mono-window thermal radiative transfer calculation"
+          },
+          "notes": "Surface temperature observation in Teynampet municipal sector"
+        },
+        "lstNormalized": {
+          "value": 0.65,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vegetation": {
+        "ndvi": {
+          "value": 0.28,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "10m raster zonal average",
+            "processingMethod": "Normalized Difference NIR/Red band ratio"
+          },
+          "notes": "Canopy and surface greenness indicator in CIT Nagar"
+        },
+        "vegetationDeficitNormalized": {
+          "value": 0.489,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vulnerability": {
+        "vulnerabilityScore": {
+          "value": 0.74,
+          "metadata": {
+            "sourceType": "MUNICIPAL_CENSUS",
+            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
+            "confidence": "MEDIUM",
+            "status": "DERIVED",
+            "resolution": "Ward Census Block Aggregate",
+            "processingMethod": "Standardized socio-economic exposure index"
+          },
+          "notes": "Composite socio-economic sensitivity for Ward 123 - CIT Nagar"
+        },
+        "vulnerabilityComponents": {
+          "populationDensity": {
+            "value": 35500,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "HIGH",
+              "status": "SOURCED"
+            }
+          },
+          "elderlyPopulation": {
+            "value": 0.13,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "outdoorWorkerExposure": {
+            "value": 0.379,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Labor Statistics",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "builtEnvironmentIndicator": {
+            "value": 0.81,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Urban Morphology Index",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "informalSettlementIndicator": {
+            "value": 0.312,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Slum Clearance Board Survey",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "zoneId": "zone-09",
+    "zoneName": "Zone IX - Teynampet",
+    "wardId": "ward-124",
+    "wardName": "Ward 124 - T. Nagar South",
+    "latitude": 13.057,
+    "longitude": 80.257,
+    "areaKm2": 4.8,
+    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
+    "lastUpdated": "2026-03-01T00:00:00Z",
+    "id": "ward-124",
+    "name": "Ward 124 - T. Nagar South",
+    "metrics": {
+      "heat": {
+        "lst": {
+          "value": 37.7,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "30m downscaled to Ward-level zonal average",
+            "processingMethod": "Mono-window thermal radiative transfer calculation"
+          },
+          "notes": "Surface temperature observation in Teynampet municipal sector"
+        },
+        "lstNormalized": {
+          "value": 0.55,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vegetation": {
+        "ndvi": {
+          "value": 0.3,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "10m raster zonal average",
+            "processingMethod": "Normalized Difference NIR/Red band ratio"
+          },
+          "notes": "Canopy and surface greenness indicator in T. Nagar South"
+        },
+        "vegetationDeficitNormalized": {
+          "value": 0.444,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vulnerability": {
+        "vulnerabilityScore": {
+          "value": 0.62,
+          "metadata": {
+            "sourceType": "MUNICIPAL_CENSUS",
+            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
+            "confidence": "MEDIUM",
+            "status": "DERIVED",
+            "resolution": "Ward Census Block Aggregate",
+            "processingMethod": "Standardized socio-economic exposure index"
+          },
+          "notes": "Composite socio-economic sensitivity for Ward 124 - T. Nagar South"
+        },
+        "vulnerabilityComponents": {
+          "populationDensity": {
+            "value": 32100,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "HIGH",
+              "status": "SOURCED"
+            }
+          },
+          "elderlyPopulation": {
+            "value": 0.14,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "outdoorWorkerExposure": {
+            "value": 0.337,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Labor Statistics",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "builtEnvironmentIndicator": {
+            "value": 0.8,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Urban Morphology Index",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "informalSettlementIndicator": {
+            "value": 0.216,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Slum Clearance Board Survey",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "zoneId": "zone-09",
+    "zoneName": "Zone IX - Teynampet",
+    "wardId": "ward-125",
+    "wardName": "Ward 125 - Choolaimedu High Road",
+    "latitude": 13.033,
+    "longitude": 80.265,
+    "areaKm2": 5.4,
+    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
+    "lastUpdated": "2026-03-01T00:00:00Z",
+    "id": "ward-125",
+    "name": "Ward 125 - Choolaimedu High Road",
+    "metrics": {
+      "heat": {
+        "lst": {
+          "value": 39.4,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "30m downscaled to Ward-level zonal average",
+            "processingMethod": "Mono-window thermal radiative transfer calculation"
+          },
+          "notes": "Surface temperature observation in Teynampet municipal sector"
+        },
+        "lstNormalized": {
+          "value": 0.671,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vegetation": {
+        "ndvi": {
+          "value": 0.32,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "10m raster zonal average",
+            "processingMethod": "Normalized Difference NIR/Red band ratio"
+          },
+          "notes": "Canopy and surface greenness indicator in Choolaimedu High Road"
+        },
+        "vegetationDeficitNormalized": {
+          "value": 0.4,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vulnerability": {
+        "vulnerabilityScore": {
+          "value": 0.5,
+          "metadata": {
+            "sourceType": "MUNICIPAL_CENSUS",
+            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
+            "confidence": "MEDIUM",
+            "status": "DERIVED",
+            "resolution": "Ward Census Block Aggregate",
+            "processingMethod": "Standardized socio-economic exposure index"
+          },
+          "notes": "Composite socio-economic sensitivity for Ward 125 - Choolaimedu High Road"
+        },
+        "vulnerabilityComponents": {
+          "populationDensity": {
+            "value": 28700,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "HIGH",
+              "status": "SOURCED"
+            }
+          },
+          "elderlyPopulation": {
+            "value": 0.15,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "outdoorWorkerExposure": {
+            "value": 0.295,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Labor Statistics",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "builtEnvironmentIndicator": {
+            "value": 0.79,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Urban Morphology Index",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "informalSettlementIndicator": {
+            "value": 0.12,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Slum Clearance Board Survey",
@@ -15392,18 +15375,18 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     "zoneId": "zone-09",
     "zoneName": "Zone IX - Teynampet",
     "wardId": "ward-126",
-    "wardName": "Ward 126 - Nandanam Chamiers",
-    "latitude": 13.046,
-    "longitude": 80.27,
+    "wardName": "Ward 126 - Nungambakkam High Road",
+    "latitude": 13.041,
+    "longitude": 80.265,
     "areaKm2": 1.8,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
     "id": "ward-126",
-    "name": "Ward 126 - Nandanam Chamiers",
+    "name": "Ward 126 - Nungambakkam High Road",
     "metrics": {
       "heat": {
         "lst": {
-          "value": 38.4,
+          "value": 38.0,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
@@ -15415,7 +15398,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
           "notes": "Surface temperature observation in Teynampet municipal sector"
         },
         "lstNormalized": {
-          "value": 0.6,
+          "value": 0.571,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS",
@@ -15426,7 +15409,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.06,
+          "value": 0.13,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -15435,10 +15418,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Nandanam Chamiers"
+          "notes": "Canopy and surface greenness indicator in Nungambakkam High Road"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.95,
+          "value": 0.822,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -15449,7 +15432,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vulnerability": {
         "vulnerabilityScore": {
-          "value": 0.77,
+          "value": 0.63,
           "metadata": {
             "sourceType": "MUNICIPAL_CENSUS",
             "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
@@ -15458,11 +15441,11 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 126 - Nandanam Chamiers"
+          "notes": "Composite socio-economic sensitivity for Ward 126 - Nungambakkam High Road"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 38950,
+            "value": 34050,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -15480,7 +15463,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "outdoorWorkerExposure": {
-            "value": 0.389,
+            "value": 0.34,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Labor Statistics",
@@ -15489,7 +15472,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.92,
+            "value": 0.885,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -15498,7 +15481,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "informalSettlementIndicator": {
-            "value": 0.336,
+            "value": 0.224,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Slum Clearance Board Survey",
@@ -15514,14 +15497,258 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     "zoneId": "zone-10",
     "zoneName": "Zone X - Kodambakkam",
     "wardId": "ward-127",
-    "wardName": "Ward 127 - Vadapalani Temple",
-    "latitude": 13.023,
-    "longitude": 80.203,
+    "wardName": "Ward 127 - Kodambakkam Liberty",
+    "latitude": 13.018,
+    "longitude": 80.193,
     "areaKm2": 2.4,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
     "id": "ward-127",
-    "name": "Ward 127 - Vadapalani Temple",
+    "name": "Ward 127 - Kodambakkam Liberty",
+    "metrics": {
+      "heat": {
+        "lst": {
+          "value": 39.4,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "30m downscaled to Ward-level zonal average",
+            "processingMethod": "Mono-window thermal radiative transfer calculation"
+          },
+          "notes": "Surface temperature observation in Kodambakkam municipal sector"
+        },
+        "lstNormalized": {
+          "value": 0.671,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vegetation": {
+        "ndvi": {
+          "value": 0.13,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "10m raster zonal average",
+            "processingMethod": "Normalized Difference NIR/Red band ratio"
+          },
+          "notes": "Canopy and surface greenness indicator in Kodambakkam Liberty"
+        },
+        "vegetationDeficitNormalized": {
+          "value": 0.822,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vulnerability": {
+        "vulnerabilityScore": {
+          "value": 0.49,
+          "metadata": {
+            "sourceType": "MUNICIPAL_CENSUS",
+            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
+            "confidence": "MEDIUM",
+            "status": "DERIVED",
+            "resolution": "Ward Census Block Aggregate",
+            "processingMethod": "Standardized socio-economic exposure index"
+          },
+          "notes": "Composite socio-economic sensitivity for Ward 127 - Kodambakkam Liberty"
+        },
+        "vulnerabilityComponents": {
+          "populationDensity": {
+            "value": 29950,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "HIGH",
+              "status": "SOURCED"
+            }
+          },
+          "elderlyPopulation": {
+            "value": 0.08,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "outdoorWorkerExposure": {
+            "value": 0.291,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Labor Statistics",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "builtEnvironmentIndicator": {
+            "value": 0.885,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Urban Morphology Index",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "informalSettlementIndicator": {
+            "value": 0.112,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Slum Clearance Board Survey",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "zoneId": "zone-10",
+    "zoneName": "Zone X - Kodambakkam",
+    "wardId": "ward-128",
+    "wardName": "Ward 128 - Vadapalani Murugan Temple",
+    "latitude": 13.026,
+    "longitude": 80.193,
+    "areaKm2": 3.0,
+    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
+    "lastUpdated": "2026-03-01T00:00:00Z",
+    "id": "ward-128",
+    "name": "Ward 128 - Vadapalani Murugan Temple",
+    "metrics": {
+      "heat": {
+        "lst": {
+          "value": 38.0,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "30m downscaled to Ward-level zonal average",
+            "processingMethod": "Mono-window thermal radiative transfer calculation"
+          },
+          "notes": "Surface temperature observation in Kodambakkam municipal sector"
+        },
+        "lstNormalized": {
+          "value": 0.571,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vegetation": {
+        "ndvi": {
+          "value": 0.15,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "10m raster zonal average",
+            "processingMethod": "Normalized Difference NIR/Red band ratio"
+          },
+          "notes": "Canopy and surface greenness indicator in Vadapalani Murugan Temple"
+        },
+        "vegetationDeficitNormalized": {
+          "value": 0.778,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vulnerability": {
+        "vulnerabilityScore": {
+          "value": 0.62,
+          "metadata": {
+            "sourceType": "MUNICIPAL_CENSUS",
+            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
+            "confidence": "MEDIUM",
+            "status": "DERIVED",
+            "resolution": "Ward Census Block Aggregate",
+            "processingMethod": "Standardized socio-economic exposure index"
+          },
+          "notes": "Composite socio-economic sensitivity for Ward 128 - Vadapalani Murugan Temple"
+        },
+        "vulnerabilityComponents": {
+          "populationDensity": {
+            "value": 35300,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "HIGH",
+              "status": "SOURCED"
+            }
+          },
+          "elderlyPopulation": {
+            "value": 0.09,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "outdoorWorkerExposure": {
+            "value": 0.337,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Labor Statistics",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "builtEnvironmentIndicator": {
+            "value": 0.875,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Urban Morphology Index",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "informalSettlementIndicator": {
+            "value": 0.216,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Slum Clearance Board Survey",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "zoneId": "zone-10",
+    "zoneName": "Zone X - Kodambakkam",
+    "wardId": "ward-129",
+    "wardName": "Ward 129 - Vadapalani Metro",
+    "latitude": 13.034,
+    "longitude": 80.193,
+    "areaKm2": 3.6,
+    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
+    "lastUpdated": "2026-03-01T00:00:00Z",
+    "id": "ward-129",
+    "name": "Ward 129 - Vadapalani Metro",
     "metrics": {
       "heat": {
         "lst": {
@@ -15548,7 +15775,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.1,
+          "value": 0.17,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -15557,10 +15784,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Vadapalani Temple"
+          "notes": "Canopy and surface greenness indicator in Vadapalani Metro"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.889,
+          "value": 0.733,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -15571,7 +15798,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vulnerability": {
         "vulnerabilityScore": {
-          "value": 0.53,
+          "value": 0.5,
           "metadata": {
             "sourceType": "MUNICIPAL_CENSUS",
             "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
@@ -15580,11 +15807,11 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 127 - Vadapalani Temple"
+          "notes": "Composite socio-economic sensitivity for Ward 129 - Vadapalani Metro"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 31350,
+            "value": 31900,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -15593,7 +15820,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "elderlyPopulation": {
-            "value": 0.08,
+            "value": 0.1,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -15602,7 +15829,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "outdoorWorkerExposure": {
-            "value": 0.305,
+            "value": 0.295,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Labor Statistics",
@@ -15611,7 +15838,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.9,
+            "value": 0.865,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -15620,7 +15847,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "informalSettlementIndicator": {
-            "value": 0.144,
+            "value": 0.12,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Slum Clearance Board Survey",
@@ -15635,15 +15862,15 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
   {
     "zoneId": "zone-10",
     "zoneName": "Zone X - Kodambakkam",
-    "wardId": "ward-128",
-    "wardName": "Ward 128 - Vadapalani Bus Terminus",
-    "latitude": 13.031,
-    "longitude": 80.203,
-    "areaKm2": 3.0,
+    "wardId": "ward-130",
+    "wardName": "Ward 130 - Saligramam Film City",
+    "latitude": 13.042,
+    "longitude": 80.193,
+    "areaKm2": 4.2,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-128",
-    "name": "Ward 128 - Vadapalani Bus Terminus",
+    "id": "ward-130",
+    "name": "Ward 130 - Saligramam Film City",
     "metrics": {
       "heat": {
         "lst": {
@@ -15670,7 +15897,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.12,
+          "value": 0.19,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -15679,10 +15906,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Vadapalani Bus Terminus"
+          "notes": "Canopy and surface greenness indicator in Saligramam Film City"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.844,
+          "value": 0.689,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -15693,7 +15920,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vulnerability": {
         "vulnerabilityScore": {
-          "value": 0.66,
+          "value": 0.63,
           "metadata": {
             "sourceType": "MUNICIPAL_CENSUS",
             "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
@@ -15702,11 +15929,11 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 128 - Vadapalani Bus Terminus"
+          "notes": "Composite socio-economic sensitivity for Ward 130 - Saligramam Film City"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 36700,
+            "value": 37250,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -15715,7 +15942,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "elderlyPopulation": {
-            "value": 0.09,
+            "value": 0.11,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -15724,7 +15951,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "outdoorWorkerExposure": {
-            "value": 0.351,
+            "value": 0.34,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Labor Statistics",
@@ -15733,7 +15960,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.89,
+            "value": 0.855,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -15742,7 +15969,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "informalSettlementIndicator": {
-            "value": 0.248,
+            "value": 0.224,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Slum Clearance Board Survey",
@@ -15757,15 +15984,15 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
   {
     "zoneId": "zone-10",
     "zoneName": "Zone X - Kodambakkam",
-    "wardId": "ward-129",
-    "wardName": "Ward 129 - Kodambakkam Station",
-    "latitude": 13.039,
-    "longitude": 80.203,
-    "areaKm2": 3.6,
+    "wardId": "ward-131",
+    "wardName": "Ward 131 - Virugambakkam Market",
+    "latitude": 13.018,
+    "longitude": 80.201,
+    "areaKm2": 4.8,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-129",
-    "name": "Ward 129 - Kodambakkam Station",
+    "id": "ward-131",
+    "name": "Ward 131 - Virugambakkam Market",
     "metrics": {
       "heat": {
         "lst": {
@@ -15792,7 +16019,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.14,
+          "value": 0.21,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -15801,10 +16028,742 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Kodambakkam Station"
+          "notes": "Canopy and surface greenness indicator in Virugambakkam Market"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.8,
+          "value": 0.644,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vulnerability": {
+        "vulnerabilityScore": {
+          "value": 0.51,
+          "metadata": {
+            "sourceType": "MUNICIPAL_CENSUS",
+            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
+            "confidence": "MEDIUM",
+            "status": "DERIVED",
+            "resolution": "Ward Census Block Aggregate",
+            "processingMethod": "Standardized socio-economic exposure index"
+          },
+          "notes": "Composite socio-economic sensitivity for Ward 131 - Virugambakkam Market"
+        },
+        "vulnerabilityComponents": {
+          "populationDensity": {
+            "value": 33850,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "HIGH",
+              "status": "SOURCED"
+            }
+          },
+          "elderlyPopulation": {
+            "value": 0.12,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "outdoorWorkerExposure": {
+            "value": 0.298,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Labor Statistics",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "builtEnvironmentIndicator": {
+            "value": 0.845,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Urban Morphology Index",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "informalSettlementIndicator": {
+            "value": 0.128,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Slum Clearance Board Survey",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "zoneId": "zone-10",
+    "zoneName": "Zone X - Kodambakkam",
+    "wardId": "ward-132",
+    "wardName": "Ward 132 - Alwarthirunagar",
+    "latitude": 13.026,
+    "longitude": 80.201,
+    "areaKm2": 5.4,
+    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
+    "lastUpdated": "2026-03-01T00:00:00Z",
+    "id": "ward-132",
+    "name": "Ward 132 - Alwarthirunagar",
+    "metrics": {
+      "heat": {
+        "lst": {
+          "value": 38.6,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "30m downscaled to Ward-level zonal average",
+            "processingMethod": "Mono-window thermal radiative transfer calculation"
+          },
+          "notes": "Surface temperature observation in Kodambakkam municipal sector"
+        },
+        "lstNormalized": {
+          "value": 0.614,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vegetation": {
+        "ndvi": {
+          "value": 0.23,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "10m raster zonal average",
+            "processingMethod": "Normalized Difference NIR/Red band ratio"
+          },
+          "notes": "Canopy and surface greenness indicator in Alwarthirunagar"
+        },
+        "vegetationDeficitNormalized": {
+          "value": 0.6,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vulnerability": {
+        "vulnerabilityScore": {
+          "value": 0.64,
+          "metadata": {
+            "sourceType": "MUNICIPAL_CENSUS",
+            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
+            "confidence": "MEDIUM",
+            "status": "DERIVED",
+            "resolution": "Ward Census Block Aggregate",
+            "processingMethod": "Standardized socio-economic exposure index"
+          },
+          "notes": "Composite socio-economic sensitivity for Ward 132 - Alwarthirunagar"
+        },
+        "vulnerabilityComponents": {
+          "populationDensity": {
+            "value": 30400,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "HIGH",
+              "status": "SOURCED"
+            }
+          },
+          "elderlyPopulation": {
+            "value": 0.13,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "outdoorWorkerExposure": {
+            "value": 0.344,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Labor Statistics",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "builtEnvironmentIndicator": {
+            "value": 0.835,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Urban Morphology Index",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "informalSettlementIndicator": {
+            "value": 0.232,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Slum Clearance Board Survey",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "zoneId": "zone-10",
+    "zoneName": "Zone X - Kodambakkam",
+    "wardId": "ward-133",
+    "wardName": "Ward 133 - Ashok Nagar 11th Avenue",
+    "latitude": 13.034,
+    "longitude": 80.201,
+    "areaKm2": 1.8,
+    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
+    "lastUpdated": "2026-03-01T00:00:00Z",
+    "id": "ward-133",
+    "name": "Ward 133 - Ashok Nagar 11th Avenue",
+    "metrics": {
+      "heat": {
+        "lst": {
+          "value": 40.3,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "30m downscaled to Ward-level zonal average",
+            "processingMethod": "Mono-window thermal radiative transfer calculation"
+          },
+          "notes": "Surface temperature observation in Kodambakkam municipal sector"
+        },
+        "lstNormalized": {
+          "value": 0.736,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vegetation": {
+        "ndvi": {
+          "value": 0.25,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "10m raster zonal average",
+            "processingMethod": "Normalized Difference NIR/Red band ratio"
+          },
+          "notes": "Canopy and surface greenness indicator in Ashok Nagar 11th Avenue"
+        },
+        "vegetationDeficitNormalized": {
+          "value": 0.556,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vulnerability": {
+        "vulnerabilityScore": {
+          "value": 0.52,
+          "metadata": {
+            "sourceType": "MUNICIPAL_CENSUS",
+            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
+            "confidence": "MEDIUM",
+            "status": "DERIVED",
+            "resolution": "Ward Census Block Aggregate",
+            "processingMethod": "Standardized socio-economic exposure index"
+          },
+          "notes": "Composite socio-economic sensitivity for Ward 133 - Ashok Nagar 11th Avenue"
+        },
+        "vulnerabilityComponents": {
+          "populationDensity": {
+            "value": 27000,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "HIGH",
+              "status": "SOURCED"
+            }
+          },
+          "elderlyPopulation": {
+            "value": 0.14,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "outdoorWorkerExposure": {
+            "value": 0.302,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Labor Statistics",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "builtEnvironmentIndicator": {
+            "value": 0.825,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Urban Morphology Index",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "informalSettlementIndicator": {
+            "value": 0.136,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Slum Clearance Board Survey",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "zoneId": "zone-10",
+    "zoneName": "Zone X - Kodambakkam",
+    "wardId": "ward-134",
+    "wardName": "Ward 134 - Ashok Pillar",
+    "latitude": 13.042,
+    "longitude": 80.201,
+    "areaKm2": 2.4,
+    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
+    "lastUpdated": "2026-03-01T00:00:00Z",
+    "id": "ward-134",
+    "name": "Ward 134 - Ashok Pillar",
+    "metrics": {
+      "heat": {
+        "lst": {
+          "value": 38.9,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "30m downscaled to Ward-level zonal average",
+            "processingMethod": "Mono-window thermal radiative transfer calculation"
+          },
+          "notes": "Surface temperature observation in Kodambakkam municipal sector"
+        },
+        "lstNormalized": {
+          "value": 0.636,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vegetation": {
+        "ndvi": {
+          "value": 0.27,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "10m raster zonal average",
+            "processingMethod": "Normalized Difference NIR/Red band ratio"
+          },
+          "notes": "Canopy and surface greenness indicator in Ashok Pillar"
+        },
+        "vegetationDeficitNormalized": {
+          "value": 0.511,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vulnerability": {
+        "vulnerabilityScore": {
+          "value": 0.65,
+          "metadata": {
+            "sourceType": "MUNICIPAL_CENSUS",
+            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
+            "confidence": "MEDIUM",
+            "status": "DERIVED",
+            "resolution": "Ward Census Block Aggregate",
+            "processingMethod": "Standardized socio-economic exposure index"
+          },
+          "notes": "Composite socio-economic sensitivity for Ward 134 - Ashok Pillar"
+        },
+        "vulnerabilityComponents": {
+          "populationDensity": {
+            "value": 32350,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "HIGH",
+              "status": "SOURCED"
+            }
+          },
+          "elderlyPopulation": {
+            "value": 0.15,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "outdoorWorkerExposure": {
+            "value": 0.347,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Labor Statistics",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "builtEnvironmentIndicator": {
+            "value": 0.815,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Urban Morphology Index",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "informalSettlementIndicator": {
+            "value": 0.24,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Slum Clearance Board Survey",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "zoneId": "zone-10",
+    "zoneName": "Zone X - Kodambakkam",
+    "wardId": "ward-135",
+    "wardName": "Ward 135 - K.K. Nagar Double Tank",
+    "latitude": 13.018,
+    "longitude": 80.209,
+    "areaKm2": 3.0,
+    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
+    "lastUpdated": "2026-03-01T00:00:00Z",
+    "id": "ward-135",
+    "name": "Ward 135 - K.K. Nagar Double Tank",
+    "metrics": {
+      "heat": {
+        "lst": {
+          "value": 37.5,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "30m downscaled to Ward-level zonal average",
+            "processingMethod": "Mono-window thermal radiative transfer calculation"
+          },
+          "notes": "Surface temperature observation in Kodambakkam municipal sector"
+        },
+        "lstNormalized": {
+          "value": 0.536,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vegetation": {
+        "ndvi": {
+          "value": 0.29,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "10m raster zonal average",
+            "processingMethod": "Normalized Difference NIR/Red band ratio"
+          },
+          "notes": "Canopy and surface greenness indicator in K.K. Nagar Double Tank"
+        },
+        "vegetationDeficitNormalized": {
+          "value": 0.467,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vulnerability": {
+        "vulnerabilityScore": {
+          "value": 0.53,
+          "metadata": {
+            "sourceType": "MUNICIPAL_CENSUS",
+            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
+            "confidence": "MEDIUM",
+            "status": "DERIVED",
+            "resolution": "Ward Census Block Aggregate",
+            "processingMethod": "Standardized socio-economic exposure index"
+          },
+          "notes": "Composite socio-economic sensitivity for Ward 135 - K.K. Nagar Double Tank"
+        },
+        "vulnerabilityComponents": {
+          "populationDensity": {
+            "value": 28950,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "HIGH",
+              "status": "SOURCED"
+            }
+          },
+          "elderlyPopulation": {
+            "value": 0.07,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "outdoorWorkerExposure": {
+            "value": 0.305,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Labor Statistics",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "builtEnvironmentIndicator": {
+            "value": 0.805,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Urban Morphology Index",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "informalSettlementIndicator": {
+            "value": 0.144,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Slum Clearance Board Survey",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "zoneId": "zone-10",
+    "zoneName": "Zone X - Kodambakkam",
+    "wardId": "ward-136",
+    "wardName": "Ward 136 - K.K. Nagar West",
+    "latitude": 13.026,
+    "longitude": 80.209,
+    "areaKm2": 3.6,
+    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
+    "lastUpdated": "2026-03-01T00:00:00Z",
+    "id": "ward-136",
+    "name": "Ward 136 - K.K. Nagar West",
+    "metrics": {
+      "heat": {
+        "lst": {
+          "value": 39.2,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "30m downscaled to Ward-level zonal average",
+            "processingMethod": "Mono-window thermal radiative transfer calculation"
+          },
+          "notes": "Surface temperature observation in Kodambakkam municipal sector"
+        },
+        "lstNormalized": {
+          "value": 0.657,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vegetation": {
+        "ndvi": {
+          "value": 0.31,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "10m raster zonal average",
+            "processingMethod": "Normalized Difference NIR/Red band ratio"
+          },
+          "notes": "Canopy and surface greenness indicator in K.K. Nagar West"
+        },
+        "vegetationDeficitNormalized": {
+          "value": 0.422,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vulnerability": {
+        "vulnerabilityScore": {
+          "value": 0.66,
+          "metadata": {
+            "sourceType": "MUNICIPAL_CENSUS",
+            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
+            "confidence": "MEDIUM",
+            "status": "DERIVED",
+            "resolution": "Ward Census Block Aggregate",
+            "processingMethod": "Standardized socio-economic exposure index"
+          },
+          "notes": "Composite socio-economic sensitivity for Ward 136 - K.K. Nagar West"
+        },
+        "vulnerabilityComponents": {
+          "populationDensity": {
+            "value": 34300,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "HIGH",
+              "status": "SOURCED"
+            }
+          },
+          "elderlyPopulation": {
+            "value": 0.08,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "outdoorWorkerExposure": {
+            "value": 0.351,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Labor Statistics",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "builtEnvironmentIndicator": {
+            "value": 0.795,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Urban Morphology Index",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "informalSettlementIndicator": {
+            "value": 0.248,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Slum Clearance Board Survey",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "zoneId": "zone-10",
+    "zoneName": "Zone X - Kodambakkam",
+    "wardId": "ward-137",
+    "wardName": "Ward 137 - MGR Nagar",
+    "latitude": 13.034,
+    "longitude": 80.209,
+    "areaKm2": 4.2,
+    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
+    "lastUpdated": "2026-03-01T00:00:00Z",
+    "id": "ward-137",
+    "name": "Ward 137 - MGR Nagar",
+    "metrics": {
+      "heat": {
+        "lst": {
+          "value": 37.8,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "30m downscaled to Ward-level zonal average",
+            "processingMethod": "Mono-window thermal radiative transfer calculation"
+          },
+          "notes": "Surface temperature observation in Kodambakkam municipal sector"
+        },
+        "lstNormalized": {
+          "value": 0.557,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vegetation": {
+        "ndvi": {
+          "value": 0.12,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "10m raster zonal average",
+            "processingMethod": "Normalized Difference NIR/Red band ratio"
+          },
+          "notes": "Canopy and surface greenness indicator in MGR Nagar"
+        },
+        "vegetationDeficitNormalized": {
+          "value": 0.844,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -15824,11 +16783,11 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 129 - Kodambakkam Station"
+          "notes": "Composite socio-economic sensitivity for Ward 137 - MGR Nagar"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 33300,
+            "value": 30900,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -15837,7 +16796,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "elderlyPopulation": {
-            "value": 0.1,
+            "value": 0.09,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -15855,7 +16814,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.88,
+            "value": 0.89,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -15879,19 +16838,19 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
   {
     "zoneId": "zone-10",
     "zoneName": "Zone X - Kodambakkam",
-    "wardId": "ward-130",
-    "wardName": "Ward 130 - Kodambakkam Liberty",
-    "latitude": 13.047,
-    "longitude": 80.203,
-    "areaKm2": 4.2,
+    "wardId": "ward-138",
+    "wardName": "Ward 138 - Nesapakkam",
+    "latitude": 13.042,
+    "longitude": 80.209,
+    "areaKm2": 4.8,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-130",
-    "name": "Ward 130 - Kodambakkam Liberty",
+    "id": "ward-138",
+    "name": "Ward 138 - Nesapakkam",
     "metrics": {
       "heat": {
         "lst": {
-          "value": 38.6,
+          "value": 39.5,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
@@ -15903,7 +16862,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
           "notes": "Surface temperature observation in Kodambakkam municipal sector"
         },
         "lstNormalized": {
-          "value": 0.614,
+          "value": 0.679,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS",
@@ -15914,7 +16873,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.16,
+          "value": 0.14,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -15923,10 +16882,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Kodambakkam Liberty"
+          "notes": "Canopy and surface greenness indicator in Nesapakkam"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.756,
+          "value": 0.8,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -15946,11 +16905,11 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 130 - Kodambakkam Liberty"
+          "notes": "Composite socio-economic sensitivity for Ward 138 - Nesapakkam"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 38650,
+            "value": 36250,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -15959,7 +16918,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "elderlyPopulation": {
-            "value": 0.11,
+            "value": 0.1,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -15977,7 +16936,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.87,
+            "value": 0.88,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -16001,19 +16960,19 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
   {
     "zoneId": "zone-10",
     "zoneName": "Zone X - Kodambakkam",
-    "wardId": "ward-131",
-    "wardName": "Ward 131 - West Mambalam North",
-    "latitude": 13.023,
-    "longitude": 80.211,
-    "areaKm2": 4.8,
+    "wardId": "ward-139",
+    "wardName": "Ward 139 - West Mambalam Station",
+    "latitude": 13.018,
+    "longitude": 80.217,
+    "areaKm2": 5.4,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-131",
-    "name": "Ward 131 - West Mambalam North",
+    "id": "ward-139",
+    "name": "Ward 139 - West Mambalam Station",
     "metrics": {
       "heat": {
         "lst": {
-          "value": 40.3,
+          "value": 38.1,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
@@ -16025,7 +16984,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
           "notes": "Surface temperature observation in Kodambakkam municipal sector"
         },
         "lstNormalized": {
-          "value": 0.736,
+          "value": 0.579,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS",
@@ -16036,7 +16995,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.18,
+          "value": 0.16,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -16045,10 +17004,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in West Mambalam North"
+          "notes": "Canopy and surface greenness indicator in West Mambalam Station"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.711,
+          "value": 0.756,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -16068,11 +17027,11 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 131 - West Mambalam North"
+          "notes": "Composite socio-economic sensitivity for Ward 139 - West Mambalam Station"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 35250,
+            "value": 32850,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -16081,7 +17040,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "elderlyPopulation": {
-            "value": 0.12,
+            "value": 0.11,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -16099,7 +17058,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.86,
+            "value": 0.87,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -16123,19 +17082,19 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
   {
     "zoneId": "zone-10",
     "zoneName": "Zone X - Kodambakkam",
-    "wardId": "ward-132",
-    "wardName": "Ward 132 - West Mambalam Postal Colony",
-    "latitude": 13.031,
-    "longitude": 80.211,
-    "areaKm2": 5.4,
+    "wardId": "ward-140",
+    "wardName": "Ward 140 - Postal Colony",
+    "latitude": 13.026,
+    "longitude": 80.217,
+    "areaKm2": 1.8,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-132",
-    "name": "Ward 132 - West Mambalam Postal Colony",
+    "id": "ward-140",
+    "name": "Ward 140 - Postal Colony",
     "metrics": {
       "heat": {
         "lst": {
-          "value": 38.9,
+          "value": 39.8,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
@@ -16147,7 +17106,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
           "notes": "Surface temperature observation in Kodambakkam municipal sector"
         },
         "lstNormalized": {
-          "value": 0.636,
+          "value": 0.7,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS",
@@ -16158,7 +17117,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.2,
+          "value": 0.18,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -16167,10 +17126,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in West Mambalam Postal Colony"
+          "notes": "Canopy and surface greenness indicator in Postal Colony"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.667,
+          "value": 0.711,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -16190,11 +17149,11 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 132 - West Mambalam Postal Colony"
+          "notes": "Composite socio-economic sensitivity for Ward 140 - Postal Colony"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 31800,
+            "value": 38200,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -16203,7 +17162,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "elderlyPopulation": {
-            "value": 0.13,
+            "value": 0.12,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -16221,7 +17180,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.85,
+            "value": 0.86,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -16245,19 +17204,19 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
   {
     "zoneId": "zone-10",
     "zoneName": "Zone X - Kodambakkam",
-    "wardId": "ward-133",
-    "wardName": "Ward 133 - Ashok Nagar Pillar",
-    "latitude": 13.039,
-    "longitude": 80.211,
-    "areaKm2": 1.8,
+    "wardId": "ward-141",
+    "wardName": "Ward 141 - Saidapet West",
+    "latitude": 13.034,
+    "longitude": 80.217,
+    "areaKm2": 2.4,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-133",
-    "name": "Ward 133 - Ashok Nagar Pillar",
+    "id": "ward-141",
+    "name": "Ward 141 - Saidapet West",
     "metrics": {
       "heat": {
         "lst": {
-          "value": 40.6,
+          "value": 38.4,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
@@ -16269,7 +17228,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
           "notes": "Surface temperature observation in Kodambakkam municipal sector"
         },
         "lstNormalized": {
-          "value": 0.757,
+          "value": 0.6,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS",
@@ -16280,7 +17239,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.22,
+          "value": 0.2,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -16289,10 +17248,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Ashok Nagar Pillar"
+          "notes": "Canopy and surface greenness indicator in Saidapet West"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.622,
+          "value": 0.667,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -16312,11 +17271,11 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 133 - Ashok Nagar Pillar"
+          "notes": "Composite socio-economic sensitivity for Ward 141 - Saidapet West"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 28400,
+            "value": 34800,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -16325,7 +17284,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "elderlyPopulation": {
-            "value": 0.14,
+            "value": 0.13,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -16343,7 +17302,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.84,
+            "value": 0.85,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -16367,19 +17326,19 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
   {
     "zoneId": "zone-10",
     "zoneName": "Zone X - Kodambakkam",
-    "wardId": "ward-134",
-    "wardName": "Ward 134 - Ashok Nagar 11th Ave",
-    "latitude": 13.047,
-    "longitude": 80.211,
-    "areaKm2": 2.4,
+    "wardId": "ward-142",
+    "wardName": "Ward 142 - Saidapet Bazaar",
+    "latitude": 13.042,
+    "longitude": 80.217,
+    "areaKm2": 3.0,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-134",
-    "name": "Ward 134 - Ashok Nagar 11th Ave",
+    "id": "ward-142",
+    "name": "Ward 142 - Saidapet Bazaar",
     "metrics": {
       "heat": {
         "lst": {
-          "value": 39.2,
+          "value": 40.1,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
@@ -16391,7 +17350,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
           "notes": "Surface temperature observation in Kodambakkam municipal sector"
         },
         "lstNormalized": {
-          "value": 0.657,
+          "value": 0.721,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS",
@@ -16402,7 +17361,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.24,
+          "value": 0.22,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -16411,10 +17370,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Ashok Nagar 11th Ave"
+          "notes": "Canopy and surface greenness indicator in Saidapet Bazaar"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.578,
+          "value": 0.622,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -16434,11 +17393,11 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 134 - Ashok Nagar 11th Ave"
+          "notes": "Composite socio-economic sensitivity for Ward 142 - Saidapet Bazaar"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 33750,
+            "value": 40150,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -16447,7 +17406,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "elderlyPopulation": {
-            "value": 0.15,
+            "value": 0.14,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -16465,7 +17424,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.83,
+            "value": 0.84,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -16487,1481 +17446,17 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     }
   },
   {
-    "zoneId": "zone-10",
-    "zoneName": "Zone X - Kodambakkam",
-    "wardId": "ward-135",
-    "wardName": "Ward 135 - K.K. Nagar Central",
-    "latitude": 13.023,
-    "longitude": 80.219,
-    "areaKm2": 3.0,
-    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
-    "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-135",
-    "name": "Ward 135 - K.K. Nagar Central",
-    "metrics": {
-      "heat": {
-        "lst": {
-          "value": 37.8,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "30m downscaled to Ward-level zonal average",
-            "processingMethod": "Mono-window thermal radiative transfer calculation"
-          },
-          "notes": "Surface temperature observation in Kodambakkam municipal sector"
-        },
-        "lstNormalized": {
-          "value": 0.557,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vegetation": {
-        "ndvi": {
-          "value": 0.26,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "10m raster zonal average",
-            "processingMethod": "Normalized Difference NIR/Red band ratio"
-          },
-          "notes": "Canopy and surface greenness indicator in K.K. Nagar Central"
-        },
-        "vegetationDeficitNormalized": {
-          "value": 0.533,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vulnerability": {
-        "vulnerabilityScore": {
-          "value": 0.57,
-          "metadata": {
-            "sourceType": "MUNICIPAL_CENSUS",
-            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
-            "confidence": "MEDIUM",
-            "status": "DERIVED",
-            "resolution": "Ward Census Block Aggregate",
-            "processingMethod": "Standardized socio-economic exposure index"
-          },
-          "notes": "Composite socio-economic sensitivity for Ward 135 - K.K. Nagar Central"
-        },
-        "vulnerabilityComponents": {
-          "populationDensity": {
-            "value": 30350,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "HIGH",
-              "status": "SOURCED"
-            }
-          },
-          "elderlyPopulation": {
-            "value": 0.07,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "outdoorWorkerExposure": {
-            "value": 0.32,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Labor Statistics",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "builtEnvironmentIndicator": {
-            "value": 0.82,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Urban Morphology Index",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "informalSettlementIndicator": {
-            "value": 0.176,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Slum Clearance Board Survey",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          }
-        }
-      }
-    }
-  },
-  {
-    "zoneId": "zone-10",
-    "zoneName": "Zone X - Kodambakkam",
-    "wardId": "ward-136",
-    "wardName": "Ward 136 - K.K. Nagar Double Tank",
-    "latitude": 13.031,
-    "longitude": 80.219,
-    "areaKm2": 3.6,
-    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
-    "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-136",
-    "name": "Ward 136 - K.K. Nagar Double Tank",
-    "metrics": {
-      "heat": {
-        "lst": {
-          "value": 39.5,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "30m downscaled to Ward-level zonal average",
-            "processingMethod": "Mono-window thermal radiative transfer calculation"
-          },
-          "notes": "Surface temperature observation in Kodambakkam municipal sector"
-        },
-        "lstNormalized": {
-          "value": 0.679,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vegetation": {
-        "ndvi": {
-          "value": 0.28,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "10m raster zonal average",
-            "processingMethod": "Normalized Difference NIR/Red band ratio"
-          },
-          "notes": "Canopy and surface greenness indicator in K.K. Nagar Double Tank"
-        },
-        "vegetationDeficitNormalized": {
-          "value": 0.489,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vulnerability": {
-        "vulnerabilityScore": {
-          "value": 0.7,
-          "metadata": {
-            "sourceType": "MUNICIPAL_CENSUS",
-            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
-            "confidence": "MEDIUM",
-            "status": "DERIVED",
-            "resolution": "Ward Census Block Aggregate",
-            "processingMethod": "Standardized socio-economic exposure index"
-          },
-          "notes": "Composite socio-economic sensitivity for Ward 136 - K.K. Nagar Double Tank"
-        },
-        "vulnerabilityComponents": {
-          "populationDensity": {
-            "value": 35700,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "HIGH",
-              "status": "SOURCED"
-            }
-          },
-          "elderlyPopulation": {
-            "value": 0.08,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "outdoorWorkerExposure": {
-            "value": 0.365,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Labor Statistics",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "builtEnvironmentIndicator": {
-            "value": 0.81,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Urban Morphology Index",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "informalSettlementIndicator": {
-            "value": 0.28,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Slum Clearance Board Survey",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          }
-        }
-      }
-    }
-  },
-  {
-    "zoneId": "zone-10",
-    "zoneName": "Zone X - Kodambakkam",
-    "wardId": "ward-137",
-    "wardName": "Ward 137 - MGR Nagar",
-    "latitude": 13.039,
-    "longitude": 80.219,
-    "areaKm2": 4.2,
-    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
-    "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-137",
-    "name": "Ward 137 - MGR Nagar",
-    "metrics": {
-      "heat": {
-        "lst": {
-          "value": 38.1,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "30m downscaled to Ward-level zonal average",
-            "processingMethod": "Mono-window thermal radiative transfer calculation"
-          },
-          "notes": "Surface temperature observation in Kodambakkam municipal sector"
-        },
-        "lstNormalized": {
-          "value": 0.579,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vegetation": {
-        "ndvi": {
-          "value": 0.09,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "10m raster zonal average",
-            "processingMethod": "Normalized Difference NIR/Red band ratio"
-          },
-          "notes": "Canopy and surface greenness indicator in MGR Nagar"
-        },
-        "vegetationDeficitNormalized": {
-          "value": 0.911,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vulnerability": {
-        "vulnerabilityScore": {
-          "value": 0.58,
-          "metadata": {
-            "sourceType": "MUNICIPAL_CENSUS",
-            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
-            "confidence": "MEDIUM",
-            "status": "DERIVED",
-            "resolution": "Ward Census Block Aggregate",
-            "processingMethod": "Standardized socio-economic exposure index"
-          },
-          "notes": "Composite socio-economic sensitivity for Ward 137 - MGR Nagar"
-        },
-        "vulnerabilityComponents": {
-          "populationDensity": {
-            "value": 32300,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "HIGH",
-              "status": "SOURCED"
-            }
-          },
-          "elderlyPopulation": {
-            "value": 0.09,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "outdoorWorkerExposure": {
-            "value": 0.323,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Labor Statistics",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "builtEnvironmentIndicator": {
-            "value": 0.905,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Urban Morphology Index",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "informalSettlementIndicator": {
-            "value": 0.184,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Slum Clearance Board Survey",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          }
-        }
-      }
-    }
-  },
-  {
-    "zoneId": "zone-10",
-    "zoneName": "Zone X - Kodambakkam",
-    "wardId": "ward-138",
-    "wardName": "Ward 138 - Jafferkhanpet",
-    "latitude": 13.047,
-    "longitude": 80.219,
-    "areaKm2": 4.8,
-    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
-    "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-138",
-    "name": "Ward 138 - Jafferkhanpet",
-    "metrics": {
-      "heat": {
-        "lst": {
-          "value": 39.8,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "30m downscaled to Ward-level zonal average",
-            "processingMethod": "Mono-window thermal radiative transfer calculation"
-          },
-          "notes": "Surface temperature observation in Kodambakkam municipal sector"
-        },
-        "lstNormalized": {
-          "value": 0.7,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vegetation": {
-        "ndvi": {
-          "value": 0.11,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "10m raster zonal average",
-            "processingMethod": "Normalized Difference NIR/Red band ratio"
-          },
-          "notes": "Canopy and surface greenness indicator in Jafferkhanpet"
-        },
-        "vegetationDeficitNormalized": {
-          "value": 0.867,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vulnerability": {
-        "vulnerabilityScore": {
-          "value": 0.71,
-          "metadata": {
-            "sourceType": "MUNICIPAL_CENSUS",
-            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
-            "confidence": "MEDIUM",
-            "status": "DERIVED",
-            "resolution": "Ward Census Block Aggregate",
-            "processingMethod": "Standardized socio-economic exposure index"
-          },
-          "notes": "Composite socio-economic sensitivity for Ward 138 - Jafferkhanpet"
-        },
-        "vulnerabilityComponents": {
-          "populationDensity": {
-            "value": 37650,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "HIGH",
-              "status": "SOURCED"
-            }
-          },
-          "elderlyPopulation": {
-            "value": 0.1,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "outdoorWorkerExposure": {
-            "value": 0.368,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Labor Statistics",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "builtEnvironmentIndicator": {
-            "value": 0.895,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Urban Morphology Index",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "informalSettlementIndicator": {
-            "value": 0.288,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Slum Clearance Board Survey",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          }
-        }
-      }
-    }
-  },
-  {
-    "zoneId": "zone-10",
-    "zoneName": "Zone X - Kodambakkam",
-    "wardId": "ward-139",
-    "wardName": "Ward 139 - Saidapet West",
-    "latitude": 13.023,
-    "longitude": 80.227,
-    "areaKm2": 5.4,
-    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
-    "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-139",
-    "name": "Ward 139 - Saidapet West",
-    "metrics": {
-      "heat": {
-        "lst": {
-          "value": 38.4,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "30m downscaled to Ward-level zonal average",
-            "processingMethod": "Mono-window thermal radiative transfer calculation"
-          },
-          "notes": "Surface temperature observation in Kodambakkam municipal sector"
-        },
-        "lstNormalized": {
-          "value": 0.6,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vegetation": {
-        "ndvi": {
-          "value": 0.13,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "10m raster zonal average",
-            "processingMethod": "Normalized Difference NIR/Red band ratio"
-          },
-          "notes": "Canopy and surface greenness indicator in Saidapet West"
-        },
-        "vegetationDeficitNormalized": {
-          "value": 0.822,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vulnerability": {
-        "vulnerabilityScore": {
-          "value": 0.59,
-          "metadata": {
-            "sourceType": "MUNICIPAL_CENSUS",
-            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
-            "confidence": "MEDIUM",
-            "status": "DERIVED",
-            "resolution": "Ward Census Block Aggregate",
-            "processingMethod": "Standardized socio-economic exposure index"
-          },
-          "notes": "Composite socio-economic sensitivity for Ward 139 - Saidapet West"
-        },
-        "vulnerabilityComponents": {
-          "populationDensity": {
-            "value": 34250,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "HIGH",
-              "status": "SOURCED"
-            }
-          },
-          "elderlyPopulation": {
-            "value": 0.11,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "outdoorWorkerExposure": {
-            "value": 0.327,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Labor Statistics",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "builtEnvironmentIndicator": {
-            "value": 0.885,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Urban Morphology Index",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "informalSettlementIndicator": {
-            "value": 0.192,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Slum Clearance Board Survey",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          }
-        }
-      }
-    }
-  },
-  {
-    "zoneId": "zone-10",
-    "zoneName": "Zone X - Kodambakkam",
-    "wardId": "ward-140",
-    "wardName": "Ward 140 - Saidapet Court",
-    "latitude": 13.031,
-    "longitude": 80.227,
-    "areaKm2": 1.8,
-    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
-    "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-140",
-    "name": "Ward 140 - Saidapet Court",
-    "metrics": {
-      "heat": {
-        "lst": {
-          "value": 40.1,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "30m downscaled to Ward-level zonal average",
-            "processingMethod": "Mono-window thermal radiative transfer calculation"
-          },
-          "notes": "Surface temperature observation in Kodambakkam municipal sector"
-        },
-        "lstNormalized": {
-          "value": 0.721,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vegetation": {
-        "ndvi": {
-          "value": 0.15,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "10m raster zonal average",
-            "processingMethod": "Normalized Difference NIR/Red band ratio"
-          },
-          "notes": "Canopy and surface greenness indicator in Saidapet Court"
-        },
-        "vegetationDeficitNormalized": {
-          "value": 0.778,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vulnerability": {
-        "vulnerabilityScore": {
-          "value": 0.72,
-          "metadata": {
-            "sourceType": "MUNICIPAL_CENSUS",
-            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
-            "confidence": "MEDIUM",
-            "status": "DERIVED",
-            "resolution": "Ward Census Block Aggregate",
-            "processingMethod": "Standardized socio-economic exposure index"
-          },
-          "notes": "Composite socio-economic sensitivity for Ward 140 - Saidapet Court"
-        },
-        "vulnerabilityComponents": {
-          "populationDensity": {
-            "value": 39600,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "HIGH",
-              "status": "SOURCED"
-            }
-          },
-          "elderlyPopulation": {
-            "value": 0.12,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "outdoorWorkerExposure": {
-            "value": 0.372,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Labor Statistics",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "builtEnvironmentIndicator": {
-            "value": 0.875,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Urban Morphology Index",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "informalSettlementIndicator": {
-            "value": 0.296,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Slum Clearance Board Survey",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          }
-        }
-      }
-    }
-  },
-  {
-    "zoneId": "zone-10",
-    "zoneName": "Zone X - Kodambakkam",
-    "wardId": "ward-141",
-    "wardName": "Ward 141 - Saidapet Bazaar",
-    "latitude": 13.039,
-    "longitude": 80.227,
-    "areaKm2": 2.4,
-    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
-    "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-141",
-    "name": "Ward 141 - Saidapet Bazaar",
-    "metrics": {
-      "heat": {
-        "lst": {
-          "value": 38.7,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "30m downscaled to Ward-level zonal average",
-            "processingMethod": "Mono-window thermal radiative transfer calculation"
-          },
-          "notes": "Surface temperature observation in Kodambakkam municipal sector"
-        },
-        "lstNormalized": {
-          "value": 0.621,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vegetation": {
-        "ndvi": {
-          "value": 0.17,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "10m raster zonal average",
-            "processingMethod": "Normalized Difference NIR/Red band ratio"
-          },
-          "notes": "Canopy and surface greenness indicator in Saidapet Bazaar"
-        },
-        "vegetationDeficitNormalized": {
-          "value": 0.733,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vulnerability": {
-        "vulnerabilityScore": {
-          "value": 0.6,
-          "metadata": {
-            "sourceType": "MUNICIPAL_CENSUS",
-            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
-            "confidence": "MEDIUM",
-            "status": "DERIVED",
-            "resolution": "Ward Census Block Aggregate",
-            "processingMethod": "Standardized socio-economic exposure index"
-          },
-          "notes": "Composite socio-economic sensitivity for Ward 141 - Saidapet Bazaar"
-        },
-        "vulnerabilityComponents": {
-          "populationDensity": {
-            "value": 36200,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "HIGH",
-              "status": "SOURCED"
-            }
-          },
-          "elderlyPopulation": {
-            "value": 0.13,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "outdoorWorkerExposure": {
-            "value": 0.33,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Labor Statistics",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "builtEnvironmentIndicator": {
-            "value": 0.865,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Urban Morphology Index",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "informalSettlementIndicator": {
-            "value": 0.2,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Slum Clearance Board Survey",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          }
-        }
-      }
-    }
-  },
-  {
-    "zoneId": "zone-10",
-    "zoneName": "Zone X - Kodambakkam",
-    "wardId": "ward-142",
-    "wardName": "Ward 142 - Guindy Race Course North",
-    "latitude": 13.047,
-    "longitude": 80.227,
-    "areaKm2": 3.0,
-    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
-    "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-142",
-    "name": "Ward 142 - Guindy Race Course North",
-    "metrics": {
-      "heat": {
-        "lst": {
-          "value": 40.4,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "30m downscaled to Ward-level zonal average",
-            "processingMethod": "Mono-window thermal radiative transfer calculation"
-          },
-          "notes": "Surface temperature observation in Kodambakkam municipal sector"
-        },
-        "lstNormalized": {
-          "value": 0.743,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vegetation": {
-        "ndvi": {
-          "value": 0.19,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "10m raster zonal average",
-            "processingMethod": "Normalized Difference NIR/Red band ratio"
-          },
-          "notes": "Canopy and surface greenness indicator in Guindy Race Course North"
-        },
-        "vegetationDeficitNormalized": {
-          "value": 0.689,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vulnerability": {
-        "vulnerabilityScore": {
-          "value": 0.73,
-          "metadata": {
-            "sourceType": "MUNICIPAL_CENSUS",
-            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
-            "confidence": "MEDIUM",
-            "status": "DERIVED",
-            "resolution": "Ward Census Block Aggregate",
-            "processingMethod": "Standardized socio-economic exposure index"
-          },
-          "notes": "Composite socio-economic sensitivity for Ward 142 - Guindy Race Course North"
-        },
-        "vulnerabilityComponents": {
-          "populationDensity": {
-            "value": 41550,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "HIGH",
-              "status": "SOURCED"
-            }
-          },
-          "elderlyPopulation": {
-            "value": 0.14,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "outdoorWorkerExposure": {
-            "value": 0.376,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Labor Statistics",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "builtEnvironmentIndicator": {
-            "value": 0.855,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Urban Morphology Index",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "informalSettlementIndicator": {
-            "value": 0.304,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Slum Clearance Board Survey",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          }
-        }
-      }
-    }
-  },
-  {
     "zoneId": "zone-11",
     "zoneName": "Zone XI - Valasaravakkam",
     "wardId": "ward-143",
-    "wardName": "Ward 143 - Virugambakkam Market",
+    "wardName": "Ward 143 - Valasaravakkam Arcot Road",
     "latitude": 13.028,
-    "longitude": 80.158,
+    "longitude": 80.153,
     "areaKm2": 3.6,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
     "id": "ward-143",
-    "name": "Ward 143 - Virugambakkam Market",
-    "metrics": {
-      "heat": {
-        "lst": {
-          "value": 38.6,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "30m downscaled to Ward-level zonal average",
-            "processingMethod": "Mono-window thermal radiative transfer calculation"
-          },
-          "notes": "Surface temperature observation in Valasaravakkam municipal sector"
-        },
-        "lstNormalized": {
-          "value": 0.614,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vegetation": {
-        "ndvi": {
-          "value": 0.24,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "10m raster zonal average",
-            "processingMethod": "Normalized Difference NIR/Red band ratio"
-          },
-          "notes": "Canopy and surface greenness indicator in Virugambakkam Market"
-        },
-        "vegetationDeficitNormalized": {
-          "value": 0.578,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vulnerability": {
-        "vulnerabilityScore": {
-          "value": 0.57,
-          "metadata": {
-            "sourceType": "MUNICIPAL_CENSUS",
-            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
-            "confidence": "MEDIUM",
-            "status": "DERIVED",
-            "resolution": "Ward Census Block Aggregate",
-            "processingMethod": "Standardized socio-economic exposure index"
-          },
-          "notes": "Composite socio-economic sensitivity for Ward 143 - Virugambakkam Market"
-        },
-        "vulnerabilityComponents": {
-          "populationDensity": {
-            "value": 27950,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "HIGH",
-              "status": "SOURCED"
-            }
-          },
-          "elderlyPopulation": {
-            "value": 0.15,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "outdoorWorkerExposure": {
-            "value": 0.32,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Labor Statistics",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "builtEnvironmentIndicator": {
-            "value": 0.83,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Urban Morphology Index",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "informalSettlementIndicator": {
-            "value": 0.176,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Slum Clearance Board Survey",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          }
-        }
-      }
-    }
-  },
-  {
-    "zoneId": "zone-11",
-    "zoneName": "Zone XI - Valasaravakkam",
-    "wardId": "ward-144",
-    "wardName": "Ward 144 - Chinmaya Nagar Stage 1",
-    "latitude": 13.036,
-    "longitude": 80.158,
-    "areaKm2": 4.2,
-    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
-    "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-144",
-    "name": "Ward 144 - Chinmaya Nagar Stage 1",
-    "metrics": {
-      "heat": {
-        "lst": {
-          "value": 40.3,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "30m downscaled to Ward-level zonal average",
-            "processingMethod": "Mono-window thermal radiative transfer calculation"
-          },
-          "notes": "Surface temperature observation in Valasaravakkam municipal sector"
-        },
-        "lstNormalized": {
-          "value": 0.736,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vegetation": {
-        "ndvi": {
-          "value": 0.26,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "10m raster zonal average",
-            "processingMethod": "Normalized Difference NIR/Red band ratio"
-          },
-          "notes": "Canopy and surface greenness indicator in Chinmaya Nagar Stage 1"
-        },
-        "vegetationDeficitNormalized": {
-          "value": 0.533,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vulnerability": {
-        "vulnerabilityScore": {
-          "value": 0.7,
-          "metadata": {
-            "sourceType": "MUNICIPAL_CENSUS",
-            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
-            "confidence": "MEDIUM",
-            "status": "DERIVED",
-            "resolution": "Ward Census Block Aggregate",
-            "processingMethod": "Standardized socio-economic exposure index"
-          },
-          "notes": "Composite socio-economic sensitivity for Ward 144 - Chinmaya Nagar Stage 1"
-        },
-        "vulnerabilityComponents": {
-          "populationDensity": {
-            "value": 33300,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "HIGH",
-              "status": "SOURCED"
-            }
-          },
-          "elderlyPopulation": {
-            "value": 0.07,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "outdoorWorkerExposure": {
-            "value": 0.365,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Labor Statistics",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "builtEnvironmentIndicator": {
-            "value": 0.82,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Urban Morphology Index",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "informalSettlementIndicator": {
-            "value": 0.28,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Slum Clearance Board Survey",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          }
-        }
-      }
-    }
-  },
-  {
-    "zoneId": "zone-11",
-    "zoneName": "Zone XI - Valasaravakkam",
-    "wardId": "ward-145",
-    "wardName": "Ward 145 - Chinmaya Nagar Stage 2",
-    "latitude": 13.044,
-    "longitude": 80.158,
-    "areaKm2": 4.8,
-    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
-    "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-145",
-    "name": "Ward 145 - Chinmaya Nagar Stage 2",
-    "metrics": {
-      "heat": {
-        "lst": {
-          "value": 38.9,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "30m downscaled to Ward-level zonal average",
-            "processingMethod": "Mono-window thermal radiative transfer calculation"
-          },
-          "notes": "Surface temperature observation in Valasaravakkam municipal sector"
-        },
-        "lstNormalized": {
-          "value": 0.636,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vegetation": {
-        "ndvi": {
-          "value": 0.28,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "10m raster zonal average",
-            "processingMethod": "Normalized Difference NIR/Red band ratio"
-          },
-          "notes": "Canopy and surface greenness indicator in Chinmaya Nagar Stage 2"
-        },
-        "vegetationDeficitNormalized": {
-          "value": 0.489,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vulnerability": {
-        "vulnerabilityScore": {
-          "value": 0.58,
-          "metadata": {
-            "sourceType": "MUNICIPAL_CENSUS",
-            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
-            "confidence": "MEDIUM",
-            "status": "DERIVED",
-            "resolution": "Ward Census Block Aggregate",
-            "processingMethod": "Standardized socio-economic exposure index"
-          },
-          "notes": "Composite socio-economic sensitivity for Ward 145 - Chinmaya Nagar Stage 2"
-        },
-        "vulnerabilityComponents": {
-          "populationDensity": {
-            "value": 29900,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "HIGH",
-              "status": "SOURCED"
-            }
-          },
-          "elderlyPopulation": {
-            "value": 0.08,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "outdoorWorkerExposure": {
-            "value": 0.323,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Labor Statistics",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "builtEnvironmentIndicator": {
-            "value": 0.81,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Urban Morphology Index",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "informalSettlementIndicator": {
-            "value": 0.184,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Slum Clearance Board Survey",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          }
-        }
-      }
-    }
-  },
-  {
-    "zoneId": "zone-11",
-    "zoneName": "Zone XI - Valasaravakkam",
-    "wardId": "ward-146",
-    "wardName": "Ward 146 - Alwarthirunagar",
-    "latitude": 13.052,
-    "longitude": 80.158,
-    "areaKm2": 5.4,
-    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
-    "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-146",
-    "name": "Ward 146 - Alwarthirunagar",
-    "metrics": {
-      "heat": {
-        "lst": {
-          "value": 37.5,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "30m downscaled to Ward-level zonal average",
-            "processingMethod": "Mono-window thermal radiative transfer calculation"
-          },
-          "notes": "Surface temperature observation in Valasaravakkam municipal sector"
-        },
-        "lstNormalized": {
-          "value": 0.536,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vegetation": {
-        "ndvi": {
-          "value": 0.3,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "10m raster zonal average",
-            "processingMethod": "Normalized Difference NIR/Red band ratio"
-          },
-          "notes": "Canopy and surface greenness indicator in Alwarthirunagar"
-        },
-        "vegetationDeficitNormalized": {
-          "value": 0.444,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vulnerability": {
-        "vulnerabilityScore": {
-          "value": 0.71,
-          "metadata": {
-            "sourceType": "MUNICIPAL_CENSUS",
-            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
-            "confidence": "MEDIUM",
-            "status": "DERIVED",
-            "resolution": "Ward Census Block Aggregate",
-            "processingMethod": "Standardized socio-economic exposure index"
-          },
-          "notes": "Composite socio-economic sensitivity for Ward 146 - Alwarthirunagar"
-        },
-        "vulnerabilityComponents": {
-          "populationDensity": {
-            "value": 35250,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "HIGH",
-              "status": "SOURCED"
-            }
-          },
-          "elderlyPopulation": {
-            "value": 0.09,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "outdoorWorkerExposure": {
-            "value": 0.368,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Labor Statistics",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "builtEnvironmentIndicator": {
-            "value": 0.8,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Urban Morphology Index",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "informalSettlementIndicator": {
-            "value": 0.288,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Slum Clearance Board Survey",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          }
-        }
-      }
-    }
-  },
-  {
-    "zoneId": "zone-11",
-    "zoneName": "Zone XI - Valasaravakkam",
-    "wardId": "ward-147",
-    "wardName": "Ward 147 - Valasaravakkam Arcot Road",
-    "latitude": 13.028,
-    "longitude": 80.166,
-    "areaKm2": 1.8,
-    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
-    "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-147",
-    "name": "Ward 147 - Valasaravakkam Arcot Road",
+    "name": "Ward 143 - Valasaravakkam Arcot Road",
     "metrics": {
       "heat": {
         "lst": {
@@ -17988,7 +17483,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.11,
+          "value": 0.22,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -18000,7 +17495,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
           "notes": "Canopy and surface greenness indicator in Valasaravakkam Arcot Road"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.867,
+          "value": 0.622,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -18011,7 +17506,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vulnerability": {
         "vulnerabilityScore": {
-          "value": 0.59,
+          "value": 0.63,
           "metadata": {
             "sourceType": "MUNICIPAL_CENSUS",
             "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
@@ -18020,11 +17515,11 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 147 - Valasaravakkam Arcot Road"
+          "notes": "Composite socio-economic sensitivity for Ward 143 - Valasaravakkam Arcot Road"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 31850,
+            "value": 30050,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -18033,7 +17528,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "elderlyPopulation": {
-            "value": 0.1,
+            "value": 0.15,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -18042,7 +17537,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "outdoorWorkerExposure": {
-            "value": 0.327,
+            "value": 0.34,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Labor Statistics",
@@ -18051,7 +17546,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.895,
+            "value": 0.84,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -18060,7 +17555,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "informalSettlementIndicator": {
-            "value": 0.192,
+            "value": 0.224,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Slum Clearance Board Survey",
@@ -18075,19 +17570,19 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
   {
     "zoneId": "zone-11",
     "zoneName": "Zone XI - Valasaravakkam",
-    "wardId": "ward-148",
-    "wardName": "Ward 148 - Porur Junction",
+    "wardId": "ward-144",
+    "wardName": "Ward 144 - Porur Junction",
     "latitude": 13.036,
-    "longitude": 80.166,
-    "areaKm2": 2.4,
+    "longitude": 80.153,
+    "areaKm2": 4.2,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-148",
-    "name": "Ward 148 - Porur Junction",
+    "id": "ward-144",
+    "name": "Ward 144 - Porur Junction",
     "metrics": {
       "heat": {
         "lst": {
-          "value": 37.8,
+          "value": 40.9,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
@@ -18099,7 +17594,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
           "notes": "Surface temperature observation in Valasaravakkam municipal sector"
         },
         "lstNormalized": {
-          "value": 0.557,
+          "value": 0.779,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS",
@@ -18110,7 +17605,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.13,
+          "value": 0.24,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -18122,7 +17617,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
           "notes": "Canopy and surface greenness indicator in Porur Junction"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.822,
+          "value": 0.578,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -18133,7 +17628,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vulnerability": {
         "vulnerabilityScore": {
-          "value": 0.72,
+          "value": 0.76,
           "metadata": {
             "sourceType": "MUNICIPAL_CENSUS",
             "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
@@ -18142,11 +17637,11 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 148 - Porur Junction"
+          "notes": "Composite socio-economic sensitivity for Ward 144 - Porur Junction"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 37200,
+            "value": 35400,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -18155,7 +17650,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "elderlyPopulation": {
-            "value": 0.11,
+            "value": 0.07,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -18164,7 +17659,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "outdoorWorkerExposure": {
-            "value": 0.372,
+            "value": 0.386,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Labor Statistics",
@@ -18173,7 +17668,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.885,
+            "value": 0.83,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -18182,7 +17677,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "informalSettlementIndicator": {
-            "value": 0.296,
+            "value": 0.328,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Slum Clearance Board Survey",
@@ -18197,15 +17692,15 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
   {
     "zoneId": "zone-11",
     "zoneName": "Zone XI - Valasaravakkam",
-    "wardId": "ward-149",
-    "wardName": "Ward 149 - Porur Lakeview",
+    "wardId": "ward-145",
+    "wardName": "Ward 145 - Porur Lake Bund",
     "latitude": 13.044,
-    "longitude": 80.166,
-    "areaKm2": 3.0,
+    "longitude": 80.153,
+    "areaKm2": 4.8,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-149",
-    "name": "Ward 149 - Porur Lakeview",
+    "id": "ward-145",
+    "name": "Ward 145 - Porur Lake Bund",
     "metrics": {
       "heat": {
         "lst": {
@@ -18232,7 +17727,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.15,
+          "value": 0.26,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -18241,10 +17736,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Porur Lakeview"
+          "notes": "Canopy and surface greenness indicator in Porur Lake Bund"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.778,
+          "value": 0.533,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -18255,7 +17750,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vulnerability": {
         "vulnerabilityScore": {
-          "value": 0.6,
+          "value": 0.64,
           "metadata": {
             "sourceType": "MUNICIPAL_CENSUS",
             "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
@@ -18264,11 +17759,11 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 149 - Porur Lakeview"
+          "notes": "Composite socio-economic sensitivity for Ward 145 - Porur Lake Bund"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 33800,
+            "value": 32000,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -18277,7 +17772,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "elderlyPopulation": {
-            "value": 0.12,
+            "value": 0.08,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -18286,7 +17781,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "outdoorWorkerExposure": {
-            "value": 0.33,
+            "value": 0.344,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Labor Statistics",
@@ -18295,7 +17790,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.875,
+            "value": 0.82,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -18304,7 +17799,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "informalSettlementIndicator": {
-            "value": 0.2,
+            "value": 0.232,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Slum Clearance Board Survey",
@@ -18319,15 +17814,15 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
   {
     "zoneId": "zone-11",
     "zoneName": "Zone XI - Valasaravakkam",
-    "wardId": "ward-150",
-    "wardName": "Ward 150 - Karambakkam",
+    "wardId": "ward-146",
+    "wardName": "Ward 146 - Ramapuram North",
     "latitude": 13.052,
-    "longitude": 80.166,
-    "areaKm2": 3.6,
+    "longitude": 80.153,
+    "areaKm2": 5.4,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-150",
-    "name": "Ward 150 - Karambakkam",
+    "id": "ward-146",
+    "name": "Ward 146 - Ramapuram North",
     "metrics": {
       "heat": {
         "lst": {
@@ -18354,7 +17849,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.17,
+          "value": 0.28,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -18363,10 +17858,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Karambakkam"
+          "notes": "Canopy and surface greenness indicator in Ramapuram North"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.733,
+          "value": 0.489,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -18377,7 +17872,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vulnerability": {
         "vulnerabilityScore": {
-          "value": 0.48,
+          "value": 0.77,
           "metadata": {
             "sourceType": "MUNICIPAL_CENSUS",
             "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
@@ -18386,11 +17881,11 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 150 - Karambakkam"
+          "notes": "Composite socio-economic sensitivity for Ward 146 - Ramapuram North"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 30400,
+            "value": 37350,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -18399,7 +17894,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "elderlyPopulation": {
-            "value": 0.13,
+            "value": 0.09,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -18408,7 +17903,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "outdoorWorkerExposure": {
-            "value": 0.288,
+            "value": 0.389,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Labor Statistics",
@@ -18417,7 +17912,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.865,
+            "value": 0.81,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -18426,7 +17921,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "informalSettlementIndicator": {
-            "value": 0.104,
+            "value": 0.336,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Slum Clearance Board Survey",
@@ -18441,15 +17936,15 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
   {
     "zoneId": "zone-11",
     "zoneName": "Zone XI - Valasaravakkam",
-    "wardId": "ward-151",
-    "wardName": "Ward 151 - Ramapuram MIOT",
+    "wardId": "ward-147",
+    "wardName": "Ward 147 - Ramapuram MGR Gardens",
     "latitude": 13.028,
-    "longitude": 80.174,
-    "areaKm2": 4.2,
+    "longitude": 80.161,
+    "areaKm2": 1.8,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-151",
-    "name": "Ward 151 - Ramapuram MIOT",
+    "id": "ward-147",
+    "name": "Ward 147 - Ramapuram MGR Gardens",
     "metrics": {
       "heat": {
         "lst": {
@@ -18476,7 +17971,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.19,
+          "value": 0.09,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -18485,10 +17980,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Ramapuram MIOT"
+          "notes": "Canopy and surface greenness indicator in Ramapuram MGR Gardens"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.689,
+          "value": 0.911,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -18499,7 +17994,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vulnerability": {
         "vulnerabilityScore": {
-          "value": 0.61,
+          "value": 0.65,
           "metadata": {
             "sourceType": "MUNICIPAL_CENSUS",
             "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
@@ -18508,11 +18003,11 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 151 - Ramapuram MIOT"
+          "notes": "Composite socio-economic sensitivity for Ward 147 - Ramapuram MGR Gardens"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 35750,
+            "value": 33950,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -18521,7 +18016,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "elderlyPopulation": {
-            "value": 0.14,
+            "value": 0.1,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -18530,7 +18025,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "outdoorWorkerExposure": {
-            "value": 0.334,
+            "value": 0.347,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Labor Statistics",
@@ -18539,7 +18034,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.855,
+            "value": 0.905,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -18548,7 +18043,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "informalSettlementIndicator": {
-            "value": 0.208,
+            "value": 0.24,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Slum Clearance Board Survey",
@@ -18563,15 +18058,15 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
   {
     "zoneId": "zone-11",
     "zoneName": "Zone XI - Valasaravakkam",
-    "wardId": "ward-152",
-    "wardName": "Ward 152 - Ramapuram South",
+    "wardId": "ward-148",
+    "wardName": "Ward 148 - Nandambakkam Trade Centre",
     "latitude": 13.036,
-    "longitude": 80.174,
-    "areaKm2": 4.8,
+    "longitude": 80.161,
+    "areaKm2": 2.4,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-152",
-    "name": "Ward 152 - Ramapuram South",
+    "id": "ward-148",
+    "name": "Ward 148 - Nandambakkam Trade Centre",
     "metrics": {
       "heat": {
         "lst": {
@@ -18598,7 +18093,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.21,
+          "value": 0.11,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -18607,10 +18102,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Ramapuram South"
+          "notes": "Canopy and surface greenness indicator in Nandambakkam Trade Centre"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.644,
+          "value": 0.867,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -18621,7 +18116,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vulnerability": {
         "vulnerabilityScore": {
-          "value": 0.49,
+          "value": 0.78,
           "metadata": {
             "sourceType": "MUNICIPAL_CENSUS",
             "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
@@ -18630,11 +18125,11 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 152 - Ramapuram South"
+          "notes": "Composite socio-economic sensitivity for Ward 148 - Nandambakkam Trade Centre"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 32350,
+            "value": 39300,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -18643,7 +18138,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "elderlyPopulation": {
-            "value": 0.15,
+            "value": 0.11,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -18652,7 +18147,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "outdoorWorkerExposure": {
-            "value": 0.291,
+            "value": 0.393,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Labor Statistics",
@@ -18661,7 +18156,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.845,
+            "value": 0.895,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -18670,7 +18165,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "informalSettlementIndicator": {
-            "value": 0.112,
+            "value": 0.344,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Slum Clearance Board Survey",
@@ -18685,15 +18180,15 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
   {
     "zoneId": "zone-11",
     "zoneName": "Zone XI - Valasaravakkam",
-    "wardId": "ward-153",
-    "wardName": "Ward 153 - Manapakkam DLF",
+    "wardId": "ward-149",
+    "wardName": "Ward 149 - Maduravoyal Flyover",
     "latitude": 13.044,
-    "longitude": 80.174,
-    "areaKm2": 5.4,
+    "longitude": 80.161,
+    "areaKm2": 3.0,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-153",
-    "name": "Ward 153 - Manapakkam DLF",
+    "id": "ward-149",
+    "name": "Ward 149 - Maduravoyal Flyover",
     "metrics": {
       "heat": {
         "lst": {
@@ -18720,7 +18215,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.23,
+          "value": 0.13,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -18729,10 +18224,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Manapakkam DLF"
+          "notes": "Canopy and surface greenness indicator in Maduravoyal Flyover"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.6,
+          "value": 0.822,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -18743,7 +18238,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vulnerability": {
         "vulnerabilityScore": {
-          "value": 0.62,
+          "value": 0.66,
           "metadata": {
             "sourceType": "MUNICIPAL_CENSUS",
             "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
@@ -18752,11 +18247,499 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 153 - Manapakkam DLF"
+          "notes": "Composite socio-economic sensitivity for Ward 149 - Maduravoyal Flyover"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 37700,
+            "value": 35900,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "HIGH",
+              "status": "SOURCED"
+            }
+          },
+          "elderlyPopulation": {
+            "value": 0.12,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "outdoorWorkerExposure": {
+            "value": 0.351,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Labor Statistics",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "builtEnvironmentIndicator": {
+            "value": 0.885,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Urban Morphology Index",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "informalSettlementIndicator": {
+            "value": 0.248,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Slum Clearance Board Survey",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "zoneId": "zone-11",
+    "zoneName": "Zone XI - Valasaravakkam",
+    "wardId": "ward-150",
+    "wardName": "Ward 150 - Maduravoyal Market",
+    "latitude": 13.052,
+    "longitude": 80.161,
+    "areaKm2": 3.6,
+    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
+    "lastUpdated": "2026-03-01T00:00:00Z",
+    "id": "ward-150",
+    "name": "Ward 150 - Maduravoyal Market",
+    "metrics": {
+      "heat": {
+        "lst": {
+          "value": 38.7,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "30m downscaled to Ward-level zonal average",
+            "processingMethod": "Mono-window thermal radiative transfer calculation"
+          },
+          "notes": "Surface temperature observation in Valasaravakkam municipal sector"
+        },
+        "lstNormalized": {
+          "value": 0.621,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vegetation": {
+        "ndvi": {
+          "value": 0.15,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "10m raster zonal average",
+            "processingMethod": "Normalized Difference NIR/Red band ratio"
+          },
+          "notes": "Canopy and surface greenness indicator in Maduravoyal Market"
+        },
+        "vegetationDeficitNormalized": {
+          "value": 0.778,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vulnerability": {
+        "vulnerabilityScore": {
+          "value": 0.54,
+          "metadata": {
+            "sourceType": "MUNICIPAL_CENSUS",
+            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
+            "confidence": "MEDIUM",
+            "status": "DERIVED",
+            "resolution": "Ward Census Block Aggregate",
+            "processingMethod": "Standardized socio-economic exposure index"
+          },
+          "notes": "Composite socio-economic sensitivity for Ward 150 - Maduravoyal Market"
+        },
+        "vulnerabilityComponents": {
+          "populationDensity": {
+            "value": 32500,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "HIGH",
+              "status": "SOURCED"
+            }
+          },
+          "elderlyPopulation": {
+            "value": 0.13,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "outdoorWorkerExposure": {
+            "value": 0.309,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Labor Statistics",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "builtEnvironmentIndicator": {
+            "value": 0.875,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Urban Morphology Index",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "informalSettlementIndicator": {
+            "value": 0.152,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Slum Clearance Board Survey",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "zoneId": "zone-11",
+    "zoneName": "Zone XI - Valasaravakkam",
+    "wardId": "ward-151",
+    "wardName": "Ward 151 - Nerkundram",
+    "latitude": 13.028,
+    "longitude": 80.169,
+    "areaKm2": 4.2,
+    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
+    "lastUpdated": "2026-03-01T00:00:00Z",
+    "id": "ward-151",
+    "name": "Ward 151 - Nerkundram",
+    "metrics": {
+      "heat": {
+        "lst": {
+          "value": 40.4,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "30m downscaled to Ward-level zonal average",
+            "processingMethod": "Mono-window thermal radiative transfer calculation"
+          },
+          "notes": "Surface temperature observation in Valasaravakkam municipal sector"
+        },
+        "lstNormalized": {
+          "value": 0.743,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vegetation": {
+        "ndvi": {
+          "value": 0.17,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "10m raster zonal average",
+            "processingMethod": "Normalized Difference NIR/Red band ratio"
+          },
+          "notes": "Canopy and surface greenness indicator in Nerkundram"
+        },
+        "vegetationDeficitNormalized": {
+          "value": 0.733,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vulnerability": {
+        "vulnerabilityScore": {
+          "value": 0.67,
+          "metadata": {
+            "sourceType": "MUNICIPAL_CENSUS",
+            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
+            "confidence": "MEDIUM",
+            "status": "DERIVED",
+            "resolution": "Ward Census Block Aggregate",
+            "processingMethod": "Standardized socio-economic exposure index"
+          },
+          "notes": "Composite socio-economic sensitivity for Ward 151 - Nerkundram"
+        },
+        "vulnerabilityComponents": {
+          "populationDensity": {
+            "value": 37850,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "HIGH",
+              "status": "SOURCED"
+            }
+          },
+          "elderlyPopulation": {
+            "value": 0.14,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "outdoorWorkerExposure": {
+            "value": 0.354,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Labor Statistics",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "builtEnvironmentIndicator": {
+            "value": 0.865,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Urban Morphology Index",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "informalSettlementIndicator": {
+            "value": 0.256,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Slum Clearance Board Survey",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "zoneId": "zone-11",
+    "zoneName": "Zone XI - Valasaravakkam",
+    "wardId": "ward-152",
+    "wardName": "Ward 152 - Kattupakkam",
+    "latitude": 13.036,
+    "longitude": 80.169,
+    "areaKm2": 4.8,
+    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
+    "lastUpdated": "2026-03-01T00:00:00Z",
+    "id": "ward-152",
+    "name": "Ward 152 - Kattupakkam",
+    "metrics": {
+      "heat": {
+        "lst": {
+          "value": 39.0,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "30m downscaled to Ward-level zonal average",
+            "processingMethod": "Mono-window thermal radiative transfer calculation"
+          },
+          "notes": "Surface temperature observation in Valasaravakkam municipal sector"
+        },
+        "lstNormalized": {
+          "value": 0.643,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vegetation": {
+        "ndvi": {
+          "value": 0.19,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "10m raster zonal average",
+            "processingMethod": "Normalized Difference NIR/Red band ratio"
+          },
+          "notes": "Canopy and surface greenness indicator in Kattupakkam"
+        },
+        "vegetationDeficitNormalized": {
+          "value": 0.689,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vulnerability": {
+        "vulnerabilityScore": {
+          "value": 0.55,
+          "metadata": {
+            "sourceType": "MUNICIPAL_CENSUS",
+            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
+            "confidence": "MEDIUM",
+            "status": "DERIVED",
+            "resolution": "Ward Census Block Aggregate",
+            "processingMethod": "Standardized socio-economic exposure index"
+          },
+          "notes": "Composite socio-economic sensitivity for Ward 152 - Kattupakkam"
+        },
+        "vulnerabilityComponents": {
+          "populationDensity": {
+            "value": 34450,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "HIGH",
+              "status": "SOURCED"
+            }
+          },
+          "elderlyPopulation": {
+            "value": 0.15,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "outdoorWorkerExposure": {
+            "value": 0.312,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Labor Statistics",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "builtEnvironmentIndicator": {
+            "value": 0.855,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Urban Morphology Index",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "informalSettlementIndicator": {
+            "value": 0.16,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Slum Clearance Board Survey",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "zoneId": "zone-11",
+    "zoneName": "Zone XI - Valasaravakkam",
+    "wardId": "ward-153",
+    "wardName": "Ward 153 - Iyyappanthangal Depot",
+    "latitude": 13.044,
+    "longitude": 80.169,
+    "areaKm2": 5.4,
+    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
+    "lastUpdated": "2026-03-01T00:00:00Z",
+    "id": "ward-153",
+    "name": "Ward 153 - Iyyappanthangal Depot",
+    "metrics": {
+      "heat": {
+        "lst": {
+          "value": 40.7,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "30m downscaled to Ward-level zonal average",
+            "processingMethod": "Mono-window thermal radiative transfer calculation"
+          },
+          "notes": "Surface temperature observation in Valasaravakkam municipal sector"
+        },
+        "lstNormalized": {
+          "value": 0.764,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vegetation": {
+        "ndvi": {
+          "value": 0.21,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "10m raster zonal average",
+            "processingMethod": "Normalized Difference NIR/Red band ratio"
+          },
+          "notes": "Canopy and surface greenness indicator in Iyyappanthangal Depot"
+        },
+        "vegetationDeficitNormalized": {
+          "value": 0.644,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vulnerability": {
+        "vulnerabilityScore": {
+          "value": 0.68,
+          "metadata": {
+            "sourceType": "MUNICIPAL_CENSUS",
+            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
+            "confidence": "MEDIUM",
+            "status": "DERIVED",
+            "resolution": "Ward Census Block Aggregate",
+            "processingMethod": "Standardized socio-economic exposure index"
+          },
+          "notes": "Composite socio-economic sensitivity for Ward 153 - Iyyappanthangal Depot"
+        },
+        "vulnerabilityComponents": {
+          "populationDensity": {
+            "value": 39800,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -18774,7 +18757,129 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "outdoorWorkerExposure": {
-            "value": 0.337,
+            "value": 0.358,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Labor Statistics",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "builtEnvironmentIndicator": {
+            "value": 0.845,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Urban Morphology Index",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "informalSettlementIndicator": {
+            "value": 0.264,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Slum Clearance Board Survey",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "zoneId": "zone-11",
+    "zoneName": "Zone XI - Valasaravakkam",
+    "wardId": "ward-154",
+    "wardName": "Ward 154 - Alapakkam",
+    "latitude": 13.052,
+    "longitude": 80.169,
+    "areaKm2": 1.8,
+    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
+    "lastUpdated": "2026-03-01T00:00:00Z",
+    "id": "ward-154",
+    "name": "Ward 154 - Alapakkam",
+    "metrics": {
+      "heat": {
+        "lst": {
+          "value": 39.3,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "30m downscaled to Ward-level zonal average",
+            "processingMethod": "Mono-window thermal radiative transfer calculation"
+          },
+          "notes": "Surface temperature observation in Valasaravakkam municipal sector"
+        },
+        "lstNormalized": {
+          "value": 0.664,
+          "metadata": {
+            "sourceType": "SATELLITE_THERMAL",
+            "sourceName": "Landsat 8/9 TIRS",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vegetation": {
+        "ndvi": {
+          "value": 0.23,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
+            "confidence": "HIGH",
+            "status": "SOURCED",
+            "resolution": "10m raster zonal average",
+            "processingMethod": "Normalized Difference NIR/Red band ratio"
+          },
+          "notes": "Canopy and surface greenness indicator in Alapakkam"
+        },
+        "vegetationDeficitNormalized": {
+          "value": 0.6,
+          "metadata": {
+            "sourceType": "SATELLITE_MULTISPECTRAL",
+            "sourceName": "Sentinel-2 MSI",
+            "confidence": "HIGH",
+            "status": "DERIVED"
+          }
+        }
+      },
+      "vulnerability": {
+        "vulnerabilityScore": {
+          "value": 0.56,
+          "metadata": {
+            "sourceType": "MUNICIPAL_CENSUS",
+            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
+            "confidence": "MEDIUM",
+            "status": "DERIVED",
+            "resolution": "Ward Census Block Aggregate",
+            "processingMethod": "Standardized socio-economic exposure index"
+          },
+          "notes": "Composite socio-economic sensitivity for Ward 154 - Alapakkam"
+        },
+        "vulnerabilityComponents": {
+          "populationDensity": {
+            "value": 27600,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "HIGH",
+              "status": "SOURCED"
+            }
+          },
+          "elderlyPopulation": {
+            "value": 0.08,
+            "metadata": {
+              "sourceType": "MUNICIPAL_CENSUS",
+              "sourceName": "Census Data",
+              "confidence": "MEDIUM",
+              "status": "INDICATIVE_ESTIMATE"
+            }
+          },
+          "outdoorWorkerExposure": {
+            "value": 0.316,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Labor Statistics",
@@ -18792,7 +18897,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "informalSettlementIndicator": {
-            "value": 0.216,
+            "value": 0.168,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Slum Clearance Board Survey",
@@ -18807,19 +18912,19 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
   {
     "zoneId": "zone-11",
     "zoneName": "Zone XI - Valasaravakkam",
-    "wardId": "ward-154",
-    "wardName": "Ward 154 - Nerkundram",
-    "latitude": 13.052,
-    "longitude": 80.174,
-    "areaKm2": 1.8,
+    "wardId": "ward-155",
+    "wardName": "Ward 155 - Karambakkam",
+    "latitude": 13.028,
+    "longitude": 80.177,
+    "areaKm2": 2.4,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-154",
-    "name": "Ward 154 - Nerkundram",
+    "id": "ward-155",
+    "name": "Ward 155 - Karambakkam",
     "metrics": {
       "heat": {
         "lst": {
-          "value": 38.7,
+          "value": 37.9,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
@@ -18831,7 +18936,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
           "notes": "Surface temperature observation in Valasaravakkam municipal sector"
         },
         "lstNormalized": {
-          "value": 0.621,
+          "value": 0.564,
           "metadata": {
             "sourceType": "SATELLITE_THERMAL",
             "sourceName": "Landsat 8/9 TIRS",
@@ -18851,7 +18956,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Nerkundram"
+          "notes": "Canopy and surface greenness indicator in Karambakkam"
         },
         "vegetationDeficitNormalized": {
           "value": 0.556,
@@ -18865,7 +18970,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vulnerability": {
         "vulnerabilityScore": {
-          "value": 0.5,
+          "value": 0.69,
           "metadata": {
             "sourceType": "MUNICIPAL_CENSUS",
             "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
@@ -18874,133 +18979,11 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 154 - Nerkundram"
+          "notes": "Composite socio-economic sensitivity for Ward 155 - Karambakkam"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 25500,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "HIGH",
-              "status": "SOURCED"
-            }
-          },
-          "elderlyPopulation": {
-            "value": 0.08,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Census Data",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "outdoorWorkerExposure": {
-            "value": 0.295,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Labor Statistics",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "builtEnvironmentIndicator": {
-            "value": 0.825,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Urban Morphology Index",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          },
-          "informalSettlementIndicator": {
-            "value": 0.12,
-            "metadata": {
-              "sourceType": "MUNICIPAL_CENSUS",
-              "sourceName": "Slum Clearance Board Survey",
-              "confidence": "MEDIUM",
-              "status": "INDICATIVE_ESTIMATE"
-            }
-          }
-        }
-      }
-    }
-  },
-  {
-    "zoneId": "zone-11",
-    "zoneName": "Zone XI - Valasaravakkam",
-    "wardId": "ward-155",
-    "wardName": "Ward 155 - Maduravoyal Flyover",
-    "latitude": 13.028,
-    "longitude": 80.182,
-    "areaKm2": 2.4,
-    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
-    "lastUpdated": "2026-03-01T00:00:00Z",
-    "id": "ward-155",
-    "name": "Ward 155 - Maduravoyal Flyover",
-    "metrics": {
-      "heat": {
-        "lst": {
-          "value": 37.3,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS (Band 10 LST)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "30m downscaled to Ward-level zonal average",
-            "processingMethod": "Mono-window thermal radiative transfer calculation"
-          },
-          "notes": "Surface temperature observation in Valasaravakkam municipal sector"
-        },
-        "lstNormalized": {
-          "value": 0.521,
-          "metadata": {
-            "sourceType": "SATELLITE_THERMAL",
-            "sourceName": "Landsat 8/9 TIRS",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vegetation": {
-        "ndvi": {
-          "value": 0.27,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
-            "confidence": "HIGH",
-            "status": "SOURCED",
-            "resolution": "10m raster zonal average",
-            "processingMethod": "Normalized Difference NIR/Red band ratio"
-          },
-          "notes": "Canopy and surface greenness indicator in Maduravoyal Flyover"
-        },
-        "vegetationDeficitNormalized": {
-          "value": 0.511,
-          "metadata": {
-            "sourceType": "SATELLITE_MULTISPECTRAL",
-            "sourceName": "Sentinel-2 MSI",
-            "confidence": "HIGH",
-            "status": "DERIVED"
-          }
-        }
-      },
-      "vulnerability": {
-        "vulnerabilityScore": {
-          "value": 0.63,
-          "metadata": {
-            "sourceType": "MUNICIPAL_CENSUS",
-            "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
-            "confidence": "MEDIUM",
-            "status": "DERIVED",
-            "resolution": "Ward Census Block Aggregate",
-            "processingMethod": "Standardized socio-economic exposure index"
-          },
-          "notes": "Composite socio-economic sensitivity for Ward 155 - Maduravoyal Flyover"
-        },
-        "vulnerabilityComponents": {
-          "populationDensity": {
-            "value": 30850,
+            "value": 32950,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -19018,7 +19001,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "outdoorWorkerExposure": {
-            "value": 0.34,
+            "value": 0.361,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Labor Statistics",
@@ -19027,7 +19010,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.815,
+            "value": 0.825,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -19036,7 +19019,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "informalSettlementIndicator": {
-            "value": 0.224,
+            "value": 0.272,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Slum Clearance Board Survey",
@@ -19052,14 +19035,14 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     "zoneId": "zone-12",
     "zoneName": "Zone XII - Alandur",
     "wardId": "ward-156",
-    "wardName": "Ward 156 - Alandur Metro",
-    "latitude": 12.983,
-    "longitude": 80.178,
+    "wardName": "Ward 156 - Alandur Metro Hub",
+    "latitude": 12.988,
+    "longitude": 80.183,
     "areaKm2": 3.0,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
     "id": "ward-156",
-    "name": "Ward 156 - Alandur Metro",
+    "name": "Ward 156 - Alandur Metro Hub",
     "metrics": {
       "heat": {
         "lst": {
@@ -19086,7 +19069,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.31,
+          "value": 0.32,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -19095,10 +19078,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Alandur Metro"
+          "notes": "Canopy and surface greenness indicator in Alandur Metro Hub"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.422,
+          "value": 0.4,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -19109,7 +19092,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vulnerability": {
         "vulnerabilityScore": {
-          "value": 0.46,
+          "value": 0.48,
           "metadata": {
             "sourceType": "MUNICIPAL_CENSUS",
             "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
@@ -19118,11 +19101,11 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 156 - Alandur Metro"
+          "notes": "Composite socio-economic sensitivity for Ward 156 - Alandur Metro Hub"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 25700,
+            "value": 26400,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -19140,7 +19123,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "outdoorWorkerExposure": {
-            "value": 0.281,
+            "value": 0.288,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Labor Statistics",
@@ -19149,7 +19132,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.795,
+            "value": 0.79,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -19158,7 +19141,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "informalSettlementIndicator": {
-            "value": 0.088,
+            "value": 0.104,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Slum Clearance Board Survey",
@@ -19174,14 +19157,14 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     "zoneId": "zone-12",
     "zoneName": "Zone XII - Alandur",
     "wardId": "ward-157",
-    "wardName": "Ward 157 - Alandur Market",
-    "latitude": 12.991,
-    "longitude": 80.178,
+    "wardName": "Ward 157 - Guindy Kathipara Flyover",
+    "latitude": 12.996,
+    "longitude": 80.183,
     "areaKm2": 3.6,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
     "id": "ward-157",
-    "name": "Ward 157 - Alandur Market",
+    "name": "Ward 157 - Guindy Kathipara Flyover",
     "metrics": {
       "heat": {
         "lst": {
@@ -19208,7 +19191,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.33,
+          "value": 0.34,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -19217,10 +19200,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Alandur Market"
+          "notes": "Canopy and surface greenness indicator in Guindy Kathipara Flyover"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.378,
+          "value": 0.356,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -19231,7 +19214,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vulnerability": {
         "vulnerabilityScore": {
-          "value": 0.59,
+          "value": 0.61,
           "metadata": {
             "sourceType": "MUNICIPAL_CENSUS",
             "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
@@ -19240,11 +19223,11 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 157 - Alandur Market"
+          "notes": "Composite socio-economic sensitivity for Ward 157 - Guindy Kathipara Flyover"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 31050,
+            "value": 31750,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -19262,7 +19245,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "outdoorWorkerExposure": {
-            "value": 0.327,
+            "value": 0.334,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Labor Statistics",
@@ -19271,7 +19254,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.785,
+            "value": 0.78,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -19280,7 +19263,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "informalSettlementIndicator": {
-            "value": 0.192,
+            "value": 0.208,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Slum Clearance Board Survey",
@@ -19296,14 +19279,14 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     "zoneId": "zone-12",
     "zoneName": "Zone XII - Alandur",
     "wardId": "ward-158",
-    "wardName": "Ward 158 - St. Thomas Mount Cantonment",
-    "latitude": 12.999,
-    "longitude": 80.178,
+    "wardName": "Ward 158 - Guindy Race Course",
+    "latitude": 13.004,
+    "longitude": 80.183,
     "areaKm2": 4.2,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
     "id": "ward-158",
-    "name": "Ward 158 - St. Thomas Mount Cantonment",
+    "name": "Ward 158 - Guindy Race Course",
     "metrics": {
       "heat": {
         "lst": {
@@ -19330,7 +19313,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.14,
+          "value": 0.15,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -19339,10 +19322,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in St. Thomas Mount Cantonment"
+          "notes": "Canopy and surface greenness indicator in Guindy Race Course"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.8,
+          "value": 0.778,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -19353,7 +19336,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vulnerability": {
         "vulnerabilityScore": {
-          "value": 0.47,
+          "value": 0.49,
           "metadata": {
             "sourceType": "MUNICIPAL_CENSUS",
             "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
@@ -19362,11 +19345,11 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 158 - St. Thomas Mount Cantonment"
+          "notes": "Composite socio-economic sensitivity for Ward 158 - Guindy Race Course"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 27650,
+            "value": 28350,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -19384,7 +19367,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "outdoorWorkerExposure": {
-            "value": 0.284,
+            "value": 0.291,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Labor Statistics",
@@ -19393,7 +19376,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.88,
+            "value": 0.875,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -19402,7 +19385,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "informalSettlementIndicator": {
-            "value": 0.096,
+            "value": 0.112,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Slum Clearance Board Survey",
@@ -19418,14 +19401,14 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     "zoneId": "zone-12",
     "zoneName": "Zone XII - Alandur",
     "wardId": "ward-159",
-    "wardName": "Ward 159 - St. Thomas Mount Hill",
-    "latitude": 13.007,
-    "longitude": 80.178,
+    "wardName": "Ward 159 - St. Thomas Mount",
+    "latitude": 13.012,
+    "longitude": 80.183,
     "areaKm2": 4.8,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
     "id": "ward-159",
-    "name": "Ward 159 - St. Thomas Mount Hill",
+    "name": "Ward 159 - St. Thomas Mount",
     "metrics": {
       "heat": {
         "lst": {
@@ -19452,7 +19435,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.16,
+          "value": 0.17,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -19461,10 +19444,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in St. Thomas Mount Hill"
+          "notes": "Canopy and surface greenness indicator in St. Thomas Mount"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.756,
+          "value": 0.733,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -19475,7 +19458,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vulnerability": {
         "vulnerabilityScore": {
-          "value": 0.6,
+          "value": 0.62,
           "metadata": {
             "sourceType": "MUNICIPAL_CENSUS",
             "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
@@ -19484,11 +19467,11 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 159 - St. Thomas Mount Hill"
+          "notes": "Composite socio-economic sensitivity for Ward 159 - St. Thomas Mount"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 33000,
+            "value": 33700,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -19506,7 +19489,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "outdoorWorkerExposure": {
-            "value": 0.33,
+            "value": 0.337,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Labor Statistics",
@@ -19515,7 +19498,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.87,
+            "value": 0.865,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -19524,7 +19507,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "informalSettlementIndicator": {
-            "value": 0.2,
+            "value": 0.216,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Slum Clearance Board Survey",
@@ -19541,8 +19524,8 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     "zoneName": "Zone XII - Alandur",
     "wardId": "ward-160",
     "wardName": "Ward 160 - Pazhavanthangal",
-    "latitude": 12.983,
-    "longitude": 80.186,
+    "latitude": 12.988,
+    "longitude": 80.191,
     "areaKm2": 5.4,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
@@ -19574,7 +19557,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.18,
+          "value": 0.19,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -19586,7 +19569,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
           "notes": "Canopy and surface greenness indicator in Pazhavanthangal"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.711,
+          "value": 0.689,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -19597,7 +19580,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vulnerability": {
         "vulnerabilityScore": {
-          "value": 0.48,
+          "value": 0.5,
           "metadata": {
             "sourceType": "MUNICIPAL_CENSUS",
             "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
@@ -19610,7 +19593,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 29600,
+            "value": 30300,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -19628,7 +19611,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "outdoorWorkerExposure": {
-            "value": 0.288,
+            "value": 0.295,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Labor Statistics",
@@ -19637,7 +19620,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.86,
+            "value": 0.855,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -19646,7 +19629,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "informalSettlementIndicator": {
-            "value": 0.104,
+            "value": 0.12,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Slum Clearance Board Survey",
@@ -19662,14 +19645,14 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     "zoneId": "zone-12",
     "zoneName": "Zone XII - Alandur",
     "wardId": "ward-161",
-    "wardName": "Ward 161 - Nanganallur Anjaneyar",
-    "latitude": 12.991,
-    "longitude": 80.186,
+    "wardName": "Ward 161 - Nanganallur Anjaneyar Temple",
+    "latitude": 12.996,
+    "longitude": 80.191,
     "areaKm2": 1.8,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
     "id": "ward-161",
-    "name": "Ward 161 - Nanganallur Anjaneyar",
+    "name": "Ward 161 - Nanganallur Anjaneyar Temple",
     "metrics": {
       "heat": {
         "lst": {
@@ -19696,7 +19679,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.2,
+          "value": 0.21,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -19705,10 +19688,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Nanganallur Anjaneyar"
+          "notes": "Canopy and surface greenness indicator in Nanganallur Anjaneyar Temple"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.667,
+          "value": 0.644,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -19719,7 +19702,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vulnerability": {
         "vulnerabilityScore": {
-          "value": 0.61,
+          "value": 0.63,
           "metadata": {
             "sourceType": "MUNICIPAL_CENSUS",
             "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
@@ -19728,11 +19711,11 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 161 - Nanganallur Anjaneyar"
+          "notes": "Composite socio-economic sensitivity for Ward 161 - Nanganallur Anjaneyar Temple"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 34950,
+            "value": 35650,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -19750,7 +19733,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "outdoorWorkerExposure": {
-            "value": 0.334,
+            "value": 0.34,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Labor Statistics",
@@ -19759,7 +19742,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.85,
+            "value": 0.845,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -19768,7 +19751,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "informalSettlementIndicator": {
-            "value": 0.208,
+            "value": 0.224,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Slum Clearance Board Survey",
@@ -19784,14 +19767,14 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     "zoneId": "zone-12",
     "zoneName": "Zone XII - Alandur",
     "wardId": "ward-162",
-    "wardName": "Ward 162 - Nanganallur 5th Main",
-    "latitude": 12.999,
-    "longitude": 80.186,
+    "wardName": "Ward 162 - Nanganallur 6th Main",
+    "latitude": 13.004,
+    "longitude": 80.191,
     "areaKm2": 2.4,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
     "id": "ward-162",
-    "name": "Ward 162 - Nanganallur 5th Main",
+    "name": "Ward 162 - Nanganallur 6th Main",
     "metrics": {
       "heat": {
         "lst": {
@@ -19818,7 +19801,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.22,
+          "value": 0.23,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -19827,10 +19810,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Nanganallur 5th Main"
+          "notes": "Canopy and surface greenness indicator in Nanganallur 6th Main"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.622,
+          "value": 0.6,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -19841,7 +19824,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vulnerability": {
         "vulnerabilityScore": {
-          "value": 0.49,
+          "value": 0.51,
           "metadata": {
             "sourceType": "MUNICIPAL_CENSUS",
             "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
@@ -19850,11 +19833,11 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 162 - Nanganallur 5th Main"
+          "notes": "Composite socio-economic sensitivity for Ward 162 - Nanganallur 6th Main"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 31550,
+            "value": 32250,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -19872,7 +19855,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "outdoorWorkerExposure": {
-            "value": 0.291,
+            "value": 0.298,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Labor Statistics",
@@ -19881,7 +19864,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.84,
+            "value": 0.835,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -19890,7 +19873,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "informalSettlementIndicator": {
-            "value": 0.112,
+            "value": 0.128,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Slum Clearance Board Survey",
@@ -19907,8 +19890,8 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     "zoneName": "Zone XII - Alandur",
     "wardId": "ward-163",
     "wardName": "Ward 163 - Adambakkam Lake",
-    "latitude": 13.007,
-    "longitude": 80.186,
+    "latitude": 13.012,
+    "longitude": 80.191,
     "areaKm2": 3.0,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
@@ -19940,7 +19923,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.24,
+          "value": 0.25,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -19952,7 +19935,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
           "notes": "Canopy and surface greenness indicator in Adambakkam Lake"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.578,
+          "value": 0.556,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -19963,7 +19946,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vulnerability": {
         "vulnerabilityScore": {
-          "value": 0.62,
+          "value": 0.64,
           "metadata": {
             "sourceType": "MUNICIPAL_CENSUS",
             "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
@@ -19976,7 +19959,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 36900,
+            "value": 37600,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -19994,7 +19977,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "outdoorWorkerExposure": {
-            "value": 0.337,
+            "value": 0.344,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Labor Statistics",
@@ -20003,7 +19986,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.83,
+            "value": 0.825,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -20012,7 +19995,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "informalSettlementIndicator": {
-            "value": 0.216,
+            "value": 0.232,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Slum Clearance Board Survey",
@@ -20028,14 +20011,14 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     "zoneId": "zone-12",
     "zoneName": "Zone XII - Alandur",
     "wardId": "ward-164",
-    "wardName": "Ward 164 - Meenambakkam Airport Zone",
-    "latitude": 12.983,
-    "longitude": 80.194,
+    "wardName": "Ward 164 - Adambakkam North",
+    "latitude": 12.988,
+    "longitude": 80.199,
     "areaKm2": 3.6,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
     "id": "ward-164",
-    "name": "Ward 164 - Meenambakkam Airport Zone",
+    "name": "Ward 164 - Adambakkam North",
     "metrics": {
       "heat": {
         "lst": {
@@ -20062,7 +20045,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.26,
+          "value": 0.27,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -20071,10 +20054,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Meenambakkam Airport Zone"
+          "notes": "Canopy and surface greenness indicator in Adambakkam North"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.533,
+          "value": 0.511,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -20085,7 +20068,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vulnerability": {
         "vulnerabilityScore": {
-          "value": 0.5,
+          "value": 0.52,
           "metadata": {
             "sourceType": "MUNICIPAL_CENSUS",
             "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
@@ -20094,11 +20077,11 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 164 - Meenambakkam Airport Zone"
+          "notes": "Composite socio-economic sensitivity for Ward 164 - Adambakkam North"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 33500,
+            "value": 34200,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -20116,7 +20099,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "outdoorWorkerExposure": {
-            "value": 0.295,
+            "value": 0.302,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Labor Statistics",
@@ -20125,7 +20108,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.82,
+            "value": 0.815,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -20134,7 +20117,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "informalSettlementIndicator": {
-            "value": 0.12,
+            "value": 0.136,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Slum Clearance Board Survey",
@@ -20151,8 +20134,8 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     "zoneName": "Zone XII - Alandur",
     "wardId": "ward-165",
     "wardName": "Ward 165 - Moovarasampettai",
-    "latitude": 12.991,
-    "longitude": 80.194,
+    "latitude": 12.996,
+    "longitude": 80.199,
     "areaKm2": 4.2,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
@@ -20184,7 +20167,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.28,
+          "value": 0.29,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -20196,7 +20179,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
           "notes": "Canopy and surface greenness indicator in Moovarasampettai"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.489,
+          "value": 0.467,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -20207,7 +20190,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vulnerability": {
         "vulnerabilityScore": {
-          "value": 0.63,
+          "value": 0.65,
           "metadata": {
             "sourceType": "MUNICIPAL_CENSUS",
             "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
@@ -20220,7 +20203,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 30050,
+            "value": 30750,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -20238,7 +20221,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "outdoorWorkerExposure": {
-            "value": 0.34,
+            "value": 0.347,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Labor Statistics",
@@ -20247,7 +20230,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.81,
+            "value": 0.805,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -20256,7 +20239,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "informalSettlementIndicator": {
-            "value": 0.224,
+            "value": 0.24,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Slum Clearance Board Survey",
@@ -20272,14 +20255,14 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     "zoneId": "zone-12",
     "zoneName": "Zone XII - Alandur",
     "wardId": "ward-166",
-    "wardName": "Ward 166 - Mugalivakkam",
-    "latitude": 12.999,
-    "longitude": 80.194,
+    "wardName": "Ward 166 - Meenambakkam Airport Edge",
+    "latitude": 13.004,
+    "longitude": 80.199,
     "areaKm2": 4.8,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
     "id": "ward-166",
-    "name": "Ward 166 - Mugalivakkam",
+    "name": "Ward 166 - Meenambakkam Airport Edge",
     "metrics": {
       "heat": {
         "lst": {
@@ -20306,7 +20289,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.3,
+          "value": 0.31,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -20315,10 +20298,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Mugalivakkam"
+          "notes": "Canopy and surface greenness indicator in Meenambakkam Airport Edge"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.444,
+          "value": 0.422,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -20329,7 +20312,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vulnerability": {
         "vulnerabilityScore": {
-          "value": 0.51,
+          "value": 0.53,
           "metadata": {
             "sourceType": "MUNICIPAL_CENSUS",
             "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
@@ -20338,11 +20321,11 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 166 - Mugalivakkam"
+          "notes": "Composite socio-economic sensitivity for Ward 166 - Meenambakkam Airport Edge"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 26650,
+            "value": 27350,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -20360,7 +20343,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "outdoorWorkerExposure": {
-            "value": 0.298,
+            "value": 0.305,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Labor Statistics",
@@ -20369,7 +20352,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.8,
+            "value": 0.795,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -20378,7 +20361,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "informalSettlementIndicator": {
-            "value": 0.128,
+            "value": 0.144,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Slum Clearance Board Survey",
@@ -20394,14 +20377,14 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
     "zoneId": "zone-12",
     "zoneName": "Zone XII - Alandur",
     "wardId": "ward-167",
-    "wardName": "Ward 167 - Cowl Bazaar",
-    "latitude": 13.007,
-    "longitude": 80.194,
+    "wardName": "Ward 167 - Madipakkam North",
+    "latitude": 13.012,
+    "longitude": 80.199,
     "areaKm2": 5.4,
     "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
     "lastUpdated": "2026-03-01T00:00:00Z",
     "id": "ward-167",
-    "name": "Ward 167 - Cowl Bazaar",
+    "name": "Ward 167 - Madipakkam North",
     "metrics": {
       "heat": {
         "lst": {
@@ -20428,7 +20411,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vegetation": {
         "ndvi": {
-          "value": 0.32,
+          "value": 0.33,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
@@ -20437,10 +20420,10 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "10m raster zonal average",
             "processingMethod": "Normalized Difference NIR/Red band ratio"
           },
-          "notes": "Canopy and surface greenness indicator in Cowl Bazaar"
+          "notes": "Canopy and surface greenness indicator in Madipakkam North"
         },
         "vegetationDeficitNormalized": {
-          "value": 0.4,
+          "value": 0.378,
           "metadata": {
             "sourceType": "SATELLITE_MULTISPECTRAL",
             "sourceName": "Sentinel-2 MSI",
@@ -20451,7 +20434,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
       },
       "vulnerability": {
         "vulnerabilityScore": {
-          "value": 0.64,
+          "value": 0.66,
           "metadata": {
             "sourceType": "MUNICIPAL_CENSUS",
             "sourceName": "GCC Municipal Ward Census & Slum Free City Plan",
@@ -20460,11 +20443,11 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             "resolution": "Ward Census Block Aggregate",
             "processingMethod": "Standardized socio-economic exposure index"
           },
-          "notes": "Composite socio-economic sensitivity for Ward 167 - Cowl Bazaar"
+          "notes": "Composite socio-economic sensitivity for Ward 167 - Madipakkam North"
         },
         "vulnerabilityComponents": {
           "populationDensity": {
-            "value": 32000,
+            "value": 32700,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Census Data",
@@ -20482,7 +20465,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "outdoorWorkerExposure": {
-            "value": 0.344,
+            "value": 0.351,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Labor Statistics",
@@ -20491,7 +20474,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "builtEnvironmentIndicator": {
-            "value": 0.79,
+            "value": 0.785,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Urban Morphology Index",
@@ -20500,7 +20483,7 @@ export const CHENNAI_ALL_200_WARDS: Zone[] = [
             }
           },
           "informalSettlementIndicator": {
-            "value": 0.232,
+            "value": 0.248,
             "metadata": {
               "sourceType": "MUNICIPAL_CENSUS",
               "sourceName": "Slum Clearance Board Survey",

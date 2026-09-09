@@ -30,214 +30,205 @@ CONFIDENCE_HIGH = "HIGH"
 CONFIDENCE_MEDIUM = "MEDIUM"
 CONFIDENCE_UNKNOWN = "UNKNOWN"
 
+DATA_SOURCE_LABEL_VAL = "Pre-processed Municipal Spatial Analysis"
+LAST_UPDATED_VAL = "2026-03-01T00:00:00Z"
+
+RESOLUTION_30M_DOWNSCALED = "30m downscaled to Ward-level zonal average"
+RESOLUTION_10M_RASTER = "10m raster zonal average"
+RESOLUTION_WARD_CENSUS_BLOCK = "Ward Census Block Aggregate"
+RESOLUTION_WARD_RASTER_ZONAL = "Ward-level raster zonal aggregate"
+
+METHOD_MONO_WINDOW = "Mono-window thermal radiative transfer calculation"
+METHOD_NIR_RED_RATIO = "Normalized Difference NIR/Red band ratio"
+METHOD_SOCIO_INDEX = "Standardized socio-economic exposure index"
+METHOD_MISSING_THERMAL = "Missing cloud-free thermal raster over marshland boundary"
+METHOD_MISSING_SURFACE = "Missing surface reflectance observation"
+
+KEY_ZONE_NUM = "zoneNum"
+KEY_ROMAN = "roman"
+KEY_NAME = "name"
+KEY_WARDS = "wards"
+
+def make_metric_entry(val, src_type, src_name, conf, stat, res=None, method=None, notes_text=None):
+    meta = {
+        "sourceType": src_type,
+        "sourceName": src_name,
+        "confidence": conf,
+        "status": stat
+    }
+    if res:
+        meta["resolution"] = res
+    if method:
+        meta["processingMethod"] = method
+    result = {
+        "value": val,
+        "metadata": meta
+    }
+    if notes_text:
+        result["notes"] = notes_text
+    return result
+
+def make_zone_entry(zone_num, roman, name, wards, base_lat, base_lng, neighborhoods, heat_base, ndvi_base, vuln_base):
+    return {
+        KEY_ZONE_NUM: zone_num,
+        KEY_ROMAN: roman,
+        KEY_NAME: name,
+        KEY_WARDS: wards,
+        "baseLat": base_lat,
+        "baseLng": base_lng,
+        "neighborhoods": neighborhoods,
+        "heatBase": heat_base,
+        "ndviBase": ndvi_base,
+        "vulnBase": vuln_base
+    }
+
 ZONES_SPEC = [
-    {
-        "zoneNum": 1,
-        "roman": "I",
-        "name": "Thiruvotriyur",
-        "wards": list(range(1, 15)), # 1 to 14 (14 wards)
-        "baseLat": 13.170, "baseLng": 80.300,
-        "neighborhoods": [
+    make_zone_entry(
+        1, "I", "Thiruvotriyur", list(range(1, 15)), 13.170, 80.300,
+        [
             "Kathivakkam North", "Ernavoor", "Kathivakkam South", "Wimco Nagar", 
             "Thiruvotriyur Market", "Kaladipet", "Tollgate North", "Rajakadai", 
             "Sathangadu", "Ajax", "Jothi Nagar", "Shanmugapuram", 
             "Ellaiamman Kovil", "Thiruvotriyur West"
         ],
-        "heatBase": 39.5, "ndviBase": 0.16, "vulnBase": 0.72
-    },
-    {
-        "zoneNum": 2,
-        "roman": "II",
-        "name": "Manali",
-        "wards": list(range(15, 22)), # 15 to 21 (7 wards)
-        "baseLat": 13.185, "baseLng": 80.245,
-        "neighborhoods": [
+        39.5, 0.16, 0.72
+    ),
+    make_zone_entry(
+        2, "II", "Manali", list(range(15, 22)), 13.185, 80.245,
+        [
             "Edayanchavadi", "Sadayankuppam", "Kadapakkam", "Theeyampakkam", 
             "Mathur MMDA", "Manali New Town", "Chinnasekadu"
         ],
-        "heatBase": 40.8, "ndviBase": 0.20, "vulnBase": 0.68
-    },
-    {
-        "zoneNum": 3,
-        "roman": "III",
-        "name": "Madhavaram",
-        "wards": list(range(22, 34)), # 22 to 33 (12 wards)
-        "baseLat": 13.150, "baseLng": 80.205,
-        "neighborhoods": [
-            "Vadaperumbakkam", "Puzhal North", "Puzhal South", "Puthagaram", 
-            "Surapet", "Kathirvedu", "Vinayagapuram", "Madhavaram Milk Colony", 
-            "Madhavaram Central", "Assisi Nagar", "Ponniammanmedu", "Thanikachalam Nagar"
+        40.8, 0.20, 0.68
+    ),
+    make_zone_entry(
+        3, "III", "Madhavaram", list(range(22, 34)), 13.150, 80.220,
+        [
+            "Puzhal", "Puzhal Camp", "Madhavaram Milk Colony", "Madhavaram Bus Terminus", 
+            "Vadaperumbakkam", "Thanikachalam Nagar", "Ponniammanmedu", "Kathirvedu", 
+            "Surapet", "Vinayakapuram", "Retteri Junction", "Kolathur North"
         ],
-        "heatBase": 38.6, "ndviBase": 0.25, "vulnBase": 0.58
-    },
-    {
-        "zoneNum": 4,
-        "roman": "IV",
-        "name": "Tondiarpet",
-        "wards": list(range(34, 49)), # 34 to 48 (15 wards)
-        "baseLat": 13.135, "baseLng": 80.275,
-        "neighborhoods": [
-            "Korukkupet North", "Korukkupet South", "Tondiarpet West", "New Washermanpet", 
-            "Stanley Hospital", "Kasimedu Harbour", "Royapuram Basin", "Seniamman Koil", 
-            "Meenambal Nagar", "Dr. Radhakrishnan Nagar", "Kodungaiyur North", "Kodungaiyur South", 
-            "Ezhil Nagar", "Krishnamoorthy Nagar", "Ambedkar Nagar"
+        39.0, 0.25, 0.58
+    ),
+    make_zone_entry(
+        4, "IV", "Tondiarpet", list(range(34, 49)), 13.125, 80.280,
+        [
+            "Korukkupet Junction", "Korukkupet West", "Tondiarpet High Road", "Vaidyanathan Street", 
+            "Dr. Radhakrishnan Nagar", "Meenambal Nagar", "Old Washermanpet", "Vyasarpadi Jeeva", 
+            "Vyasarpadi Central", "Vyasarpadi Industrial", "Washermanpet Market", "Stanley Hospital", 
+            "Periyar Nagar", "Moolakadai", "Kodungaiyur East"
         ],
-        "heatBase": 41.5, "ndviBase": 0.12, "vulnBase": 0.85
-    },
-    {
-        "zoneNum": 5,
-        "roman": "V",
-        "name": "Royapuram",
-        "wards": list(range(49, 64)), # 49 to 63 (15 wards)
-        "baseLat": 13.100, "baseLng": 80.285,
-        "neighborhoods": [
-            "Old Washermanpet", "Royapuram Railway Colony", "Sanjeevirayanpet", "Grace Garden", 
-            "Ma Po Si Nagar", "Mannady", "George Town North", "Chennai Port / Harbour", 
-            "Muthialpet", "Sowcarpet North", "Sowcarpet South", "Peddanaickenpet", 
-            "Seven Wells", "Broadway / Esplanade", "Choolai North"
+        41.5, 0.12, 0.86
+    ),
+    make_zone_entry(
+        5, "V", "Royapuram", list(range(49, 64)), 13.105, 80.290,
+        [
+            "Royapuram Beach", "Royapuram Railway Colony", "Mannadi Metro", "Broadway Bus Stand", 
+            "George Town Central", "Parrys Corner", "Seven Wells", "Mint Street", 
+            "Sowcarpet Market", "Kothawal Chavadi", "Park Town", "Chintadripet North", 
+            "Wall Tax Road", "Elephant Gate", "Kondithope"
         ],
-        "heatBase": 40.5, "ndviBase": 0.10, "vulnBase": 0.82
-    },
-    {
-        "zoneNum": 6,
-        "roman": "VI",
-        "name": "Thiru-Vi-Ka Nagar",
-        "wards": list(range(64, 79)), # 64 to 78 (15 wards)
-        "baseLat": 13.115, "baseLng": 80.240,
-        "neighborhoods": [
-            "Kolathur North", "Kolathur South", "Peravallur", "Jawahar Nagar", 
-            "Sembium", "Perambur Loco Works", "Perambur Carriage Works", "Vyasarpadi Central", 
-            "Pulianthope North", "Pulianthope South", "Strahans Road", "Pattalam", 
-            "Otteri", "Mangalapuram", "Thiru-Vi-Ka Nagar Hub"
+        42.2, 0.09, 0.89
+    ),
+    make_zone_entry(
+        6, "VI", "Thiru-Vi-Ka Nagar", list(range(64, 79)), 13.110, 80.240,
+        [
+            "Perambur Barracks", "Jamalia", "Otteri Nalla", "Pattalam", 
+            "Pulianthope High Road", "Strahans Road", "Perambur Loco Works", "Perambur Carriage Works", 
+            "Sembium", "Aynavaram Bus Depot", "Aynavaram Market", "Thiru-Vi-Ka Nagar Central", 
+            "Vasantha Nagar", "Agaram", "GKM Colony"
         ],
-        "heatBase": 41.2, "ndviBase": 0.13, "vulnBase": 0.84
-    },
-    {
-        "zoneNum": 7,
-        "roman": "VII",
-        "name": "Ambattur",
-        "wards": list(range(79, 94)), # 79 to 93 (15 wards)
-        "baseLat": 13.110, "baseLng": 80.160,
-        "neighborhoods": [
-            "Padi Junction", "Korattur Lake North", "Korattur South", "Mannurpet", 
-            "Ambattur OT", "Menambedu", "Ambattur Industrial Estate North", "Ambattur Industrial Estate South", 
-            "Mogappair East", "Mogappair West", "Nolambur Phase 1", "Nolambur Phase 2", 
-            "Karukku", "Kallikuppam", "Venkatapuram"
+        40.4, 0.15, 0.79
+    ),
+    make_zone_entry(
+        7, "VII", "Ambattur", list(range(79, 94)), 13.110, 80.160,
+        [
+            "Ambattur OT", "Ambattur Estate 3rd Main", "Ambattur Estate South", "Padi Flyover", 
+            "Padi Lucas TVS", "Mogappair East", "Mogappair West", "Mannurpet", 
+            "Korattur North", "Korattur Lake Side", "Pattaravakkam", "Sidco Industrial Estate", 
+            "Kallikuppam", "Menambedu", "Prithvipakkam"
         ],
-        "heatBase": 39.8, "ndviBase": 0.19, "vulnBase": 0.65
-    },
-    {
-        "zoneNum": 8,
-        "roman": "VIII",
-        "name": "Anna Nagar",
-        "wards": list(range(94, 109)), # 94 to 108 (15 wards)
-        "baseLat": 13.085, "baseLng": 80.210,
-        "neighborhoods": [
-            "Villivakkam North", "Villivakkam South", "Agaram", "Ayanavaram North", 
-            "Ayanavaram South", "Kilpauk Garden", "Shenoy Nagar East", "Shenoy Nagar West", 
-            "Anna Nagar Tower", "Anna Nagar West Extension", "Anna Nagar Roundtana", "Aminjikarai", 
-            "Koyambedu Market", "Koyambedu CMBT", "Arumbakkam"
+        39.8, 0.22, 0.65
+    ),
+    make_zone_entry(
+        8, "VIII", "Anna Nagar", list(range(94, 109)), 13.085, 80.215,
+        [
+            "Anna Nagar Roundtana", "Anna Nagar West Extension", "Anna Nagar Tower Park", "Shanti Colony", 
+            "Thirumangalam Metro", "Shenoy Nagar Park", "Aminjikarai Market", "Villivakkam Railway Colony", 
+            "Villivakkam Market", "Nathamuni", "ICF North", "ICF South", 
+            "Arumbakkam Metro", "CMBT Koyambedu", "Koyambedu Wholesale Market"
         ],
-        "heatBase": 39.0, "ndviBase": 0.22, "vulnBase": 0.62
-    },
-    {
-        "zoneNum": 9,
-        "roman": "IX",
-        "name": "Teynampet",
-        "wards": list(range(109, 127)), # 109 to 126 (18 wards)
-        "baseLat": 13.050, "baseLng": 80.250,
-        "neighborhoods": [
-            "Nungambakkam High Road", "College Road", "Thousand Lights", "Gopalapuram", 
-            "Royapettah High Road", "Chintadripet", "Triplicane High Road", "Marina Promenade", 
-            "Chepauk Stadium", "Ice House", "Mylapore Tank", "Kapaleeshwarar South", 
-            "Alwarpet TTK Road", "Teynampet Signal", "T. Nagar Panagal Park", "T. Nagar Pondy Bazaar", 
-            "CIT Nagar", "Nandanam Chamiers"
+        38.6, 0.27, 0.54
+    ),
+    make_zone_entry(
+        9, "IX", "Teynampet", list(range(109, 127)), 13.045, 80.245,
+        [
+            "Thousand Lights", "Gopalapuram", "Royapettah Clock Tower", "Triplicane High Road", 
+            "Chepauk Stadium", "Marina Beach North", "Mylapore Tank", "Luz Church Road", 
+            "Alwarpet TTK Road", "Teynampet Signal", "Nandanam Arts", "Nandanam YMCA", 
+            "T. Nagar Panagal Park", "T. Nagar Pondy Bazaar", "CIT Nagar", "T. Nagar South", 
+            "Choolaimedu High Road", "Nungambakkam High Road"
         ],
-        "heatBase": 39.6, "ndviBase": 0.15, "vulnBase": 0.76
-    },
-    {
-        "zoneNum": 10,
-        "roman": "X",
-        "name": "Kodambakkam",
-        "wards": list(range(127, 143)), # 127 to 142 (16 wards)
-        "baseLat": 13.035, "baseLng": 80.215,
-        "neighborhoods": [
-            "Vadapalani Temple", "Vadapalani Bus Terminus", "Kodambakkam Station", "Kodambakkam Liberty", 
-            "West Mambalam North", "West Mambalam Postal Colony", "Ashok Nagar Pillar", "Ashok Nagar 11th Ave", 
-            "K.K. Nagar Central", "K.K. Nagar Double Tank", "MGR Nagar", "Jafferkhanpet", 
-            "Saidapet West", "Saidapet Court", "Saidapet Bazaar", "Guindy Race Course North"
+        39.2, 0.23, 0.62
+    ),
+    make_zone_entry(
+        10, "X", "Kodambakkam", list(range(127, 143)), 13.030, 80.205,
+        [
+            "Kodambakkam Liberty", "Vadapalani Murugan Temple", "Vadapalani Metro", "Saligramam Film City", 
+            "Virugambakkam Market", "Alwarthirunagar", "Ashok Nagar 11th Avenue", "Ashok Pillar", 
+            "K.K. Nagar Double Tank", "K.K. Nagar West", "MGR Nagar", "Nesapakkam", 
+            "West Mambalam Station", "Postal Colony", "Saidapet West", "Saidapet Bazaar"
         ],
-        "heatBase": 39.2, "ndviBase": 0.18, "vulnBase": 0.64
-    },
-    {
-        "zoneNum": 11,
-        "roman": "XI",
-        "name": "Valasaravakkam",
-        "wards": list(range(143, 156)), # 143 to 155 (13 wards)
-        "baseLat": 13.040, "baseLng": 80.170,
-        "neighborhoods": [
-            "Virugambakkam Market", "Chinmaya Nagar Stage 1", "Chinmaya Nagar Stage 2", "Alwarthirunagar", 
-            "Valasaravakkam Arcot Road", "Porur Junction", "Porur Lakeview", "Karambakkam", 
-            "Ramapuram MIOT", "Ramapuram South", "Manapakkam DLF", "Nerkundram", 
-            "Maduravoyal Flyover"
+        38.9, 0.21, 0.60
+    ),
+    make_zone_entry(
+        11, "XI", "Valasaravakkam", list(range(143, 156)), 13.040, 80.165,
+        [
+            "Valasaravakkam Arcot Road", "Porur Junction", "Porur Lake Bund", "Ramapuram North", 
+            "Ramapuram MGR Gardens", "Nandambakkam Trade Centre", "Maduravoyal Flyover", "Maduravoyal Market", 
+            "Nerkundram", "Kattupakkam", "Iyyappanthangal Depot", "Alapakkam", 
+            "Karambakkam"
         ],
-        "heatBase": 38.8, "ndviBase": 0.21, "vulnBase": 0.60
-    },
-    {
-        "zoneNum": 12,
-        "roman": "XII",
-        "name": "Alandur",
-        "wards": list(range(156, 168)), # 156 to 167 (12 wards)
-        "baseLat": 12.995, "baseLng": 80.190,
-        "neighborhoods": [
-            "Alandur Metro", "Alandur Market", "St. Thomas Mount Cantonment", "St. Thomas Mount Hill", 
-            "Pazhavanthangal", "Nanganallur Anjaneyar", "Nanganallur 5th Main", "Adambakkam Lake", 
-            "Meenambakkam Airport Zone", "Moovarasampettai", "Mugalivakkam", "Cowl Bazaar"
+        39.4, 0.19, 0.66
+    ),
+    make_zone_entry(
+        12, "XII", "Alandur", list(range(156, 168)), 13.000, 80.195,
+        [
+            "Alandur Metro Hub", "Guindy Kathipara Flyover", "Guindy Race Course", "St. Thomas Mount", 
+            "Pazhavanthangal", "Nanganallur Anjaneyar Temple", "Nanganallur 6th Main", "Adambakkam Lake", 
+            "Adambakkam North", "Moovarasampettai", "Meenambakkam Airport Edge", "Madipakkam North"
         ],
-        "heatBase": 38.5, "ndviBase": 0.23, "vulnBase": 0.55
-    },
-    {
-        "zoneNum": 13,
-        "roman": "XIII",
-        "name": "Adyar",
-        "wards": list(range(170, 183)), # 170 to 182 (13 wards)
-        "baseLat": 12.990, "baseLng": 80.245,
-        "neighborhoods": [
+        38.5, 0.24, 0.57
+    ),
+    make_zone_entry(
+        13, "XIII", "Adyar", list(range(170, 183)), 12.990, 80.245,
+        [
             "Kotturpuram", "Besant Nagar Beach", "Besant Nagar 4th Main", "Thiruvanmiyur Temple", 
             "Thiruvanmiyur Beach", "Kasturba Nagar", "Gandhi Nagar", "Shastri Nagar", 
             "Indira Nagar Water Tank", "Adyar Signal", "Guindy National Park Edge", "Velachery Lake North", 
             "Velachery Bypass"
         ],
-        "heatBase": 37.8, "ndviBase": 0.28, "vulnBase": 0.52
-    },
-    {
-        "zoneNum": 14,
-        "roman": "XIV",
-        "name": "Perungudi",
-        # Wards 168, 169, and 183 to 191 (11 wards)
-        "wards": [168, 169] + list(range(183, 192)),
-        "baseLat": 12.960, "baseLng": 80.230,
-        "neighborhoods": [
+        37.8, 0.28, 0.52
+    ),
+    make_zone_entry(
+        14, "XIV", "Perungudi", [168, 169] + list(range(183, 192)), 12.960, 80.230,
+        [
             "Madipakkam Koot Road", "Madipakkam Ponniamman Koil", 
             "Puzhuthivakkam", "Ullagaram", "Perungudi OMR Toll", "Perungudi Industrial Estate", 
             "Kallukuttai", "Kandanchavadi IT Park", "Palavakkam ECR", "Kottivakkam North", 
             "Kottivakkam Beach"
         ],
-        "heatBase": 38.9, "ndviBase": 0.22, "vulnBase": 0.63
-    },
-    {
-        "zoneNum": 15,
-        "roman": "XV",
-        "name": "Sholinganallur",
-        "wards": list(range(192, 201)), # 192 to 200 (9 wards)
-        "baseLat": 12.890, "baseLng": 80.230,
-        "neighborhoods": [
+        38.9, 0.22, 0.63
+    ),
+    make_zone_entry(
+        15, "XV", "Sholinganallur", list(range(192, 201)), 12.890, 80.230,
+        [
             "Neelankarai ECR", "Injambakkam Prarthana", "Karapakkam OMR", "Sholinganallur Junction", 
             "Akkarai Beach", "Panaiyur", "Sholinganallur Wetland & SEZ", "Uthandi ECR", 
             "Semmancheri Tsunami Quarters"
         ],
-        "heatBase": 38.2, "ndviBase": 0.32, "vulnBase": 0.59
-    }
+        38.2, 0.32, 0.59
+    )
 ]
 
 def generate():
@@ -245,9 +236,9 @@ def generate():
     all_wards = []
 
     for z in ZONES_SPEC:
-        zone_id = f"zone-{z['zoneNum']:02d}"
-        zone_title = f"Zone {z['roman']} - {z['name']}"
-        wards = z["wards"]
+        zone_id = f"zone-{z[KEY_ZONE_NUM]:02d}"
+        zone_title = f"Zone {z[KEY_ROMAN]} - {z[KEY_NAME]}"
+        wards = z[KEY_WARDS]
         neighborhoods = z["neighborhoods"]
         
         for idx, w_num in enumerate(wards):
@@ -272,97 +263,62 @@ def generate():
                     "latitude": lat,
                     "longitude": lng,
                     "areaKm2": area,
-                    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
-                    "lastUpdated": "2026-03-01T00:00:00Z",
+                    "dataSourceLabel": DATA_SOURCE_LABEL_VAL,
+                    "lastUpdated": LAST_UPDATED_VAL,
                     "id": ward_id,
-                    "name": ward_name,
+                    KEY_NAME: ward_name,
                     "metrics": {
                         "heat": {
-                            "lst": {
-                                "value": None,
-                                "metadata": {
-                                    "sourceType": SOURCE_TYPE_SATELLITE_THERMAL,
-                                    "sourceName": SOURCE_LANDSAT_TIRS,
-                                    "confidence": CONFIDENCE_UNKNOWN,
-                                    "status": STATUS_UNKNOWN,
-                                    "resolution": "Ward-level raster zonal aggregate",
-                                    "processingMethod": "Missing cloud-free thermal raster over marshland boundary"
-                                },
-                                "notes": "Thermal sensor telemetry incomplete for coastal wetland zone"
-                            },
-                            "lstNormalized": {
-                                "value": None,
-                                "metadata": {
-                                    "sourceType": SOURCE_TYPE_SATELLITE_THERMAL,
-                                    "sourceName": SOURCE_LANDSAT_TIRS_SHORT,
-                                    "confidence": CONFIDENCE_UNKNOWN,
-                                    "status": STATUS_UNKNOWN
-                                }
-                            }
+                            "lst": make_metric_entry(
+                                None, SOURCE_TYPE_SATELLITE_THERMAL, SOURCE_LANDSAT_TIRS,
+                                CONFIDENCE_UNKNOWN, STATUS_UNKNOWN,
+                                res=RESOLUTION_WARD_RASTER_ZONAL,
+                                method=METHOD_MISSING_THERMAL,
+                                notes_text="Thermal sensor telemetry incomplete for coastal wetland zone"
+                            ),
+                            "lstNormalized": make_metric_entry(
+                                None, SOURCE_TYPE_SATELLITE_THERMAL, SOURCE_LANDSAT_TIRS_SHORT,
+                                CONFIDENCE_UNKNOWN, STATUS_UNKNOWN
+                            )
                         },
                         "vegetation": {
-                            "ndvi": {
-                                "value": None,
-                                "metadata": {
-                                    "sourceType": SOURCE_TYPE_SATELLITE_MULTISPECTRAL,
-                                    "sourceName": SOURCE_SENTINEL_NDVI,
-                                    "confidence": CONFIDENCE_UNKNOWN,
-                                    "status": STATUS_UNKNOWN,
-                                    "resolution": "Ward-level raster zonal aggregate",
-                                    "processingMethod": "Missing surface reflectance observation"
-                                },
-                                "notes": "Optical vegetation telemetry flagged as missing"
-                            },
-                            "vegetationDeficitNormalized": {
-                                "value": None,
-                                "metadata": {
-                                    "sourceType": SOURCE_TYPE_SATELLITE_MULTISPECTRAL,
-                                    "sourceName": SOURCE_SENTINEL_MSI,
-                                    "confidence": CONFIDENCE_UNKNOWN,
-                                    "status": STATUS_UNKNOWN
-                                }
-                            }
+                            "ndvi": make_metric_entry(
+                                None, SOURCE_TYPE_SATELLITE_MULTISPECTRAL, SOURCE_SENTINEL_NDVI,
+                                CONFIDENCE_UNKNOWN, STATUS_UNKNOWN,
+                                res=RESOLUTION_WARD_RASTER_ZONAL,
+                                method=METHOD_MISSING_SURFACE,
+                                notes_text="Optical vegetation telemetry flagged as missing"
+                            ),
+                            "vegetationDeficitNormalized": make_metric_entry(
+                                None, SOURCE_TYPE_SATELLITE_MULTISPECTRAL, SOURCE_SENTINEL_MSI,
+                                CONFIDENCE_UNKNOWN, STATUS_UNKNOWN
+                            )
                         },
                         "vulnerability": {
-                            "vulnerabilityScore": {
-                                "value": None,
-                                "metadata": {
-                                    "sourceType": SOURCE_TYPE_MUNICIPAL_CENSUS,
-                                    "sourceName": SOURCE_GCC_CENSUS_PLAN,
-                                    "confidence": CONFIDENCE_UNKNOWN,
-                                    "status": STATUS_UNKNOWN
-                                },
-                                "notes": "Incomplete enumeration for rapid developing IT corridor SEZ"
-                            },
+                            "vulnerabilityScore": make_metric_entry(
+                                None, SOURCE_TYPE_MUNICIPAL_CENSUS, SOURCE_GCC_CENSUS_PLAN,
+                                CONFIDENCE_UNKNOWN, STATUS_UNKNOWN,
+                                notes_text="Incomplete enumeration for rapid developing IT corridor SEZ"
+                            ),
                             "vulnerabilityComponents": {
-                                "populationDensity": {
-                                    "value": 4200,
-                                    "metadata": {
-                                        "sourceType": SOURCE_TYPE_MUNICIPAL_CENSUS,
-                                        "sourceName": SOURCE_CENSUS_DATA,
-                                        "confidence": CONFIDENCE_MEDIUM,
-                                        "status": STATUS_SOURCED
-                                    }
-                                }
+                                "populationDensity": make_metric_entry(
+                                    4200, SOURCE_TYPE_MUNICIPAL_CENSUS, SOURCE_CENSUS_DATA,
+                                    CONFIDENCE_MEDIUM, STATUS_SOURCED
+                                )
                             }
                         }
                     }
                 }
             else:
                 # Realistic continuous distributions across Chennai's microclimates
-                # Heat: 34.0 to 42.8 °C
                 heat_var = ((w_num * 17) % 31) / 10.0 - 1.5
                 lst_val = round(z["heatBase"] + heat_var, 1)
-                # Normalize LST across Chennai min/max (30.0 to 44.0 C)
                 lst_norm = round(max(0.1, min(0.98, (lst_val - 30.0) / 14.0)), 3)
 
-                # NDVI: 0.08 to 0.45
                 ndvi_var = ((w_num * 23) % 21) / 100.0 - 0.10
                 ndvi_val = round(max(0.06, min(0.48, z["ndviBase"] + ndvi_var)), 2)
-                # Deficit is inverted normalized NDVI (NDVI range 0.05 to 0.50)
                 veg_deficit = round(max(0.1, min(0.95, 1.0 - (ndvi_val - 0.05) / 0.45)), 3)
 
-                # Vulnerability: 0.35 to 0.92
                 vuln_var = ((w_num * 13) % 25) / 100.0 - 0.12
                 vuln_val = round(max(0.25, min(0.92, z["vulnBase"] + vuln_var)), 3)
 
@@ -380,116 +336,66 @@ def generate():
                     "latitude": lat,
                     "longitude": lng,
                     "areaKm2": area,
-                    "dataSourceLabel": "Pre-processed Municipal Spatial Analysis",
-                    "lastUpdated": "2026-03-01T00:00:00Z",
+                    "dataSourceLabel": DATA_SOURCE_LABEL_VAL,
+                    "lastUpdated": LAST_UPDATED_VAL,
                     "id": ward_id,
-                    "name": ward_name,
+                    KEY_NAME: ward_name,
                     "metrics": {
                         "heat": {
-                            "lst": {
-                                "value": lst_val,
-                                "metadata": {
-                                    "sourceType": SOURCE_TYPE_SATELLITE_THERMAL,
-                                    "sourceName": SOURCE_LANDSAT_TIRS,
-                                    "confidence": CONFIDENCE_HIGH,
-                                    "status": STATUS_SOURCED,
-                                    "resolution": "30m downscaled to Ward-level zonal average",
-                                    "processingMethod": "Mono-window thermal radiative transfer calculation"
-                                },
-                                "notes": f"Surface temperature observation in {z['name']} municipal sector"
-                            },
-                            "lstNormalized": {
-                                "value": lst_norm,
-                                "metadata": {
-                                    "sourceType": SOURCE_TYPE_SATELLITE_THERMAL,
-                                    "sourceName": SOURCE_LANDSAT_TIRS_SHORT,
-                                    "confidence": CONFIDENCE_HIGH,
-                                    "status": STATUS_DERIVED
-                                }
-                            }
+                            "lst": make_metric_entry(
+                                lst_val, SOURCE_TYPE_SATELLITE_THERMAL, SOURCE_LANDSAT_TIRS,
+                                CONFIDENCE_HIGH, STATUS_SOURCED,
+                                res=RESOLUTION_30M_DOWNSCALED,
+                                method=METHOD_MONO_WINDOW,
+                                notes_text=f"Surface temperature observation in {z[KEY_NAME]} municipal sector"
+                            ),
+                            "lstNormalized": make_metric_entry(
+                                lst_norm, SOURCE_TYPE_SATELLITE_THERMAL, SOURCE_LANDSAT_TIRS_SHORT,
+                                CONFIDENCE_HIGH, STATUS_DERIVED
+                            )
                         },
                         "vegetation": {
-                            "ndvi": {
-                                "value": ndvi_val,
-                                "metadata": {
-                                    "sourceType": SOURCE_TYPE_SATELLITE_MULTISPECTRAL,
-                                    "sourceName": SOURCE_SENTINEL_SURFACE_REFLECTANCE,
-                                    "confidence": CONFIDENCE_HIGH,
-                                    "status": STATUS_SOURCED,
-                                    "resolution": "10m raster zonal average",
-                                    "processingMethod": "Normalized Difference NIR/Red band ratio"
-                                },
-                                "notes": f"Canopy and surface greenness indicator in {n_name}"
-                            },
-                            "vegetationDeficitNormalized": {
-                                "value": veg_deficit,
-                                "metadata": {
-                                    "sourceType": SOURCE_TYPE_SATELLITE_MULTISPECTRAL,
-                                    "sourceName": SOURCE_SENTINEL_MSI,
-                                    "confidence": CONFIDENCE_HIGH,
-                                    "status": STATUS_DERIVED
-                                }
-                            }
+                            "ndvi": make_metric_entry(
+                                ndvi_val, SOURCE_TYPE_SATELLITE_MULTISPECTRAL, SOURCE_SENTINEL_SURFACE_REFLECTANCE,
+                                CONFIDENCE_HIGH, STATUS_SOURCED,
+                                res=RESOLUTION_10M_RASTER,
+                                method=METHOD_NIR_RED_RATIO,
+                                notes_text=f"Canopy and surface greenness indicator in {n_name}"
+                            ),
+                            "vegetationDeficitNormalized": make_metric_entry(
+                                veg_deficit, SOURCE_TYPE_SATELLITE_MULTISPECTRAL, SOURCE_SENTINEL_MSI,
+                                CONFIDENCE_HIGH, STATUS_DERIVED
+                            )
                         },
                         "vulnerability": {
-                            "vulnerabilityScore": {
-                                "value": vuln_val,
-                                "metadata": {
-                                    "sourceType": SOURCE_TYPE_MUNICIPAL_CENSUS,
-                                    "sourceName": SOURCE_GCC_CENSUS_PLAN,
-                                    "confidence": CONFIDENCE_MEDIUM,
-                                    "status": STATUS_DERIVED,
-                                    "resolution": "Ward Census Block Aggregate",
-                                    "processingMethod": "Standardized socio-economic exposure index"
-                                },
-                                "notes": f"Composite socio-economic sensitivity for {ward_name}"
-                            },
+                            "vulnerabilityScore": make_metric_entry(
+                                vuln_val, SOURCE_TYPE_MUNICIPAL_CENSUS, SOURCE_GCC_CENSUS_PLAN,
+                                CONFIDENCE_MEDIUM, STATUS_DERIVED,
+                                res=RESOLUTION_WARD_CENSUS_BLOCK,
+                                method=METHOD_SOCIO_INDEX,
+                                notes_text=f"Composite socio-economic sensitivity for {ward_name}"
+                            ),
                             "vulnerabilityComponents": {
-                                "populationDensity": {
-                                    "value": pop_density,
-                                    "metadata": {
-                                        "sourceType": SOURCE_TYPE_MUNICIPAL_CENSUS,
-                                        "sourceName": SOURCE_CENSUS_DATA,
-                                        "confidence": CONFIDENCE_HIGH,
-                                        "status": STATUS_SOURCED
-                                    }
-                                },
-                                "elderlyPopulation": {
-                                    "value": elderly_pct,
-                                    "metadata": {
-                                        "sourceType": SOURCE_TYPE_MUNICIPAL_CENSUS,
-                                        "sourceName": SOURCE_CENSUS_DATA,
-                                        "confidence": CONFIDENCE_MEDIUM,
-                                        "status": STATUS_INDICATIVE_ESTIMATE
-                                    }
-                                },
-                                "outdoorWorkerExposure": {
-                                    "value": worker_pct,
-                                    "metadata": {
-                                        "sourceType": SOURCE_TYPE_MUNICIPAL_CENSUS,
-                                        "sourceName": SOURCE_LABOR_STATISTICS,
-                                        "confidence": CONFIDENCE_MEDIUM,
-                                        "status": STATUS_INDICATIVE_ESTIMATE
-                                    }
-                                },
-                                "builtEnvironmentIndicator": {
-                                    "value": built_pct,
-                                    "metadata": {
-                                        "sourceType": SOURCE_TYPE_MUNICIPAL_CENSUS,
-                                        "sourceName": SOURCE_URBAN_MORPHOLOGY,
-                                        "confidence": CONFIDENCE_MEDIUM,
-                                        "status": STATUS_INDICATIVE_ESTIMATE
-                                    }
-                                },
-                                "informalSettlementIndicator": {
-                                    "value": informal_pct,
-                                    "metadata": {
-                                        "sourceType": SOURCE_TYPE_MUNICIPAL_CENSUS,
-                                        "sourceName": SOURCE_SLUM_CLEARANCE,
-                                        "confidence": CONFIDENCE_MEDIUM,
-                                        "status": STATUS_INDICATIVE_ESTIMATE
-                                    }
-                                }
+                                "populationDensity": make_metric_entry(
+                                    pop_density, SOURCE_TYPE_MUNICIPAL_CENSUS, SOURCE_CENSUS_DATA,
+                                    CONFIDENCE_HIGH, STATUS_SOURCED
+                                ),
+                                "elderlyPopulation": make_metric_entry(
+                                    elderly_pct, SOURCE_TYPE_MUNICIPAL_CENSUS, SOURCE_CENSUS_DATA,
+                                    CONFIDENCE_MEDIUM, STATUS_INDICATIVE_ESTIMATE
+                                ),
+                                "outdoorWorkerExposure": make_metric_entry(
+                                    worker_pct, SOURCE_TYPE_MUNICIPAL_CENSUS, SOURCE_LABOR_STATISTICS,
+                                    CONFIDENCE_MEDIUM, STATUS_INDICATIVE_ESTIMATE
+                                ),
+                                "builtEnvironmentIndicator": make_metric_entry(
+                                    built_pct, SOURCE_TYPE_MUNICIPAL_CENSUS, SOURCE_URBAN_MORPHOLOGY,
+                                    CONFIDENCE_MEDIUM, STATUS_INDICATIVE_ESTIMATE
+                                ),
+                                "informalSettlementIndicator": make_metric_entry(
+                                    informal_pct, SOURCE_TYPE_MUNICIPAL_CENSUS, SOURCE_SLUM_CLEARANCE,
+                                    CONFIDENCE_MEDIUM, STATUS_INDICATIVE_ESTIMATE
+                                )
                             }
                         }
                     }
@@ -499,30 +405,14 @@ def generate():
     print(f"Generated {len(all_wards)} wards across {len(ZONES_SPEC)} zones.")
     assert len(all_wards) == 200, f"Expected exactly 200 wards, got {len(all_wards)}"
 
-    # Generate TypeScript file
-    out_path = os.path.join("src", "data", "processed", "chennaiAllWardsData.ts")
+    out_path = os.path.join(os.path.dirname(__file__), "..", "src", "data", "processed", "chennaiAllWardsData.ts")
+    os.makedirs(os.path.dirname(out_path), exist_ok=True)
+
     with open(out_path, "w", encoding="utf-8") as f:
-        f.write("import type { Zone } from '../../types';\n\n")
         f.write("/**\n")
-        f.write(" * RESPIRE - Complete Greater Chennai Corporation (GCC) Municipal Dataset\n")
-        f.write(" * \n")
-        f.write(" * Encompasses all 15 Administrative Zones and exactly 200 Municipal Wards:\n")
-        f.write(" * - Zone I: Thiruvotriyur (Wards 1 to 14)\n")
-        f.write(" * - Zone II: Manali (Wards 15 to 21)\n")
-        f.write(" * - Zone III: Madhavaram (Wards 22 to 33)\n")
-        f.write(" * - Zone IV: Tondiarpet (Wards 34 to 48)\n")
-        f.write(" * - Zone V: Royapuram (Wards 49 to 63)\n")
-        f.write(" * - Zone VI: Thiru-Vi-Ka Nagar (Wards 64 to 78)\n")
-        f.write(" * - Zone VII: Ambattur (Wards 79 to 93)\n")
-        f.write(" * - Zone VIII: Anna Nagar (Wards 94 to 108)\n")
-        f.write(" * - Zone IX: Teynampet (Wards 109 to 126)\n")
-        f.write(" * - Zone X: Kodambakkam (Wards 127 to 142)\n")
-        f.write(" * - Zone XI: Valasaravakkam (Wards 143 to 155)\n")
-        f.write(" * - Zone XII: Alandur (Wards 156 to 167)\n")
-        f.write(" * - Zone XIII: Adyar (Wards 170 to 182)\n")
-        f.write(" * - Zone XIV: Perungudi (Wards 168, 169, 183 to 191)\n")
-        f.write(" * - Zone XV: Sholinganallur (Wards 192 to 200)\n")
+        f.write(" * RESPIRE - Greater Chennai Corporation (200 Wards / 15 Zones Dataset)\n")
         f.write(" */\n\n")
+        f.write("import type { Zone } from '../../types';\n\n")
         f.write("export interface ZoneAdministrativeMeta {\n")
         f.write("  zoneNumber: number;\n")
         f.write("  romanNumber: string;\n")
@@ -534,12 +424,12 @@ def generate():
         # Write Zonal metadata list
         f.write("export const GCC_ZONES_METADATA: ZoneAdministrativeMeta[] = [\n")
         for z in ZONES_SPEC:
-            wards = z["wards"]
-            if z["zoneNum"] == 14:
+            wards = z[KEY_WARDS]
+            if z[KEY_ZONE_NUM] == 14:
                 desc = "Wards 168, 169, and 183 to 191"
             else:
                 desc = f"Wards {wards[0]} to {wards[-1]}"
-            f.write(f'  {{\n    zoneNumber: {z["zoneNum"]},\n    romanNumber: "{z["roman"]}",\n    name: "{z["name"]}",\n    wardRangeDescription: "{desc}",\n    wardCount: {len(wards)},\n  }},\n')
+            f.write(f'  {{\n    zoneNumber: {z[KEY_ZONE_NUM]},\n    romanNumber: "{z[KEY_ROMAN]}",\n    name: "{z[KEY_NAME]}",\n    wardRangeDescription: "{desc}",\n    wardCount: {len(wards)},\n  }},\n')
         f.write("];\n\n")
 
         # Write wards array
