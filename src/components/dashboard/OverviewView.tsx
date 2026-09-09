@@ -10,7 +10,6 @@ import {
   Layers,
   CheckCircle2,
   TrendingDown,
-  Info,
 } from 'lucide-react';
 import type { ScoredZoneItem } from './RiskSummaryCards';
 import type { WorkflowTab } from './WorkflowHeader';
@@ -446,17 +445,6 @@ export const OverviewView: React.FC<OverviewViewProps> = ({
                 <span><strong>Action-Oriented:</strong> Generates immediate ward-by-ward budgets, materials, and cooling blueprints.</span>
               </div>
             </div>
-          </div>
-
-          {/* Quick Step-by-Step Deck Navigation */}
-          <div className="p-4 rounded-2xl bg-blue-50/70 dark:bg-[#151a27] border border-blue-100 dark:border-slate-400/40 dark:shadow-[inset_0_1px_0_rgba(255,255,255,0.1)] flex flex-col gap-2">
-            <div className="flex items-center gap-1.5 text-blue-900 dark:text-slate-200 font-bold text-xs">
-              <Info className="w-4 h-4 text-blue-600 dark:text-slate-300" />
-              <span>Jury Presentation Guide</span>
-            </div>
-            <p className="text-xs text-blue-800 dark:text-slate-300 leading-snug">
-              Follow the top stepper (<strong>00 → 07</strong>) to see how RESPIRE progresses from raw satellite data to simulated heat-wave scenarios and formal municipal PDF reports.
-            </p>
           </div>
         </aside>
       </div>
