@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import { Building2, RefreshCw, Sun, HelpCircle, Settings } from 'lucide-react';
+import React from 'react';
+import { Building2, HelpCircle, Settings } from 'lucide-react';
 import type { DataSourceMode, DataProvenanceSummary } from '../../data';
 import type { WorkflowTab } from '../dashboard';
-import { fetchChennaiLiveWeather, type LiveWeatherData } from '../../services/weatherService';
 
 interface TopBarProps {
   dataSourceMode: DataSourceMode;
@@ -30,23 +29,6 @@ export const TopBar: React.FC<TopBarProps> = ({
   onOpenHelp,
   onOpenZonesModal,
 }) => {
-  const [liveWeather, setLiveWeather] = useState<LiveWeatherData | null>(null);
-  const [isSyncing, setIsSyncing] = useState(false);
-
-  useEffect(() => {
-    fetchChennaiLiveWeather().then(setLiveWeather).catch(() => {});
-  }, []);
-
-  const handleSyncTelemetry = async () => {
-    setIsSyncing(true);
-    try {
-      const data = await fetchChennaiLiveWeather(true);
-      setLiveWeather(data);
-    } finally {
-      setIsSyncing(false);
-    }
-  };
-
   const steps: { id: WorkflowTab; num: string; label: string }[] = [
     { id: 'overview', num: '00', label: 'OVERVIEW' },
     { id: 'data', num: '01', label: 'DATA' },
@@ -79,45 +61,6 @@ export const TopBar: React.FC<TopBarProps> = ({
           >
             {dataSourceMode === 'processed' ? 'PROCESSED 200 WARDS' : 'ILLUSTRATIVE DEMO DATA'}
           </button>
-
-          {/* Live Meteorological Telemetry Pill */}
-          <div className="hidden lg:flex items-center gap-2 px-3 py-1 rounded-full bg-slate-50 border border-slate-200 text-xs">
-            <span
-              className={`w-2 h-2 rounded-full shrink-0 ${
-                liveWeather?.isLive ? 'bg-emerald-500 animate-pulse' : 'bg-amber-500'
-              }`}
-            />
-            <Sun className="w-3.5 h-3.5 text-amber-600 shrink-0" />
-            <span className="font-mono font-bold text-slate-900">
-              {liveWeather ? `${liveWeather.temperatureC}°C` : '38.4°C'}
-            </span>
-            <span className="text-slate-400">•</span>
-            <span className="text-slate-600 font-medium">
-              Heat Index{' '}
-              <strong className="text-slate-900 font-mono">
-                {liveWeather ? `${liveWeather.heatIndexC}°C` : '44.2°C'}
-              </strong>
-            </span>
-            <span
-              className={`px-1.5 py-0.2 rounded text-[9px] font-mono font-bold tracking-wider ${
-                (liveWeather?.heatAlertLevel || 'DANGER') === 'DANGER'
-                  ? 'bg-rose-100 text-rose-800'
-                  : 'bg-amber-100 text-amber-800'
-              }`}
-            >
-              {liveWeather?.heatAlertLevel || 'DANGER'}
-            </span>
-
-            <button
-              type="button"
-              onClick={handleSyncTelemetry}
-              disabled={isSyncing}
-              className="ml-1 p-1 hover:bg-slate-200 text-slate-500 hover:text-slate-800 rounded-full transition-colors cursor-pointer disabled:opacity-50"
-              title="Refresh live Chennai meteorology"
-            >
-              <RefreshCw className={`w-3 h-3 ${isSyncing ? 'animate-spin text-emerald-600' : ''}`} />
-            </button>
-          </div>
         </div>
 
         {/* Right: Municipal Officer Profile Widget & Quick Actions */}
