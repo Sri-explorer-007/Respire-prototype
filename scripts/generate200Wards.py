@@ -15,6 +15,7 @@ SOURCE_LANDSAT_TIRS = "Landsat 8/9 TIRS (Band 10 LST)"
 SOURCE_LANDSAT_TIRS_SHORT = "Landsat 8/9 TIRS"
 SOURCE_SENTINEL_NDVI = "Sentinel-2 MSI (10m NDVI)"
 SOURCE_SENTINEL_MSI = "Sentinel-2 MSI"
+SOURCE_SENTINEL_SURFACE_REFLECTANCE = "Sentinel-2 MSI (10m Surface Reflectance)"
 
 SOURCE_TYPE_MUNICIPAL_CENSUS = "MUNICIPAL_CENSUS"
 SOURCE_TYPE_SATELLITE_THERMAL = "SATELLITE_THERMAL"
@@ -412,7 +413,7 @@ def generate():
                                 "value": ndvi_val,
                                 "metadata": {
                                     "sourceType": SOURCE_TYPE_SATELLITE_MULTISPECTRAL,
-                                    "sourceName": "Sentinel-2 MSI (10m Surface Reflectance)",
+                                    "sourceName": SOURCE_SENTINEL_SURFACE_REFLECTANCE,
                                     "confidence": CONFIDENCE_HIGH,
                                     "status": STATUS_SOURCED,
                                     "resolution": "10m raster zonal average",

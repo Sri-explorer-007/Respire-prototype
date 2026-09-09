@@ -201,18 +201,9 @@ export class RespireScoringEngine implements IScoringEngine {
     const primaryDriver = sortedAvailable.length > 0 ? formatDriver(sortedAvailable[0]) : null;
     const secondaryDriver = sortedAvailable.length > 1 ? formatDriver(sortedAvailable[1]) : null;
 
-    const missingEvidenceLabels = missingComponents.map((k) => {
-      switch (k) {
-        case 'heat':
-          return 'Land Surface Temperature (LST)';
-        case 'vegetation':
-          return 'NDVI Vegetation Deficit';
-        case 'vulnerability':
-          return 'Social Vulnerability Index';
-        default:
-          return String(k);
-      }
-    });
+    const missingEvidenceLabels = missingComponents.map(
+      (k) => (k === 'heat' ? 'Land Surface Temperature (LST)' : k === 'vegetation' ? 'NDVI Vegetation Deficit' : k === 'vulnerability' ? 'Social Vulnerability Index' : String(k))
+    );
 
     const priorityRationale = generatePriorityRationale(
       totalScore,
