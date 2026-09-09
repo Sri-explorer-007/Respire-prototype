@@ -27,6 +27,11 @@ import { Download, Copy } from 'lucide-react';
  * Main application container for the RESPIRE Climate Resilience Decision Support Platform.
  */
 export function App() {
+  const [theme, setTheme] = useState<'light' | 'dark'>(() => {
+    const saved = localStorage.getItem('respire_theme');
+    if (saved === 'dark' || saved === 'light') return saved;
+    return window.matchMedia?.('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  });
   const [viewMode, setViewMode] = useState<'landing' | 'console'>('console');
   const [dataSourceMode, setDataSourceMode] = useState<DataSourceMode>('processed');
   const [zones, setZones] = useState<Zone[]>([]);
@@ -39,6 +44,20 @@ export function App() {
   const [showHelpModal, setShowHelpModal] = useState(false);
   const [showHeatPlanModal, setShowHeatPlanModal] = useState(false);
   const [showChennaiZonesModal, setShowChennaiZonesModal] = useState(false);
+
+  // Sync theme with document.documentElement
+  useEffect(() => {
+    if (theme === 'dark') {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+    localStorage.setItem('respire_theme', theme);
+  }, [theme]);
+
+  const handleToggleTheme = () => {
+    setTheme((prev) => (prev === 'light' ? 'dark' : 'light'));
+  };
 
   // Fetch zones on initial mount or when data mode toggles
   useEffect(() => {
@@ -121,7 +140,7 @@ export function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#f8f9ff] text-slate-900 flex antialiased selection:bg-slate-800 selection:text-white relative">
+    <div className="min-h-screen bg-[#f8f9ff] dark:bg-[#080c14] text-slate-900 dark:text-slate-100 flex antialiased selection:bg-slate-800 selection:text-white relative transition-colors duration-200">
       {viewMode === 'landing' ? (
         <LandingPage
           onLaunchConsole={handleLaunchConsole}
@@ -145,7 +164,7 @@ export function App() {
           />
 
           {/* Main Command Viewport */}
-          <div className="pl-72 flex-1 flex flex-col min-w-0 min-h-screen bg-[#f8f9ff]">
+          <div className="pl-72 flex-1 flex flex-col min-w-0 min-h-screen bg-[#f8f9ff] dark:bg-[#080c14] transition-colors duration-200">
             {/* Top Bar Header + Workflow Stepper Ribbon */}
             <TopBar
               dataSourceMode={dataSourceMode}
@@ -159,6 +178,8 @@ export function App() {
               searchQuery={searchQuery}
               onSearchChange={setSearchQuery}
               onNavigateToLanding={() => setViewMode('landing')}
+              theme={theme}
+              onToggleTheme={handleToggleTheme}
             />
 
             {/* Dynamic Content Workspace */}
