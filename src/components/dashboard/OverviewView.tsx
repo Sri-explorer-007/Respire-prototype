@@ -7,7 +7,6 @@ import {
   Trees,
   Umbrella,
   RefreshCw,
-  Sparkles,
   Layers,
   CheckCircle2,
   TrendingDown,
@@ -202,68 +201,7 @@ export const OverviewView: React.FC<OverviewViewProps> = ({
         </div>
       </section>
 
-      {/* 3. Interactive Decision Flow Ribbon ("How Respire Works" - 5-Second Jury Explainer) */}
-      <section className="bg-gradient-to-r from-blue-50/70 via-slate-50 to-indigo-50/70 dark:from-[#0d1526] dark:via-[#0f172a] dark:to-[#111827] border border-blue-100 dark:border-slate-800 p-4 sm:p-5 rounded-2xl shadow-2xs">
-        <div className="flex items-center justify-between mb-3">
-          <div className="flex items-center gap-2">
-            <Sparkles className="w-4 h-4 text-blue-600 dark:text-blue-400" />
-            <span className="text-xs font-bold uppercase tracking-wider text-slate-900 dark:text-white">
-              End-to-End Decision Architecture
-            </span>
-          </div>
-          <span className="text-[11px] font-mono text-slate-500 dark:text-slate-400 hidden sm:inline">
-            From Raw Telemetry to Fast-Track Civic Budget
-          </span>
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-          {/* Step 1 */}
-          <div className="bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm border border-slate-200/80 dark:border-slate-800 p-3 rounded-xl">
-            <div className="flex items-center gap-2 mb-1 text-xs font-mono font-bold text-blue-600 dark:text-blue-400">
-              <span>01</span>
-              <span className="text-slate-900 dark:text-slate-200 font-sans font-semibold">Satellite Telemetry</span>
-            </div>
-            <p className="text-[11px] text-slate-600 dark:text-slate-400 leading-snug">
-              Ingests Landsat-9 thermal infrared & INSAT-3DR meteorological feeds calibrated across 200 wards.
-            </p>
-          </div>
-
-          {/* Step 2 */}
-          <div className="bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm border border-slate-200/80 dark:border-slate-800 p-3 rounded-xl">
-            <div className="flex items-center gap-2 mb-1 text-xs font-mono font-bold text-indigo-600 dark:text-indigo-400">
-              <span>02</span>
-              <span className="text-slate-900 dark:text-slate-200 font-sans font-semibold">3-Factor Risk Engine</span>
-            </div>
-            <p className="text-[11px] text-slate-600 dark:text-slate-400 leading-snug">
-              Synthesizes 50% Surface Heat, 20% Canopy Deficit (NDVI), and 30% Demographic Vulnerability.
-            </p>
-          </div>
-
-          {/* Step 3 */}
-          <div className="bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm border border-slate-200/80 dark:border-slate-800 p-3 rounded-xl">
-            <div className="flex items-center gap-2 mb-1 text-xs font-mono font-bold text-emerald-600 dark:text-emerald-400">
-              <span>03</span>
-              <span className="text-slate-900 dark:text-slate-200 font-sans font-semibold">Intervention Rules</span>
-            </div>
-            <p className="text-[11px] text-slate-600 dark:text-slate-400 leading-snug">
-              Maps ward-specific archetypes to high-albedo roofs, hydration shelters, or urban Miyawaki forests.
-            </p>
-          </div>
-
-          {/* Step 4 */}
-          <div className="bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm border border-slate-200/80 dark:border-slate-800 p-3 rounded-xl">
-            <div className="flex items-center gap-2 mb-1 text-xs font-mono font-bold text-amber-600 dark:text-amber-400">
-              <span>04</span>
-              <span className="text-slate-900 dark:text-slate-200 font-sans font-semibold">Capital Allocation</span>
-            </div>
-            <p className="text-[11px] text-slate-600 dark:text-slate-400 leading-snug">
-              Optimizes budget allocation for maximum temperature reduction per rupee under municipal guidelines.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* 4. Main Analytic Section: Top Priority Spotlight + Hotspot Stack & Distribution */}
+      {/* Main Analytic Section: Top Priority Spotlight + Hotspot Stack & Distribution */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
         {/* Left Column: Top Priority Spotlight Hero + Top 3 Ranked Hotspots (8 Cols) */}
         <section className="lg:col-span-8 flex flex-col gap-4">
