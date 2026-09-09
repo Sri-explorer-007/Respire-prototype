@@ -86,11 +86,11 @@ export const OverviewView: React.FC<OverviewViewProps> = ({
         </div>
 
         {/* Live Satellite & Weather Pill with Silver Lining */}
-        <div className="flex items-center gap-3 bg-white dark:bg-gradient-to-b dark:from-[#1b2130] dark:to-[#10131d] border border-slate-200 dark:border-slate-400/50 dark:shadow-[inset_0_1px_0_rgba(255,255,255,0.18),0_2px_6px_rgba(0,0,0,0.5)] px-4 py-2.5 rounded-xl shadow-2xs self-start lg:self-auto transition-colors">
-          <div className="flex items-center gap-2.5">
-            <span className={`w-2.5 h-2.5 rounded-full ${liveWeather?.isLive ? 'bg-emerald-500 animate-pulse drop-shadow-[0_0_4px_rgba(52,211,153,0.8)]' : 'bg-amber-500'}`} />
-            <div className="text-left">
-              <div className="flex items-center gap-2 text-[10px] text-slate-500 dark:text-slate-400 uppercase tracking-wider font-semibold">
+        <div className="flex items-center gap-3.5 bg-white dark:bg-gradient-to-b dark:from-[#1b2130] dark:to-[#10131d] border border-slate-200 dark:border-slate-400/50 dark:shadow-[inset_0_1px_0_rgba(255,255,255,0.18),0_2px_6px_rgba(0,0,0,0.5)] px-4 py-2.5 rounded-xl shadow-2xs self-start lg:self-auto transition-colors shrink-0 min-w-fit">
+          <div className="flex items-center gap-2.5 shrink-0">
+            <span className={`w-2.5 h-2.5 rounded-full shrink-0 ${liveWeather?.isLive ? 'bg-emerald-500 animate-pulse drop-shadow-[0_0_4px_rgba(52,211,153,0.8)]' : 'bg-amber-500'}`} />
+            <div className="text-left flex flex-col justify-center">
+              <div className="flex items-center gap-2.5 text-[10px] text-slate-500 dark:text-slate-400 uppercase tracking-wider font-semibold whitespace-nowrap">
                 <span>{liveWeather?.isLive ? 'LIVE METEOROLOGY' : 'CALIBRATED SATELLITE'}</span>
                 {liveWeather && (
                   <span className="text-slate-700 dark:text-slate-200 font-mono font-bold">
@@ -98,7 +98,7 @@ export const OverviewView: React.FC<OverviewViewProps> = ({
                   </span>
                 )}
               </div>
-              <div className="text-xs font-mono font-bold text-slate-900 dark:text-white">
+              <div className="text-xs font-mono font-bold text-slate-900 dark:text-white whitespace-nowrap mt-0.5">
                 Heat Index {liveWeather?.heatIndexC ?? 43.8}°C • Landsat-9 TIR
               </div>
             </div>
@@ -108,7 +108,7 @@ export const OverviewView: React.FC<OverviewViewProps> = ({
             type="button"
             onClick={handleSyncTelemetry}
             disabled={isSyncing}
-            className="p-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-600 dark:bg-gradient-to-b dark:from-[#2a3348] dark:to-[#171b26] dark:border dark:border-slate-400/50 dark:text-slate-200 dark:shadow-[inset_0_1px_0_rgba(255,255,255,0.2)] dark:hover:border-white transition-all cursor-pointer disabled:opacity-50"
+            className="p-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-600 dark:bg-gradient-to-b dark:from-[#2a3348] dark:to-[#171b26] dark:border dark:border-slate-400/50 dark:text-slate-200 dark:shadow-[inset_0_1px_0_rgba(255,255,255,0.2)] dark:hover:border-white transition-all cursor-pointer disabled:opacity-50 shrink-0"
             title="Refresh live telemetry"
           >
             <RefreshCw className={`w-3.5 h-3.5 ${isSyncing ? 'animate-spin text-emerald-600 dark:text-emerald-400' : ''}`} />
